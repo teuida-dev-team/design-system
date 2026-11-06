@@ -16,4 +16,3 @@
   - 배리언트 `type=streakfreeze_empty` 자세히 (기준과 다른 부분):
         - Rectangle 1252: 56x56, 모서리 14 (토큰 없음), 면 icon-inactive
         - Vector: 29x34, 면 icon-unselected
-  - ⚠ 토큰에 없는 모서리 · Rectangle 1252: 모서리 14 → 가까운 값 Radius/12

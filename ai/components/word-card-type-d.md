@@ -39,4 +39,3 @@
           - icon / heroicons / Solid: 24x24, 부품 icon / heroicons / Solid / volume-up
           - Frame 2075: 211x46, 세로 정렬
       - Lesson/Volume: 32x32, 부품 Audio/Volume
-  - ⚠ 기본 색 사용 · Frame 2421: gray-100 → background-primary · button-tertiary 중 용도에 맞는 것

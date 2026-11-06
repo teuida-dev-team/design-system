@@ -19,4 +19,3 @@
         - Day 01: 25x34, 글자색 icon-on-color, 글자 Bold 11 (스타일 없음)
   - 배리언트 `type=score` 자세히 (기준과 다른 부분):
       - Score/Grade 30: 29x29, 부품 Score/Grade 30
-  - ⚠ 텍스트 스타일 없음 · Day 01: Bold 11 → Caption 2/B (크기 11→12)

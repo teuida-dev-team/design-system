@@ -46,9 +46,3 @@
       - Frame 2053: 223x66, 세로 정렬, 간격 6 (Spacing/6)
         - Frame 2039: 223x66, 세로 정렬
           - [sunsagnim sunsagnim sun: 223x40, 글자색 gray-600 (기본 색), 글자 Subtitle 2/R
-  - ⚠ 기본 색 사용 · [sunsagnim]: gray-600 → icon-secondary · border-active 중 용도에 맞는 것
-  - ⚠ 목록에 없는 부품 사용 · icon / heroicons / Solid: icon / heroicons / Solid / volume-up → 같은 종류의 현행 부품으로 교체
-  - ⚠ 기본 색 사용 · 배리언트 state=unselected: 면 gray-200 → button-secondary
-  - ⚠ 기본 색 사용 · 배리언트 state=success: 선 green-500 → border-highlight · text-highlight · icon-highlight
-  - ⚠ 기본 색 사용 · 배리언트 state=failed: 면 red-300 → 맞는 용도 토큰 없음
-  - ⚠ 기본 색 사용 · 배리언트 state=failed: 선 red-400 → border-error · text-failed · icon-highlight-red

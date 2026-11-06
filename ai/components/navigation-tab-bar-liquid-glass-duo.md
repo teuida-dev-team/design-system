@@ -14,4 +14,3 @@
     - Navigation/Tab Bar Cell: 48x48, 세로 정렬, 여백 위아래 12 (Spacing/12) · 좌우 16 (Spacing/16), 간격 2 (Spacing/2), 부품 Navigation/Tab Bar Cell
     - Navigation/Tab Bar Cell: 48x48, 세로 정렬, 여백 위아래 12 (Spacing/12) · 좌우 16 (Spacing/16), 간격 2 (Spacing/2), 부품 Navigation/Tab Bar Cell
     - Navigation/Tab Bar Cell: 48x48, 세로 정렬, 여백 위아래 12 (Spacing/12) · 좌우 16 (Spacing/16), 간격 2 (Spacing/2), 부품 Navigation/Tab Bar Cell
-  - ⚠ 기본 색 사용 · Selected: black → 맞는 용도 토큰 없음 (빈칸)

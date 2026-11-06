@@ -15,7 +15,3 @@
         - Frame 664: 360x360, 면 text-primary
         - Frame 665: 360x360, 면 text-primary
     - Community/Post Bottom: 375x56, 가로 정렬, 여백 16 (Spacing/16), 간격 24 (Spacing/24), 선 text-tertiary, 부품 Community/Post Bottom
-  - ⚠ 면에 글자 토큰 · Frame 662: text-primary → background-* · icon-* 토큰
-  - ⚠ 면에 글자 토큰 · Frame 663: text-primary → background-* · icon-* 토큰
-  - ⚠ 면에 글자 토큰 · Frame 664: text-primary → background-* · icon-* 토큰
-  - ⚠ 면에 글자 토큰 · Frame 665: text-primary → background-* · icon-* 토큰

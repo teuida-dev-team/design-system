@@ -31,8 +31,3 @@
   - 배리언트 `theme=red`: 315x420, 글자 #FFFFFF (토큰 없음)
   - 배리언트 `theme=purple`: 315x420, 글자 #FFFFFF (토큰 없음)
   - 배리언트 `theme=blue`: 315x420, 글자 #FFFFFF (토큰 없음)
-  - ⚠ 토큰에 없는 간격 · Frame 2514: 간격 18 → 가까운 값 Spacing/16
-  - ⚠ 토큰에 없는 모서리 · Rectangle 41502: 모서리 14.7 → 가까운 값 Radius/16
-  - ⚠ 간격 토큰 안 걸림 · Frame 2512: 간격 8 → Spacing/8 연결
-  - ⚠ 간격 토큰 안 걸림 · Frame 2515: 간격 8 → Spacing/8 연결
-  - ⚠ 텍스트 스타일 없음 · 한국어를 틀려도 포기하지 않고, 정확하게 배: Medium 16 → Subtitle 1/M

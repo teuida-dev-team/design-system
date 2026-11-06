@@ -14,9 +14,3 @@
         - 리스트 (Review/List Item, L: 309x16, 글자색 #734DD9 (토큰 없음), 글자 Medium 13 (스타일 없음)
     - Tab Bar Area: 375x88, 세로 정렬, 여백 위 0 · 오른 0 · 아래 24 (토큰 없음) · 왼 0
       - Navigation/Tab Bar Liqui: 343x64, 가로 정렬, 여백 4 (Spacing/4), 모서리 full (Radius/full), 부품 Navigation/Tab Bar Liquid Glass
-  - ⚠ 간격 토큰 안 걸림 · Content: 여백 16 → Spacing/16 연결
-  - ⚠ 텍스트 스타일 없음 · 필터·정렬 줄 (Chip/Glass Cate: Medium 13 → Subtitle 2/M (크기 13→14)
-  - ⚠ 색 직접 입력 · 필터·정렬 줄 (Chip/Glass Cate: #734DD9 → 맞는 토큰 없음 (빈칸)
-  - ⚠ 텍스트 스타일 없음 · 리스트 (Review/List Item, L: Medium 13 → Subtitle 2/M (크기 13→14)
-  - ⚠ 색 직접 입력 · 리스트 (Review/List Item, L: #734DD9 → 맞는 토큰 없음 (빈칸)
-  - ⚠ 간격 토큰 안 걸림 · Tab Bar Area: 여백 24 → Spacing/24 연결

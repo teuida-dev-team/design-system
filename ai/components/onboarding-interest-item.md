@@ -17,6 +17,3 @@
   - 배리언트 `state=selected` 자세히 (기준과 다른 부분):
     - 전체: 327x74, 세로 정렬, 여백 위아래 14 (토큰 없음) · 좌우 18 (토큰 없음), 간격 10 (Spacing/10), 모서리 8 (Radius/8), 면 button-primary
           - Text / titlebar: 245x22, 글자색 button-text-tertiary, 글자 Subtitle 1/B
-  - ⚠ 토큰에 없는 간격 · 전체: 여백 14 ×2 → 가까운 값 Spacing/12
-  - ⚠ 토큰에 없는 간격 · 전체: 여백 18 ×2 → 가까운 값 Spacing/16
-  - ⚠ 토큰에 없는 간격 · Frame 1905: 간격 14 → 가까운 값 Spacing/12

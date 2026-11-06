@@ -31,7 +31,3 @@
   - 배리언트 `state=audio_m_on` 자세히 (기준과 다른 부분):
     - 전체: 40x40, 가로 정렬, 여백 14.3 (토큰 없음), 간격 9.5 (토큰 없음), 모서리 17.1 (토큰 없음), 면 button-primary
       - Lesson/Volume: 24x24, 부품 Audio/Volume
-  - ⚠ 토큰에 없는 간격 · 전체: 간격 6.7 → 가까운 값 Spacing/6
-  - ⚠ 기본 색 사용 · 전체: blue-100 → icon-bubble-background 중 용도에 맞는 것
-  - ⚠ 기본 색 사용 · Icon (Stroke): blue-400 → icon-highlight-blue 중 용도에 맞는 것
-  - ⚠ 기본 색 사용 · 배리언트 state=ic_check: 면 blue-100 → icon-bubble-background

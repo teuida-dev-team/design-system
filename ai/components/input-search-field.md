@@ -20,9 +20,3 @@
         - Frame 1506: 50x20, 가로 정렬, 간격 10 (Spacing/10), 선 border-success
           - Sample: 50x20, 글자색 text-primary, 글자 BUTTON 2 - M
       - Icon/Cancel 24: 24x24, 부품 Icon/Cancel 24
-  - ⚠ 토큰에 없는 간격 · 전체: 여백 15 ×2 → 가까운 값 Spacing/16
-  - ⚠ 토큰에 없는 간격 · 전체: 간격 7 → 가까운 값 Spacing/6
-  - ⚠ 토큰에 없는 간격 · Frame 1792: 간격 7 → 가까운 값 Spacing/6
-  - ⚠ 옛 텍스트 스타일 · Search by username or em: BUTTON 2 - M → Button 2/M
-  - ⚠ 기본 색 사용 · Search by username or em: gray-350 → border-tertiary 중 용도에 맞는 것
-  - ⚠ 기본 색 사용 · 배리언트 typing=false: 글자 gray-350 → border-tertiary

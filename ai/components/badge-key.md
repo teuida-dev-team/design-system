@@ -15,9 +15,3 @@
   - 배리언트 `type=lesson` 자세히 (기준과 다른 부분):
       - Icon/Lesson Key 16: 16x16, 부품 Icon/Lesson Key 16
       - 1: 9x20, 글자색 icon-primary, 글자 Subtitle 2 -B
-  - ⚠ 토큰에 없는 간격 · 전체: 여백 1 ×2 → 가까운 값 Spacing/0
-  - ⚠ 토큰에 없는 간격 · 전체: 여백 5 → 가까운 값 Spacing/4
-  - ⚠ 토큰에 없는 간격 · 전체: 여백 3 → 가까운 값 Spacing/2
-  - ⚠ 토큰에 없는 간격 · 전체: 간격 1 → 가까운 값 Spacing/0
-  - ⚠ 토큰에 없는 모서리 · 전체: 모서리 7 → 가까운 값 Radius/8
-  - ⚠ 옛 텍스트 스타일 · 1: Subtitle 2 -B → Subtitle 2/B

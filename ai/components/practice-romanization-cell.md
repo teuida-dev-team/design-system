@@ -20,4 +20,3 @@
     - 전체: 142x26, 세로 정렬, 여백 위 0 · 오른 0 · 아래 2 (Spacing/2) · 왼 0
       - PT_Romani_Cell/Blank: 142x24, 가로 정렬, 여백 위아래 2 (Spacing/2) · 좌우 4 (Spacing/4), 간격 10 (Spacing/10), 모서리 4 (Radius/4), 면 background-primary
         - loremipsum dolorsit: 134x20, 글자색 gray-100 (기본 색), 글자 Body 2/R
-  - ⚠ 기본 색 사용 · 배리언트 type=blank: 글자 gray-100 → background-primary · button-tertiary

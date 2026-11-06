@@ -12,7 +12,3 @@
       - Frame 1624: 254x102, 세로 정렬, 간격 12 (Spacing/12)
         - Frame 1625: 254x52, 세로 정렬, 간격 6 (Spacing/6)
         - Button/Sub 38: 254x38, 가로 정렬, 여백 위 8 (Spacing/8) · 오른 9 (토큰 없음) · 아래 10 (Spacing/10) · 왼 9 (토큰 없음), 모서리 8 (Radius/8), 면 button-tertiary, 부품 Button/Sub 38
-  - ⚠ 토큰에 없는 간격 · 전체: 여백 17 ×2 → 가까운 값 Spacing/16
-  - ⚠ 토큰에 없는 간격 · 전체: 간격 18 → 가까운 값 Spacing/16
-  - ⚠ 토큰에 없는 간격 · Frame 1392: 간격 17 → 가까운 값 Spacing/16
-  - ⚠ 토큰에 없는 간격 · Frame 1626: 여백 3 → 가까운 값 Spacing/2

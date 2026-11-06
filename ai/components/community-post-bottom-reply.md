@@ -13,7 +13,3 @@
       - Frame 666: 32x16, 가로 정렬, 간격 20 (Spacing/20)
         - like: 32x16, 가로 정렬, 간격 5 (토큰 없음)
     - - 답글 숨기기: 66x16, 글자색 text-secondary, 글자 Caption - M
-  - ⚠ 토큰에 없는 간격 · 전체: 여백 52 → 가까운 값 Spacing/24
-  - ⚠ 옛 텍스트 스타일 · 15 min: Caption - R → Caption/R
-  - ⚠ 토큰에 없는 간격 · like: 간격 5 → 가까운 값 Spacing/4
-  - ⚠ 옛 텍스트 스타일 · - 답글 숨기기: Caption - M → Caption/M

@@ -36,6 +36,3 @@
       - Dialog/Middle Preset: 240x222, 세로 정렬, 여백 위아래 0 · 좌우 20 (Spacing/20), 간격 12 (Spacing/12), 면 background-secondary, 부품 Dialog/Middle Preset
       - Image/Illust Times Spoke: 240x240, 부품 Image/Illust Times Spoken2
       - Progress/Bar: 240x28, 가로 정렬, 여백 위 20 (토큰 없음) · 오른 0 · 아래 0 · 왼 0, 간격 8 (Spacing/8), 부품 Progress/Step Dots
-  - ⚠ 옛 텍스트 스타일 · Ipsum Lorem is simply du: Head 3 - EB → Head 3/EB
-  - ⚠ 옛 텍스트 스타일 · Lorem Ipsum is simply du: Body 2 - R → Body 2/R
-  - ⚠ 옛 텍스트 스타일 · Lorem Ipsum is simply du: Caption - R → Caption/R

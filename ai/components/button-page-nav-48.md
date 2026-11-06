@@ -12,6 +12,3 @@
   - 배리언트 `direction=left`: 48x48, 면 black-20 (기본 색) 20%
   - 배리언트 `direction=right`: 48x48, 면 black-20 (기본 색) 20%
   - 배리언트 `direction=right` 자세히: 기준과 같음
-  - ⚠ 기본 색 사용 · 전체: black-20 → 맞는 용도 토큰 없음 (빈칸)
-  - ⚠ 기본 색 사용 · 배리언트 direction=left: 면 black-20 → 맞는 용도 토큰 없음
-  - ⚠ 기본 색 사용 · 배리언트 direction=right: 면 black-20 → 맞는 용도 토큰 없음

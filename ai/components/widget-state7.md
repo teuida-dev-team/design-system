@@ -18,6 +18,3 @@
       - Streak/Ic Union: 51x51, 부품 Streak/Ic Union
       - 99: 84x52, 글자색 #FFFFFF (토큰 없음), 글자 ExtraBold 72.45570373535156 (스타일 없음)
     - Streak_ic: 272x272, 부품 Streak/Calendar Icon
-  - ⚠ 토큰에 없는 모서리 · 전체: 모서리 66.4 → 가까운 값 Radius/30
-  - ⚠ 간격 토큰 안 걸림 · Frame 1812: 간격 6 → Spacing/6 연결
-  - ⚠ 텍스트 스타일 없음 · 99: ExtraBold 72.45570373535156 → Number/EB (크기 72.45570373535156→32)

@@ -7,4 +7,3 @@
 - 스펙 (px; 괄호 = 토큰 이름, "토큰 없음" = 숫자·색 직접):
   - 전체: 69x36, 가로 정렬, 여백 위아래 7 (토큰 없음) · 좌우 12 (Spacing/12), 간격 10 (Spacing/10), 모서리 8 (Radius/8), 면 background-highlight-soft
     - 입니다: 45x22, 글자색 text-primary, 글자 Subtitle 1/M
-  - ⚠ 토큰에 없는 간격 · 전체: 여백 7 ×2 → 가까운 값 Spacing/6

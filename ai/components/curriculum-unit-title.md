@@ -24,8 +24,3 @@
   - 배리언트 `type=active`: 375x293, 면 background-primary, 글자 text-tertiary
   - 배리언트 `type=active` 자세히 (기준과 다른 부분):
           - Badge/Unit Badge: 168x130, 세로 정렬, 간격 -22 (토큰 없음), 부품 Badge/Unit Badge
-  - ⚠ 토큰에 없는 간격 · Container: 간격 5 → 가까운 값 Spacing/4
-  - ⚠ 텍스트 스타일 없음 · Subtitle: Medium 13 → Subtitle 2/M (크기 13→14)
-  - ⚠ 토큰에 없는 간격 · Container: 여백 123 ×2 → 가까운 값 Spacing/24
-  - ⚠ 토큰에 없는 간격 · Frame 2588: 여백 7 → 가까운 값 Spacing/6
-  - ⚠ 토큰에 없는 간격 · Frame 2588: 여백 14 → 가까운 값 Spacing/12

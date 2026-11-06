@@ -14,5 +14,3 @@
   - 배리언트 `state=start`: 360x4
   - 배리언트 `state=start` 자세히 (기준과 다른 부분):
       - progress/gagebar: 6x4, 면 icon-highlight
-  - ⚠ 기본 색 사용 · progress/bg: black → 맞는 용도 토큰 없음 (빈칸)
-  - ⚠ 기본 색 사용 · progress/gagebar: green-500 → button-primary · icon-highlight · text-highlight 중 용도에 맞는 것

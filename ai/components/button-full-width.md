@@ -34,8 +34,3 @@
       - Frame 1905: 54x22, 가로 정렬, 간격 14 (토큰 없음)
         - Frame 1904: 54x22, 세로 정렬
           - Text / titlebar: 54x22, 글자색 button-text-tertiary, 글자 Subtitle 1/B
-  - ⚠ 토큰에 없는 간격 · 전체: 여백 105 ×2 → 가까운 값 Spacing/24
-  - ⚠ 기본 색 사용 · 배리언트 size=54, style=white, state=enabled: 면 white → background-secondary · button-second-primary · button-text-tertiary
-  - ⚠ 기본 색 사용 · 배리언트 size=54, style=fill, state=enabled: 면 green-500 → button-primary · icon-highlight · text-highlight
-  - ⚠ 글자 스타일이 Subtitle 1/B예요. 버튼 전용 Button 1/B가 맞는지 확인이 필요해요
-  - ⚠ 좌우 여백 105는 글자를 가운데 두려고 넣은 값이에요. 가운데 정렬 + 폭 채움으로 바꾸면 숫자가 필요 없어요

@@ -36,5 +36,3 @@
   - 배리언트 `state=off` 자세히 (기준과 다른 부분):
     - 전체: 72x72, 가로 정렬, 여백 20 (Spacing/20), 간격 13.3 (토큰 없음), 모서리 full (Radius/full), 면 button-second-primary
       - Icon/Mic On 28: 34x34, 부품 Icon/Mic On 28
-  - ⚠ 토큰에 없는 간격 · 전체: 간격 13.3 → 가까운 값 Spacing/12
-  - ⚠ 기본 색 사용 · 배리언트 state=failed: 면 red-400 → icon-highlight-red · text-failed · border-error

@@ -16,7 +16,3 @@
         - Frame 1815: 263x52, 세로 정렬
       - Lorem ipsum dolor sit am: 288x60, 글자색 text-primary, 글자 SemiBold 13 (스타일 없음)
   - 배리언트 `viewportwidth=under 390x, stage=1`: 320x298, 글자 text-primary
-  - ⚠ 토큰에 없는 간격 · Rvw_Title: 간격 65 → 가까운 값 Spacing/24
-  - ⚠ 옛 텍스트 스타일 · Speak this sentence: Head 2 - EB → Head 2/EB
-  - ⚠ 토큰에 없는 간격 · Rvw_Sentence: 여백 14 → 가까운 값 Spacing/12
-  - ⚠ 텍스트 스타일 없음 · Lorem ipsum dolor sit am: SemiBold 13 → Subtitle 2/B (크기 13→14)

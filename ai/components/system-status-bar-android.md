@@ -18,4 +18,3 @@
       - wifi: 18x16
         - bounds: 16x16
         - Shape: 18x14, 면 icon-primary
-  - ⚠ 텍스트 스타일 없음 · 12:30: mixed 14 → Subtitle 2/B

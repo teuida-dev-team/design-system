@@ -34,5 +34,3 @@
   - 배리언트 `state=default` 자세히 (기준과 다른 부분):
     - 전체: 327x48, 가로 정렬, 여백 위 13 (토큰 없음) · 오른 0 · 아래 13 (토큰 없음) · 왼 14 (토큰 없음), 간격 10 (Spacing/10), 모서리 8 (Radius/8), 면 background-secondary
       - Text / titlebar: 261x22, 글자색 text-tertiary, 글자 Subtitle 1/M
-  - ⚠ 토큰에 없는 간격 · 전체: 여백 13 ×2 → 가까운 값 Spacing/12
-  - ⚠ 토큰에 없는 간격 · 전체: 여백 14 → 가까운 값 Spacing/12

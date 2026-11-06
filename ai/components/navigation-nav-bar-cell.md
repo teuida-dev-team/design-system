@@ -36,4 +36,3 @@
   - 배리언트 `type=home(old)` 자세히 (기준과 다른 부분):
       - Image/Home Logo: 106x48, 부품 Image/Home Logo
       - Frame 1677: 169x25, 세로 정렬, 간격 10 (Spacing/10)
-  - ⚠ 토큰에 없는 간격 · 전체: 여백 7 ×2 → 가까운 값 Spacing/6

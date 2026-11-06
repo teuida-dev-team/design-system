@@ -8,6 +8,3 @@
   - 전체: 257x38, 가로 정렬, 여백 위 8 (Spacing/8) · 오른 9 (토큰 없음) · 아래 10 (Spacing/10) · 왼 9 (토큰 없음), 모서리 8 (Radius/8), 면 button-tertiary
     - Ver. 1.0: 28x20, 글자색 button-text-highlight, 글자 BUTTON 2 - M
     - ic_20_check_green600: 20x20, 부품 ic_20_check_green600
-  - ⚠ 토큰에 없는 간격 · 전체: 여백 9 ×2 → 가까운 값 Spacing/8
-  - ⚠ 옛 텍스트 스타일 · Ver. 1.0: BUTTON 2 - M → Button 2/M
-  - ⚠ 목록에 없는 부품 사용 · ic_20_check_green600: ic_20_check_green600 → 같은 종류의 현행 부품으로 교체

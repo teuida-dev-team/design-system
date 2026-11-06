@@ -33,7 +33,3 @@
           - Group 928: 30x30
           - Group 929: 11x11
           - You can do better next t: 283x28, 글자색 text-alert, 글자 Head 3/B
-  - ⚠ 기본 색 사용 · Rectangle 965: green-100 → 맞는 용도 토큰 없음 (빈칸)
-  - ⚠ 토큰에 없는 간격 · Frame 1787: 간격 5 → 가까운 값 Spacing/4
-  - ⚠ 기본 색 사용 · Ellipse 259 (Stroke): green-400 → button-highlight · button-tag · border-success 중 용도에 맞는 것
-  - ⚠ 기본 색 사용 · Vector 240 (Stroke): green-50 → background-highlight-soft · button-highlight-soft 중 용도에 맞는 것

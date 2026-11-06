@@ -40,6 +40,3 @@
       - Icon/Settings 24: 24x24, 부품 Icon/Settings 24
       - Progress/Bar 2: 240x6, 가로 정렬, 간격 8 (Spacing/8), 부품 Progress/Step Bar
       - Icon/Close 24: 24x24, 부품 Icon/Close 24
-  - ⚠ 토큰에 없는 간격 · 전체: 여백 13 ×2 → 가까운 값 Spacing/12
-  - ⚠ 옛 텍스트 스타일 · Button: BUTTON 1 - M ×2 → Button 1/M
-  - ⚠ 옛 텍스트 스타일 · Text: Head 5 - B → Head 5/B

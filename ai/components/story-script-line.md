@@ -19,6 +19,3 @@
     - 전체: 280x65, 가로 정렬, 여백 위아래 13 (토큰 없음) · 좌우 15 (토큰 없음), 간격 12 (Spacing/12), 모서리 12 (Radius/12), 면 background-secondary
   - 배리언트 `type=completed` 자세히 (기준과 다른 부분):
       - Score/Grade 24: 24x24, 부품 Score/Grade 24
-  - ⚠ 토큰에 없는 간격 · 전체: 여백 13 ×2 → 가까운 값 Spacing/12
-  - ⚠ 토큰에 없는 간격 · 전체: 여백 15 ×2 → 가까운 값 Spacing/16
-  - ⚠ 토큰에 없는 간격 · Frame 1550: 간격 3 → 가까운 값 Spacing/2

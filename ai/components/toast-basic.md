@@ -7,5 +7,3 @@
 - 스펙 (px; 괄호 = 토큰 이름, "토큰 없음" = 숫자·색 직접):
   - 전체: 119x40, 가로 정렬, 여백 12 (Spacing/12), 간격 10 (Spacing/10), 모서리 6 (토큰 없음), 면 tooltip-bg-toast
     - Toast popup text: 95x16, 글자색 tooltip-text-secondary, 글자 Caption - R
-  - ⚠ 토큰에 없는 모서리 · 전체: 모서리 6 → 가까운 값 Radius/4
-  - ⚠ 옛 텍스트 스타일 · Toast popup text: Caption - R → Caption/R

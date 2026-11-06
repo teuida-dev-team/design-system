@@ -20,6 +20,3 @@
           - Star 8: 23x25, 선 blue-300 (기본 색) 10% 4.09743595123291
           - Star 9: 23x25, 선 blue-300 (기본 색) 15% 2.048717975616455
           - Exclude: 23x25, 면 icon-bubble
-  - ⚠ 토큰에 없는 모서리 · 전체: 모서리 10 → 가까운 값 Radius/8
-  - ⚠ 기본 색 사용 · Star 8: gray-300 → icon-inactive · button-inactive · gradient-unfilled 중 용도에 맞는 것
-  - ⚠ 기본 색 사용 · Star 9: gray-300 → icon-inactive · button-inactive · gradient-unfilled 중 용도에 맞는 것

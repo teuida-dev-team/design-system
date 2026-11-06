@@ -32,6 +32,3 @@
         - Tooltip minimum: 97x16, 글자색 text-primary, 글자 Caption - R
   - 배리언트 `type=bottom / left` 자세히 (기준과 다른 부분):
       - Frame 659: 54x8, 세로 정렬, 여백 위아래 0 · 좌우 20 (Spacing/20), 간격 10 (Spacing/10)
-  - ⚠ 토큰에 없는 모서리 · box: 모서리 6 → 가까운 값 Radius/4
-  - ⚠ 옛 텍스트 스타일 · Tooltip minimum: Caption - R → Caption/R
-  - ⚠ 기본 색 사용 · tale: yellow-50 → 맞는 용도 토큰 없음 (빈칸)

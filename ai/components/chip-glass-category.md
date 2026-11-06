@@ -28,5 +28,3 @@ iOS 26 유리 카테고리 칩 (기본·선택). • 언제: 리스트 위 카�
       - Fill + Shadow: 96x36, 모서리 full (Radius/full), 면 button-primary
       - Glass Effect: 96x36, 모서리 full (Radius/full)
       - Category: 64x20, 글자색 text-on-color, 글자 Subtitle 2/B
-  - ⚠ 토큰에 없는 간격 · 전체: 여백 7 ×2 → 가까운 값 Spacing/6
-  - ⚠ 토큰에 없는 간격 · 전체: 여백 14 ×2 → 가까운 값 Spacing/12

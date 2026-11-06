@@ -114,5 +114,3 @@
         - Frame 2226: 230x22, 세로 정렬, 간격 4 (Spacing/4)
           - Frame 2228: 230x22, 가로 정렬, 간격 6 (Spacing/6)
         - Component 9: 28x28, 가로 정렬, 여백 10 (Spacing/10), 간격 6.7 (토큰 없음), 모서리 12 (Radius/12), 면 button-secondary, 부품 Button/Circle Icon
-  - ⚠ 토큰에 없는 간격 · 전체: 간격 14 → 가까운 값 Spacing/12
-  - ⚠ 간격 토큰 안 걸림 · Frame 2228: 간격 2 → Spacing/2 연결

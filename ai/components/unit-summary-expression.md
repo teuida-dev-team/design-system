@@ -69,6 +69,3 @@
         - Component 9: 28x28, 가로 정렬, 여백 10 (Spacing/10), 간격 6.7 (토큰 없음), 모서리 12 (Radius/12), 면 button-primary, 부품 Button/Circle Icon
         - Frame 2227: 265x72, 세로 정렬, 간격 10 (Spacing/10)
           - Frame 2452: 265x22, 세로 정렬
-  - ⚠ 토큰에 없는 간격 · 전체: 여백 18 → 가까운 값 Spacing/16
-  - ⚠ 모서리 토큰 안 걸림 · 전체: 모서리 16 → Radius/16 연결
-  - ⚠ 기본 색 사용 · Rectangle 1002: gray-200 → button-secondary 중 용도에 맞는 것

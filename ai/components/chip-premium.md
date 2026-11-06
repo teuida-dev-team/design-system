@@ -7,6 +7,3 @@
 - 스펙 (px; 괄호 = 토큰 이름, "토큰 없음" = 숫자·색 직접):
   - 전체: 65x23, 가로 정렬, 여백 위 2 (Spacing/2) · 오른 6 (Spacing/6) · 아래 5 (토큰 없음) · 왼 6 (Spacing/6), 간격 10 (Spacing/10), 모서리 6 (토큰 없음), 선 border-highlight 1
     - Premium: 53x16, 글자색 text-highlight, 글자 Caption - M
-  - ⚠ 토큰에 없는 간격 · 전체: 여백 5 → 가까운 값 Spacing/4
-  - ⚠ 토큰에 없는 모서리 · 전체: 모서리 6 → 가까운 값 Radius/4
-  - ⚠ 옛 텍스트 스타일 · Premium: Caption - M → Caption/M

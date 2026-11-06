@@ -173,5 +173,3 @@
       - Ellipse 404: 6x6, 면 gray-300 (기본 색)
       - Ellipse 405: 6x6, 면 gray-300 (기본 색)
       - Rectangle 41453: 32x6, 모서리 full (Radius/full), 면 green-500 (기본 색)
-  - ⚠ 기본 색 사용 · Rectangle 41453: green-500 → button-primary · icon-highlight · text-highlight 중 용도에 맞는 것
-  - ⚠ 기본 색 사용 · Ellipse 400: gray-300 → button-inactive · icon-inactive · gradient-unfilled 중 용도에 맞는 것

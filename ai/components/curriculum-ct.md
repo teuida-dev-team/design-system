@@ -47,9 +47,3 @@
         - Group 1059: 164x67
           - Lorem Ipsum is simply du: 164x44, 글자색 icon-primary, 글자 Head 5 - B
           - Description: 65x16, 글자색 text-secondary, 글자 Caption 2/R
-  - ⚠ 토큰에 없는 간격 · 전체: 여백 15 → 가까운 값 Spacing/16
-  - ⚠ 토큰에 없는 간격 · 전체: 여백 17 → 가까운 값 Spacing/16
-  - ⚠ 토큰에 없는 간격 · 전체: 간격 15 → 가까운 값 Spacing/16
-  - ⚠ 토큰에 없는 모서리 · 전체: 모서리 14 → 가까운 값 Radius/12
-  - ⚠ 옛 텍스트 스타일 · Label: Caption - M → Caption/M
-  - ⚠ 옛 텍스트 스타일 · Lorem Ipsum is simply du: Head 5 - B → Head 5/B

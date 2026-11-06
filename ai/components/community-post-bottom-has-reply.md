@@ -12,7 +12,3 @@
         - like: 42x16, 가로 정렬, 간격 2 (Spacing/2)
         - comments: 32x16, 가로 정렬, 간격 5 (토큰 없음)
     - + See all replies: 89x16, 글자색 text-secondary, 글자 Caption - M
-  - ⚠ 토큰에 없는 간격 · Frame 665: 간격 91 → 가까운 값 Spacing/24
-  - ⚠ 옛 텍스트 스타일 · 15 min: Caption - R → Caption/R
-  - ⚠ 토큰에 없는 간격 · comments: 간격 5 → 가까운 값 Spacing/4
-  - ⚠ 옛 텍스트 스타일 · + See all replies: Caption - M → Caption/M

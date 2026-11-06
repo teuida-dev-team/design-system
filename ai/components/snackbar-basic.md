@@ -10,6 +10,3 @@
       - Frame 1957: 128x38, 세로 정렬
         - Text / titlebar: 115x20, 글자색 tooltip-text-toast-primary, 글자 Subtitle 2/M
         - Text / titlebar: 128x18, 글자색 tooltip-text-toast-secondary, 글자 Caption/M
-  - ⚠ 토큰에 없는 간격 · 전체: 여백 14 ×2 → 가까운 값 Spacing/12
-  - ⚠ 토큰에 없는 모서리 · 전체: 모서리 6 → 가까운 값 Radius/4
-  - ⚠ 토큰에 없는 간격 · Frame 1956: 간격 128 → 가까운 값 Spacing/24

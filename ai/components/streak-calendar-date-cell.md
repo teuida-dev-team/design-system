@@ -54,4 +54,3 @@
       - Rectangle 1111: 21x28, 면 button-primary
       - Vector: 24x28, 면 icon-bubble
       - 1: 8x20, 글자색 text-on-color, 글자 Bold 13 (스타일 없음)
-  - ⚠ 텍스트 스타일 없음 · 1: Bold 13 → Subtitle 2/B (크기 13→14)

@@ -19,4 +19,3 @@
         - 00: 19x22, 글자색 text-primary, 글자 Subtitle 1/B
     - Frame: 138x42, 가로 정렬, 여백 위아래 10 (Spacing/10) · 좌우 33 (토큰 없음), 모서리 full (Radius/full), 면 background-secondary
       - Get offer: 72x22, 글자색 text-primary, 글자 Button 1/B
-  - ⚠ 토큰에 없는 간격 · Frame: 여백 33 ×2 → 가까운 값 Spacing/24

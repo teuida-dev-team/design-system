@@ -92,6 +92,3 @@
   - 배리언트 `language=romanization, type=default, state=spoken` 자세히 (기준과 다른 부분):
     - 전체: 48x24, 가로 정렬, 여백 위아래 0 · 좌우 2 (Spacing/2), 간격 10 (Spacing/10), 모서리 4 (Radius/4), 면 background-primary
       - taberu: 44x20, 글자색 text-highlight, 글자 Body 2/R
-  - ⚠ 토큰에 없는 간격 · 전체: 여백 1 ×3 → 가까운 값 Spacing/0
-  - ⚠ 토큰에 없는 간격 · 전체: 여백 3 → 가까운 값 Spacing/2
-  - ⚠ 토큰에 없는 모서리 · 전체: 모서리 6 → 가까운 값 Radius/4

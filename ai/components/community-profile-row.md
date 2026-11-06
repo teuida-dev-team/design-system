@@ -12,4 +12,3 @@
         - Frame 1624: 219x20, 가로 정렬, 간격 6 (Spacing/6)
         - Frame 1624: 68x20, 가로 정렬, 간격 7 (토큰 없음)
     - Icon/Menu 20: 20x20, 부품 Icon/Menu 20
-  - ⚠ 토큰에 없는 간격 · Frame 1624: 간격 7 → 가까운 값 Spacing/6

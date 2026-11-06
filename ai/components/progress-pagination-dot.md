@@ -13,4 +13,3 @@
   - 배리언트 `state=focused`: 6x6
   - 배리언트 `state=focused` 자세히 (기준과 다른 부분):
       - Navigation_dot_focused: 6x6, 면 green-500 (기본 색)
-  - ⚠ 기본 색 사용 · Navigation_dot_default: gray-600 → icon-secondary · border-active 중 용도에 맞는 것

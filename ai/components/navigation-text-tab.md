@@ -14,7 +14,3 @@
   - 배리언트 `type=tabmenu_default`: 19x29, 글자 text-secondary
   - 배리언트 `type=tabmenu_default` 자세히 (기준과 다른 부분):
       - All: 19x20, 글자색 text-secondary, 글자 Subtitle 2 -B
-  - ⚠ 옛 텍스트 스타일 · All: Subtitle 2 -B → Subtitle 2/B
-  - ⚠ 기본 색 사용 · All: gray-50 → 맞는 용도 토큰 없음 (빈칸)
-  - ⚠ 기본 색 사용 · Rectangle 858: green-500 → button-primary · icon-highlight · text-highlight 중 용도에 맞는 것
-  - ⚠ 기본 색 사용 · 배리언트 type=tabmenu_focused: 글자 gray-50 → 맞는 용도 토큰 없음

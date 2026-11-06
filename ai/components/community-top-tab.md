@@ -13,4 +13,3 @@
       - Frame 670: 32x29, 세로 정렬, 간격 6 (Spacing/6), 부품 Navigation/Text Tab
       - Frame 672: 43x29, 세로 정렬, 간격 6 (Spacing/6), 부품 Navigation/Text Tab
       - K-pop: 41x20, 글자색 text-unselected, 글자 Subtitle 2 -B
-  - ⚠ 옛 텍스트 스타일 · K-pop: Subtitle 2 -B → Subtitle 2/B

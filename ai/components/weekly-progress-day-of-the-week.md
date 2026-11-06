@@ -16,4 +16,3 @@
       - Su: 17x20, 글자색 text-highlight, 글자 Subtitle 2/B
   - 배리언트 `state=potion` 자세히 (기준과 다른 부분):
       - Su: 17x20, 글자색 blue-300 (기본 색), 글자 Subtitle 2/B
-  - ⚠ 기본 색 사용 · 배리언트 state=potion: 글자 blue-300 → icon-bubble

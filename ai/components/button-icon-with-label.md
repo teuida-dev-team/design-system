@@ -18,7 +18,3 @@
         - Group 1823: 19x19
           - Rectangle 41558: 24x3, 모서리 full (Radius/full), 면 button-second-primary
           - Rectangle 41558: 24x3, 모서리 full (Radius/full), 면 button-second-primary
-  - ⚠ 토큰에 없는 간격 · Frame 2073: 여백 3.6 → 가까운 값 Spacing/4
-  - ⚠ 토큰에 없는 간격 · Frame 2073: 여백 2.7 → 가까운 값 Spacing/2
-  - ⚠ 토큰에 없는 간격 · Frame 2073: 간격 9 → 가까운 값 Spacing/8
-  - ⚠ 기본 색 사용 · Frame 2073: black-30 → 맞는 용도 토큰 없음 (빈칸)

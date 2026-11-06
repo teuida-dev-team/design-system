@@ -37,8 +37,3 @@
         - Body: 250x40, 글자색 text-secondary, 글자 Body 2/R
       - Buttons: 250x44, 가로 정렬, 간격 8 (Spacing/8)
         - Primary Button: 250x44, 가로 정렬, 여백 12 (토큰 없음), 간격 10 (토큰 없음), 모서리 50 (토큰 없음), 면 button-primary, 부품 Button/2
-  - ⚠ 토큰에 없는 간격 · 전체: 여백 28 → 가까운 값 Spacing/24
-  - ⚠ 토큰에 없는 모서리 · 전체: 모서리 20 → 가까운 값 Radius/16
-  - ⚠ 목록에 없는 부품 사용 · Secondary Button: Button/2 → 같은 종류의 현행 부품으로 교체
-  - ⚠ 목록에 없는 부품 사용 · Primary Button: Button/2 → 같은 종류의 현행 부품으로 교체
-  - ⚠ 안 버튼은 게시 후 Button/Full Width로 바꾸기로 한 항목이에요

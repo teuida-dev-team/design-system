@@ -38,4 +38,3 @@
       - Progress/Bar Cell: 8x8, 부품 Progress/Bar Cell
       - Progress/Bar Cell: 8x8, 부품 Progress/Bar Cell
       - Progress/Bar Cell: 8x8, 부품 Progress/Bar Cell
-  - ⚠ 토큰에 없는 간격 · 전체: 간격 9 → 가까운 값 Spacing/8

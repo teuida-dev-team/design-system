@@ -16,4 +16,3 @@ iOS 스위치 (on·off). • 언제: 설정 켜기·끄기 • 쓰지 말 것: �
   - 배리언트 `state=on` 자세히 (기준과 다른 부분):
       - Group 1588: 46x28
         - Rectangle 1116: 46x28, 모서리 full (Radius/full), 면 button-primary
-  - ⚠ 기본 색 사용 · Rectangle 1116: gray-350 → border-tertiary 중 용도에 맞는 것

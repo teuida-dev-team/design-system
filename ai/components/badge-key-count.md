@@ -22,8 +22,3 @@
   - 배리언트 `type=lessonkey` 자세히 (기준과 다른 부분):
     - 전체: 41x30, 세로 정렬, 간격 10 (Spacing/10)
         - Icon/Lesson Key 24: 24x24, 부품 Icon/Lesson Key 24
-  - ⚠ 토큰에 없는 간격 · Frame 1565: 여백 3 ×2 → 가까운 값 Spacing/2
-  - ⚠ 토큰에 없는 간격 · Frame 1565: 여백 5 → 가까운 값 Spacing/4
-  - ⚠ 토큰에 없는 간격 · Frame 1565: 간격 1 → 가까운 값 Spacing/0
-  - ⚠ 옛 텍스트 스타일 · 0: Subtitle 2 -B → Subtitle 2/B
-  - ⚠ 글자에 글자 토큰이 아님 · 0: icon-primary → text-* 토큰

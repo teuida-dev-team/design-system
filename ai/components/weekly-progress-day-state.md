@@ -58,7 +58,3 @@
       - Union: 15x18, 면 gray-350 (기본 색)
         - Rectangle 64: 15x11, 면 background-secondary
         - Rectangle 65 (Stroke): 10x7, 면 background-secondary
-  - ⚠ 토큰에 없는 모서리 · Rectangle 41563: 모서리 15 → 가까운 값 Radius/16
-  - ⚠ 기본 색 사용 · Rectangle 41563: gray-200 → button-secondary 중 용도에 맞는 것
-  - ⚠ 기본 색 사용 · Vector: white ×2 → background-secondary · button-second-primary · button-text-tertiary 중 용도에 맞는 것
-  - ⚠ 기본 색 사용 · Vector: white → border-primary · background-secondary · text-on-color 중 용도에 맞는 것
