@@ -1,0 +1,118 @@
+# Review/List Item
+
+묶음: 기능 전용 · Review
+
+리뷰 탭 배운 단어·표현 목록의 한 줄 335x78. 북마크, 단어와 발음, 소리 버튼이 들어감. list-item으로 첫·중간·마지막 줄 모서리, lines로 1·2줄, romanization으로 발음 표기 유무를 고름.
+
+속성: lines:1·2 / language type:study·source / language:koen·jaen / list-item:first·middle·last
+
+- 스펙 (px, 기준 `state=all-on, lines=1, language type=study, language=koen, list-item=middle, romanization=on`; 괄호 = 토큰 이름, "토큰 없음" = 숫자·색 직접):
+  - 전체: 335x78, 가로 정렬, 여백 16 (Spacing/16), 간격 14 (토큰 없음), 모서리 16 (Radius/16), 면 background-secondary
+    - ic_24_bookmark: 24x24, 부품 Icon/Bookmark 24
+    - Frame 2255: 265x44, 가로 정렬, 간격 10 (Spacing/10)
+      - Frame 2228: 265x44, 세로 정렬, 간격 2 (토큰 없음)
+        - Teacher: 265x22, 글자색 text-primary, 글자 Head 5/B
+        - romanization: 265x20, 글자색 text-tertiary, 글자 Body 2/R
+    - audio: 28x28, 가로 정렬, 여백 10 (Spacing/10), 간격 6.7 (토큰 없음), 모서리 12 (Radius/12), 면 button-secondary, 부품 Button/Circle Icon
+  - 배리언트 `state=all-on, lines=1, language type=study, language=koen, l`: 335x78, 면 background-secondary, 글자 text-primary
+  - 배리언트 `state=all-on, lines=1, language type=study, language=koen, l`: 335x60, 면 background-secondary, 글자 text-primary
+  - 배리언트 `state=all-on, lines=1, language type=study, language=koen, l`: 335x78, 면 background-secondary, 글자 text-primary
+  - 배리언트 `state=all-on, lines=1, language type=study, language=koen, l`: 335x78, 면 background-secondary, 글자 text-primary
+  - 배리언트 `state=all-on, lines=1, language type=study, language=koen, l`: 335x78, 면 background-secondary, 글자 text-primary
+  - 배리언트 `state=all-on, lines=1, language type=study, language=koen, l`: 335x78, 면 background-secondary, 글자 text-primary
+  - 배리언트 `state=all-on, lines=1, language type=study, language=jaen, l`: 335x96, 면 background-secondary, 글자 text-primary
+  - 배리언트 `state=all-on, lines=1, language type=study, language=jaen, l`: 335x96, 면 background-secondary, 글자 text-primary
+  - 배리언트 `state=all-on, lines=1, language type=study, language=jaen, l`: 335x96, 면 background-secondary, 글자 text-primary
+  - 배리언트 `state=all-on, lines=1, language type=study, language=jaen, l`: 335x96, 면 background-secondary, 글자 text-primary
+  - 배리언트 `state=all-on, lines=1, language type=study, language=koen, list-item=middle, rom` 자세히 (기준과 다른 부분):
+    - 전체: 335x60, 가로 정렬, 여백 16 (Spacing/16), 간격 양 끝 정렬, 모서리 16 (Radius/16), 면 background-secondary
+      - Frame 2255: 268x22, 가로 정렬, 여백 위 0 · 오른 0 · 아래 0 · 왼 8 (Spacing/8), 간격 10 (Spacing/10)
+        - Frame 2228: 260x22, 가로 정렬, 간격 6 (Spacing/6)
+          - Teacher: 260x22, 글자색 text-primary, 글자 Head 5/B
+      - audio: 28x28, 가로 정렬, 여백 10 (Spacing/10), 간격 6.7 (토큰 없음), 모서리 12 (Radius/12), 면 button-secondary, 부품 Button/Circle Icon
+  - 배리언트 `state=all-on, lines=1, language type=study, language=koen, list-item=first, roma` 자세히 (기준과 다른 부분):
+    - 전체: 335x78, 가로 정렬, 여백 16 (Spacing/16), 간격 양 끝 정렬, 모서리 16 (Radius/16), 면 background-secondary
+      - Frame 2255: 268x22, 가로 정렬, 여백 위 0 · 오른 0 · 아래 0 · 왼 8 (Spacing/8), 간격 10 (Spacing/10)
+        - Frame 2228: 260x22, 가로 정렬, 간격 6 (Spacing/6)
+          - Teacher: 260x22, 글자색 text-primary, 글자 Head 5/B
+      - audio: 28x28, 가로 정렬, 여백 10 (Spacing/10), 간격 6.7 (토큰 없음), 모서리 12 (Radius/12), 면 button-secondary, 부품 Button/Circle Icon
+  - 배리언트 `state=all-on, lines=1, language type=study, language=koen, list-item=last, roman` 자세히 (기준과 다른 부분):
+    - 전체: 335x78, 가로 정렬, 여백 16 (Spacing/16), 간격 양 끝 정렬, 모서리 16 (Radius/16), 면 background-secondary
+      - Frame 2255: 268x22, 가로 정렬, 여백 위 0 · 오른 0 · 아래 0 · 왼 8 (Spacing/8), 간격 10 (Spacing/10)
+        - Frame 2228: 260x22, 가로 정렬, 간격 6 (Spacing/6)
+          - Teacher: 260x22, 글자색 text-primary, 글자 Head 5/B
+      - audio: 28x28, 가로 정렬, 여백 10 (Spacing/10), 간격 6.7 (토큰 없음), 모서리 12 (Radius/12), 면 button-secondary, 부품 Button/Circle Icon
+  - 배리언트 `state=all-on, lines=1, language type=study, language=jaen, list-item=first, roma` 자세히 (기준과 다른 부분):
+    - 전체: 335x96, 가로 정렬, 여백 16 (Spacing/16), 간격 양 끝 정렬, 모서리 16 (Radius/16), 면 background-secondary
+      - Frame 2255: 268x22, 가로 정렬, 여백 위 0 · 오른 0 · 아래 0 · 왼 8 (Spacing/8), 간격 10 (Spacing/10)
+        - Frame 2228: 260x22, 가로 정렬, 간격 6 (Spacing/6)
+          - Teacher: 260x22, 글자색 text-primary, 글자 Head 5/B
+      - audio: 28x28, 가로 정렬, 여백 10 (Spacing/10), 간격 6.7 (토큰 없음), 모서리 12 (Radius/12), 면 button-secondary, 부품 Button/Circle Icon
+  - 배리언트 `state=all-on, lines=1, language type=study, language=jaen, list-item=middle, rom` 자세히 (기준과 다른 부분):
+    - 전체: 335x96, 가로 정렬, 여백 16 (Spacing/16), 간격 양 끝 정렬, 모서리 16 (Radius/16), 면 background-secondary
+      - Frame 2255: 268x22, 가로 정렬, 여백 위 0 · 오른 0 · 아래 0 · 왼 8 (Spacing/8), 간격 10 (Spacing/10)
+        - Frame 2228: 260x22, 가로 정렬, 간격 6 (Spacing/6)
+          - Teacher: 260x22, 글자색 text-primary, 글자 Head 5/B
+      - audio: 28x28, 가로 정렬, 여백 10 (Spacing/10), 간격 6.7 (토큰 없음), 모서리 12 (Radius/12), 면 button-secondary, 부품 Button/Circle Icon
+  - 배리언트 `state=all-on, lines=1, language type=study, language=jaen, list-item=last, roman` 자세히 (기준과 다른 부분):
+    - 전체: 335x96, 가로 정렬, 여백 16 (Spacing/16), 간격 양 끝 정렬, 모서리 16 (Radius/16), 면 background-secondary
+      - Frame 2255: 268x22, 가로 정렬, 여백 위 0 · 오른 0 · 아래 0 · 왼 8 (Spacing/8), 간격 10 (Spacing/10)
+        - Frame 2228: 260x22, 가로 정렬, 간격 6 (Spacing/6)
+          - Teacher: 260x22, 글자색 text-primary, 글자 Head 5/B
+      - audio: 28x28, 가로 정렬, 여백 10 (Spacing/10), 간격 6.7 (토큰 없음), 모서리 12 (Radius/12), 면 button-secondary, 부품 Button/Circle Icon
+  - 배리언트 `state=all-on, lines=2, language type=study, language=jaen, list-item=first, roma` 자세히 (기준과 다른 부분):
+    - 전체: 335x96, 가로 정렬, 여백 16 (Spacing/16), 간격 양 끝 정렬, 모서리 16 (Radius/16), 면 background-secondary
+      - Frame 2255: 268x44, 가로 정렬, 여백 위 0 · 오른 0 · 아래 0 · 왼 8 (Spacing/8), 간격 10 (Spacing/10)
+        - Frame 2228: 260x44, 가로 정렬, 간격 6 (Spacing/6)
+          - I got to attend a fan si: 260x44, 글자색 text-primary, 글자 Head 5/B
+      - audio: 28x28, 가로 정렬, 여백 10 (Spacing/10), 간격 6.7 (토큰 없음), 모서리 12 (Radius/12), 면 button-secondary, 부품 Button/Circle Icon
+  - 배리언트 `state=all-on, lines=2, language type=study, language=jaen, list-item=middle, rom` 자세히 (기준과 다른 부분):
+    - 전체: 335x96, 가로 정렬, 여백 16 (Spacing/16), 간격 양 끝 정렬, 모서리 16 (Radius/16), 면 background-secondary
+      - Frame 2255: 268x44, 가로 정렬, 여백 위 0 · 오른 0 · 아래 0 · 왼 8 (Spacing/8), 간격 10 (Spacing/10)
+        - Frame 2228: 260x44, 가로 정렬, 간격 6 (Spacing/6)
+          - I got to attend a fan si: 260x44, 글자색 text-primary, 글자 Head 5/B
+      - audio: 28x28, 가로 정렬, 여백 10 (Spacing/10), 간격 6.7 (토큰 없음), 모서리 12 (Radius/12), 면 button-secondary, 부품 Button/Circle Icon
+  - 배리언트 `state=all-on, lines=2, language type=study, language=jaen, list-item=last, roman` 자세히 (기준과 다른 부분):
+    - 전체: 335x96, 가로 정렬, 여백 16 (Spacing/16), 간격 양 끝 정렬, 모서리 16 (Radius/16), 면 background-secondary
+      - Frame 2255: 268x44, 가로 정렬, 여백 위 0 · 오른 0 · 아래 0 · 왼 8 (Spacing/8), 간격 10 (Spacing/10)
+        - Frame 2228: 260x44, 가로 정렬, 간격 6 (Spacing/6)
+          - I got to attend a fan si: 260x44, 글자색 text-primary, 글자 Head 5/B
+      - audio: 28x28, 가로 정렬, 여백 10 (Spacing/10), 간격 6.7 (토큰 없음), 모서리 12 (Radius/12), 면 button-secondary, 부품 Button/Circle Icon
+  - 배리언트 `state=all-on, lines=2, language type=study, language=koen, list-item=middle, rom` 자세히 (기준과 다른 부분):
+    - 전체: 335x76, 가로 정렬, 여백 16 (Spacing/16), 간격 양 끝 정렬, 모서리 16 (Radius/16), 면 background-secondary
+      - Frame 2255: 268x44, 가로 정렬, 여백 위 0 · 오른 0 · 아래 0 · 왼 8 (Spacing/8), 간격 10 (Spacing/10)
+        - Frame 2228: 260x44, 가로 정렬, 간격 6 (Spacing/6)
+          - I got to attend a fan si: 260x44, 글자색 text-primary, 글자 Head 5/B
+      - audio: 28x28, 가로 정렬, 여백 10 (Spacing/10), 간격 6.7 (토큰 없음), 모서리 12 (Radius/12), 면 button-secondary, 부품 Button/Circle Icon
+  - 배리언트 `state=all-on, lines=2, language type=study, language=koen, list-item=first, roma` 자세히 (기준과 다른 부분):
+    - 전체: 335x96, 가로 정렬, 여백 16 (Spacing/16), 간격 양 끝 정렬, 모서리 16 (Radius/16), 면 background-secondary
+      - Frame 2255: 268x44, 가로 정렬, 여백 위 0 · 오른 0 · 아래 0 · 왼 8 (Spacing/8), 간격 10 (Spacing/10)
+        - Frame 2228: 260x44, 가로 정렬, 간격 6 (Spacing/6)
+          - I got to attend a fan si: 260x44, 글자색 text-primary, 글자 Head 5/B
+      - audio: 28x28, 가로 정렬, 여백 10 (Spacing/10), 간격 6.7 (토큰 없음), 모서리 12 (Radius/12), 면 button-secondary, 부품 Button/Circle Icon
+  - 배리언트 `state=all-on, lines=2, language type=study, language=koen, list-item=last, roman` 자세히 (기준과 다른 부분):
+    - 전체: 335x96, 가로 정렬, 여백 16 (Spacing/16), 간격 양 끝 정렬, 모서리 16 (Radius/16), 면 background-secondary
+      - Frame 2255: 268x44, 가로 정렬, 여백 위 0 · 오른 0 · 아래 0 · 왼 8 (Spacing/8), 간격 10 (Spacing/10)
+        - Frame 2228: 260x44, 가로 정렬, 간격 6 (Spacing/6)
+          - I got to attend a fan si: 260x44, 글자색 text-primary, 글자 Head 5/B
+      - audio: 28x28, 가로 정렬, 여백 10 (Spacing/10), 간격 6.7 (토큰 없음), 모서리 12 (Radius/12), 면 button-secondary, 부품 Button/Circle Icon
+  - 배리언트 `state=all-on, lines=1, language type=source, language=koen, list-item=middle, ro` 자세히 (기준과 다른 부분):
+    - 전체: 335x60, 가로 정렬, 여백 16 (Spacing/16), 간격 양 끝 정렬, 모서리 16 (Radius/16), 면 background-secondary
+      - Frame 2257: 268x28, 가로 정렬, 간격 10 (Spacing/10)
+        - Frame 2226: 230x22, 세로 정렬, 간격 4 (Spacing/4)
+          - Frame 2228: 230x22, 가로 정렬, 간격 6 (Spacing/6)
+        - Component 9: 28x28, 가로 정렬, 여백 10 (Spacing/10), 간격 6.7 (토큰 없음), 모서리 12 (Radius/12), 면 button-secondary, 부품 Button/Circle Icon
+  - 배리언트 `state=all-on, lines=1, language type=source, language=koen, list-item=first, rom` 자세히 (기준과 다른 부분):
+    - 전체: 335x60, 가로 정렬, 여백 16 (Spacing/16), 간격 양 끝 정렬, 모서리 16 (Radius/16), 면 background-secondary
+      - Frame 2257: 268x28, 가로 정렬, 간격 10 (Spacing/10)
+        - Frame 2226: 230x22, 세로 정렬, 간격 4 (Spacing/4)
+          - Frame 2228: 230x22, 가로 정렬, 간격 6 (Spacing/6)
+        - Component 9: 28x28, 가로 정렬, 여백 10 (Spacing/10), 간격 6.7 (토큰 없음), 모서리 12 (Radius/12), 면 button-secondary, 부품 Button/Circle Icon
+  - 배리언트 `state=all-on, lines=1, language type=source, language=koen, list-item=last, roma` 자세히 (기준과 다른 부분):
+    - 전체: 335x60, 가로 정렬, 여백 16 (Spacing/16), 간격 양 끝 정렬, 모서리 16 (Radius/16), 면 background-secondary
+      - Frame 2257: 268x28, 가로 정렬, 간격 10 (Spacing/10)
+        - Frame 2226: 230x22, 세로 정렬, 간격 4 (Spacing/4)
+          - Frame 2228: 230x22, 가로 정렬, 간격 6 (Spacing/6)
+        - Component 9: 28x28, 가로 정렬, 여백 10 (Spacing/10), 간격 6.7 (토큰 없음), 모서리 12 (Radius/12), 면 button-secondary, 부품 Button/Circle Icon
+  - ⚠ 토큰에 없는 간격 · 전체: 간격 14 → 가까운 값 Spacing/12
+  - ⚠ 간격 토큰 안 걸림 · Frame 2228: 간격 2 → Spacing/2 연결

@@ -1,0 +1,6540 @@
+{
+ "updated": "2026-11-06",
+ "features": [
+  {
+   "feature": "온보딩·로그인",
+   "screens": [
+    {
+     "order": 1,
+     "title": "온보딩 · 첫 화면",
+     "flow": "회원유형 선택",
+     "state": "기본",
+     "figma_name": "온보딩 / 회원유형 선택 / 기본",
+     "app_image": "screens/50017-3-00-app.jpg",
+     "figma_image": "screens/50017-3-00-fig.jpg",
+     "source": "24.04 Sprint AI - 온보딩 개편 (25.07 위젯 추가) / 회원유형 선택",
+     "parts": [
+      {
+       "name": "System/Home Indicator iOS",
+       "in_list": true
+      },
+      {
+       "name": "System/Status Bar iOS",
+       "in_list": true
+      },
+      {
+       "name": "Button/Full Width",
+       "in_list": true
+      }
+     ]
+    },
+    {
+     "order": 2,
+     "title": "로그인 · 방식 선택",
+     "flow": "로그인 방식 선택",
+     "state": "기본",
+     "figma_name": "로그인 / 로그인 방식 선택 / 기본",
+     "app_image": "screens/50017-3-01-app.jpg",
+     "figma_image": "screens/50017-3-01-fig.jpg",
+     "source": "24.04 Sprint AI - 온보딩 개편 (25.07 위젯 추가) / 로그인 방식 선택",
+     "parts": [
+      {
+       "name": "System/Home Indicator iOS",
+       "in_list": true
+      },
+      {
+       "name": "logo_teuida.png",
+       "in_list": false
+      },
+      {
+       "name": "System/Status Bar iOS",
+       "in_list": true
+      },
+      {
+       "name": "Component 3",
+       "in_list": false
+      },
+      {
+       "name": "03.ICON/LOGIN/btn_login_google.png",
+       "in_list": false
+      },
+      {
+       "name": "ic_24_Social",
+       "in_list": false
+      },
+      {
+       "name": "03.ICON/LOGIN/btn_login_facebook.png",
+       "in_list": false
+      },
+      {
+       "name": "03.ICON/LOGIN/ic_ogin_email.png",
+       "in_list": false
+      },
+      {
+       "name": "Icon/Close 24",
+       "in_list": true
+      }
+     ]
+    },
+    {
+     "order": 3,
+     "title": "로그인 · 이메일",
+     "flow": "이메일 로그인",
+     "state": "기본",
+     "figma_name": "로그인 / 이메일 로그인 / 기본",
+     "app_image": "screens/50017-3-02-app.jpg",
+     "figma_image": "screens/50017-3-02-fig.jpg",
+     "source": "24.04 Sprint AI - 온보딩 개편 (25.07 위젯 추가) / 이메일 로그인",
+     "parts": [
+      {
+       "name": "System/Status Bar iOS",
+       "in_list": true
+      },
+      {
+       "name": "logo_teuida.png",
+       "in_list": false
+      },
+      {
+       "name": "System/Keyboard iOS",
+       "in_list": true
+      },
+      {
+       "name": "Button/Full Width",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Chevron Left 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Close 24",
+       "in_list": true
+      },
+      {
+       "name": "Input/Text Field Form 1",
+       "in_list": true
+      },
+      {
+       "name": "Input/Text Field",
+       "in_list": true
+      }
+     ]
+    },
+    {
+     "order": 4,
+     "title": "비밀번호 찾기",
+     "flow": "비밀번호 찾기",
+     "state": "기본",
+     "figma_name": "로그인 / 비밀번호 찾기 / 기본",
+     "app_image": "screens/50017-3-03-app.jpg",
+     "figma_image": "screens/50017-3-03-fig.jpg",
+     "source": "24.04 Sprint AI - 온보딩 개편 (25.07 위젯 추가) / 비밀번호 찾기",
+     "parts": [
+      {
+       "name": "System/Status Bar iOS",
+       "in_list": true
+      },
+      {
+       "name": "logo_teuida.png",
+       "in_list": false
+      },
+      {
+       "name": "System/Keyboard iOS",
+       "in_list": true
+      },
+      {
+       "name": "Input/Text Field Form 1",
+       "in_list": true
+      },
+      {
+       "name": "Input/Text Field",
+       "in_list": true
+      },
+      {
+       "name": "Button/Full Width",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Chevron Left 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Close 24",
+       "in_list": true
+      }
+     ]
+    },
+    {
+     "order": 5,
+     "title": "가입 · Start speaking today!",
+     "flow": "리뷰 콘텐츠",
+     "state": "기본",
+     "figma_name": "회원가입 / 리뷰 콘텐츠 / 기본",
+     "app_image": "screens/50017-3-04-app.jpg",
+     "figma_image": "screens/50017-3-04-fig.jpg",
+     "source": "26.08 -  Sprint BT - 온보딩 언어선택 추가 / 회원 가입",
+     "parts": [
+      {
+       "name": "System/Home Indicator iOS",
+       "in_list": true
+      },
+      {
+       "name": "System/Status Bar iOS",
+       "in_list": true
+      },
+      {
+       "name": "logo_teuida.png",
+       "in_list": false
+      },
+      {
+       "name": "Icon/Close 24",
+       "in_list": true
+      },
+      {
+       "name": "Component 3",
+       "in_list": false
+      },
+      {
+       "name": "03.ICON/LOGIN/btn_login_google.png",
+       "in_list": false
+      },
+      {
+       "name": "ic_24_Social",
+       "in_list": false
+      }
+     ]
+    },
+    {
+     "order": 6,
+     "title": "온보딩 · 닉네임",
+     "flow": "이름 입력",
+     "state": "기본",
+     "figma_name": "온보딩 / 이름 입력 / 기본",
+     "app_image": "screens/50017-3-05-app.jpg",
+     "figma_image": "screens/50017-3-05-fig.jpg",
+     "source": "26.08 -  Sprint BT - 온보딩 언어선택 추가 / 이름 입력",
+     "parts": [
+      {
+       "name": "System/Status Bar iOS",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Close 24",
+       "in_list": true
+      },
+      {
+       "name": "logo_teuida.png",
+       "in_list": false
+      },
+      {
+       "name": "System/Keyboard iOS",
+       "in_list": true
+      },
+      {
+       "name": "Button/Full Width",
+       "in_list": true
+      },
+      {
+       "name": "Input/Text Field Form 1",
+       "in_list": true
+      },
+      {
+       "name": "Input/Text Field",
+       "in_list": true
+      }
+     ]
+    },
+    {
+     "order": 7,
+     "title": "온보딩 · 닉네임 입력됨",
+     "flow": "이름 입력",
+     "state": "입력 완료",
+     "figma_name": "온보딩 / 이름 입력 / 입력 완료",
+     "app_image": "screens/50017-3-06-app.jpg",
+     "figma_image": "screens/50017-3-06-fig.jpg",
+     "source": "26.08 -  Sprint BT - 온보딩 언어선택 추가 / 이름 입력",
+     "parts": [
+      {
+       "name": "System/Status Bar iOS",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Close 24",
+       "in_list": true
+      },
+      {
+       "name": "logo_teuida.png",
+       "in_list": false
+      },
+      {
+       "name": "System/Keyboard iOS",
+       "in_list": true
+      },
+      {
+       "name": "Button/Full Width",
+       "in_list": true
+      },
+      {
+       "name": "Input/Text Field Form 1",
+       "in_list": true
+      },
+      {
+       "name": "Input/Text Field",
+       "in_list": true
+      }
+     ]
+    },
+    {
+     "order": 8,
+     "title": "온보딩 · 언어 선택",
+     "flow": "학습 언어 선택",
+     "state": "선택 전",
+     "figma_name": "온보딩 / 학습 언어 선택 / 선택 전",
+     "app_image": "screens/50017-3-07-app.jpg",
+     "figma_image": "screens/50017-3-07-fig.jpg",
+     "source": "26.08 -  Sprint BT - 온보딩 언어선택 추가 / 학습 언어 선택",
+     "parts": [
+      {
+       "name": "logo_teuida.png",
+       "in_list": false
+      },
+      {
+       "name": "System/Home Indicator iOS",
+       "in_list": true
+      },
+      {
+       "name": "System/Status Bar iOS",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Chevron Left 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Flag",
+       "in_list": true
+      }
+     ]
+    },
+    {
+     "order": 9,
+     "title": "온보딩 · 언어 확인",
+     "flow": "학습 언어 선택",
+     "state": "선택 완료",
+     "figma_name": "온보딩 / 학습 언어 선택 / 선택 완료",
+     "app_image": "screens/50017-3-08-app.jpg",
+     "figma_image": "screens/50017-3-08-fig.jpg",
+     "source": "26.08 -  Sprint BT - 온보딩 언어선택 추가 / 영어, 학습어 선택 완료",
+     "parts": [
+      {
+       "name": "logo_teuida.png",
+       "in_list": false
+      },
+      {
+       "name": "System/Home Indicator iOS",
+       "in_list": true
+      },
+      {
+       "name": "System/Status Bar iOS",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Chevron Left 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Flag",
+       "in_list": true
+      }
+     ]
+    },
+    {
+     "order": 10,
+     "title": "설문 1 · 다운로드 목적",
+     "flow": "",
+     "state": "",
+     "figma_name": "",
+     "app_image": "screens/50017-3-09-app.jpg",
+     "figma_image": null,
+     "source": "",
+     "parts": []
+    },
+    {
+     "order": 11,
+     "title": "설문 2 · 유입 경로",
+     "flow": "01. 유입경로 선택",
+     "state": "기본",
+     "figma_name": "온보딩 / 01. 유입경로 선택 / 기본",
+     "app_image": "screens/50017-3-10-app.jpg",
+     "figma_image": "screens/50017-3-10-fig.jpg",
+     "source": "26.08 -  Sprint BT - 온보딩 언어선택 추가 / 01. 유입경로 선택",
+     "parts": [
+      {
+       "name": "System/Status Bar iOS",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Chevron Left 24",
+       "in_list": true
+      },
+      {
+       "name": "logo_teuida.png",
+       "in_list": false
+      },
+      {
+       "name": "System/Home Indicator iOS",
+       "in_list": true
+      },
+      {
+       "name": "Onboarding/Interest Item",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Insta 32",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Youtube 32",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Google 32",
+       "in_list": true
+      },
+      {
+       "name": "Icon/People 32",
+       "in_list": true
+      },
+      {
+       "name": "icon / bootstrap / filled / people",
+       "in_list": false
+      },
+      {
+       "name": "Icon/Store AOS 32",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Other 32",
+       "in_list": true
+      }
+     ]
+    },
+    {
+     "order": 12,
+     "title": "설문 3 · 학습 동기",
+     "flow": "02. 학습 목적 선택",
+     "state": "선택 전",
+     "figma_name": "온보딩 / 02. 학습 목적 선택 / 선택 전",
+     "app_image": "screens/50017-3-11-app.jpg",
+     "figma_image": "screens/50017-3-11-fig.jpg",
+     "source": "26.08 -  Sprint BT - 온보딩 언어선택 추가 / 02. 학습 목적 선택",
+     "parts": [
+      {
+       "name": "System/Status Bar iOS",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Chevron Left 24",
+       "in_list": true
+      },
+      {
+       "name": "logo_teuida.png",
+       "in_list": false
+      },
+      {
+       "name": "Onboarding/Interest Item",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Travel 32",
+       "in_list": true
+      },
+      {
+       "name": "icon / jam-icons / filled / plane-f",
+       "in_list": false
+      },
+      {
+       "name": "Icon/Fun 32",
+       "in_list": true
+      },
+      {
+       "name": "icon / octicons / filled / star",
+       "in_list": false
+      },
+      {
+       "name": "Icon/Culture 32",
+       "in_list": true
+      },
+      {
+       "name": "icon / jam-icons / outline & logos / world",
+       "in_list": false
+      },
+      {
+       "name": "Icon/Connect 32",
+       "in_list": true
+      },
+      {
+       "name": "icon / bootstrap / filled / chat-square-text",
+       "in_list": false
+      },
+      {
+       "name": "Icon/Other 32",
+       "in_list": true
+      },
+      {
+       "name": "System/Home Indicator iOS",
+       "in_list": true
+      }
+     ]
+    },
+    {
+     "order": 13,
+     "title": "설문 4 · 현재 수준",
+     "flow": "03. 언어 수준 선택",
+     "state": "선택 전",
+     "figma_name": "온보딩 / 03. 언어 수준 선택 / 선택 전",
+     "app_image": "screens/50017-3-12-app.jpg",
+     "figma_image": "screens/50017-3-12-fig.jpg",
+     "source": "26.08 -  Sprint BT - 온보딩 언어선택 추가 / 03. 언어 수준 선택",
+     "parts": [
+      {
+       "name": "System/Status Bar iOS",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Chevron Left 24",
+       "in_list": true
+      },
+      {
+       "name": "logo_teuida.png",
+       "in_list": false
+      },
+      {
+       "name": "System/Home Indicator iOS",
+       "in_list": true
+      },
+      {
+       "name": "Onboarding/Interest Item",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Level 32",
+       "in_list": true
+      }
+     ]
+    },
+    {
+     "order": 14,
+     "title": "설문 5 · 한글 아는지",
+     "flow": "04. 언어 읽을 수 있는지 선택",
+     "state": "선택 전",
+     "figma_name": "온보딩 / 04. 언어 읽을 수 있는지 선택 / 선택 전",
+     "app_image": "screens/50017-3-13-app.jpg",
+     "figma_image": "screens/50017-3-13-fig.jpg",
+     "source": "26.08 -  Sprint BT - 온보딩 언어선택 추가 / 04. 문자 읽기 가능 여부",
+     "parts": [
+      {
+       "name": "System/Status Bar iOS",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Chevron Left 24",
+       "in_list": true
+      },
+      {
+       "name": "logo_teuida.png",
+       "in_list": false
+      },
+      {
+       "name": "System/Home Indicator iOS",
+       "in_list": true
+      },
+      {
+       "name": "Onboarding/Interest Item",
+       "in_list": true
+      }
+     ]
+    },
+    {
+     "order": 15,
+     "title": "온보딩 · 5분 약속",
+     "flow": "05. 학습 목표 안내",
+     "state": "기본",
+     "figma_name": "온보딩 / 05. 학습 목표 안내 / 기본",
+     "app_image": "screens/50017-3-14-app.jpg",
+     "figma_image": "screens/50017-3-14-fig.jpg",
+     "source": "26.08 -  Sprint BT - 온보딩 언어선택 추가 / 05. 학습 목표 안내",
+     "parts": [
+      {
+       "name": "System/Status Bar iOS",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Chevron Left 24",
+       "in_list": true
+      },
+      {
+       "name": "logo_teuida.png",
+       "in_list": false
+      },
+      {
+       "name": "System/Home Indicator iOS",
+       "in_list": true
+      }
+     ]
+    },
+    {
+     "order": 16,
+     "title": "온보딩 · 플랜 선택",
+     "flow": "06. 소프트 페이월",
+     "state": "플랜 선택",
+     "figma_name": "온보딩 / 06. 소프트 페이월 / 플랜 선택",
+     "app_image": "screens/50017-3-15-app.jpg",
+     "figma_image": "screens/50017-3-15-fig.jpg",
+     "source": "26.02 - Sprint BJ - 온보딩 페이월 추가 / 06. 소프트 페이월, 최초 진입",
+     "parts": [
+      {
+       "name": "System/Status Bar iOS",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Chevron Left 24",
+       "in_list": true
+      },
+      {
+       "name": "logo_teuida.png",
+       "in_list": false
+      },
+      {
+       "name": "System/Home Indicator iOS",
+       "in_list": true
+      },
+      {
+       "name": "Onboarding/Interest Item",
+       "in_list": true
+      }
+     ]
+    },
+    {
+     "order": 17,
+     "title": "온보딩 · Free 선택",
+     "flow": "06. 소프트 페이월",
+     "state": "무료 선택 시",
+     "figma_name": "온보딩 / 06. 소프트 페이월 / 무료 선택 시",
+     "app_image": "screens/50017-3-16-app.jpg",
+     "figma_image": "screens/50017-3-16-fig.jpg",
+     "source": "26.02 - Sprint BJ - 온보딩 페이월 추가 / 무료 선택 시",
+     "parts": [
+      {
+       "name": "System/Status Bar iOS",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Chevron Left 24",
+       "in_list": true
+      },
+      {
+       "name": "logo_teuida.png",
+       "in_list": false
+      },
+      {
+       "name": "System/Home Indicator iOS",
+       "in_list": true
+      },
+      {
+       "name": "Onboarding/Interest Item",
+       "in_list": true
+      }
+     ]
+    },
+    {
+     "order": 18,
+     "title": "온보딩 · 위젯 안내",
+     "flow": "위젯 설정 유도",
+     "state": "iOS",
+     "figma_name": "온보딩 / 위젯 설정 유도 / iOS",
+     "app_image": "screens/50017-3-17-app.jpg",
+     "figma_image": "screens/50017-3-17-fig.jpg",
+     "source": "26.08 -  Sprint BT - 온보딩 언어선택 추가 / 06. 위젯 설정 유도",
+     "parts": [
+      {
+       "name": "System/Status Bar iOS",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Chevron Left 24",
+       "in_list": true
+      },
+      {
+       "name": "logo_teuida.png",
+       "in_list": false
+      },
+      {
+       "name": "System/Home Indicator iOS",
+       "in_list": true
+      },
+      {
+       "name": "Streak/Calendar Icon",
+       "in_list": true
+      },
+      {
+       "name": "Streak/Status Icon",
+       "in_list": true
+      },
+      {
+       "name": "Streak/Ic Union",
+       "in_list": true
+      }
+     ]
+    },
+    {
+     "order": 19,
+     "title": "온보딩 · 환영 팝업",
+     "flow": "환영 팝업",
+     "state": "기본",
+     "figma_name": "온보딩 / 환영 팝업 / 기본",
+     "app_image": "screens/50017-3-18-app.jpg",
+     "figma_image": "screens/50017-3-18-fig.jpg",
+     "source": "Sprint H - 뉴홈, 보캡 / 환영 팝업",
+     "parts": [
+      {
+       "name": "Curriculum/Lesson Item",
+       "in_list": true
+      },
+      {
+       "name": "Curriculum/Lesson Thumbnail",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Chevron Up 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Chevron Down 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Community 24",
+       "in_list": true
+      },
+      {
+       "name": "System/Status Bar Android",
+       "in_list": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "feature": "홈·유닛",
+   "screens": [
+    {
+     "order": 1,
+     "title": "H01-home-unit-expanded",
+     "flow": "레슨 경로",
+     "state": "유닛 펼침",
+     "figma_name": "홈 / 레슨 경로 / 유닛 펼침",
+     "app_image": "screens/50017-907-00-app.jpg",
+     "figma_image": "screens/50017-907-00-fig.jpg",
+     "source": "25.11- Sprint BF - 블랙프라이데이 / 홈, 유닛 펼침",
+     "parts": [
+      {
+       "name": "Icon/Chevron Down 24",
+       "in_list": true
+      },
+      {
+       "name": "Curriculum/Unit Title",
+       "in_list": true
+      },
+      {
+       "name": "Badge/Unit Badge",
+       "in_list": true
+      },
+      {
+       "name": "UnitBadgeSet/Default",
+       "in_list": false
+      },
+      {
+       "name": "UnitBage_ProgressBar",
+       "in_list": false
+      },
+      {
+       "name": "UnitBadge_Inactive",
+       "in_list": false
+      },
+      {
+       "name": "Icon/Chevron Right",
+       "in_list": true
+      },
+      {
+       "name": "Curriculum/Unit Set",
+       "in_list": true
+      },
+      {
+       "name": "Curriculum/Day Order",
+       "in_list": true
+      },
+      {
+       "name": "Score/Grade 30",
+       "in_list": true
+      },
+      {
+       "name": "Curriculum/Lesson Item",
+       "in_list": true
+      },
+      {
+       "name": "Curriculum/Lesson Thumbnail",
+       "in_list": true
+      },
+      {
+       "name": "Curriculum/CT",
+       "in_list": true
+      },
+      {
+       "name": "Curriculum/Review Quiz Item",
+       "in_list": true
+      },
+      {
+       "name": "Curriculum/Review Quiz Thumbnail",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Lock 24",
+       "in_list": true
+      },
+      {
+       "name": "Curriculum/Unit Bottom",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Chevron Up 24",
+       "in_list": true
+      },
+      {
+       "name": "Streak/Floating Button Set",
+       "in_list": true
+      },
+      {
+       "name": "Streak/Floating Button",
+       "in_list": true
+      }
+     ]
+    },
+    {
+     "order": 2,
+     "title": "H02-home-units-collapsed",
+     "flow": "",
+     "state": "",
+     "figma_name": "",
+     "app_image": "screens/50017-907-01-app.jpg",
+     "figma_image": null,
+     "source": "",
+     "parts": []
+    },
+    {
+     "order": 3,
+     "title": "U01-unit-summary",
+     "flow": "유닛 써머리",
+     "state": "기본",
+     "figma_name": "홈 / 유닛 써머리 / 기본",
+     "app_image": "screens/50017-907-02-app.jpg",
+     "figma_image": "screens/50017-907-02-fig.jpg",
+     "source": "25.08 - Sprint  BC - unit summary / 유닛써머리상세, 전체 스크롤",
+     "parts": [
+      {
+       "name": "Score/Grade A 26",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Chevron Left 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Close 24",
+       "in_list": true
+      },
+      {
+       "name": "Unit Summary/Expression",
+       "in_list": true
+      },
+      {
+       "name": "Button/Circle Icon",
+       "in_list": true
+      },
+      {
+       "name": "Audio/Volume",
+       "in_list": true
+      },
+      {
+       "name": "_StatusBar-time",
+       "in_list": false
+      }
+     ]
+    },
+    {
+     "order": 4,
+     "title": "U02-unit-summary-scrolled",
+     "flow": "",
+     "state": "",
+     "figma_name": "",
+     "app_image": "screens/50017-907-03-app.jpg",
+     "figma_image": null,
+     "source": "",
+     "parts": []
+    },
+    {
+     "order": 5,
+     "title": "레슨 경로",
+     "flow": "레슨 경로",
+     "state": "기본",
+     "figma_name": "홈 / 레슨 경로 / 기본",
+     "app_image": "screens/50017-907-04-app.jpg",
+     "figma_image": "screens/50017-907-04-fig.jpg",
+     "source": "25.09 - Sprint  B? - 한글날 이벤트 / 홈, 카운트다운 배너",
+     "parts": [
+      {
+       "name": "Icon/Unit Summary 16",
+       "in_list": true
+      },
+      {
+       "name": "Badge/Unit Badge",
+       "in_list": true
+      },
+      {
+       "name": "UnitBadgeSet/Default",
+       "in_list": false
+      },
+      {
+       "name": "UnitBage_ProgressBar",
+       "in_list": false
+      },
+      {
+       "name": "UnitBadge_Inactive",
+       "in_list": false
+      },
+      {
+       "name": "Icon/Chevron Right",
+       "in_list": true
+      },
+      {
+       "name": "Button/Medium Line Button White Default",
+       "in_list": false
+      },
+      {
+       "name": "Icon/Lesson Key 16",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Lock 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Chevron Up 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Chevron Down 24",
+       "in_list": true
+      },
+      {
+       "name": "Tab Bar - iPhone",
+       "in_list": false
+      },
+      {
+       "name": "Liquid Glass - Regular - Small",
+       "in_list": false
+      },
+      {
+       "name": "_Tab Bar Button - iPhone - Text",
+       "in_list": false
+      },
+      {
+       "name": "_StatusBar-time",
+       "in_list": false
+      },
+      {
+       "name": "Icon/Flag",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Toggle Down 16",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Lesson Key 24",
+       "in_list": true
+      }
+     ]
+    },
+    {
+     "order": 6,
+     "title": "레슨 경로 (스크롤)",
+     "flow": "레슨 경로",
+     "state": "스크롤",
+     "figma_name": "홈 / 레슨 경로 / 스크롤",
+     "app_image": "screens/50017-907-05-app.jpg",
+     "figma_image": "screens/50017-907-05-fig.jpg",
+     "source": "26.08 -  Sprint BT - 온보딩 언어선택 추가 / 홈",
+     "parts": [
+      {
+       "name": "Icon/Unit Summary 16",
+       "in_list": true
+      },
+      {
+       "name": "Badge/Unit Badge",
+       "in_list": true
+      },
+      {
+       "name": "UnitBadgeSet/Default",
+       "in_list": false
+      },
+      {
+       "name": "UnitBage_ProgressBar",
+       "in_list": false
+      },
+      {
+       "name": "UnitBadge_Inactive",
+       "in_list": false
+      },
+      {
+       "name": "Icon/Chevron Right",
+       "in_list": true
+      },
+      {
+       "name": "Button/Medium Line Button White Default",
+       "in_list": false
+      },
+      {
+       "name": "Icon/Lesson Key 16",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Lock 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Chevron Up 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Chevron Down 24",
+       "in_list": true
+      },
+      {
+       "name": "_StatusBar-time",
+       "in_list": false
+      },
+      {
+       "name": "Icon/Flag",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Toggle Down 16",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Lesson Key 24",
+       "in_list": true
+      },
+      {
+       "name": "Navigation/Tab Bar",
+       "in_list": true
+      },
+      {
+       "name": "Navigation/Tab Bar Cell",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Home 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Premium Only 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Tab Review 24",
+       "in_list": true
+      }
+     ]
+    },
+    {
+     "order": 7,
+     "title": "유닛 Summary",
+     "flow": "유닛 써머리",
+     "state": "기본",
+     "figma_name": "홈 / 유닛 써머리 / 기본",
+     "app_image": "screens/50017-907-06-app.jpg",
+     "figma_image": "screens/50017-907-06-fig.jpg",
+     "source": "25.08 - Sprint  BC - unit summary / 유닛써머리상세, 전체 스크롤",
+     "parts": [
+      {
+       "name": "Score/Grade A 26",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Chevron Left 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Close 24",
+       "in_list": true
+      },
+      {
+       "name": "Unit Summary/Expression",
+       "in_list": true
+      },
+      {
+       "name": "Button/Circle Icon",
+       "in_list": true
+      },
+      {
+       "name": "Audio/Volume",
+       "in_list": true
+      },
+      {
+       "name": "_StatusBar-time",
+       "in_list": false
+      }
+     ]
+    },
+    {
+     "order": 8,
+     "title": "JAEN 홈 (일본어)",
+     "flow": "레슨 경로",
+     "state": "JAEN",
+     "figma_name": "홈 / 레슨 경로 / JAEN",
+     "app_image": "screens/50017-907-07-app.jpg",
+     "figma_image": "screens/50017-907-07-fig.jpg",
+     "source": "25.08 - Sprint  BC - unit summary / home",
+     "parts": [
+      {
+       "name": "Icon/Unit Summary 16",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Chevron Right",
+       "in_list": true
+      },
+      {
+       "name": "Button/Medium Line Button White Default",
+       "in_list": false
+      },
+      {
+       "name": "Icon/Lesson Key 16",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Lock 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Chevron Up 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Chevron Down 24",
+       "in_list": true
+      },
+      {
+       "name": "_StatusBar-time",
+       "in_list": false
+      },
+      {
+       "name": "Icon/Flag",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Toggle Down 16",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Lesson Key 24",
+       "in_list": true
+      },
+      {
+       "name": "Navigation/Tab Bar",
+       "in_list": true
+      },
+      {
+       "name": "Navigation/Tab Bar Cell",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Home 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Premium Only 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Tab Review 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Community 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Profile 24",
+       "in_list": true
+      }
+     ]
+    },
+    {
+     "order": 9,
+     "title": "ESEN 홈 (스페인어)",
+     "flow": "레슨 경로",
+     "state": "ESEN",
+     "figma_name": "홈 / 레슨 경로 / ESEN",
+     "app_image": "screens/50017-907-08-app.jpg",
+     "figma_image": "screens/50017-907-08-fig.jpg",
+     "source": "25.08 - Sprint  BC - unit summary / home",
+     "parts": [
+      {
+       "name": "Icon/Unit Summary 16",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Chevron Right",
+       "in_list": true
+      },
+      {
+       "name": "Button/Medium Line Button White Default",
+       "in_list": false
+      },
+      {
+       "name": "Icon/Lesson Key 16",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Lock 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Chevron Up 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Chevron Down 24",
+       "in_list": true
+      },
+      {
+       "name": "_StatusBar-time",
+       "in_list": false
+      },
+      {
+       "name": "Icon/Flag",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Toggle Down 16",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Lesson Key 24",
+       "in_list": true
+      },
+      {
+       "name": "Navigation/Tab Bar",
+       "in_list": true
+      },
+      {
+       "name": "Navigation/Tab Bar Cell",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Home 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Premium Only 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Tab Review 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Community 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Profile 24",
+       "in_list": true
+      }
+     ]
+    },
+    {
+     "order": 10,
+     "title": "FREN 홈 (프랑스어)",
+     "flow": "레슨 경로",
+     "state": "FREN",
+     "figma_name": "홈 / 레슨 경로 / FREN",
+     "app_image": "screens/50017-907-09-app.jpg",
+     "figma_image": "screens/50017-907-09-fig.jpg",
+     "source": "25.08 - Sprint  BC - unit summary / home",
+     "parts": [
+      {
+       "name": "Icon/Unit Summary 16",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Chevron Right",
+       "in_list": true
+      },
+      {
+       "name": "Button/Medium Line Button White Default",
+       "in_list": false
+      },
+      {
+       "name": "Icon/Lesson Key 16",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Lock 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Chevron Up 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Chevron Down 24",
+       "in_list": true
+      },
+      {
+       "name": "_StatusBar-time",
+       "in_list": false
+      },
+      {
+       "name": "Icon/Flag",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Toggle Down 16",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Lesson Key 24",
+       "in_list": true
+      },
+      {
+       "name": "Navigation/Tab Bar",
+       "in_list": true
+      },
+      {
+       "name": "Navigation/Tab Bar Cell",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Home 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Premium Only 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Tab Review 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Community 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Profile 24",
+       "in_list": true
+      }
+     ]
+    },
+    {
+     "order": 11,
+     "title": "코스 선택",
+     "flow": "코스 선택",
+     "state": "기본",
+     "figma_name": "홈 / 코스 선택 / 기본",
+     "app_image": "screens/50017-907-10-app.jpg",
+     "figma_image": "screens/50017-907-10-fig.jpg",
+     "source": "Sprint AF - 스페인어 ESEN / O / My Courses",
+     "parts": [
+      {
+       "name": "Navigation/Nav Bar",
+       "in_list": true
+      },
+      {
+       "name": "System/Status Bar iOS",
+       "in_list": true
+      },
+      {
+       "name": "Navigation/Top Nav",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Chevron Left 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Empty 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Close 24",
+       "in_list": true
+      },
+      {
+       "name": "List/Option",
+       "in_list": true
+      },
+      {
+       "name": "List/Option Item",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Flag",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Check 24",
+       "in_list": true
+      },
+      {
+       "name": "Button/1 Set",
+       "in_list": false
+      },
+      {
+       "name": "Button/1",
+       "in_list": false
+      }
+     ]
+    },
+    {
+     "order": 12,
+     "title": "Study Key 안내",
+     "flow": "Study Key 안내",
+     "state": "기본",
+     "figma_name": "홈 / Study Key 안내 / 기본",
+     "app_image": "screens/50017-907-11-app.jpg",
+     "figma_image": "screens/50017-907-11-fig.jpg",
+     "source": "Sprint X - 스터디키 광고 / O / 스터디키 광고 / 레슨키 있을 때 팝업",
+     "parts": [
+      {
+       "name": "Icon/Chevron Down 24",
+       "in_list": true
+      },
+      {
+       "name": "Curriculum/Unit Title",
+       "in_list": true
+      },
+      {
+       "name": "Badge/Unit Badge",
+       "in_list": true
+      },
+      {
+       "name": "UnitBadgeSet/Default",
+       "in_list": false
+      },
+      {
+       "name": "UnitBage_ProgressBar",
+       "in_list": false
+      },
+      {
+       "name": "UnitBadge_Inactive",
+       "in_list": false
+      },
+      {
+       "name": "Icon/Chevron Right",
+       "in_list": true
+      },
+      {
+       "name": "Curriculum/Unit Set",
+       "in_list": true
+      },
+      {
+       "name": "Curriculum/Day Order",
+       "in_list": true
+      },
+      {
+       "name": "Score/Grade 30",
+       "in_list": true
+      },
+      {
+       "name": "Curriculum/Lesson Item",
+       "in_list": true
+      },
+      {
+       "name": "Curriculum/Lesson Thumbnail",
+       "in_list": true
+      },
+      {
+       "name": "Curriculum/CT",
+       "in_list": true
+      },
+      {
+       "name": "Curriculum/Review Quiz Item",
+       "in_list": true
+      },
+      {
+       "name": "Curriculum/Review Quiz Thumbnail",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Lock 24",
+       "in_list": true
+      },
+      {
+       "name": "Curriculum/Unit Bottom",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Chevron Up 24",
+       "in_list": true
+      },
+      {
+       "name": "Navigation/Tab Bar",
+       "in_list": true
+      },
+      {
+       "name": "Navigation/Tab Bar Cell",
+       "in_list": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "feature": "레슨 · Expression",
+   "screens": [
+    {
+     "order": 1,
+     "title": "E01-expression-entry",
+     "flow": "",
+     "state": "",
+     "figma_name": "",
+     "app_image": "screens/50019-5578-00-app.jpg",
+     "figma_image": null,
+     "source": "",
+     "parts": []
+    },
+    {
+     "order": 2,
+     "title": "E02-expression-t5",
+     "flow": "",
+     "state": "",
+     "figma_name": "",
+     "app_image": "screens/50019-5578-01-app.jpg",
+     "figma_image": null,
+     "source": "",
+     "parts": []
+    },
+    {
+     "order": 3,
+     "title": "E03-expression-listening",
+     "flow": "",
+     "state": "",
+     "figma_name": "",
+     "app_image": "screens/50019-5578-02-app.jpg",
+     "figma_image": null,
+     "source": "",
+     "parts": []
+    },
+    {
+     "order": 4,
+     "title": "E04-expression-try-again",
+     "flow": "",
+     "state": "",
+     "figma_name": "",
+     "app_image": "screens/50019-5578-03-app.jpg",
+     "figma_image": null,
+     "source": "",
+     "parts": []
+    },
+    {
+     "order": 5,
+     "title": "E05-expression-swap-roles",
+     "flow": "",
+     "state": "",
+     "figma_name": "",
+     "app_image": "screens/50019-5578-04-app.jpg",
+     "figma_image": null,
+     "source": "",
+     "parts": []
+    },
+    {
+     "order": 6,
+     "title": "E06-expression-grammar-tags",
+     "flow": "",
+     "state": "",
+     "figma_name": "",
+     "app_image": "screens/50019-5578-05-app.jpg",
+     "figma_image": null,
+     "source": "",
+     "parts": []
+    },
+    {
+     "order": 7,
+     "title": "E07-expression-grammar-breakdown",
+     "flow": "",
+     "state": "",
+     "figma_name": "",
+     "app_image": "screens/50019-5578-06-app.jpg",
+     "figma_image": null,
+     "source": "",
+     "parts": []
+    },
+    {
+     "order": 8,
+     "title": "E08-expression-answer-prompt",
+     "flow": "",
+     "state": "",
+     "figma_name": "",
+     "app_image": "screens/50019-5578-07-app.jpg",
+     "figma_image": null,
+     "source": "",
+     "parts": []
+    },
+    {
+     "order": 9,
+     "title": "온보딩 · 첫 레슨 자동 시작",
+     "flow": "",
+     "state": "",
+     "figma_name": "",
+     "app_image": "screens/50019-5578-08-app.jpg",
+     "figma_image": null,
+     "source": "",
+     "parts": []
+    },
+    {
+     "order": 10,
+     "title": "레슨 · 도입 영상",
+     "flow": "",
+     "state": "",
+     "figma_name": "",
+     "app_image": "screens/50019-5578-09-app.jpg",
+     "figma_image": null,
+     "source": "",
+     "parts": []
+    },
+    {
+     "order": 11,
+     "title": "레슨 · 자막 진행",
+     "flow": "자막 진행",
+     "state": "기본",
+     "figma_name": "레슨 Expression / 자막 진행 / 기본",
+     "app_image": "screens/50019-5578-10-app.jpg",
+     "figma_image": "screens/50019-5578-10-fig.jpg",
+     "source": "Sprint I - STT, 데이락 / (25.07 데이락팝업 수정) / 레슨, 자막 진행",
+     "parts": [
+      {
+       "name": "Progress/Linear",
+       "in_list": true
+      },
+      {
+       "name": "subtitle_1line",
+       "in_list": false
+      },
+      {
+       "name": "Icon/Sample Listen 24",
+       "in_list": true
+      }
+     ]
+    },
+    {
+     "order": 12,
+     "title": "레슨 · 어휘 카드",
+     "flow": "어휘 카드",
+     "state": "기본",
+     "figma_name": "레슨 Expression / 어휘 카드 / 기본",
+     "app_image": "screens/50019-5578-11-app.jpg",
+     "figma_image": "screens/50019-5578-11-fig.jpg",
+     "source": "Sprint I - STT, 데이락 / (25.07 데이락팝업 수정) / 레슨, 어휘 카드",
+     "parts": [
+      {
+       "name": "Progress/Linear",
+       "in_list": true
+      },
+      {
+       "name": "subtitle_1line",
+       "in_list": false
+      },
+      {
+       "name": "Icon/Sample Listen 24",
+       "in_list": true
+      }
+     ]
+    },
+    {
+     "order": 13,
+     "title": "종료 만류 다이얼로그",
+     "flow": "종료 만류 팝업",
+     "state": "기본",
+     "figma_name": "레슨 / 종료 만류 팝업 / 기본",
+     "app_image": "screens/50019-5578-12-app.jpg",
+     "figma_image": "screens/50019-5578-12-fig.jpg",
+     "source": "Sprint P - 스토리관 파인튜닝 / 종료 만류 팝업",
+     "parts": [
+      {
+       "name": "Progress/Linear",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Sample Listen 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Close 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Settings 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Sample Listen 25",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Sample Listen 16",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Bookmark 16",
+       "in_list": true
+      },
+      {
+       "name": "Bottom Sheet/Cancel",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Close 20",
+       "in_list": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "feature": "레슨 · Grammar",
+   "screens": [
+    {
+     "order": 1,
+     "title": "G01-grammar-intro",
+     "flow": "",
+     "state": "",
+     "figma_name": "",
+     "app_image": "screens/50019-37785-00-app.jpg",
+     "figma_image": null,
+     "source": "",
+     "parts": []
+    },
+    {
+     "order": 2,
+     "title": "G02-grammar-breakdown",
+     "flow": "",
+     "state": "",
+     "figma_name": "",
+     "app_image": "screens/50019-37785-01-app.jpg",
+     "figma_image": null,
+     "source": "",
+     "parts": []
+    },
+    {
+     "order": 3,
+     "title": "G03-lesson-video-paused",
+     "flow": "",
+     "state": "",
+     "figma_name": "",
+     "app_image": "screens/50019-37785-02-app.jpg",
+     "figma_image": null,
+     "source": "",
+     "parts": []
+    },
+    {
+     "order": 4,
+     "title": "G04-lesson-video-menu",
+     "flow": "",
+     "state": "",
+     "figma_name": "",
+     "app_image": "screens/50019-37785-03-app.jpg",
+     "figma_image": null,
+     "source": "",
+     "parts": []
+    },
+    {
+     "order": 5,
+     "title": "G05-lesson-video-options",
+     "flow": "영상 옵션 팝업",
+     "state": "기본",
+     "figma_name": "레슨 Grammar / 영상 옵션 팝업 / 기본",
+     "app_image": "screens/50019-37785-04-app.jpg",
+     "figma_image": "screens/50019-37785-04-fig.jpg",
+     "source": "Sprint AF - 스페인어 ESEN / O / 영상 옵션 팝업",
+     "parts": [
+      {
+       "name": "Progress/Linear",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Sample Listen 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Close 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Settings 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Sample Listen 16",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Bookmark 16",
+       "in_list": true
+      },
+      {
+       "name": "Input/Switch AOS",
+       "in_list": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "feature": "레슨 · Vocabulary",
+   "screens": [
+    {
+     "order": 1,
+     "title": "V01-vocab-intro-card",
+     "flow": "도입 카드",
+     "state": "기본",
+     "figma_name": "레슨 Vocabulary / 도입 카드 / 기본",
+     "app_image": "screens/50019-39420-00-app.jpg",
+     "figma_image": "screens/50019-39420-00-fig.jpg",
+     "source": "24.05 Sprint AJ - 보캡 개편 2 / 정답일 시 / 팝업 사라진 후",
+     "parts": [
+      {
+       "name": "Icon/Chevron Up 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Chevron Down 24",
+       "in_list": true
+      },
+      {
+       "name": "System/Home Indicator iOS",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Chevron Left 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Close 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Checkboxes 28",
+       "in_list": true
+      },
+      {
+       "name": "Progress/Pagination Bar",
+       "in_list": true
+      },
+      {
+       "name": "_StatusBar-time",
+       "in_list": false
+      },
+      {
+       "name": "Word Card/Basic",
+       "in_list": true
+      },
+      {
+       "name": "icon / heroicons / Solid / volume-up",
+       "in_list": false
+      },
+      {
+       "name": "Audio/Volume",
+       "in_list": true
+      }
+     ]
+    },
+    {
+     "order": 2,
+     "title": "V02-vocab-match-quiz",
+     "flow": "짝 맞추기",
+     "state": "기본",
+     "figma_name": "레슨 Vocabulary / 짝 맞추기 / 기본",
+     "app_image": "screens/50019-39420-01-app.jpg",
+     "figma_image": "screens/50019-39420-01-fig.jpg",
+     "source": "25.10 - 디테일 개선 작업(26.08 수정) / 유형 C",
+     "parts": [
+      {
+       "name": "Icon/Chevron Up 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Chevron Down 24",
+       "in_list": true
+      },
+      {
+       "name": "System/Home Indicator iOS",
+       "in_list": true
+      },
+      {
+       "name": "Button/Choice",
+       "in_list": true
+      },
+      {
+       "name": "Audio/Volume",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Menu 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Close 24",
+       "in_list": true
+      },
+      {
+       "name": "_StatusBar-time",
+       "in_list": false
+      }
+     ]
+    },
+    {
+     "order": 3,
+     "title": "V03-vocab-match-wrong",
+     "flow": "짝 맞추기",
+     "state": "오답",
+     "figma_name": "레슨 Vocabulary / 짝 맞추기 / 오답",
+     "app_image": "screens/50019-39420-02-app.jpg",
+     "figma_image": "screens/50019-39420-02-fig.jpg",
+     "source": "24.05 Sprint AJ - 보캡 개편 2 / 정답일 시 /  팝업 노출, 정답 포커스",
+     "parts": [
+      {
+       "name": "Icon/Chevron Up 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Chevron Down 24",
+       "in_list": true
+      },
+      {
+       "name": "System/Home Indicator iOS",
+       "in_list": true
+      },
+      {
+       "name": "Button/Mic",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Checkboxes 28",
+       "in_list": true
+      },
+      {
+       "name": "Vocab/List Item",
+       "in_list": true
+      },
+      {
+       "name": "icon / heroicons / Solid / volume-up",
+       "in_list": false
+      },
+      {
+       "name": "Icon/Close 24",
+       "in_list": true
+      },
+      {
+       "name": "_StatusBar-time",
+       "in_list": false
+      },
+      {
+       "name": "Audio/Volume",
+       "in_list": true
+      },
+      {
+       "name": "Toast/Round",
+       "in_list": true
+      }
+     ]
+    },
+    {
+     "order": 4,
+     "title": "V04-vocab-speak-card",
+     "flow": "말하기 카드",
+     "state": "기본",
+     "figma_name": "레슨 Vocabulary / 말하기 카드 / 기본",
+     "app_image": "screens/50019-39420-03-app.jpg",
+     "figma_image": "screens/50019-39420-03-fig.jpg",
+     "source": "25.10 - 디테일 개선 작업(26.08 수정) / 유형 D",
+     "parts": [
+      {
+       "name": "Icon/Chevron Up 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Chevron Down 24",
+       "in_list": true
+      },
+      {
+       "name": "System/Home Indicator iOS",
+       "in_list": true
+      },
+      {
+       "name": "Button/Mic",
+       "in_list": true
+      },
+      {
+       "name": "VUI",
+       "in_list": false
+      },
+      {
+       "name": "Word Card/Type D",
+       "in_list": true
+      },
+      {
+       "name": "Audio/Volume",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Search 18",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Menu 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Close 24",
+       "in_list": true
+      },
+      {
+       "name": "_StatusBar-time",
+       "in_list": false
+      }
+     ]
+    },
+    {
+     "order": 5,
+     "title": "V05-vocab-speak-listening",
+     "flow": "",
+     "state": "",
+     "figma_name": "",
+     "app_image": "screens/50019-39420-04-app.jpg",
+     "figma_image": null,
+     "source": "",
+     "parts": []
+    },
+    {
+     "order": 6,
+     "title": "V06-vocab-speak-choice",
+     "flow": "말하기 선택",
+     "state": "기본",
+     "figma_name": "레슨 Vocabulary / 말하기 선택 / 기본",
+     "app_image": "screens/50019-39420-05-app.jpg",
+     "figma_image": "screens/50019-39420-05-fig.jpg",
+     "source": "25.10 - 디테일 개선 작업(26.08 수정) / 유형 B",
+     "parts": [
+      {
+       "name": "Icon/Chevron Up 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Chevron Down 24",
+       "in_list": true
+      },
+      {
+       "name": "System/Home Indicator iOS",
+       "in_list": true
+      },
+      {
+       "name": "Button/Mic",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Menu 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Close 24",
+       "in_list": true
+      },
+      {
+       "name": "Vocab/List Item",
+       "in_list": true
+      },
+      {
+       "name": "icon / heroicons / Solid / volume-up",
+       "in_list": false
+      },
+      {
+       "name": "VUI",
+       "in_list": false
+      },
+      {
+       "name": "_StatusBar-time",
+       "in_list": false
+      },
+      {
+       "name": "Audio/Volume",
+       "in_list": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "feature": "레슨 · Review Quiz",
+   "screens": [
+    {
+     "order": 1,
+     "title": "RQ01-reviewquiz-default",
+     "flow": "",
+     "state": "",
+     "figma_name": "",
+     "app_image": "screens/50019-97213-00-app.jpg",
+     "figma_image": null,
+     "source": "",
+     "parts": []
+    },
+    {
+     "order": 2,
+     "title": "RQ03-reviewquiz-tutor-playing",
+     "flow": "",
+     "state": "",
+     "figma_name": "",
+     "app_image": "screens/50019-97213-01-app.jpg",
+     "figma_image": null,
+     "source": "",
+     "parts": []
+    },
+    {
+     "order": 3,
+     "title": "RQ04-reviewquiz-paused-controls",
+     "flow": "퀴즈",
+     "state": "일시정지 컨트롤",
+     "figma_name": "레슨 Review Quiz / 퀴즈 / 일시정지 컨트롤",
+     "app_image": "screens/50019-97213-02-app.jpg",
+     "figma_image": "screens/50019-97213-02-fig.jpg",
+     "source": "25.10 - 디테일 개선 작업(26.08 수정) / 일시정지",
+     "parts": [
+      {
+       "name": "Icon/Chevron Up 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Chevron Down 24",
+       "in_list": true
+      },
+      {
+       "name": "System/Home Indicator iOS",
+       "in_list": true
+      },
+      {
+       "name": "Button/Mic",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Sample Listen 24",
+       "in_list": true
+      },
+      {
+       "name": "Button/Icon With Label",
+       "in_list": true
+      },
+      {
+       "name": "_StatusBar-time",
+       "in_list": false
+      },
+      {
+       "name": "Icon/Menu 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Chevron Left 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Close 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Video Previous 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Video Next 24",
+       "in_list": true
+      },
+      {
+       "name": "Button/Play Pause",
+       "in_list": true
+      }
+     ]
+    },
+    {
+     "order": 4,
+     "title": "RQ05-reviewquiz-menu",
+     "flow": "",
+     "state": "",
+     "figma_name": "",
+     "app_image": "screens/50019-97213-03-app.jpg",
+     "figma_image": null,
+     "source": "",
+     "parts": []
+    },
+    {
+     "order": 5,
+     "title": "RQ06-reviewquiz-exit",
+     "flow": "",
+     "state": "",
+     "figma_name": "",
+     "app_image": "screens/50019-97213-04-app.jpg",
+     "figma_image": null,
+     "source": "",
+     "parts": []
+    }
+   ]
+  },
+  {
+   "feature": "레슨 · Conversation(Mission·Unit Test)",
+   "screens": [
+    {
+     "order": 1,
+     "title": "MI01-mission-intro",
+     "flow": "",
+     "state": "",
+     "figma_name": "",
+     "app_image": "screens/50019-98409-00-app.jpg",
+     "figma_image": null,
+     "source": "",
+     "parts": []
+    },
+    {
+     "order": 2,
+     "title": "MI02-mission-title",
+     "flow": "",
+     "state": "",
+     "figma_name": "",
+     "app_image": "screens/50019-98409-01-app.jpg",
+     "figma_image": null,
+     "source": "",
+     "parts": []
+    },
+    {
+     "order": 3,
+     "title": "MI03-mission-user-turn-hidden",
+     "flow": "사용자 차례",
+     "state": "문장 숨김",
+     "figma_name": "레슨 Mission / 사용자 차례 / 문장 숨김",
+     "app_image": "screens/50019-98409-02-app.jpg",
+     "figma_image": "screens/50019-98409-02-fig.jpg",
+     "source": "Sprint AA - step M+ / 이슈 1, 해결방안 B",
+     "parts": [
+      {
+       "name": "Progress/Linear",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Sample Listen 24",
+       "in_list": true
+      },
+      {
+       "name": "VUI/progress",
+       "in_list": false
+      }
+     ]
+    },
+    {
+     "order": 4,
+     "title": "MI04-mission-sorry",
+     "flow": "",
+     "state": "",
+     "figma_name": "",
+     "app_image": "screens/50019-98409-03-app.jpg",
+     "figma_image": null,
+     "source": "",
+     "parts": []
+    },
+    {
+     "order": 5,
+     "title": "UT01-unittest-intro",
+     "flow": "",
+     "state": "",
+     "figma_name": "",
+     "app_image": "screens/50019-98409-04-app.jpg",
+     "figma_image": null,
+     "source": "",
+     "parts": []
+    },
+    {
+     "order": 6,
+     "title": "UT02-unittest-user-turn-listening",
+     "flow": "",
+     "state": "",
+     "figma_name": "",
+     "app_image": "screens/50019-98409-05-app.jpg",
+     "figma_image": null,
+     "source": "",
+     "parts": []
+    },
+    {
+     "order": 7,
+     "title": "UT03-unittest-sorry-repeat",
+     "flow": "",
+     "state": "",
+     "figma_name": "",
+     "app_image": "screens/50019-98409-06-app.jpg",
+     "figma_image": null,
+     "source": "",
+     "parts": []
+    }
+   ]
+  },
+  {
+   "feature": "프랙티스",
+   "screens": [
+    {
+     "order": 1,
+     "title": "PR01-listen-repeat-listening",
+     "flow": "",
+     "state": "",
+     "figma_name": "",
+     "app_image": "screens/50020-11511-00-app.jpg",
+     "figma_image": null,
+     "source": "",
+     "parts": []
+    },
+    {
+     "order": 2,
+     "title": "PR02-listen-repeat-fail",
+     "flow": "",
+     "state": "",
+     "figma_name": "",
+     "app_image": "screens/50020-11511-01-app.jpg",
+     "figma_image": null,
+     "source": "",
+     "parts": []
+    },
+    {
+     "order": 3,
+     "title": "PR03-build-sentence-listening",
+     "flow": "",
+     "state": "",
+     "figma_name": "",
+     "app_image": "screens/50020-11511-02-app.jpg",
+     "figma_image": null,
+     "source": "",
+     "parts": []
+    },
+    {
+     "order": 4,
+     "title": "PR04-build-sentence-almost",
+     "flow": "",
+     "state": "",
+     "figma_name": "",
+     "app_image": "screens/50020-11511-03-app.jpg",
+     "figma_image": null,
+     "source": "",
+     "parts": []
+    },
+    {
+     "order": 5,
+     "title": "PR05-fill-blank-listening",
+     "flow": "",
+     "state": "",
+     "figma_name": "",
+     "app_image": "screens/50020-11511-04-app.jpg",
+     "figma_image": null,
+     "source": "",
+     "parts": []
+    },
+    {
+     "order": 6,
+     "title": "PR06-speak-own-listening",
+     "flow": "",
+     "state": "",
+     "figma_name": "",
+     "app_image": "screens/50020-11511-05-app.jpg",
+     "figma_image": null,
+     "source": "",
+     "parts": []
+    },
+    {
+     "order": 7,
+     "title": "PR07-fill-blank-fail",
+     "flow": "",
+     "state": "",
+     "figma_name": "",
+     "app_image": "screens/50020-11511-06-app.jpg",
+     "figma_image": null,
+     "source": "",
+     "parts": []
+    },
+    {
+     "order": 8,
+     "title": "PR08-almost-done-retry-round",
+     "flow": "",
+     "state": "",
+     "figma_name": "",
+     "app_image": "screens/50020-11511-07-app.jpg",
+     "figma_image": null,
+     "source": "",
+     "parts": []
+    },
+    {
+     "order": 9,
+     "title": "프랙티스 · Listen and repeat",
+     "flow": "Listen and repeat",
+     "state": "기본",
+     "figma_name": "프랙티스 / Listen and repeat / 기본",
+     "app_image": "screens/50020-11511-08-app.jpg",
+     "figma_image": "screens/50020-11511-08-fig.jpg",
+     "source": "25.10 - 디테일 개선 작업(26.08 수정) / Listen and repeat",
+     "parts": [
+      {
+       "name": "Score/Grade A 26",
+       "in_list": true
+      },
+      {
+       "name": "Practice/Question",
+       "in_list": true
+      },
+      {
+       "name": "Practice/Cell",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Sample Listen 20",
+       "in_list": true
+      },
+      {
+       "name": "Practice/Romanization Cell",
+       "in_list": true
+      },
+      {
+       "name": "System/Status Bar iOS",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Settings 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Menu 24",
+       "in_list": true
+      },
+      {
+       "name": "Progress/Step Bar",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Close 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Tab Setting 24",
+       "in_list": true
+      }
+     ]
+    },
+    {
+     "order": 10,
+     "title": "프랙티스 · 듣는 중",
+     "flow": "Listen and repeat",
+     "state": "듣는 중",
+     "figma_name": "프랙티스 / Listen and repeat / 듣는 중",
+     "app_image": "screens/50020-11511-09-app.jpg",
+     "figma_image": "screens/50020-11511-09-fig.jpg",
+     "source": "Sprint W - Practice / O / Listen and repeat, 듣는 중",
+     "parts": [
+      {
+       "name": "Score/Grade A 26",
+       "in_list": true
+      },
+      {
+       "name": "Navigation/Nav Bar",
+       "in_list": true
+      },
+      {
+       "name": "System/Status Bar iOS",
+       "in_list": true
+      },
+      {
+       "name": "Navigation/Top Nav",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Settings 24",
+       "in_list": true
+      },
+      {
+       "name": "Progress/Step Dots",
+       "in_list": true
+      },
+      {
+       "name": "Progress/Bar Cell",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Close 24",
+       "in_list": true
+      },
+      {
+       "name": "Practice/Question",
+       "in_list": true
+      },
+      {
+       "name": "Practice/Cell",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Sample Listen 20",
+       "in_list": true
+      },
+      {
+       "name": "Practice/Romanization Cell",
+       "in_list": true
+      }
+     ]
+    },
+    {
+     "order": 11,
+     "title": "프랙티스 · 오답 피드백",
+     "flow": "Listen and repeat",
+     "state": "오답 피드백",
+     "figma_name": "프랙티스 / Listen and repeat / 오답 피드백",
+     "app_image": "screens/50020-11511-10-app.jpg",
+     "figma_image": "screens/50020-11511-10-fig.jpg",
+     "source": "Sprint W - Practice / O / Listen and repeat, 오답 피드백",
+     "parts": [
+      {
+       "name": "Score/Grade A 26",
+       "in_list": true
+      },
+      {
+       "name": "Practice/Question",
+       "in_list": true
+      },
+      {
+       "name": "Practice/Cell",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Sample Listen 20",
+       "in_list": true
+      },
+      {
+       "name": "Practice/Romanization Cell",
+       "in_list": true
+      },
+      {
+       "name": "Navigation/Nav Bar",
+       "in_list": true
+      },
+      {
+       "name": "System/Status Bar iOS",
+       "in_list": true
+      },
+      {
+       "name": "Navigation/Top Nav",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Settings 24",
+       "in_list": true
+      },
+      {
+       "name": "Progress/Step Dots",
+       "in_list": true
+      },
+      {
+       "name": "Progress/Bar Cell",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Close 24",
+       "in_list": true
+      },
+      {
+       "name": "Practice/Auto Skip",
+       "in_list": true
+      },
+      {
+       "name": "Practice/Auto Skip Cell",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Pause 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Skip 24",
+       "in_list": true
+      }
+     ]
+    },
+    {
+     "order": 12,
+     "title": "프랙티스 · Build the sentence",
+     "flow": "Build the sentence",
+     "state": "기본",
+     "figma_name": "프랙티스 / Build the sentence / 기본",
+     "app_image": "screens/50020-11511-11-app.jpg",
+     "figma_image": "screens/50020-11511-11-fig.jpg",
+     "source": "25.10 - 디테일 개선 작업(26.08 수정) / 틀렸을때",
+     "parts": [
+      {
+       "name": "Score/Grade A 26",
+       "in_list": true
+      },
+      {
+       "name": "Practice/Question",
+       "in_list": true
+      },
+      {
+       "name": "Practice/Cell",
+       "in_list": true
+      },
+      {
+       "name": "Practice/Romanization Cell",
+       "in_list": true
+      },
+      {
+       "name": "Navigation/Nav Bar",
+       "in_list": true
+      },
+      {
+       "name": "System/Status Bar iOS",
+       "in_list": true
+      },
+      {
+       "name": "Navigation/Top Nav",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Settings 24",
+       "in_list": true
+      },
+      {
+       "name": "Progress/Step Dots",
+       "in_list": true
+      },
+      {
+       "name": "Progress/Bar Cell",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Close 24",
+       "in_list": true
+      },
+      {
+       "name": "Practice/Auto Skip",
+       "in_list": true
+      },
+      {
+       "name": "Practice/Auto Skip Cell",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Pause 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Skip 24",
+       "in_list": true
+      }
+     ]
+    },
+    {
+     "order": 13,
+     "title": "프랙티스 · Fill in the blank",
+     "flow": "Fill in the blank",
+     "state": "기본",
+     "figma_name": "프랙티스 / Fill in the blank / 기본",
+     "app_image": "screens/50020-11511-12-app.jpg",
+     "figma_image": "screens/50020-11511-12-fig.jpg",
+     "source": "25.10 - 디테일 개선 작업(26.08 수정) / Fill in the blank",
+     "parts": [
+      {
+       "name": "Score/Grade A 26",
+       "in_list": true
+      },
+      {
+       "name": "Practice/Question",
+       "in_list": true
+      },
+      {
+       "name": "Practice/Cell",
+       "in_list": true
+      },
+      {
+       "name": "Practice/Romanization Cell",
+       "in_list": true
+      },
+      {
+       "name": "System/Status Bar iOS",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Settings 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Menu 24",
+       "in_list": true
+      },
+      {
+       "name": "Progress/Step Bar",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Close 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Tab Setting 24",
+       "in_list": true
+      }
+     ]
+    },
+    {
+     "order": 14,
+     "title": "프랙티스 · 오답 피드백 2",
+     "flow": "Fill in the blank",
+     "state": "오답 피드백",
+     "figma_name": "프랙티스 / Fill in the blank / 오답 피드백",
+     "app_image": "screens/50020-11511-13-app.jpg",
+     "figma_image": "screens/50020-11511-13-fig.jpg",
+     "source": "Sprint W - Practice / O / Fill in the blank, 오답 피드백",
+     "parts": [
+      {
+       "name": "Score/Grade A 26",
+       "in_list": true
+      },
+      {
+       "name": "Practice/Question",
+       "in_list": true
+      },
+      {
+       "name": "Practice/Cell",
+       "in_list": true
+      },
+      {
+       "name": "Practice/Romanization Cell",
+       "in_list": true
+      },
+      {
+       "name": "Navigation/Nav Bar",
+       "in_list": true
+      },
+      {
+       "name": "System/Status Bar iOS",
+       "in_list": true
+      },
+      {
+       "name": "Navigation/Top Nav",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Settings 24",
+       "in_list": true
+      },
+      {
+       "name": "Progress/Step Dots",
+       "in_list": true
+      },
+      {
+       "name": "Progress/Bar Cell",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Close 24",
+       "in_list": true
+      },
+      {
+       "name": "Practice/Auto Skip",
+       "in_list": true
+      },
+      {
+       "name": "Practice/Auto Skip Cell",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Pause 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Skip 24",
+       "in_list": true
+      }
+     ]
+    },
+    {
+     "order": 15,
+     "title": "프랙티스 · Speak on your own",
+     "flow": "Speak on your own",
+     "state": "기본",
+     "figma_name": "프랙티스 / Speak on your own / 기본",
+     "app_image": "screens/50020-11511-14-app.jpg",
+     "figma_image": "screens/50020-11511-14-fig.jpg",
+     "source": "25.10 - 디테일 개선 작업(26.08 수정) / Speak on your own",
+     "parts": [
+      {
+       "name": "Score/Grade A 26",
+       "in_list": true
+      },
+      {
+       "name": "Practice/Question",
+       "in_list": true
+      },
+      {
+       "name": "Practice/Cell",
+       "in_list": true
+      },
+      {
+       "name": "Practice/Romanization Cell",
+       "in_list": true
+      },
+      {
+       "name": "System/Status Bar iOS",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Settings 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Menu 24",
+       "in_list": true
+      },
+      {
+       "name": "Progress/Step Bar",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Close 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Tab Setting 24",
+       "in_list": true
+      }
+     ]
+    },
+    {
+     "order": 16,
+     "title": "프랙티스 · Almost there!",
+     "flow": "Speak on your own",
+     "state": "Almost there!",
+     "figma_name": "프랙티스 / Speak on your own / Almost there!",
+     "app_image": "screens/50020-11511-15-app.jpg",
+     "figma_image": "screens/50020-11511-15-fig.jpg",
+     "source": "Sprint W - Practice / O / Speak on your own, 피드백",
+     "parts": [
+      {
+       "name": "Score/Grade A 26",
+       "in_list": true
+      },
+      {
+       "name": "Practice/Question",
+       "in_list": true
+      },
+      {
+       "name": "Practice/Cell",
+       "in_list": true
+      },
+      {
+       "name": "Practice/Romanization Cell",
+       "in_list": true
+      },
+      {
+       "name": "Navigation/Nav Bar",
+       "in_list": true
+      },
+      {
+       "name": "System/Status Bar iOS",
+       "in_list": true
+      },
+      {
+       "name": "Navigation/Top Nav",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Settings 24",
+       "in_list": true
+      },
+      {
+       "name": "Progress/Step Dots",
+       "in_list": true
+      },
+      {
+       "name": "Progress/Bar Cell",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Close 24",
+       "in_list": true
+      },
+      {
+       "name": "Practice/Auto Skip",
+       "in_list": true
+      },
+      {
+       "name": "Practice/Auto Skip Cell",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Pause 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Skip 24",
+       "in_list": true
+      }
+     ]
+    },
+    {
+     "order": 17,
+     "title": "프랙티스 · Close!",
+     "flow": "Speak on your own",
+     "state": "Close!",
+     "figma_name": "프랙티스 / Speak on your own / Close!",
+     "app_image": "screens/50020-11511-16-app.jpg",
+     "figma_image": "screens/50020-11511-16-fig.jpg",
+     "source": "Sprint W - Practice / O / Speak on your own, 피드백",
+     "parts": [
+      {
+       "name": "Score/Grade A 26",
+       "in_list": true
+      },
+      {
+       "name": "Practice/Question",
+       "in_list": true
+      },
+      {
+       "name": "Practice/Cell",
+       "in_list": true
+      },
+      {
+       "name": "Practice/Romanization Cell",
+       "in_list": true
+      },
+      {
+       "name": "Navigation/Nav Bar",
+       "in_list": true
+      },
+      {
+       "name": "System/Status Bar iOS",
+       "in_list": true
+      },
+      {
+       "name": "Navigation/Top Nav",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Settings 24",
+       "in_list": true
+      },
+      {
+       "name": "Progress/Step Dots",
+       "in_list": true
+      },
+      {
+       "name": "Progress/Bar Cell",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Close 24",
+       "in_list": true
+      },
+      {
+       "name": "Practice/Auto Skip",
+       "in_list": true
+      },
+      {
+       "name": "Practice/Auto Skip Cell",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Pause 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Skip 24",
+       "in_list": true
+      }
+     ]
+    },
+    {
+     "order": 18,
+     "title": "프랙티스 · 재도전 라운드 안내",
+     "flow": "재도전 라운드 안내",
+     "state": "기본",
+     "figma_name": "프랙티스 / 재도전 라운드 안내 / 기본",
+     "app_image": "screens/50020-11511-17-app.jpg",
+     "figma_image": "screens/50020-11511-17-fig.jpg",
+     "source": "25.10 - 디테일 개선 작업(26.08 수정) / 중간 중간 끊어갈때",
+     "parts": [
+      {
+       "name": "Score/Grade A 26",
+       "in_list": true
+      },
+      {
+       "name": "Navigation/Nav Bar",
+       "in_list": true
+      },
+      {
+       "name": "System/Status Bar iOS",
+       "in_list": true
+      },
+      {
+       "name": "Navigation/Top Nav",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Settings 24",
+       "in_list": true
+      },
+      {
+       "name": "Progress/Step Dots",
+       "in_list": true
+      },
+      {
+       "name": "Progress/Bar Cell",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Close 24",
+       "in_list": true
+      },
+      {
+       "name": "Practice/Auto Skip Cell",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Pause 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Skip 24",
+       "in_list": true
+      }
+     ]
+    },
+    {
+     "order": 19,
+     "title": "프랙티스 · Good Try!",
+     "flow": "결과",
+     "state": "Good Try!",
+     "figma_name": "프랙티스 / 결과 / Good Try!",
+     "app_image": "screens/50020-11511-18-app.jpg",
+     "figma_image": "screens/50020-11511-18-fig.jpg",
+     "source": "Sprint W - Practice / O / Listen and repeat, 오답 피드백",
+     "parts": [
+      {
+       "name": "Score/Grade A 26",
+       "in_list": true
+      },
+      {
+       "name": "Practice/Question",
+       "in_list": true
+      },
+      {
+       "name": "Practice/Cell",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Sample Listen 20",
+       "in_list": true
+      },
+      {
+       "name": "Practice/Romanization Cell",
+       "in_list": true
+      },
+      {
+       "name": "Navigation/Nav Bar",
+       "in_list": true
+      },
+      {
+       "name": "System/Status Bar iOS",
+       "in_list": true
+      },
+      {
+       "name": "Navigation/Top Nav",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Settings 24",
+       "in_list": true
+      },
+      {
+       "name": "Progress/Step Dots",
+       "in_list": true
+      },
+      {
+       "name": "Progress/Bar Cell",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Close 24",
+       "in_list": true
+      },
+      {
+       "name": "Practice/Auto Skip",
+       "in_list": true
+      },
+      {
+       "name": "Practice/Auto Skip Cell",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Pause 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Skip 24",
+       "in_list": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "feature": "레슨 완료 흐름",
+   "screens": [
+    {
+     "order": 1,
+     "title": "E10-post-lesson-paywall",
+     "flow": "페이월",
+     "state": "기본",
+     "figma_name": "레슨 완료 / 페이월 / 기본",
+     "app_image": "screens/50022-13929-00-app.jpg",
+     "figma_image": "screens/50022-13929-00-fig.jpg",
+     "source": "24.08 Sprint AN - KOEN 스토리관 유료화 2 / 유닛 상세 > 버튼 선택 시",
+     "parts": [
+      {
+       "name": "System/Status Bar Android",
+       "in_list": true
+      },
+      {
+       "name": "Button/Medium Line Button White Default",
+       "in_list": false
+      }
+     ]
+    },
+    {
+     "order": 2,
+     "title": "E11-lesson-summary-failed",
+     "flow": "레슨 Summary",
+     "state": "실패",
+     "figma_name": "레슨 완료 / 레슨 Summary / 실패",
+     "app_image": "screens/50022-13929-01-app.jpg",
+     "figma_image": "screens/50022-13929-01-fig.jpg",
+     "source": "Sprint M - 써머리,등 / 레슨 Summary, 실패",
+     "parts": [
+      {
+       "name": "Score/Grade A 26",
+       "in_list": true
+      },
+      {
+       "name": "System/Status Bar Android",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Close 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Sample Listen 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Bookmark 24 2",
+       "in_list": true
+      },
+      {
+       "name": "Score/Grade A 32",
+       "in_list": true
+      }
+     ]
+    },
+    {
+     "order": 3,
+     "title": "E12-streak-1day",
+     "flow": "스트릭",
+     "state": "1일",
+     "figma_name": "레슨 완료 / 스트릭 / 1일",
+     "app_image": "screens/50022-13929-02-app.jpg",
+     "figma_image": "screens/50022-13929-02-fig.jpg",
+     "source": "25.07 - Sprint AZ - 위클리 프로그레스 팝업 / 리뷰탭 / 학습 내용 없을 시",
+     "parts": [
+      {
+       "name": "Streak/Calendar Icon",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Close 24",
+       "in_list": true
+      },
+      {
+       "name": "Streak/Status Icon",
+       "in_list": true
+      },
+      {
+       "name": "System/Home Indicator iOS",
+       "in_list": true
+      },
+      {
+       "name": "Navigation/Tab Bar",
+       "in_list": true
+      },
+      {
+       "name": "_StatusBar-time",
+       "in_list": false
+      }
+     ]
+    },
+    {
+     "order": 4,
+     "title": "E13-reminder-prompt",
+     "flow": "리마인더 권한 안내",
+     "state": "기본",
+     "figma_name": "레슨 완료 / 리마인더 권한 안내 / 기본",
+     "app_image": "screens/50022-13929-03-app.jpg",
+     "figma_image": "screens/50022-13929-03-fig.jpg",
+     "source": "25.11 - Sprint  BG - 스마트 리마인더 / Notification Permission Popup / iOS",
+     "parts": [
+      {
+       "name": "Icon/Unit Summary 16",
+       "in_list": true
+      },
+      {
+       "name": "Badge/Unit Badge",
+       "in_list": true
+      },
+      {
+       "name": "UnitBadgeSet/Default",
+       "in_list": false
+      },
+      {
+       "name": "UnitBage_ProgressBar",
+       "in_list": false
+      },
+      {
+       "name": "UnitBadge_Inactive",
+       "in_list": false
+      },
+      {
+       "name": "Icon/Chevron Right",
+       "in_list": true
+      },
+      {
+       "name": "Button/Medium Line Button White Default",
+       "in_list": false
+      },
+      {
+       "name": "Icon/Lesson Key 16",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Lock 24",
+       "in_list": true
+      },
+      {
+       "name": "_StatusBar-time",
+       "in_list": false
+      },
+      {
+       "name": "Icon/Flag",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Toggle Down 16",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Lesson Key 24",
+       "in_list": true
+      },
+      {
+       "name": "Navigation/Tab Bar",
+       "in_list": true
+      },
+      {
+       "name": "Navigation/Tab Bar Cell",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Home 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Premium Only 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Tab Review 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Community 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Profile 24",
+       "in_list": true
+      }
+     ]
+    },
+    {
+     "order": 5,
+     "title": "L01-lesson-summary-top",
+     "flow": "레슨 Summary",
+     "state": "상단",
+     "figma_name": "레슨 완료 / 레슨 Summary / 상단",
+     "app_image": "screens/50022-13929-04-app.jpg",
+     "figma_image": "screens/50022-13929-04-fig.jpg",
+     "source": "Sprint K - 스트릭 / 레슨 Summary, 상단",
+     "parts": [
+      {
+       "name": "Score/Grade A 26",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Sample Listen 24",
+       "in_list": true
+      },
+      {
+       "name": "System/Status Bar Android",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Close 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Feedback 24",
+       "in_list": true
+      }
+     ]
+    },
+    {
+     "order": 6,
+     "title": "레슨 후 전면 광고",
+     "flow": "전면 광고",
+     "state": "기본",
+     "figma_name": "레슨 완료 / 전면 광고 / 기본",
+     "app_image": "screens/50022-13929-05-app.jpg",
+     "figma_image": "screens/50022-13929-05-fig.jpg",
+     "source": "24.08 Sprint AO - JAEN 프리미엄 플랜 광고 노출 / 광고 재생 중",
+     "parts": [
+      {
+       "name": "Navigation/Nav Bar",
+       "in_list": true
+      },
+      {
+       "name": "System/Status Bar iOS",
+       "in_list": true
+      },
+      {
+       "name": "System/Home Indicator iOS",
+       "in_list": true
+      },
+      {
+       "name": "Progress/Linear",
+       "in_list": true
+      }
+     ]
+    },
+    {
+     "order": 7,
+     "title": "프랙티스 Summary",
+     "flow": "프랙티스 Summary",
+     "state": "기본",
+     "figma_name": "레슨 완료 / 프랙티스 Summary / 기본",
+     "app_image": "screens/50022-13929-06-app.jpg",
+     "figma_image": "screens/50022-13929-06-fig.jpg",
+     "source": "Sprint W - Practice / O / 프랙티스 Summary",
+     "parts": [
+      {
+       "name": "Score/Grade A 26",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Close 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Sample Listen 20",
+       "in_list": true
+      },
+      {
+       "name": "Score/Grade A 32",
+       "in_list": true
+      },
+      {
+       "name": "System/Status Bar Android",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Feedback 24",
+       "in_list": true
+      }
+     ]
+    },
+    {
+     "order": 8,
+     "title": "레슨 피드백 시트",
+     "flow": "피드백 시트",
+     "state": "기본",
+     "figma_name": "레슨 완료 / 피드백 시트 / 기본",
+     "app_image": "screens/50022-13929-07-app.jpg",
+     "figma_image": "screens/50022-13929-07-fig.jpg",
+     "source": "Sprint H - 뉴홈, 보캡 / 피드백 시트",
+     "parts": [
+      {
+       "name": "Score/Grade A 26",
+       "in_list": true
+      },
+      {
+       "name": "System/Status Bar Android",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Close 24",
+       "in_list": true
+      },
+      {
+       "name": "Bottom Sheet/Cancel",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Close 20",
+       "in_list": true
+      },
+      {
+       "name": "feedback_star_default",
+       "in_list": false
+      },
+      {
+       "name": "inputbox_default",
+       "in_list": false
+      },
+      {
+       "name": "Button/Old Fill Set",
+       "in_list": false
+      }
+     ]
+    },
+    {
+     "order": 9,
+     "title": "스트릭 달성 팝업",
+     "flow": "스트릭 달성 팝업",
+     "state": "기본",
+     "figma_name": "레슨 완료 / 스트릭 달성 팝업 / 기본",
+     "app_image": "screens/50022-13929-08-app.jpg",
+     "figma_image": "screens/50022-13929-08-fig.jpg",
+     "source": "25.07 - Sprint AZ - 위클리 프로그레스 팝업 / 첫주 첫날",
+     "parts": [
+      {
+       "name": "Streak/Calendar Icon",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Close 24",
+       "in_list": true
+      },
+      {
+       "name": "Streak/Status Icon",
+       "in_list": true
+      },
+      {
+       "name": "Weekly Progress/Day Labels",
+       "in_list": true
+      },
+      {
+       "name": "Weekly Progress/Day Of The Week",
+       "in_list": true
+      },
+      {
+       "name": "Weekly Progress/Day State",
+       "in_list": true
+      },
+      {
+       "name": "System/Home Indicator iOS",
+       "in_list": true
+      },
+      {
+       "name": "Navigation/Tab Bar",
+       "in_list": true
+      },
+      {
+       "name": "_StatusBar-time",
+       "in_list": false
+      }
+     ]
+    },
+    {
+     "order": 10,
+     "title": "레슨 후 페이월",
+     "flow": "페이월",
+     "state": "프리미엄 혜택",
+     "figma_name": "레슨 완료 / 페이월 / 프리미엄 혜택",
+     "app_image": "screens/50022-13929-09-app.jpg",
+     "figma_image": "screens/50022-13929-09-fig.jpg",
+     "source": "ENKO / 프리미엄 혜택",
+     "parts": [
+      {
+       "name": "System/Status Bar Android",
+       "in_list": true
+      },
+      {
+       "name": "Button/Medium Line Button White Default",
+       "in_list": false
+      }
+     ]
+    },
+    {
+     "order": 11,
+     "title": "무료 체험 타임라인",
+     "flow": "페이월",
+     "state": "무료체험 타임라인",
+     "figma_name": "레슨 완료 / 페이월 / 무료체험 타임라인",
+     "app_image": "screens/50022-13929-10-app.jpg",
+     "figma_image": "screens/50022-13929-10-fig.jpg",
+     "source": "26.02 - Sprint BJ - 온보딩 페이월 추가 / 무료체험 안내",
+     "parts": [
+      {
+       "name": "System/Status Bar Android",
+       "in_list": true
+      },
+      {
+       "name": "Button/Medium Line Button White Default",
+       "in_list": false
+      },
+      {
+       "name": "Icon/Chevron Left 24",
+       "in_list": true
+      }
+     ]
+    },
+    {
+     "order": 12,
+     "title": "학습 리마인더 팝업",
+     "flow": "학습 리마인더 팝업",
+     "state": "기본",
+     "figma_name": "레슨 완료 / 학습 리마인더 팝업 / 기본",
+     "app_image": "screens/50022-13929-11-app.jpg",
+     "figma_image": "screens/50022-13929-11-fig.jpg",
+     "source": "25.11 - Sprint  BG - 스마트 리마인더 / Notification Permission Popup / iOS",
+     "parts": [
+      {
+       "name": "Icon/Unit Summary 16",
+       "in_list": true
+      },
+      {
+       "name": "Badge/Unit Badge",
+       "in_list": true
+      },
+      {
+       "name": "UnitBadgeSet/Default",
+       "in_list": false
+      },
+      {
+       "name": "UnitBage_ProgressBar",
+       "in_list": false
+      },
+      {
+       "name": "UnitBadge_Inactive",
+       "in_list": false
+      },
+      {
+       "name": "Icon/Chevron Right",
+       "in_list": true
+      },
+      {
+       "name": "Button/Medium Line Button White Default",
+       "in_list": false
+      },
+      {
+       "name": "Icon/Lesson Key 16",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Lock 24",
+       "in_list": true
+      },
+      {
+       "name": "_StatusBar-time",
+       "in_list": false
+      },
+      {
+       "name": "Icon/Flag",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Toggle Down 16",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Lesson Key 24",
+       "in_list": true
+      },
+      {
+       "name": "Navigation/Tab Bar",
+       "in_list": true
+      },
+      {
+       "name": "Navigation/Tab Bar Cell",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Home 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Premium Only 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Tab Review 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Community 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Profile 24",
+       "in_list": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "feature": "리뷰 탭·퀵리뷰",
+   "screens": [
+    {
+     "order": 1,
+     "title": "RV01-review-tab",
+     "flow": "리뷰 홈",
+     "state": "퀵리뷰 있을 때",
+     "figma_name": "리뷰탭 / 리뷰 홈 / 퀵리뷰 있을 때",
+     "app_image": "screens/50022-86222-00-app.jpg",
+     "figma_image": "screens/50022-86222-00-fig.jpg",
+     "source": "25.10 - 디테일 개선 작업(26.08 수정) / 퀵리뷰 있을 경우",
+     "parts": [
+      {
+       "name": "Streak/Calendar Icon",
+       "in_list": true
+      },
+      {
+       "name": "Streak/Ic Union",
+       "in_list": true
+      },
+      {
+       "name": "Streak/Status Icon",
+       "in_list": true
+      },
+      {
+       "name": "System/Status Bar iOS",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Info Small 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Learned Expressions 48",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Chevron Right 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Check 18",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Quick Review 22",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Learned Vocabulary 48",
+       "in_list": true
+      },
+      {
+       "name": "System/Home Indicator iOS",
+       "in_list": true
+      },
+      {
+       "name": "Navigation/Tab Bar",
+       "in_list": true
+      },
+      {
+       "name": "Navigation/Tab Bar Cell",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Home 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Premium Only 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Community 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Tab Review 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Profile 24",
+       "in_list": true
+      }
+     ]
+    },
+    {
+     "order": 2,
+     "title": "RV10-learned-vocab-list",
+     "flow": "배운 단어",
+     "state": "리스트",
+     "figma_name": "리뷰탭 / 배운 단어 / 리스트",
+     "app_image": "screens/50022-86222-01-app.jpg",
+     "figma_image": "screens/50022-86222-01-fig.jpg",
+     "source": "25.02_ Sprint AV - 리뷰탭&퀵리뷰  / 표현 진입",
+     "parts": [
+      {
+       "name": "Icon/Chevron Up 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Chevron Down 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Chevron Left 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Menu 24",
+       "in_list": true
+      },
+      {
+       "name": "_StatusBar-time",
+       "in_list": false
+      },
+      {
+       "name": "Chip/Filter",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Chevron Down 20",
+       "in_list": true
+      },
+      {
+       "name": "Review/List Item",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Bookmark 24",
+       "in_list": true
+      },
+      {
+       "name": "Button/Circle Icon",
+       "in_list": true
+      },
+      {
+       "name": "Audio/Volume",
+       "in_list": true
+      },
+      {
+       "name": "System/Home Indicator iOS",
+       "in_list": true
+      }
+     ]
+    },
+    {
+     "order": 3,
+     "title": "RV11-learned-vocab-detail",
+     "flow": "배운 단어",
+     "state": "상세",
+     "figma_name": "리뷰탭 / 배운 단어 / 상세",
+     "app_image": "screens/50022-86222-02-app.jpg",
+     "figma_image": "screens/50022-86222-02-fig.jpg",
+     "source": "25.02_ Sprint AV - 리뷰탭&퀵리뷰  / 표현 진입",
+     "parts": [
+      {
+       "name": "Icon/Chevron Up 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Chevron Down 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Chevron Left 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Menu 24",
+       "in_list": true
+      },
+      {
+       "name": "_StatusBar-time",
+       "in_list": false
+      },
+      {
+       "name": "Chip/Filter",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Chevron Down 20",
+       "in_list": true
+      },
+      {
+       "name": "Review/List Item",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Bookmark 24",
+       "in_list": true
+      },
+      {
+       "name": "Button/Circle Icon",
+       "in_list": true
+      },
+      {
+       "name": "Audio/Volume",
+       "in_list": true
+      },
+      {
+       "name": "System/Home Indicator iOS",
+       "in_list": true
+      }
+     ]
+    },
+    {
+     "order": 4,
+     "title": "RV12-learned-vocab-options",
+     "flow": "",
+     "state": "",
+     "figma_name": "",
+     "app_image": "screens/50022-86222-03-app.jpg",
+     "figma_image": null,
+     "source": "",
+     "parts": []
+    },
+    {
+     "order": 5,
+     "title": "RV20-vocab-quickreview",
+     "flow": "단어 퀵리뷰",
+     "state": "마이크 활성화",
+     "figma_name": "리뷰탭 / 단어 퀵리뷰 / 마이크 활성화",
+     "app_image": "screens/50022-86222-04-app.jpg",
+     "figma_image": "screens/50022-86222-04-fig.jpg",
+     "source": "25.10 - 디테일 개선 작업(26.08 수정) / 퀵리뷰 > 마이크 활성화",
+     "parts": [
+      {
+       "name": "Icon/Chevron Up 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Chevron Down 24",
+       "in_list": true
+      },
+      {
+       "name": "System/Home Indicator iOS",
+       "in_list": true
+      },
+      {
+       "name": "Button/Mic",
+       "in_list": true
+      },
+      {
+       "name": "VUI",
+       "in_list": false
+      },
+      {
+       "name": "Icon/Chevron Left 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Menu 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Close 24",
+       "in_list": true
+      },
+      {
+       "name": "_StatusBar-time",
+       "in_list": false
+      },
+      {
+       "name": "Word Card/Type D",
+       "in_list": true
+      },
+      {
+       "name": "Audio/Volume",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Search 18",
+       "in_list": true
+      }
+     ]
+    },
+    {
+     "order": 6,
+     "title": "RV21-vocab-quickreview-wrong",
+     "flow": "단어 퀵리뷰",
+     "state": "오답",
+     "figma_name": "리뷰탭 / 단어 퀵리뷰 / 오답",
+     "app_image": "screens/50022-86222-05-app.jpg",
+     "figma_image": "screens/50022-86222-05-fig.jpg",
+     "source": "25.02_ Sprint AV - 리뷰탭&퀵리뷰  / 오답 시 토스트",
+     "parts": [
+      {
+       "name": "Icon/Chevron Up 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Chevron Down 24",
+       "in_list": true
+      },
+      {
+       "name": "System/Home Indicator iOS",
+       "in_list": true
+      },
+      {
+       "name": "Button/Mic",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Chevron Left 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Close 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/X 28",
+       "in_list": true
+      },
+      {
+       "name": "_StatusBar-time",
+       "in_list": false
+      },
+      {
+       "name": "Word Card/Type D",
+       "in_list": true
+      },
+      {
+       "name": "Audio/Volume",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Search 18",
+       "in_list": true
+      },
+      {
+       "name": "icon / heroicons / Solid / volume-up",
+       "in_list": false
+      }
+     ]
+    },
+    {
+     "order": 7,
+     "title": "RV22-vocab-quickreview-answer",
+     "flow": "단어 퀵리뷰",
+     "state": "정답",
+     "figma_name": "리뷰탭 / 단어 퀵리뷰 / 정답",
+     "app_image": "screens/50022-86222-06-app.jpg",
+     "figma_image": "screens/50022-86222-06-fig.jpg",
+     "source": "25.02_ Sprint AV - 리뷰탭&퀵리뷰  / 정답",
+     "parts": [
+      {
+       "name": "Icon/Chevron Up 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Chevron Down 24",
+       "in_list": true
+      },
+      {
+       "name": "System/Home Indicator iOS",
+       "in_list": true
+      },
+      {
+       "name": "Button/Mic",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Chevron Left 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Close 24",
+       "in_list": true
+      },
+      {
+       "name": "_StatusBar-time",
+       "in_list": false
+      },
+      {
+       "name": "Word Card/Type D",
+       "in_list": true
+      },
+      {
+       "name": "Audio/Volume",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Search 18",
+       "in_list": true
+      },
+      {
+       "name": "icon / heroicons / Solid / volume-up",
+       "in_list": false
+      }
+     ]
+    },
+    {
+     "order": 8,
+     "title": "RV23-quickreview-exit",
+     "flow": "",
+     "state": "",
+     "figma_name": "",
+     "app_image": "screens/50022-86222-07-app.jpg",
+     "figma_image": null,
+     "source": "",
+     "parts": []
+    },
+    {
+     "order": 9,
+     "title": "RV30-expr-quickreview",
+     "flow": "표현 퀵리뷰",
+     "state": "기본",
+     "figma_name": "리뷰탭 / 표현 퀵리뷰 / 기본",
+     "app_image": "screens/50022-86222-08-app.jpg",
+     "figma_image": "screens/50022-86222-08-fig.jpg",
+     "source": "25.02_ Sprint AV - 리뷰탭&퀵리뷰  / 표현 진입",
+     "parts": [
+      {
+       "name": "Icon/Chevron Up 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Chevron Down 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Chevron Left 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Close 24",
+       "in_list": true
+      },
+      {
+       "name": "Button/Circle Icon",
+       "in_list": true
+      },
+      {
+       "name": "Audio/Volume",
+       "in_list": true
+      },
+      {
+       "name": "Text/Target Language Word",
+       "in_list": true
+      },
+      {
+       "name": "Button/Mic",
+       "in_list": true
+      },
+      {
+       "name": "Icon/X 28",
+       "in_list": true
+      },
+      {
+       "name": "_StatusBar-time",
+       "in_list": false
+      },
+      {
+       "name": "System/Home Indicator iOS",
+       "in_list": true
+      }
+     ]
+    },
+    {
+     "order": 10,
+     "title": "RV40-learned-expr-list",
+     "flow": "배운 표현",
+     "state": "리스트",
+     "figma_name": "리뷰탭 / 배운 표현 / 리스트",
+     "app_image": "screens/50022-86222-09-app.jpg",
+     "figma_image": "screens/50022-86222-09-fig.jpg",
+     "source": "25.07 - Sprint AZ - 위클리 프로그레스 팝업 / 표현 진입",
+     "parts": [
+      {
+       "name": "Icon/Chevron Up 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Chevron Down 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Chevron Left 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Menu 24",
+       "in_list": true
+      },
+      {
+       "name": "Chip/Filter",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Chevron Down 20",
+       "in_list": true
+      },
+      {
+       "name": "Review/List Item",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Bookmark 24",
+       "in_list": true
+      },
+      {
+       "name": "Button/Circle Icon",
+       "in_list": true
+      },
+      {
+       "name": "Audio/Volume",
+       "in_list": true
+      },
+      {
+       "name": "_StatusBar-time",
+       "in_list": false
+      },
+      {
+       "name": "System/Home Indicator iOS",
+       "in_list": true
+      }
+     ]
+    },
+    {
+     "order": 11,
+     "title": "복습 홈",
+     "flow": "리뷰 홈",
+     "state": "학습 이력 없음",
+     "figma_name": "리뷰탭 / 리뷰 홈 / 학습 이력 없음",
+     "app_image": "screens/50022-86222-10-app.jpg",
+     "figma_image": "screens/50022-86222-10-fig.jpg",
+     "source": "25.10 - 디테일 개선 작업(26.08 수정) / 레슨탭 진입시 / 학습 이력 없이 진입 경우",
+     "parts": [
+      {
+       "name": "Streak/Calendar Icon",
+       "in_list": true
+      },
+      {
+       "name": "Streak/Ic Union",
+       "in_list": true
+      },
+      {
+       "name": "Streak/Status Icon",
+       "in_list": true
+      },
+      {
+       "name": "System/Status Bar iOS",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Info Small 24",
+       "in_list": true
+      },
+      {
+       "name": "Premium/Upgrade Badge",
+       "in_list": true
+      },
+      {
+       "name": "Badge/Key Count",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Learned Expressions 48",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Chevron Right 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Check 18",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Learned Vocabulary 48",
+       "in_list": true
+      },
+      {
+       "name": "System/Home Indicator iOS",
+       "in_list": true
+      },
+      {
+       "name": "Navigation/Tab Bar",
+       "in_list": true
+      },
+      {
+       "name": "Navigation/Tab Bar Cell",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Home 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Premium Only 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Community 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Tab Review 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Profile 24",
+       "in_list": true
+      }
+     ]
+    },
+    {
+     "order": 12,
+     "title": "배운 표현 리스트",
+     "flow": "배운 표현",
+     "state": "리스트",
+     "figma_name": "리뷰탭 / 배운 표현 / 리스트",
+     "app_image": "screens/50022-86222-11-app.jpg",
+     "figma_image": "screens/50022-86222-11-fig.jpg",
+     "source": "25.07 - Sprint AZ - 위클리 프로그레스 팝업 / 표현 진입",
+     "parts": [
+      {
+       "name": "Icon/Chevron Up 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Chevron Down 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Chevron Left 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Menu 24",
+       "in_list": true
+      },
+      {
+       "name": "Chip/Filter",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Chevron Down 20",
+       "in_list": true
+      },
+      {
+       "name": "Review/List Item",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Bookmark 24",
+       "in_list": true
+      },
+      {
+       "name": "Button/Circle Icon",
+       "in_list": true
+      },
+      {
+       "name": "Audio/Volume",
+       "in_list": true
+      },
+      {
+       "name": "_StatusBar-time",
+       "in_list": false
+      },
+      {
+       "name": "System/Home Indicator iOS",
+       "in_list": true
+      }
+     ]
+    },
+    {
+     "order": 13,
+     "title": "복습 옵션 시트",
+     "flow": "배운 표현",
+     "state": "옵션 시트",
+     "figma_name": "리뷰탭 / 배운 표현 / 옵션 시트",
+     "app_image": "screens/50022-86222-12-app.jpg",
+     "figma_image": "screens/50022-86222-12-fig.jpg",
+     "source": "25.02_ Sprint AV - 리뷰탭&퀵리뷰  / 옵션버튼 선택_iOS",
+     "parts": [
+      {
+       "name": "Icon/Chevron Up 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Chevron Down 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Chevron Left 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Menu 24",
+       "in_list": true
+      },
+      {
+       "name": "Chip/Filter",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Chevron Down 20",
+       "in_list": true
+      },
+      {
+       "name": "Review/List Item",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Bookmark 24",
+       "in_list": true
+      },
+      {
+       "name": "Button/Circle Icon",
+       "in_list": true
+      },
+      {
+       "name": "Audio/Volume",
+       "in_list": true
+      },
+      {
+       "name": "_StatusBar-time",
+       "in_list": false
+      },
+      {
+       "name": "System/Home Indicator iOS",
+       "in_list": true
+      },
+      {
+       "name": "Input/Switch iOS",
+       "in_list": true
+      }
+     ]
+    },
+    {
+     "order": 14,
+     "title": "복습 정렬 시트",
+     "flow": "배운 표현",
+     "state": "정렬 시트",
+     "figma_name": "리뷰탭 / 배운 표현 / 정렬 시트",
+     "app_image": "screens/50022-86222-13-app.jpg",
+     "figma_image": "screens/50022-86222-13-fig.jpg",
+     "source": "25.02_ Sprint AV - 리뷰탭&퀵리뷰  / 정렬 변경 중",
+     "parts": [
+      {
+       "name": "Icon/Chevron Up 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Chevron Down 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Chevron Left 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Menu 24",
+       "in_list": true
+      },
+      {
+       "name": "Chip/Filter",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Chevron Down 20",
+       "in_list": true
+      },
+      {
+       "name": "Review/List Item",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Bookmark 24",
+       "in_list": true
+      },
+      {
+       "name": "Button/Circle Icon",
+       "in_list": true
+      },
+      {
+       "name": "Audio/Volume",
+       "in_list": true
+      },
+      {
+       "name": "_StatusBar-time",
+       "in_list": false
+      },
+      {
+       "name": "System/Home Indicator iOS",
+       "in_list": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "feature": "스토리 · 테스트 앱",
+   "screens": [
+    {
+     "order": 1,
+     "title": "S01-story-tab",
+     "flow": "스토리 탭",
+     "state": "기본",
+     "figma_name": "스토리 / 스토리 탭 / 기본",
+     "app_image": "screens/50022-154156-00-app.jpg",
+     "figma_image": "screens/50022-154156-00-fig.jpg",
+     "source": "Sprint AE - 다크모드 / O / Stories_Home tokenized",
+     "parts": [
+      {
+       "name": "Badge/Free",
+       "in_list": true
+      },
+      {
+       "name": "Streak/Floating Button Set",
+       "in_list": true
+      },
+      {
+       "name": "Streak/Floating Button",
+       "in_list": true
+      },
+      {
+       "name": "Streak/Icon 40 White",
+       "in_list": true
+      },
+      {
+       "name": "System/Status Bar Android",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Alarm 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Play 16",
+       "in_list": true
+      },
+      {
+       "name": "Navigation/Tab Bar Cell",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Home 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Community 24",
+       "in_list": true
+      }
+     ]
+    },
+    {
+     "order": 2,
+     "title": "S02-story-premium-popup",
+     "flow": "스토리 탭",
+     "state": "프리미엄 팝업",
+     "figma_name": "스토리 / 스토리 탭 / 프리미엄 팝업",
+     "app_image": "screens/50022-154156-01-app.jpg",
+     "figma_image": "screens/50022-154156-01-fig.jpg",
+     "source": "24.08 Sprint AN - KOEN 스토리관 유료화 2 / 스토리 메인 / 팝업 떴을 때",
+     "parts": [
+      {
+       "name": "Badge/Free",
+       "in_list": true
+      },
+      {
+       "name": "Streak/Floating Button Set",
+       "in_list": true
+      },
+      {
+       "name": "Streak/Floating Button",
+       "in_list": true
+      },
+      {
+       "name": "Streak/Icon 40 White",
+       "in_list": true
+      },
+      {
+       "name": "System/Status Bar Android",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Alarm 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Play 16",
+       "in_list": true
+      },
+      {
+       "name": "Navigation/Tab Bar",
+       "in_list": true
+      },
+      {
+       "name": "Navigation/Tab Bar Cell",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Home 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Premium Only 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Community 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Profile 24",
+       "in_list": true
+      },
+      {
+       "name": "ic_premium-only",
+       "in_list": false
+      },
+      {
+       "name": "ic_24_close_gray600",
+       "in_list": false
+      }
+     ]
+    },
+    {
+     "order": 3,
+     "title": "S03-story-tab-continue-watching",
+     "flow": "스토리 탭",
+     "state": "이어보기",
+     "figma_name": "스토리 / 스토리 탭 / 이어보기",
+     "app_image": "screens/50022-154156-02-app.jpg",
+     "figma_image": "screens/50022-154156-02-fig.jpg",
+     "source": "Sprint AE - 다크모드 / O / Stories_Home tokenized",
+     "parts": [
+      {
+       "name": "Badge/Free",
+       "in_list": true
+      },
+      {
+       "name": "Streak/Floating Button Set",
+       "in_list": true
+      },
+      {
+       "name": "Streak/Floating Button",
+       "in_list": true
+      },
+      {
+       "name": "Streak/Icon 40 White",
+       "in_list": true
+      },
+      {
+       "name": "System/Status Bar Android",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Alarm 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Play 16",
+       "in_list": true
+      },
+      {
+       "name": "Navigation/Tab Bar Cell",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Home 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Community 24",
+       "in_list": true
+      }
+     ]
+    },
+    {
+     "order": 4,
+     "title": "S10-story-detail",
+     "flow": "스토리 상세",
+     "state": "무료 유저",
+     "figma_name": "스토리 / 스토리 상세 / 무료 유저",
+     "app_image": "screens/50022-154156-03-app.jpg",
+     "figma_image": "screens/50022-154156-03-fig.jpg",
+     "source": "24.08 Sprint AN - KOEN 스토리관 유료화 2 / 유닛 상세",
+     "parts": [
+      {
+       "name": "Icon/Chevron Left 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Alarm 24",
+       "in_list": true
+      },
+      {
+       "name": "System/Status Bar Android",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Premium Only 24",
+       "in_list": true
+      }
+     ]
+    },
+    {
+     "order": 5,
+     "title": "S20-story-narration",
+     "flow": "",
+     "state": "",
+     "figma_name": "",
+     "app_image": "screens/50022-154156-04-app.jpg",
+     "figma_image": null,
+     "source": "",
+     "parts": []
+    },
+    {
+     "order": 6,
+     "title": "S21-story-user-line-listening",
+     "flow": "",
+     "state": "",
+     "figma_name": "",
+     "app_image": "screens/50022-154156-05-app.jpg",
+     "figma_image": null,
+     "source": "",
+     "parts": []
+    },
+    {
+     "order": 7,
+     "title": "S22-story-retry-prompt",
+     "flow": "",
+     "state": "",
+     "figma_name": "",
+     "app_image": "screens/50022-154156-06-app.jpg",
+     "figma_image": null,
+     "source": "",
+     "parts": []
+    },
+    {
+     "order": 8,
+     "title": "S23-story-paused-carousel",
+     "flow": "",
+     "state": "",
+     "figma_name": "",
+     "app_image": "screens/50022-154156-07-app.jpg",
+     "figma_image": null,
+     "source": "",
+     "parts": []
+    },
+    {
+     "order": 9,
+     "title": "S24-story-quit",
+     "flow": "",
+     "state": "",
+     "figma_name": "",
+     "app_image": "screens/50022-154156-08-app.jpg",
+     "figma_image": null,
+     "source": "",
+     "parts": []
+    }
+   ]
+  },
+  {
+   "feature": "스토리 · 한글",
+   "screens": [
+    {
+     "order": 1,
+     "title": "한글 · 플레이어",
+     "flow": "플레이어",
+     "state": "기본",
+     "figma_name": "스토리 한글 / 플레이어 / 기본",
+     "app_image": "screens/50022-191035-00-app.jpg",
+     "figma_image": "screens/50022-191035-00-fig.jpg",
+     "source": "Sprint P - 스토리관 파인튜닝 / 스토리 플레이어, 내레이션",
+     "parts": [
+      {
+       "name": "Progress/Linear",
+       "in_list": true
+      }
+     ]
+    },
+    {
+     "order": 2,
+     "title": "한글 · 강의 진행",
+     "flow": "플레이어",
+     "state": "강의 진행",
+     "figma_name": "스토리 한글 / 플레이어 / 강의 진행",
+     "app_image": "screens/50022-191035-01-app.jpg",
+     "figma_image": "screens/50022-191035-01-fig.jpg",
+     "source": "Sprint P - 스토리관 파인튜닝 / 스토리 플레이어, 내레이션",
+     "parts": [
+      {
+       "name": "Progress/Linear",
+       "in_list": true
+      }
+     ]
+    },
+    {
+     "order": 3,
+     "title": "플레이어 컨트롤",
+     "flow": "플레이어",
+     "state": "컨트롤",
+     "figma_name": "스토리 / 플레이어 / 컨트롤",
+     "app_image": "screens/50022-191035-02-app.jpg",
+     "figma_image": "screens/50022-191035-02-fig.jpg",
+     "source": "Sprint V - 파인튜닝 / 스토리 플레이어, 컨트롤",
+     "parts": [
+      {
+       "name": "Progress/Linear",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Sample Listen 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Close 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Settings 24",
+       "in_list": true
+      },
+      {
+       "name": "Story/Line Card Swipe Guide",
+       "in_list": true
+      }
+     ]
+    },
+    {
+     "order": 4,
+     "title": "스토리 목록",
+     "flow": "스토리 목록",
+     "state": "기본",
+     "figma_name": "스토리 / 스토리 목록 / 기본",
+     "app_image": "screens/50022-191035-03-app.jpg",
+     "figma_image": "screens/50022-191035-03-fig.jpg",
+     "source": "24.08 Sprint AN - KOEN 스토리관 유료화 2 / 스토리 메인",
+     "parts": [
+      {
+       "name": "Badge/Free",
+       "in_list": true
+      },
+      {
+       "name": "Streak/Floating Button Set",
+       "in_list": true
+      },
+      {
+       "name": "Streak/Floating Button",
+       "in_list": true
+      },
+      {
+       "name": "Streak/Icon 40 White",
+       "in_list": true
+      },
+      {
+       "name": "System/Status Bar Android",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Alarm 24",
+       "in_list": true
+      },
+      {
+       "name": "Chip/Premium",
+       "in_list": true
+      },
+      {
+       "name": "Navigation/Tab Bar",
+       "in_list": true
+      },
+      {
+       "name": "Navigation/Tab Bar Cell",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Home 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Premium Only 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Community 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Profile 24",
+       "in_list": true
+      }
+     ]
+    },
+    {
+     "order": 5,
+     "title": "스토리 목록 (스크롤)",
+     "flow": "스토리 목록",
+     "state": "스크롤",
+     "figma_name": "스토리 / 스토리 목록 / 스크롤",
+     "app_image": "screens/50022-191035-04-app.jpg",
+     "figma_image": "screens/50022-191035-04-fig.jpg",
+     "source": "24.08 Sprint AN - KOEN 스토리관 유료화 2 / 스토리 메인",
+     "parts": [
+      {
+       "name": "Badge/Free",
+       "in_list": true
+      },
+      {
+       "name": "Streak/Floating Button Set",
+       "in_list": true
+      },
+      {
+       "name": "Streak/Floating Button",
+       "in_list": true
+      },
+      {
+       "name": "Streak/Icon 40 White",
+       "in_list": true
+      },
+      {
+       "name": "System/Status Bar Android",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Alarm 24",
+       "in_list": true
+      },
+      {
+       "name": "Chip/Premium",
+       "in_list": true
+      },
+      {
+       "name": "Navigation/Tab Bar",
+       "in_list": true
+      },
+      {
+       "name": "Navigation/Tab Bar Cell",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Home 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Premium Only 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Community 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Profile 24",
+       "in_list": true
+      }
+     ]
+    },
+    {
+     "order": 6,
+     "title": "한글 · 에피소드 목록",
+     "flow": "에피소드 목록",
+     "state": "기본",
+     "figma_name": "스토리 한글 / 에피소드 목록 / 기본",
+     "app_image": "screens/50022-191035-05-app.jpg",
+     "figma_image": "screens/50022-191035-05-fig.jpg",
+     "source": "24.08 Sprint AN - KOEN 스토리관 유료화 2 / 상세 / 무료 콘텐츠 하이라이트",
+     "parts": [
+      {
+       "name": "Badge/Free",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Chevron Left 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Alarm 24",
+       "in_list": true
+      },
+      {
+       "name": "System/Status Bar Android",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Play 24",
+       "in_list": true
+      }
+     ]
+    },
+    {
+     "order": 7,
+     "title": "스토리 · Ep.1 상세",
+     "flow": "에피소드 상세",
+     "state": "Ep.1",
+     "figma_name": "스토리 / 에피소드 상세 / Ep.1",
+     "app_image": "screens/50022-191035-06-app.jpg",
+     "figma_image": "screens/50022-191035-06-fig.jpg",
+     "source": "24.08 Sprint AN - KOEN 스토리관 유료화 2 / 상세 / 무료",
+     "parts": [
+      {
+       "name": "Badge/Free",
+       "in_list": true
+      },
+      {
+       "name": "Score/Grade 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Chevron Right 16",
+       "in_list": true
+      },
+      {
+       "name": "Story/Script Line",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Lesson Play 24",
+       "in_list": true
+      },
+      {
+       "name": "score_24x24_B",
+       "in_list": false
+      },
+      {
+       "name": "Icon/Chevron Left 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Alarm 24",
+       "in_list": true
+      },
+      {
+       "name": "System/Status Bar Android",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Play 24",
+       "in_list": true
+      }
+     ]
+    },
+    {
+     "order": 8,
+     "title": "스토리 · 표현 목록",
+     "flow": "표현 목록",
+     "state": "기본",
+     "figma_name": "스토리 / 표현 목록 / 기본",
+     "app_image": "screens/50022-191035-07-app.jpg",
+     "figma_image": "screens/50022-191035-07-fig.jpg",
+     "source": "24.08 Sprint AN - KOEN 스토리관 유료화 2 / 상세 > view all",
+     "parts": [
+      {
+       "name": "Story/Script Line",
+       "in_list": true
+      },
+      {
+       "name": "Score/Grade 24",
+       "in_list": true
+      },
+      {
+       "name": "score_24x24_B",
+       "in_list": false
+      },
+      {
+       "name": "score_24x24_C",
+       "in_list": false
+      },
+      {
+       "name": "score_24x24_F",
+       "in_list": false
+      },
+      {
+       "name": "Icon/Lesson Play 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Chevron Left 24",
+       "in_list": true
+      },
+      {
+       "name": "System/Status Bar Android",
+       "in_list": true
+      }
+     ]
+    },
+    {
+     "order": 9,
+     "title": "스토리 플레이어 · 내레이션",
+     "flow": "플레이어",
+     "state": "내레이션",
+     "figma_name": "스토리 / 플레이어 / 내레이션",
+     "app_image": "screens/50022-191035-08-app.jpg",
+     "figma_image": "screens/50022-191035-08-fig.jpg",
+     "source": "Sprint P - 스토리관 파인튜닝 / 스토리 플레이어, 내레이션",
+     "parts": [
+      {
+       "name": "Progress/Linear",
+       "in_list": true
+      }
+     ]
+    },
+    {
+     "order": 10,
+     "title": "스토리 플레이어 · 대사",
+     "flow": "플레이어",
+     "state": "대사",
+     "figma_name": "스토리 / 플레이어 / 대사",
+     "app_image": "screens/50022-191035-09-app.jpg",
+     "figma_image": "screens/50022-191035-09-fig.jpg",
+     "source": "Sprint P - 스토리관 파인튜닝 / 스토리 플레이어, 대사",
+     "parts": [
+      {
+       "name": "Progress/Linear",
+       "in_list": true
+      }
+     ]
+    },
+    {
+     "order": 11,
+     "title": "스토리 플레이어 · 발화",
+     "flow": "플레이어",
+     "state": "발화",
+     "figma_name": "스토리 / 플레이어 / 발화",
+     "app_image": "screens/50022-191035-10-app.jpg",
+     "figma_image": "screens/50022-191035-10-fig.jpg",
+     "source": "Sprint P - 스토리관 파인튜닝 / 스토리 플레이어, 발화",
+     "parts": [
+      {
+       "name": "Progress/Linear",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Sample Listen 25",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Sample Listen 16",
+       "in_list": true
+      }
+     ]
+    },
+    {
+     "order": 12,
+     "title": "스토리 · Swipe to Skip 안내",
+     "flow": "플레이어",
+     "state": "Swipe to Skip 안내",
+     "figma_name": "스토리 / 플레이어 / Swipe to Skip 안내",
+     "app_image": "screens/50022-191035-11-app.jpg",
+     "figma_image": "screens/50022-191035-11-fig.jpg",
+     "source": "Sprint V - 파인튜닝 / 스토리 플레이어, Swipe to Skip 안내",
+     "parts": [
+      {
+       "name": "Progress/Linear",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Sample Listen 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Close 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Settings 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Sample Listen 25",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Sample Listen 16",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Bookmark 16",
+       "in_list": true
+      },
+      {
+       "name": "Story/Line Card Swipe Guide",
+       "in_list": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "feature": "스트릭",
+   "screens": [
+    {
+     "order": 1,
+     "title": "스트릭 식물",
+     "flow": "스트릭 식물",
+     "state": "기본",
+     "figma_name": "스트릭 / 스트릭 식물 / 기본",
+     "app_image": "screens/50022-192097-00-app.jpg",
+     "figma_image": "screens/50022-192097-00-fig.jpg",
+     "source": "25.10 - 디테일 개선 작업(26.08 수정) / 스트릭 페이지, about 아이콘",
+     "parts": [
+      {
+       "name": "System/Status Bar Android",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Info Small 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Close 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Tab Setting 24",
+       "in_list": true
+      },
+      {
+       "name": "Streak/Calendar Month",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Chevron Left 20",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Chevron Right",
+       "in_list": true
+      },
+      {
+       "name": "Streak/Calendar Date Cell",
+       "in_list": true
+      },
+      {
+       "name": "Streak/Freeze Item",
+       "in_list": true
+      },
+      {
+       "name": "Streak/Icon 40 Green",
+       "in_list": true
+      }
+     ]
+    },
+    {
+     "order": 2,
+     "title": "스트릭 식물 (스크롤)",
+     "flow": "스트릭 식물",
+     "state": "스크롤",
+     "figma_name": "스트릭 / 스트릭 식물 / 스크롤",
+     "app_image": "screens/50022-192097-01-app.jpg",
+     "figma_image": "screens/50022-192097-01-fig.jpg",
+     "source": "Sprint AE - 다크모드 / O / Streak Page_02 (Tokenized)",
+     "parts": [
+      {
+       "name": "System/Status Bar Android",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Close 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Tab Setting 24",
+       "in_list": true
+      },
+      {
+       "name": "Streak/Calendar Month",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Chevron Left 20",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Chevron Right",
+       "in_list": true
+      },
+      {
+       "name": "Streak/Calendar Date Cell",
+       "in_list": true
+      },
+      {
+       "name": "Streak/Freeze Item",
+       "in_list": true
+      },
+      {
+       "name": "Streak/Icon 40 Green",
+       "in_list": true
+      }
+     ]
+    },
+    {
+     "order": 3,
+     "title": "스트릭 About",
+     "flow": "About",
+     "state": "기본",
+     "figma_name": "스트릭 / About / 기본",
+     "app_image": "screens/50022-192097-02-app.jpg",
+     "figma_image": "screens/50022-192097-02-fig.jpg",
+     "source": "Sprint Y - 스트릭 프리즈 / O / 스트릭 About",
+     "parts": [
+      {
+       "name": "System/Status Bar Android",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Close 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Tab Setting 24",
+       "in_list": true
+      },
+      {
+       "name": "Streak/Calendar Month",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Chevron Left 20",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Chevron Right",
+       "in_list": true
+      },
+      {
+       "name": "Streak/Calendar Date Cell",
+       "in_list": true
+      },
+      {
+       "name": "Streak/Icon 40 Green",
+       "in_list": true
+      },
+      {
+       "name": "Bottom Sheet/Top",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Close 20",
+       "in_list": true
+      },
+      {
+       "name": "Progress/Step Dots",
+       "in_list": true
+      },
+      {
+       "name": "Progress/Bar Cell",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Empty 20",
+       "in_list": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "feature": "페이월·구독",
+   "screens": [
+    {
+     "order": 1,
+     "title": "페이월 · 훅",
+     "flow": "훅",
+     "state": "기본",
+     "figma_name": "페이월 / 훅 / 기본",
+     "app_image": "screens/50022-192713-00-app.jpg",
+     "figma_image": "screens/50022-192713-00-fig.jpg",
+     "source": "ENKO / 프리미엄 혜택",
+     "parts": [
+      {
+       "name": "System/Status Bar Android",
+       "in_list": true
+      },
+      {
+       "name": "Button/Medium Line Button White Default",
+       "in_list": false
+      }
+     ]
+    },
+    {
+     "order": 2,
+     "title": "페이월 · 혜택",
+     "flow": "혜택",
+     "state": "기본",
+     "figma_name": "페이월 / 혜택 / 기본",
+     "app_image": "screens/50022-192713-01-app.jpg",
+     "figma_image": "screens/50022-192713-01-fig.jpg",
+     "source": "ENKO / 프리미엄 혜택",
+     "parts": [
+      {
+       "name": "System/Status Bar Android",
+       "in_list": true
+      },
+      {
+       "name": "Button/Medium Line Button White Default",
+       "in_list": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "feature": "커뮤니티",
+   "screens": [
+    {
+     "order": 1,
+     "title": "C01-community-feed",
+     "flow": "",
+     "state": "",
+     "figma_name": "",
+     "app_image": null,
+     "figma_image": null,
+     "source": "",
+     "parts": []
+    },
+    {
+     "order": 2,
+     "title": "C02-post-more-menu",
+     "flow": "",
+     "state": "",
+     "figma_name": "",
+     "app_image": null,
+     "figma_image": null,
+     "source": "",
+     "parts": []
+    },
+    {
+     "order": 3,
+     "title": "C03-community-study",
+     "flow": "",
+     "state": "",
+     "figma_name": "",
+     "app_image": null,
+     "figma_image": null,
+     "source": "",
+     "parts": []
+    },
+    {
+     "order": 4,
+     "title": "C04-notice-detail",
+     "flow": "공지 상세",
+     "state": "기본",
+     "figma_name": "커뮤니티 / 공지 상세 / 기본",
+     "app_image": null,
+     "figma_image": "screens/50022-201248-03-fig.jpg",
+     "source": "Sprint S - 친구추가, 커뮤니티 개선 / 게시물 상세",
+     "parts": [
+      {
+       "name": "Icon/Chevron Left 24",
+       "in_list": true
+      },
+      {
+       "name": "System/Status Bar iOS",
+       "in_list": true
+      },
+      {
+       "name": "Community/Profile Row BG",
+       "in_list": true
+      },
+      {
+       "name": "Community/Profile Row",
+       "in_list": true
+      },
+      {
+       "name": "Profile/Avatar Stroke 36",
+       "in_list": true
+      },
+      {
+       "name": "Profile/Avatar 36",
+       "in_list": true
+      },
+      {
+       "name": "Streak/Icon 20 Green",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Acv Icon 20",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Menu 20",
+       "in_list": true
+      },
+      {
+       "name": "Community/Post Top",
+       "in_list": true
+      },
+      {
+       "name": "Button/Play Pause",
+       "in_list": true
+      },
+      {
+       "name": "Progress/Pagination Dots",
+       "in_list": true
+      },
+      {
+       "name": "Progress/Pagination Dot",
+       "in_list": true
+      },
+      {
+       "name": "Community/Post Bottom",
+       "in_list": true
+      },
+      {
+       "name": "Community/Tag",
+       "in_list": true
+      },
+      {
+       "name": "ic_20_like/fill",
+       "in_list": false
+      },
+      {
+       "name": "Icon/Reply Outline 20",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Text Send 24",
+       "in_list": true
+      }
+     ]
+    },
+    {
+     "order": 5,
+     "title": "커뮤니티 피드",
+     "flow": "피드",
+     "state": "기본",
+     "figma_name": "커뮤니티 / 피드 / 기본",
+     "app_image": null,
+     "figma_image": "screens/50022-201248-04-fig.jpg",
+     "source": "Sprint S - 친구추가, 커뮤니티 개선 / 커뮤니티 피드",
+     "parts": [
+      {
+       "name": "Community/Post Set 1",
+       "in_list": true
+      },
+      {
+       "name": "Community/Profile Row BG",
+       "in_list": true
+      },
+      {
+       "name": "Community/Profile Row",
+       "in_list": true
+      },
+      {
+       "name": "Profile/Avatar Stroke 36",
+       "in_list": true
+      },
+      {
+       "name": "Profile/Avatar 36",
+       "in_list": true
+      },
+      {
+       "name": "Streak/Icon 20 Green",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Acv Icon 20",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Menu 20",
+       "in_list": true
+      },
+      {
+       "name": "Community/Post Top",
+       "in_list": true
+      },
+      {
+       "name": "Community/Post Bottom",
+       "in_list": true
+      },
+      {
+       "name": "Community/Tag",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Like Outline 20",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Reply Outline 20",
+       "in_list": true
+      },
+      {
+       "name": "Profile_Teuida_Community",
+       "in_list": false
+      },
+      {
+       "name": "Community/Teuida Mark 18",
+       "in_list": true
+      },
+      {
+       "name": "ic_20_like/fill",
+       "in_list": false
+      },
+      {
+       "name": "ic_20_reply/fill",
+       "in_list": false
+      },
+      {
+       "name": "Community/Post Set 2",
+       "in_list": true
+      },
+      {
+       "name": "Progress/Pagination Dots",
+       "in_list": true
+      },
+      {
+       "name": "Progress/Pagination Dot",
+       "in_list": true
+      }
+     ]
+    },
+    {
+     "order": 6,
+     "title": "커뮤니티 · Study",
+     "flow": "피드",
+     "state": "Study",
+     "figma_name": "커뮤니티 / 피드 / Study",
+     "app_image": null,
+     "figma_image": "screens/50022-201248-05-fig.jpg",
+     "source": "Sprint S - 친구추가, 커뮤니티 개선 / 커뮤니티 피드",
+     "parts": [
+      {
+       "name": "Community/Post Set 1",
+       "in_list": true
+      },
+      {
+       "name": "Community/Profile Row BG",
+       "in_list": true
+      },
+      {
+       "name": "Community/Profile Row",
+       "in_list": true
+      },
+      {
+       "name": "Profile/Avatar Stroke 36",
+       "in_list": true
+      },
+      {
+       "name": "Profile/Avatar 36",
+       "in_list": true
+      },
+      {
+       "name": "Streak/Icon 20 Green",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Acv Icon 20",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Menu 20",
+       "in_list": true
+      },
+      {
+       "name": "Community/Post Top",
+       "in_list": true
+      },
+      {
+       "name": "Community/Post Bottom",
+       "in_list": true
+      },
+      {
+       "name": "Community/Tag",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Like Outline 20",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Reply Outline 20",
+       "in_list": true
+      },
+      {
+       "name": "Profile_Teuida_Community",
+       "in_list": false
+      },
+      {
+       "name": "Community/Teuida Mark 18",
+       "in_list": true
+      },
+      {
+       "name": "ic_20_like/fill",
+       "in_list": false
+      },
+      {
+       "name": "ic_20_reply/fill",
+       "in_list": false
+      },
+      {
+       "name": "Community/Post Set 2",
+       "in_list": true
+      },
+      {
+       "name": "Progress/Pagination Dots",
+       "in_list": true
+      },
+      {
+       "name": "Progress/Pagination Dot",
+       "in_list": true
+      }
+     ]
+    },
+    {
+     "order": 7,
+     "title": "알림함",
+     "flow": "알림함",
+     "state": "기본",
+     "figma_name": "커뮤니티 / 알림함 / 기본",
+     "app_image": null,
+     "figma_image": "screens/50022-201248-06-fig.jpg",
+     "source": "Sprint S - 친구추가, 커뮤니티 개선 / 알림함",
+     "parts": [
+      {
+       "name": "Button/Old Fill Set",
+       "in_list": false
+      },
+      {
+       "name": "Icon/Chevron Left 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Menu 24",
+       "in_list": true
+      },
+      {
+       "name": "System/Status Bar iOS",
+       "in_list": true
+      }
+     ]
+    },
+    {
+     "order": 8,
+     "title": "커뮤니티 가이드라인",
+     "flow": "가이드라인",
+     "state": "기본",
+     "figma_name": "커뮤니티 / 가이드라인 / 기본",
+     "app_image": null,
+     "figma_image": "screens/50022-201248-07-fig.jpg",
+     "source": "Sprint S - 친구추가, 커뮤니티 개선 / 커뮤니티 가이드라인",
+     "parts": [
+      {
+       "name": "Icon/Chevron Left 24",
+       "in_list": true
+      },
+      {
+       "name": "System/Status Bar iOS",
+       "in_list": true
+      },
+      {
+       "name": "Community/Post Set 1",
+       "in_list": true
+      },
+      {
+       "name": "Community/Profile Row BG",
+       "in_list": true
+      },
+      {
+       "name": "Community/Profile Row",
+       "in_list": true
+      },
+      {
+       "name": "Profile/Avatar Stroke 36",
+       "in_list": true
+      },
+      {
+       "name": "Profile/Avatar 36",
+       "in_list": true
+      },
+      {
+       "name": "Streak/Icon 20 Green",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Acv Icon 20",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Menu 20",
+       "in_list": true
+      },
+      {
+       "name": "Community/Post Top",
+       "in_list": true
+      },
+      {
+       "name": "Community/Post Bottom",
+       "in_list": true
+      },
+      {
+       "name": "Community/Tag",
+       "in_list": true
+      },
+      {
+       "name": "ic_20_like/fill",
+       "in_list": false
+      },
+      {
+       "name": "Icon/Reply Outline 20",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Text Send 24",
+       "in_list": true
+      }
+     ]
+    },
+    {
+     "order": 9,
+     "title": "게시물 상세",
+     "flow": "게시물 상세",
+     "state": "기본",
+     "figma_name": "커뮤니티 / 게시물 상세 / 기본",
+     "app_image": null,
+     "figma_image": "screens/50022-201248-08-fig.jpg",
+     "source": "Sprint S - 친구추가, 커뮤니티 개선 / 게시물 상세",
+     "parts": [
+      {
+       "name": "Icon/Chevron Left 24",
+       "in_list": true
+      },
+      {
+       "name": "System/Status Bar iOS",
+       "in_list": true
+      },
+      {
+       "name": "Community/Profile Row BG",
+       "in_list": true
+      },
+      {
+       "name": "Community/Profile Row",
+       "in_list": true
+      },
+      {
+       "name": "Profile/Avatar Stroke 36",
+       "in_list": true
+      },
+      {
+       "name": "Profile/Avatar 36",
+       "in_list": true
+      },
+      {
+       "name": "Streak/Icon 20 Green",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Acv Icon 20",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Menu 20",
+       "in_list": true
+      },
+      {
+       "name": "Community/Post Top",
+       "in_list": true
+      },
+      {
+       "name": "Button/Play Pause",
+       "in_list": true
+      },
+      {
+       "name": "Progress/Pagination Dots",
+       "in_list": true
+      },
+      {
+       "name": "Progress/Pagination Dot",
+       "in_list": true
+      },
+      {
+       "name": "Community/Post Bottom",
+       "in_list": true
+      },
+      {
+       "name": "Community/Tag",
+       "in_list": true
+      },
+      {
+       "name": "ic_20_like/fill",
+       "in_list": false
+      },
+      {
+       "name": "Icon/Reply Outline 20",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Text Send 24",
+       "in_list": true
+      }
+     ]
+    },
+    {
+     "order": 10,
+     "title": "게시물 댓글",
+     "flow": "게시물 상세",
+     "state": "댓글",
+     "figma_name": "커뮤니티 / 게시물 상세 / 댓글",
+     "app_image": null,
+     "figma_image": "screens/50022-201248-09-fig.jpg",
+     "source": "Sprint S - 친구추가, 커뮤니티 개선 / 게시물 상세, 댓글",
+     "parts": [
+      {
+       "name": "Community/Profile Row BG",
+       "in_list": true
+      },
+      {
+       "name": "Community/Profile Row",
+       "in_list": true
+      },
+      {
+       "name": "Profile/Avatar Stroke 36",
+       "in_list": true
+      },
+      {
+       "name": "Profile/Avatar 36",
+       "in_list": true
+      },
+      {
+       "name": "Streak/Icon 20 Green",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Acv Icon 20",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Menu 20",
+       "in_list": true
+      },
+      {
+       "name": "Community/Post Top Comment",
+       "in_list": true
+      },
+      {
+       "name": "Community/Post Bottom Has Reply",
+       "in_list": true
+      },
+      {
+       "name": "ic_16_like/fill",
+       "in_list": false
+      },
+      {
+       "name": "Community/Profile Row Reply",
+       "in_list": true
+      },
+      {
+       "name": "Profile/Avatar Stroke 28",
+       "in_list": true
+      },
+      {
+       "name": "Community/Post Top Reply",
+       "in_list": true
+      },
+      {
+       "name": "Community/Post Bottom Reply",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Like Outline 16",
+       "in_list": true
+      },
+      {
+       "name": "Community/Post Set 1",
+       "in_list": true
+      },
+      {
+       "name": "Community/Post Top",
+       "in_list": true
+      },
+      {
+       "name": "Community/Post Bottom",
+       "in_list": true
+      },
+      {
+       "name": "Community/Tag",
+       "in_list": true
+      },
+      {
+       "name": "ic_20_like/fill",
+       "in_list": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "feature": "프로필·친구",
+   "screens": [
+    {
+     "order": 1,
+     "title": "프로필",
+     "flow": "내 프로필",
+     "state": "기본",
+     "figma_name": "프로필 / 내 프로필 / 기본",
+     "app_image": null,
+     "figma_image": "screens/50022-216472-00-fig.jpg",
+     "source": "Sprint S - 친구추가, 커뮤니티 개선 / 내 프로필",
+     "parts": [
+      {
+       "name": "Profile/Header",
+       "in_list": true
+      },
+      {
+       "name": "Profile/Avatar Stroke 63",
+       "in_list": true
+      },
+      {
+       "name": "Profile/Avatar 63",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Edit Profile 16",
+       "in_list": true
+      },
+      {
+       "name": "Button/Sub 38",
+       "in_list": true
+      },
+      {
+       "name": "Navigation/Nav Bar",
+       "in_list": true
+      },
+      {
+       "name": "System/Status Bar iOS",
+       "in_list": true
+      },
+      {
+       "name": "Navigation/Nav Bar Cell",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Tab Setting 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Home 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Community 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Profile 24",
+       "in_list": true
+      }
+     ]
+    },
+    {
+     "order": 2,
+     "title": "프로필 · 업적",
+     "flow": "내 프로필",
+     "state": "업적",
+     "figma_name": "프로필 / 내 프로필 / 업적",
+     "app_image": null,
+     "figma_image": "screens/50022-216472-01-fig.jpg",
+     "source": "Sprint S - 친구추가, 커뮤니티 개선 / 내 프로필",
+     "parts": [
+      {
+       "name": "Profile/Header",
+       "in_list": true
+      },
+      {
+       "name": "Profile/Avatar Stroke 63",
+       "in_list": true
+      },
+      {
+       "name": "Profile/Avatar 63",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Edit Profile 16",
+       "in_list": true
+      },
+      {
+       "name": "Button/Sub 38",
+       "in_list": true
+      },
+      {
+       "name": "Navigation/Nav Bar",
+       "in_list": true
+      },
+      {
+       "name": "System/Status Bar iOS",
+       "in_list": true
+      },
+      {
+       "name": "Navigation/Nav Bar Cell",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Tab Setting 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Home 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Community 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Profile 24",
+       "in_list": true
+      }
+     ]
+    },
+    {
+     "order": 3,
+     "title": "친구 추가",
+     "flow": "친구 추가",
+     "state": "기본",
+     "figma_name": "프로필 / 친구 추가 / 기본",
+     "app_image": null,
+     "figma_image": "screens/50022-216472-02-fig.jpg",
+     "source": "Sprint S - 친구추가, 커뮤니티 개선 / 친구 추가",
+     "parts": [
+      {
+       "name": "Input/Search Field",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Search 16",
+       "in_list": true
+      },
+      {
+       "name": "Navigation/Nav Bar",
+       "in_list": true
+      },
+      {
+       "name": "System/Status Bar iOS",
+       "in_list": true
+      },
+      {
+       "name": "Navigation/Top Nav",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Chevron Left 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Empty 24",
+       "in_list": true
+      }
+     ]
+    },
+    {
+     "order": 4,
+     "title": "팔로잉 / 팔로워",
+     "flow": "팔로잉·팔로워",
+     "state": "기본",
+     "figma_name": "프로필 / 팔로잉·팔로워 / 기본",
+     "app_image": null,
+     "figma_image": "screens/50022-216472-03-fig.jpg",
+     "source": "Sprint S - 친구추가, 커뮤니티 개선 / 팔로잉·팔로워, 팔로잉 없음",
+     "parts": [
+      {
+       "name": "Button/Old Fill Set",
+       "in_list": false
+      },
+      {
+       "name": "Navigation/Nav Bar",
+       "in_list": true
+      },
+      {
+       "name": "System/Status Bar iOS",
+       "in_list": true
+      },
+      {
+       "name": "Navigation/Top Nav",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Chevron Left 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Empty 24",
+       "in_list": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "feature": "설정",
+   "screens": [
+    {
+     "order": 1,
+     "title": "설정 홈",
+     "flow": "설정 홈",
+     "state": "기본",
+     "figma_name": "설정 / 설정 홈 / 기본",
+     "app_image": "screens/50022-216710-00-app.jpg",
+     "figma_image": "screens/50022-216710-00-fig.jpg",
+     "source": "26.05 - Sprint B - 친구초대 / 세팅 페이지",
+     "parts": [
+      {
+       "name": "Icon/Chevron Left 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Menu 24",
+       "in_list": true
+      },
+      {
+       "name": "_StatusBar-time",
+       "in_list": false
+      }
+     ]
+    },
+    {
+     "order": 2,
+     "title": "언어 설정",
+     "flow": "언어 설정",
+     "state": "기본",
+     "figma_name": "설정 / 언어 설정 / 기본",
+     "app_image": "screens/50022-216710-01-app.jpg",
+     "figma_image": "screens/50022-216710-01-fig.jpg",
+     "source": "26.08 -  Sprint BT - 온보딩 언어선택 추가 / 스페인어, 언어 설정 변경 완료",
+     "parts": [
+      {
+       "name": "System/Home Indicator iOS",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Chevron Left 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Menu 24",
+       "in_list": true
+      },
+      {
+       "name": "_StatusBar-time",
+       "in_list": false
+      },
+      {
+       "name": "Icon/Flag",
+       "in_list": true
+      }
+     ]
+    },
+    {
+     "order": 3,
+     "title": "학습 리마인더",
+     "flow": "학습 리마인더",
+     "state": "기본",
+     "figma_name": "설정 / 학습 리마인더 / 기본",
+     "app_image": "screens/50022-216710-02-app.jpg",
+     "figma_image": "screens/50022-216710-02-fig.jpg",
+     "source": "26.04 - Sprint BL - 포커스 모드 / StudyReminder_06_Light",
+     "parts": [
+      {
+       "name": "System/Status Bar Android",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Chevron Left 24",
+       "in_list": true
+      },
+      {
+       "name": "Button/Medium Line Button White Default",
+       "in_list": false
+      }
+     ]
+    },
+    {
+     "order": 4,
+     "title": "권한",
+     "flow": "권한",
+     "state": "기본",
+     "figma_name": "설정 / 권한 / 기본",
+     "app_image": "screens/50022-216710-03-app.jpg",
+     "figma_image": "screens/50022-216710-03-fig.jpg",
+     "source": "Sprint N - 마이페이지 추가 / 권한, iOS",
+     "parts": [
+      {
+       "name": "System/Status Bar Android",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Chevron Left 24",
+       "in_list": true
+      },
+      {
+       "name": "Input/Switch iOS",
+       "in_list": true
+      }
+     ]
+    },
+    {
+     "order": 5,
+     "title": "비디오 옵션",
+     "flow": "비디오 옵션",
+     "state": "기본",
+     "figma_name": "설정 / 비디오 옵션 / 기본",
+     "app_image": "screens/50022-216710-04-app.jpg",
+     "figma_image": "screens/50022-216710-04-fig.jpg",
+     "source": "Sprint N - 마이페이지 추가 / 비디오 옵션, AOS",
+     "parts": [
+      {
+       "name": "System/Status Bar Android",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Chevron Left 24",
+       "in_list": true
+      },
+      {
+       "name": "Input/Switch AOS",
+       "in_list": true
+      }
+     ]
+    },
+    {
+     "order": 6,
+     "title": "초대 코드",
+     "flow": "초대 코드",
+     "state": "기본",
+     "figma_name": "설정 / 초대 코드 / 기본",
+     "app_image": "screens/50022-216710-05-app.jpg",
+     "figma_image": "screens/50022-216710-05-fig.jpg",
+     "source": "26.05 - Sprint B - 친구초대 / en",
+     "parts": [
+      {
+       "name": "System/Home Indicator iOS",
+       "in_list": true
+      },
+      {
+       "name": "System/Status Bar iOS",
+       "in_list": true
+      },
+      {
+       "name": "logo_teuida.png",
+       "in_list": false
+      },
+      {
+       "name": "Button/Full Width",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Chevron Left 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Menu 24",
+       "in_list": true
+      },
+      {
+       "name": "_StatusBar-time",
+       "in_list": false
+      },
+      {
+       "name": "Input/Text Field Form 1",
+       "in_list": true
+      },
+      {
+       "name": "Input/Text Field",
+       "in_list": true
+      }
+     ]
+    },
+    {
+     "order": 7,
+     "title": "알림 설정",
+     "flow": "알림 설정",
+     "state": "기본",
+     "figma_name": "설정 / 알림 설정 / 기본",
+     "app_image": "screens/50022-216710-06-app.jpg",
+     "figma_image": "screens/50022-216710-06-fig.jpg",
+     "source": "Sprint N - 마이페이지 추가 / 알림 설정, iOS",
+     "parts": [
+      {
+       "name": "System/Status Bar Android",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Chevron Left 24",
+       "in_list": true
+      },
+      {
+       "name": "Input/Switch iOS",
+       "in_list": true
+      }
+     ]
+    },
+    {
+     "order": 8,
+     "title": "Help & Feedback",
+     "flow": "Help & Feedback",
+     "state": "기본",
+     "figma_name": "설정 / Help & Feedback / 기본",
+     "app_image": "screens/50022-216710-07-app.jpg",
+     "figma_image": "screens/50022-216710-07-fig.jpg",
+     "source": "25.04 - 챗봇 / Help & Feedback",
+     "parts": [
+      {
+       "name": "Streak/Status Icon",
+       "in_list": true
+      }
+     ]
+    },
+    {
+     "order": 9,
+     "title": "설정 홈 (스크롤)",
+     "flow": "설정 홈",
+     "state": "스크롤",
+     "figma_name": "설정 / 설정 홈 / 스크롤",
+     "app_image": "screens/50022-216710-08-app.jpg",
+     "figma_image": "screens/50022-216710-08-fig.jpg",
+     "source": "26.05 - Sprint B - 친구초대 / 세팅 페이지",
+     "parts": [
+      {
+       "name": "Icon/Chevron Left 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Menu 24",
+       "in_list": true
+      },
+      {
+       "name": "_StatusBar-time",
+       "in_list": false
+      }
+     ]
+    },
+    {
+     "order": 10,
+     "title": "이용약관",
+     "flow": "이용약관",
+     "state": "기본",
+     "figma_name": "설정 / 이용약관 / 기본",
+     "app_image": "screens/50022-216710-09-app.jpg",
+     "figma_image": "screens/50022-216710-09-fig.jpg",
+     "source": "Sprint N - 마이페이지 추가 / 이용약관",
+     "parts": [
+      {
+       "name": "System/Status Bar Android",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Chevron Left 24",
+       "in_list": true
+      }
+     ]
+    },
+    {
+     "order": 11,
+     "title": "개인정보처리방침",
+     "flow": "",
+     "state": "",
+     "figma_name": "",
+     "app_image": "screens/50022-216710-10-app.jpg",
+     "figma_image": null,
+     "source": "",
+     "parts": []
+    },
+    {
+     "order": 12,
+     "title": "구매 복원 실패",
+     "flow": "구매 복원",
+     "state": "실패",
+     "figma_name": "설정 / 구매 복원 / 실패",
+     "app_image": "screens/50022-216710-11-app.jpg",
+     "figma_image": "screens/50022-216710-11-fig.jpg",
+     "source": "Sprint U - 구독 / 구매 복원 실패",
+     "parts": [
+      {
+       "name": "System/Status Bar Android",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Chevron Left 24",
+       "in_list": true
+      }
+     ]
+    },
+    {
+     "order": 13,
+     "title": "로그아웃 확인",
+     "flow": "로그아웃",
+     "state": "확인 팝업",
+     "figma_name": "설정 / 로그아웃 / 확인 팝업",
+     "app_image": "screens/50022-216710-12-app.jpg",
+     "figma_image": "screens/50022-216710-12-fig.jpg",
+     "source": "Sprint N - 마이페이지 추가 / 로그아웃 확인 팝업",
+     "parts": [
+      {
+       "name": "System/Status Bar Android",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Chevron Left 24",
+       "in_list": true
+      },
+      {
+       "name": "Button/Medium Line Button White Default",
+       "in_list": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "feature": "권한·시스템",
+   "screens": [
+    {
+     "order": 1,
+     "title": "P01-os-mic-permission",
+     "flow": "OS 마이크 권한",
+     "state": "기본",
+     "figma_name": "권한 / OS 마이크 권한 / 기본",
+     "app_image": "screens/50022-217400-00-app.jpg",
+     "figma_image": "screens/50022-217400-00-fig.jpg",
+     "source": "Sprint N - 마이페이지 추가 / 권한, iOS",
+     "parts": [
+      {
+       "name": "System/Status Bar Android",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Chevron Left 24",
+       "in_list": true
+      },
+      {
+       "name": "Input/Switch iOS",
+       "in_list": true
+      }
+     ]
+    },
+    {
+     "order": 2,
+     "title": "OS 마이크 권한",
+     "flow": "OS 마이크 권한",
+     "state": "기본",
+     "figma_name": "권한 / OS 마이크 권한 / 기본",
+     "app_image": "screens/50022-217400-01-app.jpg",
+     "figma_image": "screens/50022-217400-01-fig.jpg",
+     "source": "Sprint N - 마이페이지 추가 / 권한, iOS",
+     "parts": [
+      {
+       "name": "System/Status Bar Android",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Chevron Left 24",
+       "in_list": true
+      },
+      {
+       "name": "Input/Switch iOS",
+       "in_list": true
+      }
+     ]
+    },
+    {
+     "order": 3,
+     "title": "레슨 내 권한 안내",
+     "flow": "레슨 내 권한 안내",
+     "state": "기본",
+     "figma_name": "권한 / 레슨 내 권한 안내 / 기본",
+     "app_image": "screens/50022-217400-02-app.jpg",
+     "figma_image": "screens/50022-217400-02-fig.jpg",
+     "source": "Sprint X - 스터디키 광고 / O / 키 1개 보유 팝업",
+     "parts": [
+      {
+       "name": "Icon/Time 20",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Key 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Alarm 24",
+       "in_list": true
+      },
+      {
+       "name": "System/Status Bar Android",
+       "in_list": true
+      },
+      {
+       "name": "Streak/Floating Button Set",
+       "in_list": true
+      },
+      {
+       "name": "Streak/Floating Button",
+       "in_list": true
+      },
+      {
+       "name": "Streak/Icon 40 White",
+       "in_list": true
+      },
+      {
+       "name": "Navigation/Tab Bar Cell",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Home 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Community 24",
+       "in_list": true
+      },
+      {
+       "name": "Icon/Lesson Key 60",
+       "in_list": true
+      },
+      {
+       "name": "Button/Medium Line Button White Default",
+       "in_list": false
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,103 @@
+/* TEUIDA 디자인 시스템 토큰 (라이트 모드, 2026-11-06) */
+:root {
+  --color-background-primary: #F5F5F5;
+  --color-background-secondary: #FFFFFF;
+  --color-background-tertiary: #E8E8E8;
+  --color-background-dim-01: #000000CC;
+  --color-background-dim-02: #00000099;
+  --color-background-highlight-soft: #E8FFF2;
+  --color-text-primary: #252525;
+  --color-text-secondary: #616161;
+  --color-text-tertiary: #9E9E9E;
+  --color-text-unselected: #9E9E9E;
+  --color-text-highlight: #00E2B9;
+  --color-text-on-color: #FFFFFF;
+  --color-text-inactive: #FFFFFF;
+  --color-text-alert: #FF3F59;
+  --color-text-failed: #FF6F75;
+  --color-text-correct: #00A1A2;
+  --color-icon-primary: #252525;
+  --color-icon-secondary: #757575;
+  --color-icon-tertiary: #9E9E9E;
+  --color-icon-highlight: #00E2B9;
+  --color-icon-on-color: #FFFFFF;
+  --color-icon-unselected: #B7B7B7;
+  --color-icon-inactive: #DFDFDF;
+  --color-icon-highlight-blue: #6995FF;
+  --color-icon-highlight-red: #FF6F75;
+  --color-icon-highlight-purple: #A240E8;
+  --color-icon-transparent: #0000001A;
+  --color-icon-transparent-locked: #00000080;
+  --color-icon-bubble: #87ADFF;
+  --color-icon-bubble-background: #D7E6FF;
+  --color-border-secondary: #E8E8E8;
+  --color-border-tertiary: #C8C8C8;
+  --color-border-primary: #FFFFFF;
+  --color-border-highlight: #00E2B9;
+  --color-border-inactive: #9E9E9E;
+  --color-border-active: #757575;
+  --color-border-error: #FF6F75;
+  --color-border-success: #3BEDBC;
+  --color-button-primary: #00E2B9;
+  --color-button-text-primary: #252525;
+  --color-button-second-primary: #FFFFFF;
+  --color-button-secondary: #EFEFEF;
+  --color-button-text-secondary: #3F3F3F;
+  --color-button-outline-secondary: #B7B7B7;
+  --color-button-tertiary: #F5F5F5;
+  --color-button-text-tertiary: #FFFFFF;
+  --color-button-inactive: #DFDFDF;
+  --color-button-text-inactive: #9E9E9E;
+  --color-button-highlight: #3BEDBC;
+  --color-button-highlight-soft: #E8FFF2;
+  --color-button-text-highlight: #00A1A2;
+  --color-button-unfilled: #E8E8E8;
+  --color-gradient-unfilled: #DFDFDF;
+  --color-button-floating-background-inactive: #9E9E9E;
+  --color-button-play-transparent: #00000066;
+  --color-button-tag: #3BEDBC80;
+  --color-status-badge: #FF7298;
+  --spacing-screen-horizontal: 20px;
+  --spacing-screen-horizontal-wide: 24px;
+  --spacing-section-gap: 24px;
+  --spacing-item-gap: 12px;
+  --spacing-card-padding: 12px;
+  --spacing-card-padding-large: 16px;
+  --spacing-inline-gap: 8px;
+  --spacing-inline-gap-small: 4px;
+  --spacing-chip-gap: 6px;
+  --radius-4: 4px;
+  --radius-8: 8px;
+  --radius-12: 12px;
+  --radius-16: 16px;
+  --radius-24: 24px;
+  --radius-30: 30px;
+  --radius-full: 9999px;
+}
+.text-head-1-eb { font-family: "Noto Sans", sans-serif; font-weight: 800; font-size: 24px; line-height: 34px; }
+.text-head-2-eb { font-family: "Noto Sans", sans-serif; font-weight: 800; font-size: 22px; line-height: 30px; }
+.text-head-3-eb { font-family: "Noto Sans", sans-serif; font-weight: 800; font-size: 20px; line-height: 28px; }
+.text-head-3-b { font-family: "Noto Sans", sans-serif; font-weight: 700; font-size: 20px; line-height: 28px; }
+.text-head-3-m { font-family: "Noto Sans", sans-serif; font-weight: 500; font-size: 20px; line-height: 28px; }
+.text-head-4-b { font-family: "Noto Sans", sans-serif; font-weight: 700; font-size: 18px; line-height: 26px; }
+.text-head-4-m { font-family: "Noto Sans", sans-serif; font-weight: 500; font-size: 18px; line-height: 26px; }
+.text-head-5-b { font-family: "Noto Sans", sans-serif; font-weight: 700; font-size: 16px; line-height: 22px; }
+.text-subtitle-1-b { font-family: "Noto Sans", sans-serif; font-weight: 700; font-size: 16px; line-height: 22px; }
+.text-subtitle-1-m { font-family: "Noto Sans", sans-serif; font-weight: 500; font-size: 16px; line-height: 22px; }
+.text-subtitle-1-r { font-family: "Noto Sans", sans-serif; font-weight: 400; font-size: 16px; line-height: 22px; }
+.text-subtitle-2-b { font-family: "Noto Sans", sans-serif; font-weight: 700; font-size: 14px; line-height: 20px; }
+.text-subtitle-2-m { font-family: "Noto Sans", sans-serif; font-weight: 500; font-size: 14px; line-height: 20px; }
+.text-subtitle-2-r { font-family: "Noto Sans", sans-serif; font-weight: 400; font-size: 14px; line-height: 20px; }
+.text-body-1-r { font-family: "Noto Sans", sans-serif; font-weight: 400; font-size: 16px; line-height: 22px; }
+.text-body-2-r { font-family: "Noto Sans", sans-serif; font-weight: 400; font-size: 14px; line-height: 20px; }
+.text-button-1-b { font-family: "Noto Sans", sans-serif; font-weight: 700; font-size: 16px; line-height: 22px; }
+.text-button-1-m { font-family: "Noto Sans", sans-serif; font-weight: 500; font-size: 16px; line-height: 22px; }
+.text-button-2-b { font-family: "Noto Sans", sans-serif; font-weight: 700; font-size: 14px; line-height: 20px; }
+.text-button-2-m { font-family: "Noto Sans", sans-serif; font-weight: 500; font-size: 14px; line-height: 20px; }
+.text-caption-m { font-family: "Noto Sans", sans-serif; font-weight: 500; font-size: 12px; line-height: 18px; }
+.text-caption-r { font-family: "Noto Sans", sans-serif; font-weight: 400; font-size: 12px; line-height: 18px; }
+.text-caption-2-b { font-family: "Noto Sans", sans-serif; font-weight: 700; font-size: 12px; line-height: 16px; }
+.text-caption-2-m { font-family: "Noto Sans", sans-serif; font-weight: 500; font-size: 12px; line-height: 16px; }
+.text-caption-2-r { font-family: "Noto Sans", sans-serif; font-weight: 400; font-size: 12px; line-height: 16px; }
+.text-overline-r { font-family: "Noto Sans", sans-serif; font-weight: 400; font-size: 10px; line-height: 16px; }
+.text-number-eb { font-family: "Noto Sans", sans-serif; font-weight: 800; font-size: 32px; line-height: 40px; }

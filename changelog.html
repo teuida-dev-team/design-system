@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>변경 기록 · TEUIDA 디자인 시스템</title>
+<link rel="alternate" type="text/markdown" href="ai/changelog.md">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>:root{--bg:#F5F5F5;--surface:#FFFFFF;--ink:#252525;--ink2:#616161;--ink3:#9E9E9E;--line:#E8E8E8;--mint:#00E2B9;--mint-ink:#00A1A2;--mint-soft:#E8FFF2;--warn:#FF3F59;--warn-soft:#FFF0F2;--thumb:#2C2C2C;--code:#F0F0F0}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#161616;--surface:#202020;--ink:#EDEDED;--ink2:#B5B5B5;--ink3:#8A8A8A;--line:#333;--mint-ink:#3BEDBC;--mint-soft:#0F2E27;--warn-soft:#3A1A1F;--thumb:#2C2C2C;--code:#2A2A2A}}
+:root[data-theme="dark"]{--bg:#161616;--surface:#202020;--ink:#EDEDED;--ink2:#B5B5B5;--ink3:#8A8A8A;--line:#333;--mint-ink:#3BEDBC;--mint-soft:#0F2E27;--warn-soft:#3A1A1F;--thumb:#2C2C2C;--code:#2A2A2A}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.65 "Noto Sans KR",system-ui,sans-serif;word-break:keep-all;overflow-wrap:anywhere}
+a{color:var(--mint-ink)}
+code{font:13px/1.4 ui-monospace,SFMono-Regular,Menlo,monospace;background:var(--code);padding:1px 5px;border-radius:4px}
+pre{background:var(--code);padding:14px;border-radius:8px;overflow:auto}pre code{background:none;padding:0}
+.top{position:sticky;top:0;z-index:5;display:flex;align-items:center;justify-content:space-between;height:56px;padding:0 20px;background:var(--surface);border-bottom:1px solid var(--line)}
+.brand{display:flex;align-items:center;gap:8px;color:var(--ink);text-decoration:none;font-weight:800;letter-spacing:-.2px}
+.brand b{font-weight:500;color:var(--ink2)}
+.dot{width:14px;height:14px;border-radius:50%;background:var(--mint)}
+.menu{display:none;border:0;background:none;color:var(--ink);font-size:22px;padding:8px;cursor:pointer}
+.wrap{display:flex;max-width:1240px;margin:0 auto}
+.side{position:sticky;top:56px;align-self:flex-start;width:200px;flex:none;padding:24px 12px;height:calc(100vh - 56px);overflow:auto}
+.side a{display:block;padding:8px 12px;border-radius:8px;color:var(--ink2);text-decoration:none;font-weight:500}
+.side a:hover{background:var(--surface)}
+.side a[aria-current]{background:var(--mint-soft);color:var(--ink);font-weight:700}
+.upd{margin:20px 12px 0;font-size:12px;color:var(--ink3);line-height:1.7}.upd a{display:inline;padding:0;color:var(--ink3)}
+main{flex:1;min-width:0;padding:32px 32px 80px}
+h1{font-size:28px;line-height:1.3;margin:0 0 8px;font-weight:800;letter-spacing:-.4px}
+h2{font-size:20px;margin:40px 0 10px;font-weight:800;scroll-margin-top:70px}
+h2 small{font-size:14px;color:var(--ink3);font-weight:500}
+h3{font-size:16px;margin:24px 0 8px;font-weight:700}
+.lead,main>p:first-of-type{color:var(--ink2);font-size:16px}
+.note{color:var(--ink2);margin:4px 0}
+.tbl{overflow-x:auto;margin:10px 0;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{text-align:left;vertical-align:top;padding:10px 12px;border-bottom:1px solid var(--line)}
+th{font-weight:700;color:var(--ink2);background:var(--bg);white-space:nowrap}
+tr:last-child td{border-bottom:0}
+td code{white-space:nowrap}
+tr.dep td{opacity:.5}
+.val{white-space:nowrap;color:var(--ink2)}
+.sw{display:inline-block;vertical-align:-4px;width:18px;height:18px;border-radius:5px;margin-right:8px;background:var(--c);box-shadow:inset 0 0 0 1px rgba(127,127,127,.35)}
+.sw.none{background:repeating-linear-gradient(45deg,transparent 0 3px,var(--line) 3px 6px)}
+.bar{display:inline-block;height:10px;background:var(--mint);border-radius:2px;margin-right:8px;vertical-align:0}
+.radii{display:flex;flex-wrap:wrap;gap:12px}
+.rad{display:flex;flex-direction:column;gap:4px;width:130px;font-size:13px}
+.rad span{width:64px;height:48px;background:var(--mint-soft);border:2px solid var(--mint)}
+.rad small{color:var(--ink3)}
+.callout{background:var(--warn-soft);border-left:3px solid var(--warn);padding:12px 14px;border-radius:8px;margin:12px 0}
+.box{display:inline-block;width:14px;height:14px;border:1.5px solid var(--ink3);border-radius:3px;vertical-align:-2px}
+li:has(.box){list-style:none;margin-left:-20px}
+input[type=search]{width:100%;max-width:520px;height:44px;padding:0 14px;border:1px solid var(--line);border-radius:10px;background:var(--surface);color:var(--ink);font:inherit}
+input[type=search]:focus{outline:2px solid var(--mint);border-color:transparent}
+.filters{position:sticky;top:56px;z-index:3;background:var(--bg);padding:12px 0;display:flex;flex-direction:column;gap:10px}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{border:1px solid var(--line);background:var(--surface);color:var(--ink2);border-radius:8px;padding:6px 12px;font:inherit;font-size:14px;cursor:pointer}
+.chip.on{background:var(--ink);color:var(--surface);border-color:var(--ink)}
+.cnt{color:var(--ink3);font-size:13px;margin:0}
+.cat{color:var(--ink2);font-size:14px;margin:22px 0 8px;text-transform:none}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden;display:flex;flex-direction:column}
+.thumb{background:var(--thumb);height:170px;display:flex;align-items:center;justify-content:center;padding:10px}
+.thumb img{max-width:100%;max-height:100%;object-fit:contain}
+.card.small .thumb{height:96px}.card.small .thumb img{max-height:56px}
+.body{padding:12px 14px 14px}
+.body h4{margin:0 0 4px;font-size:14px;font-weight:700;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:-.2px}
+.body p{margin:0 0 6px;font-size:13.5px;color:var(--ink)}
+.kv{font-size:13px;color:var(--ink2);margin-top:3px}
+.kv span{display:inline-block;min-width:64px;margin-right:8px;font-weight:700;color:var(--ink)}
+.var{margin-top:8px;font-size:12px;color:var(--ink3);font-family:ui-monospace,Menlo,monospace}
+.warn{margin-left:6px;font:700 11px/1 "Noto Sans KR";color:var(--warn);background:var(--warn-soft);padding:3px 6px;border-radius:4px;vertical-align:1px}
+.arc{margin-top:8px}
+.arow{display:flex;gap:12px;padding:10px 0;border-top:1px solid var(--line)}
+.why{flex:none;width:200px;font-size:13px;font-weight:700;color:var(--ink2)}
+.names{display:flex;flex-wrap:wrap;gap:6px}
+.names code{font-size:12px}
+[hidden]{display:none!important}
+@media (max-width:860px){
+ .menu{display:block}
+ .side{position:fixed;top:56px;left:0;right:0;width:auto;height:auto;max-height:calc(100vh - 56px);background:var(--surface);border-bottom:1px solid var(--line);z-index:6;display:none;padding:8px 16px 16px}
+ body.open .side{display:block}
+ main{padding:24px 16px 64px}
+ .top{padding:0 16px}
+ h1{font-size:24px}
+ .grid{grid-template-columns:1fr}
+ .arow{flex-direction:column;gap:6px}.why{width:auto}
+}
+.spec{margin-top:12px;border-top:1px solid var(--line);padding-top:10px}
+.spec summary{cursor:pointer;font-weight:700;color:var(--mint-ink);font-size:14px}
+.card:has(.spec[open]){grid-column:1/-1;flex-direction:row}
+.card:has(.spec[open]) .thumb{width:240px;flex:none;height:auto;min-height:200px;align-items:flex-start;padding-top:24px}
+.card:has(.spec[open]) .body{flex:1;min-width:0}
+.spec h5{margin:16px 0 4px;font-size:13px}
+.spec td{font-size:13px}.spec td code,.spec .tk,.spec .prim{white-space:normal;word-break:break-all}
+.legend{font-size:12px;color:var(--ink2)}
+.tk,.prim,.raw{font:12px/1.3 ui-monospace,Menlo,monospace;padding:1px 5px;border-radius:4px;white-space:nowrap}
+.tk{background:var(--mint-soft);color:var(--mint-ink)}
+.prim{background:var(--code);color:var(--ink2)}
+.raw{background:var(--warn-soft);color:var(--warn)}
+.has-spec{margin-left:6px;font:700 11px/1 "Noto Sans KR";color:var(--mint-ink);background:var(--mint-soft);padding:3px 6px;border-radius:4px;vertical-align:1px}
+@media (max-width:860px){.card:has(.spec[open]){flex-direction:column}.card:has(.spec[open]) .thumb{width:auto}}
+.fixn{margin-left:6px;font:700 11px/1 "Noto Sans KR";color:var(--warn);background:var(--warn-soft);padding:3px 6px;border-radius:4px}
+.ind{display:inline-block;width:calc(var(--d)*14px)}
+.callout ul{margin:6px 0 0;padding-left:18px}.callout li{font-size:13px;margin:3px 0}
+.foot{margin-top:56px;padding-top:16px;border-top:1px solid var(--line);font-size:13px;color:var(--ink3)}
+.body h4 a{color:inherit;text-decoration:none}
+.cp{margin-left:4px;border:0;background:none;color:var(--ink3);cursor:pointer;font-size:13px;padding:2px 4px;border-radius:4px}
+.cp:hover{background:var(--code)}.cp.ok{color:var(--mint-ink)}.cp.ok::after{content:" 복사됨";font:12px "Noto Sans KR"}
+.card:target{outline:2px solid var(--mint)}
+.dl{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;margin:12px 0}
+.dl a{display:flex;flex-direction:column;padding:12px 14px;border:1px solid var(--line);border-radius:10px;background:var(--surface);color:var(--ink);text-decoration:none;font:700 14px ui-monospace,Menlo,monospace}
+.dl a:hover{border-color:var(--mint)}.dl small{font:12px "Noto Sans KR";color:var(--ink2);margin-top:2px}
+.vd{margin-top:14px}.vd summary{cursor:pointer;font-weight:700;font-size:13px;color:var(--ink2)}
+.vd h6{margin:14px 0 4px;font-size:12px}
+.svgs{display:flex;flex-wrap:wrap;gap:4px;margin-top:8px}.svgs a{font-size:11px;padding:2px 6px;border:1px solid var(--line);border-radius:4px;text-decoration:none;color:var(--ink2)}
+.card.small .thumb img{width:48px;height:48px}
+.toc{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0}.toc a{padding:5px 10px;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--ink2);text-decoration:none;font-size:13px}.toc small{color:var(--ink3)}
+.scr-row{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:14px}
+.scr{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px}
+.scr h4{margin:0 0 2px;font-size:14px}.scr .no{display:inline-block;min-width:22px;height:22px;line-height:22px;text-align:center;border-radius:11px;background:var(--mint-soft);color:var(--mint-ink);font-size:12px;margin-right:6px}
+.scr .flow{margin:0;font-size:12px;color:var(--ink2)}.scr .src{margin:2px 0 0;font-size:11px;color:var(--ink3)}
+.imgs{display:flex;gap:8px;margin-top:8px}.imgs figure{margin:0;flex:1;min-width:0}.imgs img{width:100%;border-radius:8px;border:1px solid var(--line);display:block}
+.imgs figcaption{font-size:11px;color:var(--ink3);text-align:center;margin-top:2px}
+.imgs .none div{aspect-ratio:375/812;display:flex;align-items:center;justify-content:center;text-align:center;border:1.5px dashed var(--warn);border-radius:8px;color:var(--warn);font-size:12px;font-weight:700}
+.scr details{margin-top:8px}.scr summary{font-size:12px;cursor:pointer;color:var(--ink2)}
+.parts{display:flex;flex-wrap:wrap;gap:4px;margin-top:6px}.parts a,.parts span{font:11px ui-monospace,Menlo,monospace;padding:2px 5px;border-radius:4px}
+.parts a{background:var(--mint-soft);color:var(--mint-ink);text-decoration:none}.parts span{background:var(--code);color:var(--ink3);text-decoration:line-through}
+</style></head>
+<body><header class="top"><a class="brand" href="index.html"><span class="dot"></span>TEUIDA <b>디자인 시스템</b></a>
+<button class="menu" aria-label="메뉴" onclick="document.body.classList.toggle('open')">☰</button></header>
+<div class="wrap"><nav class="side"><a href="index.html">시작하기</a><a href="rules.html">작업 규칙</a><a href="components.html">컴포넌트</a><a href="tokens.html">토큰</a><a href="screens.html">현행 화면</a><a href="description.html">디스크립션</a><a href="changelog.html" aria-current="page">변경 기록</a><a href="ai.html">Claude용 안내</a><p class="upd">갱신 2026-11-06<br><a href="ai/changelog.md">이 페이지 Markdown</a></p></nav>
+<main><h1>변경 기록</h1>
+<p>라이브러리와 사이트가 바뀐 내용이에요. 최신이 위에 있어요. 라이브러리는 주 1회 묶어서 게시하고, 게시 후 사이트도 다시 만들어요.</p>
+<h2>2026-11-05</h2>
+<ul>
+<li>사이트 첫 공개 (초안)</li>
+<li>부품 248개 목록, 아이콘·이미지를 뺀 144개 부품에 스펙 (크기·여백·간격·모서리·부분별 토큰·배리언트별 색)</li>
+<li>토큰 파일 (JSON · CSS), 색 대비 표</li>
+<li>배리언트 전체 스펙 (부품 72개, 기준과 다른 부분), 부품별 스펙 파일 (<code>ai/components/</code>, <code>data/specs/</code>)</li>
+<li>아이콘 SVG 127개 (아이콘 98종)</li>
+<li>현행 화면 168장 (기능 18개, 플로우 순서, 화면별 쓴 부품)</li>
+<li>라이브러리: Archive 부품 설명 첫 줄에 <code>📦 Archive</code> 표시 (게시 대기)</li>
+</ul>
+<h2>2026-11-04</h2>
+<ul>
+<li>라이브러리: 유리 탭바·유리 버튼·Nav Bar iOS 26 등 투명도 복구 (게시 대기)</li>
+</ul>
+<h2>2026-10-28</h2>
+<ul>
+<li><code>icon-tertiary</code>를 회색 #9E9E9E로 변경</li>
+</ul>
+<h2>2026-10-27</h2>
+<ul>
+<li>역할 토큰 정리: <code>text-on-color</code>, <code>icon-on-color</code>, <code>text-alert</code>, <code>text-failed</code> 등 "무엇을 칠하나 → 어떤 토큰" 표 확정</li>
+<li>텍스트 스타일 27개로 정리 (Caption 2, Head 4/M, Number/EB 추가)</li>
+</ul>
+<h2>2026-10-20</h2>
+<ul>
+<li>디자인 시스템 결정 20개 확정: 라이브러리 3페이지(Foundation · Components · Archive), 이름 규칙, 색 우선순위</li>
+</ul><footer class="foot">틀린 내용이 있거나 필요한 부품·토큰이 없으면 디자인 시스템 담당자에게 알려 주세요. 사이트와 피그마가 다르면 피그마가 기준이에요.</footer></main></div>
+<script>document.querySelectorAll('[data-copy]').forEach(b=>b.addEventListener('click',e=>{e.preventDefault();try{navigator.clipboard.writeText(b.dataset.copy);b.classList.add('ok');setTimeout(()=>b.classList.remove('ok'),1200);}catch(_){}}));</script></body></html>

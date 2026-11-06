@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>작업 규칙 · TEUIDA 디자인 시스템</title>
+<link rel="alternate" type="text/markdown" href="ai/rules.md">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>:root{--bg:#F5F5F5;--surface:#FFFFFF;--ink:#252525;--ink2:#616161;--ink3:#9E9E9E;--line:#E8E8E8;--mint:#00E2B9;--mint-ink:#00A1A2;--mint-soft:#E8FFF2;--warn:#FF3F59;--warn-soft:#FFF0F2;--thumb:#2C2C2C;--code:#F0F0F0}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#161616;--surface:#202020;--ink:#EDEDED;--ink2:#B5B5B5;--ink3:#8A8A8A;--line:#333;--mint-ink:#3BEDBC;--mint-soft:#0F2E27;--warn-soft:#3A1A1F;--thumb:#2C2C2C;--code:#2A2A2A}}
+:root[data-theme="dark"]{--bg:#161616;--surface:#202020;--ink:#EDEDED;--ink2:#B5B5B5;--ink3:#8A8A8A;--line:#333;--mint-ink:#3BEDBC;--mint-soft:#0F2E27;--warn-soft:#3A1A1F;--thumb:#2C2C2C;--code:#2A2A2A}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.65 "Noto Sans KR",system-ui,sans-serif;word-break:keep-all;overflow-wrap:anywhere}
+a{color:var(--mint-ink)}
+code{font:13px/1.4 ui-monospace,SFMono-Regular,Menlo,monospace;background:var(--code);padding:1px 5px;border-radius:4px}
+pre{background:var(--code);padding:14px;border-radius:8px;overflow:auto}pre code{background:none;padding:0}
+.top{position:sticky;top:0;z-index:5;display:flex;align-items:center;justify-content:space-between;height:56px;padding:0 20px;background:var(--surface);border-bottom:1px solid var(--line)}
+.brand{display:flex;align-items:center;gap:8px;color:var(--ink);text-decoration:none;font-weight:800;letter-spacing:-.2px}
+.brand b{font-weight:500;color:var(--ink2)}
+.dot{width:14px;height:14px;border-radius:50%;background:var(--mint)}
+.menu{display:none;border:0;background:none;color:var(--ink);font-size:22px;padding:8px;cursor:pointer}
+.wrap{display:flex;max-width:1240px;margin:0 auto}
+.side{position:sticky;top:56px;align-self:flex-start;width:200px;flex:none;padding:24px 12px;height:calc(100vh - 56px);overflow:auto}
+.side a{display:block;padding:8px 12px;border-radius:8px;color:var(--ink2);text-decoration:none;font-weight:500}
+.side a:hover{background:var(--surface)}
+.side a[aria-current]{background:var(--mint-soft);color:var(--ink);font-weight:700}
+.upd{margin:20px 12px 0;font-size:12px;color:var(--ink3);line-height:1.7}.upd a{display:inline;padding:0;color:var(--ink3)}
+main{flex:1;min-width:0;padding:32px 32px 80px}
+h1{font-size:28px;line-height:1.3;margin:0 0 8px;font-weight:800;letter-spacing:-.4px}
+h2{font-size:20px;margin:40px 0 10px;font-weight:800;scroll-margin-top:70px}
+h2 small{font-size:14px;color:var(--ink3);font-weight:500}
+h3{font-size:16px;margin:24px 0 8px;font-weight:700}
+.lead,main>p:first-of-type{color:var(--ink2);font-size:16px}
+.note{color:var(--ink2);margin:4px 0}
+.tbl{overflow-x:auto;margin:10px 0;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{text-align:left;vertical-align:top;padding:10px 12px;border-bottom:1px solid var(--line)}
+th{font-weight:700;color:var(--ink2);background:var(--bg);white-space:nowrap}
+tr:last-child td{border-bottom:0}
+td code{white-space:nowrap}
+tr.dep td{opacity:.5}
+.val{white-space:nowrap;color:var(--ink2)}
+.sw{display:inline-block;vertical-align:-4px;width:18px;height:18px;border-radius:5px;margin-right:8px;background:var(--c);box-shadow:inset 0 0 0 1px rgba(127,127,127,.35)}
+.sw.none{background:repeating-linear-gradient(45deg,transparent 0 3px,var(--line) 3px 6px)}
+.bar{display:inline-block;height:10px;background:var(--mint);border-radius:2px;margin-right:8px;vertical-align:0}
+.radii{display:flex;flex-wrap:wrap;gap:12px}
+.rad{display:flex;flex-direction:column;gap:4px;width:130px;font-size:13px}
+.rad span{width:64px;height:48px;background:var(--mint-soft);border:2px solid var(--mint)}
+.rad small{color:var(--ink3)}
+.callout{background:var(--warn-soft);border-left:3px solid var(--warn);padding:12px 14px;border-radius:8px;margin:12px 0}
+.box{display:inline-block;width:14px;height:14px;border:1.5px solid var(--ink3);border-radius:3px;vertical-align:-2px}
+li:has(.box){list-style:none;margin-left:-20px}
+input[type=search]{width:100%;max-width:520px;height:44px;padding:0 14px;border:1px solid var(--line);border-radius:10px;background:var(--surface);color:var(--ink);font:inherit}
+input[type=search]:focus{outline:2px solid var(--mint);border-color:transparent}
+.filters{position:sticky;top:56px;z-index:3;background:var(--bg);padding:12px 0;display:flex;flex-direction:column;gap:10px}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{border:1px solid var(--line);background:var(--surface);color:var(--ink2);border-radius:8px;padding:6px 12px;font:inherit;font-size:14px;cursor:pointer}
+.chip.on{background:var(--ink);color:var(--surface);border-color:var(--ink)}
+.cnt{color:var(--ink3);font-size:13px;margin:0}
+.cat{color:var(--ink2);font-size:14px;margin:22px 0 8px;text-transform:none}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden;display:flex;flex-direction:column}
+.thumb{background:var(--thumb);height:170px;display:flex;align-items:center;justify-content:center;padding:10px}
+.thumb img{max-width:100%;max-height:100%;object-fit:contain}
+.card.small .thumb{height:96px}.card.small .thumb img{max-height:56px}
+.body{padding:12px 14px 14px}
+.body h4{margin:0 0 4px;font-size:14px;font-weight:700;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:-.2px}
+.body p{margin:0 0 6px;font-size:13.5px;color:var(--ink)}
+.kv{font-size:13px;color:var(--ink2);margin-top:3px}
+.kv span{display:inline-block;min-width:64px;margin-right:8px;font-weight:700;color:var(--ink)}
+.var{margin-top:8px;font-size:12px;color:var(--ink3);font-family:ui-monospace,Menlo,monospace}
+.warn{margin-left:6px;font:700 11px/1 "Noto Sans KR";color:var(--warn);background:var(--warn-soft);padding:3px 6px;border-radius:4px;vertical-align:1px}
+.arc{margin-top:8px}
+.arow{display:flex;gap:12px;padding:10px 0;border-top:1px solid var(--line)}
+.why{flex:none;width:200px;font-size:13px;font-weight:700;color:var(--ink2)}
+.names{display:flex;flex-wrap:wrap;gap:6px}
+.names code{font-size:12px}
+[hidden]{display:none!important}
+@media (max-width:860px){
+ .menu{display:block}
+ .side{position:fixed;top:56px;left:0;right:0;width:auto;height:auto;max-height:calc(100vh - 56px);background:var(--surface);border-bottom:1px solid var(--line);z-index:6;display:none;padding:8px 16px 16px}
+ body.open .side{display:block}
+ main{padding:24px 16px 64px}
+ .top{padding:0 16px}
+ h1{font-size:24px}
+ .grid{grid-template-columns:1fr}
+ .arow{flex-direction:column;gap:6px}.why{width:auto}
+}
+.spec{margin-top:12px;border-top:1px solid var(--line);padding-top:10px}
+.spec summary{cursor:pointer;font-weight:700;color:var(--mint-ink);font-size:14px}
+.card:has(.spec[open]){grid-column:1/-1;flex-direction:row}
+.card:has(.spec[open]) .thumb{width:240px;flex:none;height:auto;min-height:200px;align-items:flex-start;padding-top:24px}
+.card:has(.spec[open]) .body{flex:1;min-width:0}
+.spec h5{margin:16px 0 4px;font-size:13px}
+.spec td{font-size:13px}.spec td code,.spec .tk,.spec .prim{white-space:normal;word-break:break-all}
+.legend{font-size:12px;color:var(--ink2)}
+.tk,.prim,.raw{font:12px/1.3 ui-monospace,Menlo,monospace;padding:1px 5px;border-radius:4px;white-space:nowrap}
+.tk{background:var(--mint-soft);color:var(--mint-ink)}
+.prim{background:var(--code);color:var(--ink2)}
+.raw{background:var(--warn-soft);color:var(--warn)}
+.has-spec{margin-left:6px;font:700 11px/1 "Noto Sans KR";color:var(--mint-ink);background:var(--mint-soft);padding:3px 6px;border-radius:4px;vertical-align:1px}
+@media (max-width:860px){.card:has(.spec[open]){flex-direction:column}.card:has(.spec[open]) .thumb{width:auto}}
+.fixn{margin-left:6px;font:700 11px/1 "Noto Sans KR";color:var(--warn);background:var(--warn-soft);padding:3px 6px;border-radius:4px}
+.ind{display:inline-block;width:calc(var(--d)*14px)}
+.callout ul{margin:6px 0 0;padding-left:18px}.callout li{font-size:13px;margin:3px 0}
+.foot{margin-top:56px;padding-top:16px;border-top:1px solid var(--line);font-size:13px;color:var(--ink3)}
+.body h4 a{color:inherit;text-decoration:none}
+.cp{margin-left:4px;border:0;background:none;color:var(--ink3);cursor:pointer;font-size:13px;padding:2px 4px;border-radius:4px}
+.cp:hover{background:var(--code)}.cp.ok{color:var(--mint-ink)}.cp.ok::after{content:" 복사됨";font:12px "Noto Sans KR"}
+.card:target{outline:2px solid var(--mint)}
+.dl{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;margin:12px 0}
+.dl a{display:flex;flex-direction:column;padding:12px 14px;border:1px solid var(--line);border-radius:10px;background:var(--surface);color:var(--ink);text-decoration:none;font:700 14px ui-monospace,Menlo,monospace}
+.dl a:hover{border-color:var(--mint)}.dl small{font:12px "Noto Sans KR";color:var(--ink2);margin-top:2px}
+.vd{margin-top:14px}.vd summary{cursor:pointer;font-weight:700;font-size:13px;color:var(--ink2)}
+.vd h6{margin:14px 0 4px;font-size:12px}
+.svgs{display:flex;flex-wrap:wrap;gap:4px;margin-top:8px}.svgs a{font-size:11px;padding:2px 6px;border:1px solid var(--line);border-radius:4px;text-decoration:none;color:var(--ink2)}
+.card.small .thumb img{width:48px;height:48px}
+.toc{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0}.toc a{padding:5px 10px;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--ink2);text-decoration:none;font-size:13px}.toc small{color:var(--ink3)}
+.scr-row{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:14px}
+.scr{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px}
+.scr h4{margin:0 0 2px;font-size:14px}.scr .no{display:inline-block;min-width:22px;height:22px;line-height:22px;text-align:center;border-radius:11px;background:var(--mint-soft);color:var(--mint-ink);font-size:12px;margin-right:6px}
+.scr .flow{margin:0;font-size:12px;color:var(--ink2)}.scr .src{margin:2px 0 0;font-size:11px;color:var(--ink3)}
+.imgs{display:flex;gap:8px;margin-top:8px}.imgs figure{margin:0;flex:1;min-width:0}.imgs img{width:100%;border-radius:8px;border:1px solid var(--line);display:block}
+.imgs figcaption{font-size:11px;color:var(--ink3);text-align:center;margin-top:2px}
+.imgs .none div{aspect-ratio:375/812;display:flex;align-items:center;justify-content:center;text-align:center;border:1.5px dashed var(--warn);border-radius:8px;color:var(--warn);font-size:12px;font-weight:700}
+.scr details{margin-top:8px}.scr summary{font-size:12px;cursor:pointer;color:var(--ink2)}
+.parts{display:flex;flex-wrap:wrap;gap:4px;margin-top:6px}.parts a,.parts span{font:11px ui-monospace,Menlo,monospace;padding:2px 5px;border-radius:4px}
+.parts a{background:var(--mint-soft);color:var(--mint-ink);text-decoration:none}.parts span{background:var(--code);color:var(--ink3);text-decoration:line-through}
+</style></head>
+<body><header class="top"><a class="brand" href="index.html"><span class="dot"></span>TEUIDA <b>디자인 시스템</b></a>
+<button class="menu" aria-label="메뉴" onclick="document.body.classList.toggle('open')">☰</button></header>
+<div class="wrap"><nav class="side"><a href="index.html">시작하기</a><a href="rules.html" aria-current="page">작업 규칙</a><a href="components.html">컴포넌트</a><a href="tokens.html">토큰</a><a href="screens.html">현행 화면</a><a href="description.html">디스크립션</a><a href="changelog.html">변경 기록</a><a href="ai.html">Claude용 안내</a><p class="upd">갱신 2026-11-06<br><a href="ai/rules.md">이 페이지 Markdown</a></p></nav>
+<main><h1>작업 규칙</h1>
+<p>목표는 <strong>일관된 규칙 + 예외 최소화</strong>예요. 100% 시스템화보다 다시 손볼 일이 적은 화면이 먼저예요.</p>
+<h2>어디를 기준으로 보나</h2>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>무엇</th>
+<th>기준</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>현행 화면</td>
+<td>Product Design <code>🧩 기능별 최신 화면</code> 페이지. 카드 캡션의 원본 링크가 최신 원본. 빨간 글씨 카드는 피그마에 없는 화면이라 앱 캡처를 보고 새로 만들어요</td>
+</tr>
+<tr>
+<td>부품</td>
+<td>Design Library의 <code>Components</code> 페이지 → 이 사이트 <a href="components.html">컴포넌트</a></td>
+</tr>
+<tr>
+<td>색</td>
+<td>라이브러리 변수 <code>Tokens</code> 컬렉션 → <a href="tokens.html">토큰</a>. Primitives(<code>Color/Gray/gray-400</code> 등)와 옛 색 스타일은 직접 쓰지 않아요</td>
+</tr>
+<tr>
+<td>글자</td>
+<td>텍스트 스타일 27개. 글꼴은 Noto Sans (이벤트 화면만 예외, 시스템 UI는 SF Pro)</td>
+</tr>
+<tr>
+<td>간격·모서리·그림자</td>
+<td><code>Spacing/*</code>, <code>Radius/*</code>, <code>Shadow/Soft 12·8</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>스프린트 페이지는 위쪽일수록 최신이에요. 같은 화면 사본이 여러 페이지에 있으면 가장 위 페이지 것을 써요.</p>
+<h2>색 고르는 순서</h2>
+<ol>
+<li><strong>용도가 맞는 <code>Tokens</code> 변수.</strong> 같은 색이어도 용도가 다르면 그 토큰을 빌려 쓰지 않아요.</li>
+<li>맞는 토큰이 없거나 한 번만 쓰는 색이면 <strong>기본 색(Primitives)</strong> 을 써요. 이때 화면·레이어·색·이유를 기록해서 알려요.</li>
+<li>hex 직접 입력, 옛 색 스타일 새로 쓰기는 하지 않아요. 다크 모드 값은 건드리지 않아요 (앱은 아직 라이트 모드만 써요).</li>
+<li>다시 쓰이지 않는 그래픽(일러스트 안쪽, 장식 원)과 화면에 안 들어가는 색(정리용 라벨)은 토큰에 연결하지 않아요.</li>
+<li>피그마와 앱 코드 색이 다르면 <strong>피그마가 기준</strong>이에요.</li>
+</ol>
+<h3>무엇을 칠하나 → 어떤 토큰</h3>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>칠하는 것</th>
+<th>토큰</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>화면 바탕 / 카드·시트·다이얼로그 면 / 입력창·구분 면</td>
+<td><code>background-primary</code> / <code>background-secondary</code> / <code>background-tertiary</code></td>
+</tr>
+<tr>
+<td>기본 글자 / 보조 설명 / 힌트·메타 ("Unit 1", "Tap to view")</td>
+<td><code>text-primary</code> / <code>text-secondary</code> / <code>text-tertiary</code></td>
+</tr>
+<tr>
+<td>강조 글자 (브랜드 민트)</td>
+<td><code>text-highlight</code></td>
+</tr>
+<tr>
+<td>민트·남색 같은 진한 면이나 영상 위의 흰 글자</td>
+<td><code>text-on-color</code> (<code>text-inactive</code> 아님)</td>
+</tr>
+<tr>
+<td>진한 면·사진 위의 흰 아이콘</td>
+<td><code>icon-on-color</code></td>
+</tr>
+<tr>
+<td>경고·에러·위험한 동작 (입력 에러, 로그아웃·삭제)</td>
+<td><code>text-alert</code></td>
+</tr>
+<tr>
+<td>학습 결과 오답 / 정답</td>
+<td><code>text-failed</code> / <code>text-correct</code></td>
+</tr>
+<tr>
+<td>기본 / 보조 / 약한 보조 / 선택 안 된 탭 / 강조 아이콘</td>
+<td><code>icon-primary</code> / <code>icon-secondary</code> / <code>icon-tertiary</code> / <code>icon-unselected</code> / <code>icon-highlight</code></td>
+</tr>
+<tr>
+<td>구분선·카드 테두리 / 선택·포커스 테두리</td>
+<td><code>border-secondary</code> / <code>border-highlight</code></td>
+</tr>
+<tr>
+<td>버튼 면·버튼 글자</td>
+<td><code>button-*</code>는 <strong>버튼 부품 안에서만</strong>. 버튼이 아닌 민트 글자는 <code>text-highlight</code></td>
+</tr>
+<tr>
+<td>연한 민트 알약 버튼 ("Try Premium for Free")</td>
+<td>면 <code>button-highlight-soft</code> + 글자 <code>button-text-highlight</code></td>
+</tr>
+<tr>
+<td>일부러 밝게 쓰는 민트 (열쇠 칩 테두리, Coming Soon 스티커)</td>
+<td><code>button-highlight</code> (브랜드 민트로 바꾸지 않음)</td>
+</tr>
+<tr>
+<td>이미지가 들어갈 빈 회색 카드</td>
+<td><code>button-unfilled</code></td>
+</tr>
+<tr>
+<td>잠긴·비활성 회색 원·버튼</td>
+<td><code>button-inactive</code></td>
+</tr>
+<tr>
+<td>툴팁·유닛 배지·컬렉션</td>
+<td><code>tooltip-*</code>, <code>unit-badge-*</code>, <code>collection/*</code>는 그 부품 안에서만</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>아이콘은 아이콘 토큰(<code>icon-*</code>)으로 칠해요. 글자와 같은 회색이 필요해도 <code>text-*</code>를 쓰지 않아요.</li>
+<li>한 가지 색 아이콘은 색 배리언트가 없어요. 놓은 뒤 Icon 토큰으로 칠해요. 여러 색이 섞인 아이콘(국기, 로고 등)은 색을 바꾸지 않아요.</li>
+<li>아이콘 크기는 크기 배리언트를 골라요. 인스턴스를 늘리거나 줄여 쓰지 않아요.</li>
+<li>리퀴드 글래스 탭바에서 선택 안 된 탭은 검정(애플 고정), 예전 탭바는 회색이에요. 스토리 탭은 유료라서 왕관 육각형(<code>tabicon=premium-only</code>)을 써요.</li>
+</ul>
+<h2>글자</h2>
+<ul>
+<li>항상 텍스트 스타일을 걸어요. 크기·굵기를 직접 지정하지 않아요.</li>
+<li>맞는 스타일이 없으면 (크기 13, SemiBold 등) 가장 가까운 스타일을 쓰고 알려요.</li>
+<li>언어별 글자 토큰은 아직 없어요.</li>
+</ul>
+<h2>콘텐츠가 먼저</h2>
+<ul>
+<li>간격 토큰은 기본값이에요. 간격 때문에 콘텐츠가 다 안 들어가면 간격을 줄이거나 토큰을 쓰지 않아도 돼요.</li>
+<li>레슨·보캡·퀴즈 같은 학습 화면은 대부분 스크롤하지 않아요.</li>
+<li>리스트·설정처럼 스크롤 되는 화면은 간격 토큰을 지켜요.</li>
+<li>조정했으면 "콘텐츠 확보로 간격 조정"이라고 한 줄 남겨요.</li>
+</ul>
+<h2>하지 말 것 → 대신</h2>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>하지 말 것</th>
+<th>대신</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>글자 들어간 알약 버튼</td>
+<td><code>Button/Full Width</code> (모서리 8)</td>
+</tr>
+<tr>
+<td>hex 직접 입력·옛 색 스타일</td>
+<td>용도 토큰 (없으면 Primitives + 알리기)</td>
+</tr>
+<tr>
+<td>임의 간격·모서리 (7, 14…)</td>
+<td>Spacing·Radius 토큰 (콘텐츠 확보가 필요하면 예외)</td>
+</tr>
+<tr>
+<td>인스턴스 detach·로컬 부품</td>
+<td>라이브러리 인스턴스</td>
+</tr>
+<tr>
+<td>섹션 밖 참고 화면을 원본으로</td>
+<td><code>🧩 기능별 최신 화면</code>, 섹션 안 화면</td>
+</tr>
+<tr>
+<td>색만 다른 아이콘 새로 만들기</td>
+<td>기본 아이콘 + Icon 토큰</td>
+</tr>
+<tr>
+<td>사이트 <a href="components.html">컴포넌트</a>에 없는 부품</td>
+<td>쓰지 않아요. 꼭 필요하면 담당자에게 알리기</td>
+</tr>
+<tr>
+<td>피그마 검색 결과의 <code>Product Design</code> 부품</td>
+<td><code>Design Library</code> 것만</td>
+</tr>
+<tr>
+<td>화면 안에 작업 메모·노란 스티키</td>
+<td>설명은 전부 디스크립션으로</td>
+</tr>
+</tbody>
+</table></div>
+<h2>상황별 기준 부품</h2>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>상황</th>
+<th>쓸 부품</th>
+<th>쓰지 않는 것</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>상태바 iOS / 안드로이드</td>
+<td><code>System/Status Bar iOS</code> / <code>System/Status Bar Android</code></td>
+<td>예전 Material 상태바</td>
+</tr>
+<tr>
+<td>화면 맨 아래 홈 바 (iOS)</td>
+<td><code>System/Home Indicator iOS</code></td>
+<td></td>
+</tr>
+<tr>
+<td>하위 화면 맨 위 (iOS 26)</td>
+<td><code>Navigation/Nav Bar iOS 26</code></td>
+<td></td>
+</tr>
+<tr>
+<td>학습 화면 맨 위</td>
+<td><code>Navigation/Top Nav</code></td>
+<td></td>
+</tr>
+<tr>
+<td>탭 루트 화면 맨 아래</td>
+<td><code>Navigation/Tab Bar Liquid Glass</code> (iOS 26), <code>Navigation/Tab Bar</code></td>
+<td><code>Navigation/Tab Bar AOS</code> (예전)</td>
+</tr>
+<tr>
+<td>가운데 확인 창</td>
+<td><code>Dialog/Basic</code></td>
+<td><code>Dialog/Middle Preset</code> (예전)</td>
+</tr>
+<tr>
+<td>아래에서 올라오는 시트</td>
+<td><code>Bottom Sheet/Basic</code> + Content Slot</td>
+<td>예전 시트 프리셋</td>
+</tr>
+<tr>
+<td>글자 탭 (밑줄)</td>
+<td><code>Navigation/Text Tab</code></td>
+<td></td>
+</tr>
+<tr>
+<td>동그란 아이콘 버튼</td>
+<td><code>Button/Circle Icon</code></td>
+<td></td>
+</tr>
+<tr>
+<td>화면 아래 주요 행동</td>
+<td><code>Button/Full Width</code> (fill은 한 화면에 하나)</td>
+<td>알약 버튼</td>
+</tr>
+<tr>
+<td>페이지 점 / 단계 진행</td>
+<td><code>Progress/Pagination Dots</code> / <code>Progress/Step Bar</code>·<code>Step Dots</code>·<code>Pagination Bar</code></td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<p>버튼은 종류가 많아서 2차에 정리해요. 그 전까지는 같은 화면 최신 원본에 쓰인 버튼을 그대로 써요.</p>
+<h2>이름 규칙</h2>
+<ul>
+<li><strong>Product Design 페이지</strong>: 기획서 이름 그대로, 한글 + 필요한 명사만 영어. 형식 <code>YY.MM - Sprint XX - 기능명</code>. 영문으로 번역하지 않아요.</li>
+<li><strong>부품</strong>: 영어 <code>분류/이름</code> (예: <code>Button/Full Width</code>, <code>Icon/Close 24</code>). 기능 전용은 <code>기능/무엇</code> (예: <code>Curriculum/Unit Title</code>). 속성 이름·값은 소문자 (<code>state=enabled</code>).</li>
+<li><strong>레이어</strong>: <code>Group 1673</code> 같은 기본 이름을 두지 않고 역할로 붙여요 (예: <code>Vocab Header</code>).</li>
+<li><strong>화면(프레임)</strong>: 짧게 <code>{콘텐츠} {유형} {상태}</code> (예: <code>보캡 B 오답</code>, <code>퀵리뷰 문장 정답</code>). 설명 문장이나 기호 나열을 넣지 않아요.</li>
+<li>Curriculum = 레슨 탭 메인 (그 안에 레슨·보캡·프랙티스·리뷰퀴즈).</li>
+</ul>
+<h2>알려진 빈칸 (아직 라이브러리에 없음)</h2>
+<p>시안에 필요하면 가장 가까운 것을 쓰고 "디자인 시스템 빈칸"으로 알려요. 새 토큰·스타일·부품을 라이브러리에 마음대로 추가하지 않아요.</p>
+<ul>
+<li><strong>색</strong>: 영상·다크 배경(#000000), 빈 별·꺼진 토글 회색(#C8C8C8), 팝업 뒤 막 30%, 프리미엄 남색(#293649)·그라디언트, 비활성·잠금 덮개, 어두운 배경 위 보조 글자(흰색 60%·30%), 오답 구분선(#FFDFDF), 입력창 안내 글자</li>
+<li><strong>부품</strong>: 자막 말풍선, 학습 문장, Listening(마이크), 결과 바, 미션 카드</li>
+<li><strong>글자</strong>: 10/14, 배지 라벨</li>
+</ul><footer class="foot">틀린 내용이 있거나 필요한 부품·토큰이 없으면 디자인 시스템 담당자에게 알려 주세요. 사이트와 피그마가 다르면 피그마가 기준이에요.</footer></main></div>
+<script>document.querySelectorAll('[data-copy]').forEach(b=>b.addEventListener('click',e=>{e.preventDefault();try{navigator.clipboard.writeText(b.dataset.copy);b.classList.add('ok');setTimeout(()=>b.classList.remove('ok'),1200);}catch(_){}}));</script></body></html>

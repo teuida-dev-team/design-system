@@ -1,0 +1,146 @@
+# Navigation/Tab Bar Cell
+
+묶음: 공통 · Navigation
+
+탭바 셀. TabIcon(Home / Story / review / Community / Profile / premium-only) × Clicked × NewDot × Text. premium-only = 유료 스토리관 탭(왕관 육각형 아이콘). 2024-08 스토리관 유료화부터 스토리 탭 자리에 사용.
+
+속성: tabicon:review·premium-only·home·story·community·profile / clicked:true·false / newdot:false·true
+
+- 스펙 (px, 기준 `tabicon=home, clicked=true, newdot=false, text=false`; 괄호 = 토큰 이름, "토큰 없음" = 숫자·색 직접):
+  - 전체: 56x56, 세로 정렬, 여백 위아래 12 (Spacing/12) · 좌우 16 (Spacing/16), 간격 2 (Spacing/2)
+    - Icon/Home 24: 24x24, 부품 Icon/Home 24
+  - 배리언트 `tabicon=home, clicked=true, newdot=false, text=true`: 62x66, 글자 text-highlight
+  - 배리언트 `tabicon=home, clicked=true, newdot=false, text=false`: 56x56
+  - 배리언트 `tabicon=home, clicked=false, newdot=false, text=true`: 62x66, 글자 icon-unselected
+  - 배리언트 `tabicon=home, clicked=false, newdot=false, text=false`: 56x56
+  - 배리언트 `tabicon=home, clicked=false, newdot=true, text=true`: 62x66, 글자 icon-unselected
+  - 배리언트 `tabicon=home, clicked=false, newdot=true, text=false`: 62x56
+  - 배리언트 `tabicon=story, clicked=true, newdot=false, text=true`: 59x66, 글자 text-highlight
+  - 배리언트 `tabicon=story, clicked=true, newdot=false, text=false`: 56x56
+  - 배리언트 `tabicon=story, clicked=false, newdot=false, text=true`: 59x66, 글자 icon-unselected
+  - 배리언트 `tabicon=story, clicked=false, newdot=false, text=false`: 56x56
+  - 배리언트 `tabicon=home, clicked=true, newdot=false, text=true` 자세히 (기준과 다른 부분):
+    - 전체: 62x66, 세로 정렬, 여백 위아래 12 (Spacing/12) · 좌우 16 (Spacing/16), 간격 2 (Spacing/2)
+      - Home: 30x16, 글자색 text-highlight, 글자 Bold 10 (스타일 없음)
+  - 배리언트 `tabicon=home, clicked=false, newdot=false, text=true` 자세히 (기준과 다른 부분):
+    - 전체: 62x66, 세로 정렬, 여백 위아래 12 (Spacing/12) · 좌우 16 (Spacing/16), 간격 2 (Spacing/2)
+      - Home: 30x16, 글자색 icon-unselected, 글자 Bold 10 (스타일 없음)
+  - 배리언트 `tabicon=home, clicked=false, newdot=false, text=false` 자세히: 기준과 같음
+  - 배리언트 `tabicon=home, clicked=false, newdot=true, text=true` 자세히 (기준과 다른 부분):
+    - 전체: 62x66, 세로 정렬, 여백 위아래 12 (Spacing/12) · 좌우 16 (Spacing/16), 간격 2 (Spacing/2)
+      - Frame 1715: 28x24, 가로 정렬
+        - Icon/Home 24: 24x24, 부품 Icon/Home 24
+        - NewDot: 4x4, 면 icon-highlight
+      - Home: 30x16, 글자색 icon-unselected, 글자 Bold 10 (스타일 없음)
+  - 배리언트 `tabicon=home, clicked=false, newdot=true, text=false` 자세히 (기준과 다른 부분):
+    - 전체: 62x56, 세로 정렬, 여백 위아래 12 (Spacing/12) · 좌우 16 (Spacing/16), 간격 2 (Spacing/2)
+      - Frame 1715: 30x24, 가로 정렬
+        - Icon/Home 24: 24x24, 부품 Icon/Home 24
+        - NewDot: 6x6, 면 status-badge
+  - 배리언트 `tabicon=story, clicked=true, newdot=false, text=true` 자세히 (기준과 다른 부분):
+    - 전체: 59x66, 세로 정렬, 여백 위아래 12 (Spacing/12) · 좌우 16 (Spacing/16), 간격 2 (Spacing/2)
+      - 03.ICON / 03.ICON / ic_s: 24x24
+        - Mask: 20x20, 면 icon-highlight
+          - Rectangle: 16x2, 모서리 1 (토큰 없음), 면 #D8D8D8 (토큰 없음), 선 #979797 (토큰 없음) 1
+          - Rectangle: 12x2, 모서리 1 (토큰 없음), 면 #D8D8D8 (토큰 없음), 선 #979797 (토큰 없음) 1
+          - Rectangle: 20x12, 모서리 1 (토큰 없음), 면 #D8D8D8 (토큰 없음), 선 #979797 (토큰 없음) 1
+          - Path: 6x7
+      - Story: 27x16, 글자색 text-highlight, 글자 Bold 10 (스타일 없음)
+  - 배리언트 `tabicon=story, clicked=true, newdot=false, text=false` 자세히 (기준과 다른 부분):
+      - 03.ICON / 03.ICON / ic_s: 24x24
+        - Mask: 20x20, 면 icon-highlight
+          - Rectangle: 16x2, 모서리 1 (토큰 없음), 면 #D8D8D8 (토큰 없음), 선 #979797 (토큰 없음) 1
+          - Rectangle: 12x2, 모서리 1 (토큰 없음), 면 #D8D8D8 (토큰 없음), 선 #979797 (토큰 없음) 1
+          - Rectangle: 20x12, 모서리 1 (토큰 없음), 면 #D8D8D8 (토큰 없음), 선 #979797 (토큰 없음) 1
+          - Path: 6x7
+  - 배리언트 `tabicon=story, clicked=false, newdot=false, text=true` 자세히 (기준과 다른 부분):
+    - 전체: 59x66, 세로 정렬, 여백 위아래 12 (Spacing/12) · 좌우 16 (Spacing/16), 간격 2 (Spacing/2)
+      - 03.ICON / 03.ICON / ic_s: 24x24
+        - Mask: 20x20, 면 icon-unselected
+          - Rectangle: 16x2, 모서리 1 (토큰 없음), 면 #D8D8D8 (토큰 없음), 선 #979797 (토큰 없음) 1
+          - Rectangle: 12x2, 모서리 1 (토큰 없음), 면 #D8D8D8 (토큰 없음), 선 #979797 (토큰 없음) 1
+          - Rectangle: 20x12, 모서리 1 (토큰 없음), 면 #D8D8D8 (토큰 없음), 선 #979797 (토큰 없음) 1
+          - Path: 6x7
+      - Story: 27x16, 글자색 icon-unselected, 글자 Bold 10 (스타일 없음)
+  - 배리언트 `tabicon=story, clicked=false, newdot=false, text=false` 자세히 (기준과 다른 부분):
+      - 03.ICON / 03.ICON / ic_s: 24x24
+        - Mask: 20x20, 면 icon-unselected
+          - Rectangle: 16x2, 모서리 1 (토큰 없음), 면 #D8D8D8 (토큰 없음), 선 #979797 (토큰 없음) 1
+          - Rectangle: 12x2, 모서리 1 (토큰 없음), 면 #D8D8D8 (토큰 없음), 선 #979797 (토큰 없음) 1
+          - Rectangle: 20x12, 모서리 1 (토큰 없음), 면 #D8D8D8 (토큰 없음), 선 #979797 (토큰 없음) 1
+          - Path: 6x7
+  - 배리언트 `tabicon=story, clicked=false, newdot=true, text=true` 자세히 (기준과 다른 부분):
+    - 전체: 60x66, 세로 정렬, 여백 위아래 12 (Spacing/12) · 좌우 16 (Spacing/16), 간격 2 (Spacing/2)
+      - Frame 1716: 28x24, 가로 정렬
+        - 03.ICON / 03.ICON / ic_s: 24x24
+          - Mask: 20x20, 면 icon-unselected
+        - NewDot: 4x4, 면 icon-highlight
+      - Story: 27x16, 글자색 icon-unselected, 글자 Bold 10 (스타일 없음)
+  - 배리언트 `tabicon=story, clicked=false, newdot=true, text=false` 자세히 (기준과 다른 부분):
+    - 전체: 62x56, 세로 정렬, 여백 위아래 12 (Spacing/12) · 좌우 16 (Spacing/16), 간격 2 (Spacing/2)
+      - Frame 1716: 30x24, 가로 정렬
+        - 03.ICON / 03.ICON / ic_s: 24x24
+          - Mask: 20x20, 면 icon-unselected
+        - NewDot: 6x6, 면 icon-highlight
+  - 배리언트 `tabicon=community, clicked=true, newdot=false, text=true` 자세히 (기준과 다른 부분):
+    - 전체: 91x66, 세로 정렬, 여백 위아래 12 (Spacing/12) · 좌우 16 (Spacing/16), 간격 2 (Spacing/2)
+      - Icon/Community 24: 24x24, 부품 Icon/Community 24
+      - Community: 59x16, 글자색 text-highlight, 글자 Bold 10 (스타일 없음)
+  - 배리언트 `tabicon=community, clicked=true, newdot=false, text=false` 자세히 (기준과 다른 부분):
+      - Icon/Community 24: 24x24, 부품 Icon/Community 24
+  - 배리언트 `tabicon=community, clicked=false, newdot=false, text=true` 자세히 (기준과 다른 부분):
+    - 전체: 91x66, 세로 정렬, 여백 위아래 12 (Spacing/12) · 좌우 16 (Spacing/16), 간격 2 (Spacing/2)
+      - Icon/Community 24: 24x24, 부품 Icon/Community 24
+      - Community: 59x16, 글자색 icon-unselected, 글자 Bold 10 (스타일 없음)
+  - 배리언트 `tabicon=community, clicked=false, newdot=false, text=false` 자세히 (기준과 다른 부분):
+      - Icon/Community 24: 24x24, 부품 Icon/Community 24
+  - 배리언트 `tabicon=community, clicked=false, newdot=true, text=true` 자세히 (기준과 다른 부분):
+    - 전체: 91x66, 세로 정렬, 여백 위아래 12 (Spacing/12) · 좌우 16 (Spacing/16), 간격 2 (Spacing/2)
+      - Frame 1717: 28x24, 가로 정렬
+        - Icon/Community 24: 24x24, 부품 Icon/Community 24
+        - NewDot: 4x4, 면 icon-highlight
+      - Community: 59x16, 글자색 icon-unselected, 글자 Bold 10 (스타일 없음)
+  - 배리언트 `tabicon=community, clicked=false, newdot=true, text=false` 자세히 (기준과 다른 부분):
+    - 전체: 60x56, 세로 정렬, 여백 위아래 12 (Spacing/12) · 좌우 16 (Spacing/16), 간격 2 (Spacing/2)
+      - Frame 1717: 28x24, 가로 정렬
+        - Icon/Community 24: 24x24, 부품 Icon/Community 24
+        - NewDot: 4x4, 면 icon-highlight
+  - 배리언트 `tabicon=profile, clicked=true, newdot=false, text=true` 자세히 (기준과 다른 부분):
+    - 전체: 65x66, 세로 정렬, 여백 위아래 12 (Spacing/12) · 좌우 16 (Spacing/16), 간격 2 (Spacing/2)
+      - Icon/Profile 24: 24x24, 부품 Icon/Profile 24
+      - Profile: 33x16, 글자색 text-highlight, 글자 Bold 10 (스타일 없음)
+  - 배리언트 `tabicon=profile, clicked=true, newdot=false, text=false` 자세히 (기준과 다른 부분):
+      - Icon/Profile 24: 24x24, 부품 Icon/Profile 24
+  - 배리언트 `tabicon=review, clicked=true, newdot=false, text=false` 자세히 (기준과 다른 부분):
+      - Icon/Tab Review 24: 24x24, 부품 Icon/Tab Review 24
+  - 배리언트 `tabicon=premium-only, clicked=false, newdot=false, text=false` 자세히 (기준과 다른 부분):
+      - Icon/Premium Only 24: 24x24, 부품 Icon/Premium Only 24
+  - 배리언트 `tabicon=premium-only, clicked=true, newdot=false, text=false` 자세히 (기준과 다른 부분):
+      - Icon/Premium Only 24: 24x24, 부품 Icon/Premium Only 24
+  - 배리언트 `tabicon=profile, clicked=false, newdot=false, text=true` 자세히 (기준과 다른 부분):
+    - 전체: 65x66, 세로 정렬, 여백 위아래 12 (Spacing/12) · 좌우 16 (Spacing/16), 간격 2 (Spacing/2)
+      - Icon/Profile 24: 24x24, 부품 Icon/Profile 24
+      - Profile: 33x16, 글자색 icon-unselected, 글자 Bold 10 (스타일 없음)
+  - 배리언트 `tabicon=profile, clicked=false, newdot=false, text=false` 자세히 (기준과 다른 부분):
+      - Icon/Profile 24: 24x24, 부품 Icon/Profile 24
+  - 배리언트 `tabicon=review, clicked=false, newdot=false, text=false` 자세히 (기준과 다른 부분):
+      - Icon/Tab Review 24: 24x24, 부품 Icon/Tab Review 24
+  - 배리언트 `tabicon=profile, clicked=false, newdot=true, text=true` 자세히 (기준과 다른 부분):
+    - 전체: 65x66, 세로 정렬, 여백 위아래 12 (Spacing/12) · 좌우 16 (Spacing/16), 간격 2 (Spacing/2)
+      - Frame 1718: 28x24, 가로 정렬
+        - Icon/Profile 24: 24x24, 부품 Icon/Profile 24
+        - NewDot: 4x4, 면 icon-highlight
+      - Profile: 33x16, 글자색 icon-unselected, 글자 Bold 10 (스타일 없음)
+  - 배리언트 `tabicon=profile, clicked=false, newdot=true, text=false` 자세히 (기준과 다른 부분):
+    - 전체: 62x56, 세로 정렬, 여백 위아래 12 (Spacing/12) · 좌우 16 (Spacing/16), 간격 2 (Spacing/2)
+      - Frame 1718: 30x24, 가로 정렬
+        - Icon/Profile 24: 24x24, 부품 Icon/Profile 24
+        - NewDot: 6x6, 면 icon-highlight
+  - 배리언트 `tabicon=review, clicked=false, newdot=true, text=false` 자세히 (기준과 다른 부분):
+      - Frame 1718: 24x24, 가로 정렬
+        - Icon/Tab Review 24: 24x24, 부품 Icon/Tab Review 24
+        - NewDot: 6x6, 면 status-badge, 선 background-secondary 1
+  - 배리언트 `tabicon=review, clicked=false, newdot=false, text=true` 자세히 (기준과 다른 부분):
+    - 전체: 68x66, 세로 정렬, 여백 위아래 12 (Spacing/12) · 좌우 16 (Spacing/16), 간격 2 (Spacing/2)
+      - Icon/Tab Review 24: 24x24, 부품 Icon/Tab Review 24
+      - Review: 36x16, 글자색 icon-unselected, 글자 Bold 10 (스타일 없음)
