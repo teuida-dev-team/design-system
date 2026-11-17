@@ -128,6 +128,35 @@ input[type=search]:focus{outline:2px solid var(--mint);border-color:transparent}
 .scr details{margin-top:8px}.scr summary{font-size:12px;cursor:pointer;color:var(--ink2)}
 .parts{display:flex;flex-wrap:wrap;gap:4px;margin-top:6px}.parts a,.parts span{font:11px ui-monospace,Menlo,monospace;padding:2px 5px;border-radius:4px}
 .parts a{background:var(--mint-soft);color:var(--mint-ink);text-decoration:none}.parts span{background:var(--code);color:var(--ink3);text-decoration:line-through}
+
+/* 스트릭: 조건 넣고 보기 */
+.pk{border:1px solid var(--line);background:var(--surface);border-radius:14px;padding:4px 18px 22px;margin:18px 0 28px}
+.pk>h2{margin-top:20px}
+.pk-ctl{display:flex;flex-wrap:wrap;gap:14px;align-items:flex-end;margin:14px 0 8px}
+.pk-ctl label{display:flex;flex-direction:column;gap:4px;font-size:13px;color:var(--ink2);font-weight:700}
+.pk-ctl select,.pk-ctl input[type=number]{font:inherit;font-size:15px;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:8px 10px;min-width:160px}
+.pk-ctl input[type=number]{width:110px;min-width:0}
+.pk-zoom{flex-direction:row!important;align-items:center;gap:6px!important;font-weight:500}
+.pk-slide{display:flex;align-items:center;gap:12px;margin:2px 0 12px;flex-wrap:wrap}
+.pk-slide span{font-size:12px;color:var(--ink3);white-space:nowrap}
+#pk-rng{flex:1;min-width:0;accent-color:var(--mint)}
+.pk-chips{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
+.pk-chip{border:1px solid var(--line);background:var(--bg);color:var(--ink2);border-radius:8px;padding:5px 10px;font:inherit;font-size:13px;cursor:pointer}
+.pk-chip:hover{border-color:var(--mint);color:var(--ink)}
+.pk-out{display:grid;grid-template-columns:repeat(auto-fill,minmax(212px,1fr));gap:12px}
+.pk-out.z2{grid-template-columns:repeat(auto-fill,minmax(344px,1fr))}
+.pk-card{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--bg);display:flex;flex-direction:column;align-items:stretch;padding:18px 10px 0;min-height:170px}
+.pk-card.pk-off{border-color:var(--warn)}
+.pk-box{margin:auto;position:relative;overflow:hidden;flex:none;border-radius:6px}
+.pk-box i{display:block;position:absolute;left:0;top:0;transform-origin:0 0;background-repeat:no-repeat}
+.pk-none{margin:auto;padding:18px 10px;max-width:170px;text-align:center;font-size:12px;color:var(--ink3);border:1px dashed var(--line);border-radius:10px;line-height:1.5}
+.pk-meta{margin-top:0;border-top:1px solid var(--line);background:var(--surface);padding:10px 12px;margin:0 -10px}
+.pk-meta h4{margin:0 0 5px;font-size:13px;font-weight:700}
+.pk-meta code{font-size:12px;display:inline-block;white-space:normal}
+.pk-meta p{margin:6px 0 0;font-size:12px;color:var(--ink2);line-height:1.5}
+ul.pk-warn{margin:0 0 14px;padding:11px 14px 11px 30px;background:var(--warn-soft);border:1px solid var(--warn);border-radius:10px;font-size:13px}
+ul.pk-warn li{margin:4px 0}
+@media (max-width:760px){.pk{padding:4px 12px 18px}.pk-ctl select{min-width:0}.pk-slide span{display:none}.pk-out,.pk-out.z2{grid-template-columns:1fr}}
 </style></head>
 <body><header class="top"><a class="brand" href="index.html"><span class="dot"></span>TEUIDA <b>디자인 시스템</b></a>
 <button class="menu" aria-label="메뉴" onclick="document.body.classList.toggle('open')">☰</button></header>
@@ -197,6 +226,89 @@ input[type=search]:focus{outline:2px solid var(--mint);border-color:transparent}
 </tbody>
 </table></div>
 <p><strong>불꽃 아이콘은 바탕색으로 골라요.</strong> 민트·진한 면 위면 White, 흰 바탕이면 Green이에요. 반대로 쓰면 안 보여요.</p>
+<p>어느 배리언트를 쓸지 헷갈리면 아래 <strong><a href="#pick">조건 넣고 보기</a></strong> 에서 상태와 연속 일수를 넣어 보면 돼요.</p>
+<hr />
+<section class="pk">
+<h2 id="pick">조건 넣고 보기</h2>
+<p>상태와 연속 일수를 고르면 <b>어느 부품의 어느 배리언트</b>를 쓰는지 한 번에 보여줘요. 그림은 라이브러리에서 그대로 뽑은 거예요.</p>
+<div class="pk-ctl">
+<label>상태<select id="pk-state"><option value="none">없음</option><option value="todo">해야 함</option><option value="doing_morning">진행 중 · 아침</option><option value="doing_afternoon">진행 중 · 낮</option><option value="doing_evening">진행 중 · 저녁</option><option value="doing_emergency">진행 중 · 긴급</option><option value="done" selected>완료</option></select></label>
+<label>연속 일수<input type="number" id="pk-day" min="0" max="1000" value="7" inputmode="numeric"></label>
+<label class="pk-zoom"><input type="checkbox" id="pk-zoom"> 2배로 보기</label>
+</div>
+<div class="pk-slide"><input type="range" id="pk-rng" min="0" max="21" value="7" aria-label="식물 단계"><span>식물 단계로 밀기 (0일 → 1000일)</span></div>
+<div class="pk-chips"><button type="button" class="pk-chip" data-d="0">0일</button><button type="button" class="pk-chip" data-d="1">1일</button><button type="button" class="pk-chip" data-d="3">3일</button><button type="button" class="pk-chip" data-d="6">6일</button><button type="button" class="pk-chip" data-d="7">7일</button><button type="button" class="pk-chip" data-d="21">21일</button><button type="button" class="pk-chip" data-d="42">42일</button><button type="button" class="pk-chip" data-d="70">70일</button><button type="button" class="pk-chip" data-d="100">100일</button><button type="button" class="pk-chip" data-d="365">365일</button><button type="button" class="pk-chip" data-d="1000">1000일</button></div>
+<div id="pk-warn"></div>
+<div class="pk-out" id="pk-out"></div>
+<p class="note">여기 값은 <b>피그마 배리언트 이름을 그대로 읽은 것</b>이에요. 연속 일수가 몇 일일 때 식물이 다음 단계로 넘어가는지(앱 적용 기준)는 아직 확인 전이라, 이 칸은 <b>그 일수 이하에서 가장 큰 단계</b>로 보여줘요.</p>
+<script>
+(function(){
+const C={"sets":{"Streak/Calendar Icon":{"img":"img/2643-10935.png","where":"달력 칸 · 위젯 안의 식물","v":{"state=none, day=default":[26,26,90,90],"state=todo, day=default":[26,150,90,90],"state=doing_morning, day=day1":[26,274,90,90],"state=doing_afternoon, day=day1":[26,398,90,90],"state=doing_evening, day=day1":[26,522,90,90],"state=doing_emergency, day=day1":[26,646,90,90],"state=done, day=day1":[26,770,90,90],"state=doing_morning, day=day2":[150,274,90,90],"state=doing_afternoon, day=day2":[150,398,90,90],"state=doing_evening, day=day2":[150,522,90,90],"state=doing_emergency, day=day2":[150,646,90,90],"state=done, day=day2":[150,770,90,90],"state=doing_morning, day=day3":[274,274,90,90],"state=doing_afternoon, day=day3":[274,398,90,90],"state=doing_evening, day=day3":[274,522,90,90],"state=doing_emergency, day=day3":[274,646,90,90],"state=done, day=day3":[274,770,90,90],"state=doing_morning, day=day4":[398,274,90,90],"state=doing_afternoon, day=day4":[398,398,90,90],"state=doing_evening, day=day4":[398,522,90,90],"state=doing_emergency, day=day4":[398,646,90,90],"state=done, day=day4":[398,770,90,90],"state=doing_morning, day=day5":[522,274,90,90],"state=doing_afternoon, day=day5":[522,398,90,90],"state=doing_evening, day=day5":[522,522,90,90],"state=doing_emergency, day=day5":[522,646,90,90],"state=done, day=day5":[522,770,90,90],"state=doing_morning, day=day6":[646,274,90,90],"state=doing_afternoon, day=day6":[646,398,90,90],"state=doing_evening, day=day6":[646,522,90,90],"state=doing_emergency, day=day6":[646,646,90,90],"state=done, day=day6":[646,770,90,90],"state=doing_morning, day=day7":[770,274,90,90],"state=doing_afternoon, day=day7":[770,398,90,90],"state=doing_evening, day=day7":[770,522,90,90],"state=doing_emergency, day=day7":[770,646,90,90],"state=done, day=day7":[770,770,90,90],"state=doing_morning, day=day21":[894,274,90,90],"state=doing_afternoon, day=day21":[894,398,90,90],"state=doing_evening, day=day21":[894,522,90,90],"state=doing_emergency, day=day21":[894,646,90,90],"state=done, day=day21":[894,770,90,90],"state=doing_morning, day=day42":[1018,274,90,90],"state=doing_afternoon, day=day42":[1018,398,90,90],"state=doing_evening, day=day42":[1018,522,90,90],"state=doing_emergency, day=day42":[1018,646,90,90],"state=done, day=day42":[1018,770,90,90],"state=doing_morning, day=day70":[1142,274,90,90],"state=doing_afternoon, day=day70":[1142,398,90,90],"state=doing_evening, day=day70":[1142,522,90,90],"state=doing_emergency, day=day70":[1142,646,90,90],"state=done, day=day70":[1142,770,90,90],"state=doing_morning, day=day100":[1266,274,90,90],"state=doing_afternoon, day=day100":[1266,398,90,90],"state=doing_evening, day=day100":[1266,522,90,90],"state=doing_emergency, day=day100":[1266,646,90,90],"state=done, day=day100":[1266,770,90,90],"state=doing_morning, day=day200":[1390,274,90,90],"state=doing_afternoon, day=day200":[1390,398,90,90],"state=doing_evening, day=day200":[1390,522,90,90],"state=doing_emergency, day=day200":[1390,646,90,90],"state=done, day=day200":[1390,770,90,90],"state=doing_morning, day=day300":[1514,274,90,90],"state=doing_afternoon, day=day300":[1514,398,90,90],"state=doing_evening, day=day300":[1514,522,90,90],"state=doing_emergency, day=day300":[1514,646,90,90],"state=done, day=day300":[1514,770,90,90],"state=doing_morning, day=day365":[1638,274,90,90],"state=doing_afternoon, day=day365":[1638,398,90,90],"state=doing_evening, day=day365":[1638,522,90,90],"state=doing_emergency, day=day365":[1638,646,90,90],"state=done, day=day365":[1638,770,90,90],"state=doing_morning, day=day400":[1762,274,90,90],"state=doing_afternoon, day=day400":[1762,398,90,90],"state=doing_evening, day=day400":[1762,522,90,90],"state=doing_emergency, day=day400":[1762,646,90,90],"state=done, day=day400":[1762,770,90,90],"state=doing_morning, day=day500":[1886,274,90,90],"state=doing_afternoon, day=day500":[1886,398,90,90],"state=doing_evening, day=day500":[1886,522,90,90],"state=doing_emergency, day=day500":[1886,646,90,90],"state=done, day=day500":[1886,770,90,90],"state=doing_morning, day=day600":[2010,274,90,90],"state=doing_afternoon, day=day600":[2010,398,90,90],"state=doing_evening, day=day600":[2010,522,90,90],"state=doing_emergency, day=day600":[2010,646,90,90],"state=done, day=day600":[2010,770,90,90],"state=doing_morning, day=day700":[2134,274,90,90],"state=doing_afternoon, day=day700":[2134,398,90,90],"state=doing_evening, day=day700":[2134,522,90,90],"state=doing_emergency, day=day700":[2134,646,90,90],"state=done, day=day700":[2134,770,90,90],"state=doing_morning, day=day800":[2258,274,90,90],"state=doing_afternoon, day=day800":[2258,398,90,90],"state=doing_evening, day=day800":[2258,522,90,90],"state=doing_emergency, day=day800":[2258,646,90,90],"state=done, day=day800":[2258,770,90,90],"state=doing_morning, day=day900":[2382,274,90,90],"state=doing_afternoon, day=day900":[2382,398,90,90],"state=doing_evening, day=day900":[2382,522,90,90],"state=doing_emergency, day=day900":[2382,646,90,90],"state=done, day=day900":[2382,770,90,90],"state=doing_morning, day=day1000":[2506,274,90,90],"state=doing_afternoon, day=day1000":[2506,398,90,90],"state=doing_evening, day=day1000":[2506,522,90,90],"state=doing_emergency, day=day1000":[2506,646,90,90],"state=done, day=day1000":[2506,770,90,90]},"miss":[]},"Streak/Status Icon":{"img":"img/2927-4780.png","where":"식물 얼굴 (표정만)","v":{"state=doing-emergency":[6,6,52,40],"state=doing-morning":[138,6,52,40],"state=doing-morning-n":[270,6,52,40],"state=done":[402,6,52,40],"state=none":[534,6,52,40],"state=todo":[666,6,52,40],"state=doing-afternoon":[86,166,52,40],"state=doing-evening":[218,166,52,40]},"miss":["state=doing-afternoon","state=doing-evening"]},"Widget/Streak":{"img":"img/2643-10399.png","where":"iOS 홈화면 위젯","v":{"state=none":[26,26,158,158],"state=todo":[26,214,158,158],"state=doing":[26,402,158,158],"state=doing/emergency":[224,402,158,158],"state=done":[26,585,158,158]},"miss":[]},"Streak/Floating Button Set":{"img":"img/1-3303.png","where":"레슨 화면에 떠 있는 버튼 (숫자까지)","v":{"active=1-2days":[26,26,55,65],"active=3-4days":[26,121,55,65],"active=5-6days":[26,216,55,65],"active=6-69days":[26,311,55,65],"active=70-days":[26,406,55,65]},"miss":[]},"Streak/Floating Button":{"img":"img/1-3355.png","where":"그 버튼의 원 부분만","v":{"active=1-2days":[26,26,55,55],"active=3-4days":[26,111,55,55],"active=5-6days":[26,196,55,55],"active=6-69days":[26,281,55,55],"active=70-99days":[26,366,55,55]},"miss":[]},"Streak/Icon 40 White":{"img":"img/1-3374-dark.png","where":"민트·진한 면 위 불꽃","v":{"days=0day":[26,26,40,40],"days=1-2days":[96,26,40,40],"days=3-4days":[166,26,40,40],"days=5-6days":[236,26,40,40],"days=7-69days":[306,26,40,40],"days=70-99days":[376,26,40,40]},"miss":[]},"Streak/Icon 40 Green":{"img":"img/1-3410.png","where":"흰 바탕 위 불꽃 40","v":{"days=1-2days":[26,26,40,40],"days=3-4days":[96,26,40,40],"days=5-6days":[166,26,40,40],"days=7-69days":[236,26,40,40],"days=70-99days":[306,26,40,40]},"miss":[]},"Streak/Icon 20 Green":{"img":"img/1-3443.png","where":"흰 바탕 위 불꽃 20","v":{"days=1-2days":[26,26,20,20],"days=3-4days":[76,26,20,20],"days=5-6days":[126,26,20,20],"days=7-69days":[176,26,20,20],"days=70-99days":[226,26,20,20]},"miss":[]}},"days":[1,2,3,4,5,6,7,21,42,70,100,200,300,365,400,500,600,700,800,900,1000],"flame":["Streak/Floating Button Set","Streak/Floating Button","Streak/Icon 40 White","Streak/Icon 40 Green","Streak/Icon 20 Green"],"status":{"none":"none","todo":"todo","doing_morning":"doing-morning","doing_afternoon":"doing-afternoon","doing_evening":"doing-evening","doing_emergency":"doing-emergency","done":"done"},"widget":{"none":"none","todo":"todo","doing_morning":"doing","doing_afternoon":"doing","doing_evening":"doing","doing_emergency":"doing/emergency","done":"done"},"ranges":{"Streak/Icon 20 Green":[[1,2,"1-2days"],[3,4,"3-4days"],[5,6,"5-6days"],[7,69,"7-69days"],[70,99,"70-99days"]],"Streak/Icon 40 Green":[[1,2,"1-2days"],[3,4,"3-4days"],[5,6,"5-6days"],[7,69,"7-69days"],[70,99,"70-99days"]],"Streak/Icon 40 White":[[0,0,"0day"],[1,2,"1-2days"],[3,4,"3-4days"],[5,6,"5-6days"],[7,69,"7-69days"],[70,99,"70-99days"]],"Streak/Floating Button":[[1,2,"1-2days"],[3,4,"3-4days"],[5,6,"5-6days"],[6,69,"6-69days"],[70,99,"70-99days"]],"Streak/Floating Button Set":[[1,2,"1-2days"],[3,4,"3-4days"],[5,6,"5-6days"],[6,69,"6-69days"],[70,10000,"70-days"]]}};
+const STOPS=[0].concat(C.days);
+const S=document.getElementById('pk-state'),D=document.getElementById('pk-day'),
+      R=document.getElementById('pk-rng'),Z=document.getElementById('pk-zoom'),
+      OUT=document.getElementById('pk-out'),W=document.getElementById('pk-warn');
+function stopOf(n){var i=0;for(var k=0;k<STOPS.length;k++) if(STOPS[k]<=n) i=k; return i;}
+function plantDay(st,n){
+  if(st==='none'||st==='todo') return 'default';
+  var best=C.days[0];
+  for(var i=0;i<C.days.length;i++) if(C.days[i]<=n) best=C.days[i];
+  return 'day'+best;
+}
+function inRange(name,n){
+  var hit=[],r=C.ranges[name];
+  for(var i=0;i<r.length;i++) if(n>=r[i][0]&&n<=r[i][1]) hit.push(r[i][2]);
+  return hit;
+}
+function sprite(set,variant){
+  var s=C.sets[set],r=s.v[variant],z=Z.checked?2:1;
+  if(!r||s.miss.indexOf(variant)>=0) return '<div class="pk-none">세트 프레임 밖이라<br>그림을 못 뽑았어요</div>';
+  return '<div class="pk-box" style="width:'+(r[2]*z)+'px;height:'+(r[3]*z)+'px">'+
+    '<i style="width:'+r[2]+'px;height:'+r[3]+'px;background-image:url('+s.img+');background-position:-'+r[0]+'px -'+r[1]+'px;transform:scale('+z+')"></i></div>';
+}
+function card(set,variant,note,cls){
+  return '<article class="pk-card'+(cls||'')+'">'+sprite(set,variant)+
+    '<div class="pk-meta"><h4>'+set+'</h4><code>'+variant+'</code><p>'+C.sets[set].where+
+    (note?'<br>'+note:'')+'</p></div></article>';
+}
+function run(){
+  var st=S.value,n=Math.max(0,Math.min(1000,parseInt(D.value||'0',10)||0));
+  var day=plantDay(st,n),warn=[],parts=[];
+  var pnote=(st==='none'||st==='todo')?'이 상태는 일수와 상관없이 하나예요':'연속 '+n+'일 → <b>'+day+'</b>';
+  parts.push(card('Streak/Calendar Icon','state='+st+', day='+day,pnote));
+  parts.push(card('Streak/Status Icon','state='+C.status[st],''));
+  parts.push(card('Widget/Streak','state='+C.widget[st],''));
+  for(var i=0;i<C.flame.length;i++){
+    var set=C.flame[i],hit=inRange(set,n);
+    if(hit.length===0){
+      parts.push('<article class="pk-card pk-off"><div class="pk-none">이 일수에 맞는<br>배리언트가 없어요</div>'+
+        '<div class="pk-meta"><h4>'+set+'</h4><code>없음</code><p>'+C.sets[set].where+'</p></div></article>');
+    }else{
+      var key=set.indexOf('Floating')>=0?'active=':'days=';
+      var note=hit.length>1?'<b>'+key+hit[1]+'도 같이 걸려요.</b> 어느 쪽이 맞는지 정해야 해요':'';
+      parts.push(card(set,key+hit[0],note,hit.length>1?' pk-off':''));
+    }
+  }
+  if(n===6) warn.push('<b>6일째에 모양이 갈려요.</b> 불꽃 아이콘은 <code>5-6days</code>, 플로팅 버튼은 <code>6-69days</code>예요. 어느 쪽이 맞는지 확인 필요');
+  if(n>=100) warn.push('100일 이상은 불꽃 아이콘에 구간이 없어요 (<code>70-99days</code>까지). <code>Floating Button Set</code>만 <code>70-days</code>로 끝이 열려 있어요');
+  if(n===0) warn.push('0일 그림은 <code>Icon 40 White</code>의 <code>0day</code>에만 있어요. Green 아이콘·플로팅 버튼에는 0일이 없어요');
+  if(st==='doing_afternoon'||st==='doing_evening') warn.push('<code>Status Icon</code>의 <code>'+C.status[st]+'</code>가 <b>세트 프레임 밖에 나가 있어요.</b> 디스크립션에도 빠져 있어서 정리 필요');
+  if(st==='none'||st==='todo') warn.push('<code>none</code>·<code>todo</code>는 식물이 <code>day=default</code> 하나예요. 일수를 바꿔도 식물은 그대로예요');
+  OUT.className='pk-out'+(Z.checked?' z2':'');
+  OUT.innerHTML=parts.join('');
+  W.innerHTML=warn.length?'<ul class="pk-warn">'+warn.map(function(x){return '<li>'+x+'</li>';}).join('')+'</ul>':'';
+}
+S.addEventListener('change',run);
+D.addEventListener('input',function(){R.value=stopOf(parseInt(D.value||'0',10)||0);run();});
+R.addEventListener('input',function(){D.value=STOPS[parseInt(R.value,10)];run();});
+Z.addEventListener('change',run);
+var chips=document.querySelectorAll('.pk-chip');
+for(var i=0;i<chips.length;i++) chips[i].addEventListener('click',function(){D.value=this.dataset.d;R.value=stopOf(+this.dataset.d);run();});
+R.value=stopOf(parseInt(D.value,10));
+run();
+})();
+</script>
+</section>
 <hr />
 <h2>1. 식물 아이콘 그리기</h2>
 <p>기준 심볼은 <code>Streak/Calendar Icon</code> 의 <code>state=done, day=day1</code> (새싹)이에요. 나머지 단계도 같은 캔버스·같은 화분을 써요.</p>
@@ -498,6 +610,14 @@ input[type=search]:focus{outline:2px solid var(--mint);border-color:transparent}
 <tr>
 <td><code>Widget/State6·7·8</code></td>
 <td>어떤 조건에서 뜨는지 확인 안 됨</td>
+</tr>
+<tr>
+<td><code>Status Icon</code>의 배리언트 2개</td>
+<td><code>doing-afternoon</code>·<code>doing-evening</code>이 <strong>세트 프레임 밖에 나가 있어요.</strong> 그래서 세트 그림에도 안 담기고 디스크립션에도 빠져 있어요</td>
+</tr>
+<tr>
+<td>상태가 바뀌는 조건</td>
+<td>아침·낮·저녁을 가르는 시각, <code>doing_emergency</code>가 되는 조건, <code>doing-morning-n</code>이 무엇인지 확인 안 됨</td>
 </tr>
 </tbody>
 </table></div><footer class="foot">틀린 내용이 있거나 필요한 부품·토큰이 없으면 디자인 시스템 담당자에게 알려 주세요. 사이트와 피그마가 다르면 피그마가 기준이에요.</footer></main></div>

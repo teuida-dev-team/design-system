@@ -19,6 +19,46 @@
 
 **불꽃 아이콘은 바탕색으로 골라요.** 민트·진한 면 위면 White, 흰 바탕이면 Green이에요. 반대로 쓰면 안 보여요.
 
+어느 배리언트를 쓸지 헷갈리면 아래 **[조건 넣고 보기](#pick)** 에서 상태와 연속 일수를 넣어 보면 돼요.
+
+---
+
+## 조건 넣고 보기
+
+사이트(streak.html)에는 상태·연속 일수를 고르면 어느 배리언트가 쓰이는지 보여 주는 칸이 있어요. 같은 내용을 표로 적으면 이래요.
+
+### 상태별로 어느 배리언트를 쓰나
+
+| 상태 | 식물 `Calendar Icon` | 얼굴 `Status Icon` | 위젯 `Widget/Streak` |
+|---|---|---|---|
+| 없음 (`none`) | `state=none` | `state=none` | `state=none` |
+| 해야 함 (`todo`) | `state=todo` | `state=todo` | `state=todo` |
+| 진행 중 · 아침 (`doing_morning`) | `state=doing_morning` | `state=doing-morning` | `state=doing` |
+| 진행 중 · 낮 (`doing_afternoon`) | `state=doing_afternoon` | `state=doing-afternoon` | `state=doing` |
+| 진행 중 · 저녁 (`doing_evening`) | `state=doing_evening` | `state=doing-evening` | `state=doing` |
+| 진행 중 · 긴급 (`doing_emergency`) | `state=doing_emergency` | `state=doing-emergency` | `state=doing/emergency` |
+| 완료 (`done`) | `state=done` | `state=done` | `state=done` |
+
+- `none`·`todo`는 식물이 `day=default` 하나예요. 일수를 바꿔도 안 바뀌어요.
+- 나머지 상태는 `day` 배리언트가 따로 있어요: day1 · day2 · day3 · day4 · day5 · day6 · day7 · day21 · day42 · day70 · day100 · day200 · day300 · day365 · day400 · day500 · day600 · day700 · day800 · day900 · day1000.
+- 일수가 중간값이면 **그 이하에서 가장 큰 단계**로 봐요 (예: 50일 → `day42`). 앱 적용 기준은 확인 전이에요.
+- `Status Icon`의 `doing-afternoon`·`doing-evening`은 세트 프레임 밖에 나가 있어요.
+
+### 연속 일수별 불꽃·버튼 구간
+
+| 부품 | 구간 |
+|---|---|
+| `Streak/Icon 20 Green` | `1-2days` · `3-4days` · `5-6days` · `7-69days` · `70-99days` |
+| `Streak/Icon 40 Green` | `1-2days` · `3-4days` · `5-6days` · `7-69days` · `70-99days` |
+| `Streak/Icon 40 White` | `0day` · `1-2days` · `3-4days` · `5-6days` · `7-69days` · `70-99days` |
+| `Streak/Floating Button` | `1-2days` · `3-4days` · `5-6days` · `6-69days` · `70-99days` |
+| `Streak/Floating Button Set` | `1-2days` · `3-4days` · `5-6days` · `6-69days` · `70-days` |
+
+- **6일째가 어긋나요.** 불꽃은 `5-6days`, 플로팅 버튼은 `6-69days`라 모양이 서로 달라요.
+- 100일 이상은 `Floating Button Set`(`70-days`)에만 있어요. 나머지는 `70-99days`에서 끝나요.
+- 0일 그림은 `Icon 40 White`의 `0day`에만 있어요.
+
+
 ---
 
 ## 1. 식물 아이콘 그리기
@@ -167,3 +207,5 @@
 | `Floating Button Set` 날짜 글자 | 텍스트 스타일이 안 걸려 있어요 (Bold 12 직접 입력) |
 | `Status Icon`과 `Calendar Icon`의 상태 이름 | 하나는 `doing-morning`(하이픈), 다른 하나는 `doing_morning`(밑줄)이에요. 상태 종류도 서로 달라요 |
 | `Widget/State6·7·8` | 어떤 조건에서 뜨는지 확인 안 됨 |
+| `Status Icon`의 배리언트 2개 | `doing-afternoon`·`doing-evening`이 **세트 프레임 밖에 나가 있어요.** 그래서 세트 그림에도 안 담기고 디스크립션에도 빠져 있어요 |
+| 상태가 바뀌는 조건 | 아침·낮·저녁을 가르는 시각, `doing_emergency`가 되는 조건, `doing-morning-n`이 무엇인지 확인 안 됨 |
