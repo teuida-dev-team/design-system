@@ -1,0 +1,504 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>스트릭 · TEUIDA 디자인 시스템</title>
+<meta name="robots" content="noindex,nofollow">
+<link rel="alternate" type="text/markdown" href="ai/streak.md">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>:root{--bg:#F5F5F5;--surface:#FFFFFF;--ink:#252525;--ink2:#616161;--ink3:#9E9E9E;--line:#E8E8E8;--mint:#00E2B9;--mint-ink:#00A1A2;--mint-soft:#E8FFF2;--warn:#FF3F59;--warn-soft:#FFF0F2;--thumb:#2C2C2C;--thumb-light:#EFEFEF;--code:#F0F0F0}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#161616;--surface:#202020;--ink:#EDEDED;--ink2:#B5B5B5;--ink3:#8A8A8A;--line:#333;--mint-ink:#3BEDBC;--mint-soft:#0F2E27;--warn-soft:#3A1A1F;--thumb:#2C2C2C;--thumb-light:#EFEFEF;--code:#2A2A2A}}
+:root[data-theme="dark"]{--bg:#161616;--surface:#202020;--ink:#EDEDED;--ink2:#B5B5B5;--ink3:#8A8A8A;--line:#333;--mint-ink:#3BEDBC;--mint-soft:#0F2E27;--warn-soft:#3A1A1F;--thumb:#2C2C2C;--thumb-light:#EFEFEF;--code:#2A2A2A}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.65 "Noto Sans KR",system-ui,sans-serif;word-break:keep-all;overflow-wrap:anywhere}
+a{color:var(--mint-ink)}
+code{font:13px/1.4 ui-monospace,SFMono-Regular,Menlo,monospace;background:var(--code);padding:1px 5px;border-radius:4px}
+pre{background:var(--code);padding:14px;border-radius:8px;overflow:auto}pre code{background:none;padding:0}
+.top{position:sticky;top:0;z-index:5;display:flex;align-items:center;justify-content:space-between;height:56px;padding:0 20px;background:var(--surface);border-bottom:1px solid var(--line)}
+.brand{display:flex;align-items:center;gap:8px;color:var(--ink);text-decoration:none;font-weight:800;letter-spacing:-.2px}
+.brand b{font-weight:500;color:var(--ink2)}
+.dot{width:14px;height:14px;border-radius:50%;background:var(--mint)}
+.menu{display:none;border:0;background:none;color:var(--ink);font-size:22px;padding:8px;cursor:pointer}
+.wrap{display:flex;max-width:1240px;margin:0 auto}
+.side{position:sticky;top:56px;align-self:flex-start;width:200px;flex:none;padding:24px 12px;height:calc(100vh - 56px);overflow:auto}
+.side a{display:block;padding:8px 12px;border-radius:8px;color:var(--ink2);text-decoration:none;font-weight:500}
+.side a:hover{background:var(--surface)}
+.side a[aria-current]{background:var(--surface);color:var(--ink);font-weight:700}
+.upd{margin:20px 12px 0;font-size:12px;color:var(--ink3);line-height:1.7}.upd a{display:inline;padding:0;color:var(--ink3)}
+main{flex:1;min-width:0;padding:32px 32px 80px}
+main p>img{max-width:100%;height:auto;display:block;margin:16px 0;border:1px solid var(--line);border-radius:10px;background:var(--surface)}
+h1{font-size:28px;line-height:1.3;margin:0 0 8px;font-weight:800;letter-spacing:-.4px}
+h2{font-size:20px;margin:40px 0 10px;font-weight:800;scroll-margin-top:70px}
+h2 small{font-size:14px;color:var(--ink3);font-weight:500}
+h3{font-size:16px;margin:24px 0 8px;font-weight:700}
+.lead,main>p:first-of-type{color:var(--ink2);font-size:16px}
+.note{color:var(--ink2);margin:4px 0}
+.tbl{overflow-x:auto;margin:10px 0;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{text-align:left;vertical-align:top;padding:10px 12px;border-bottom:1px solid var(--line)}
+th{font-weight:700;color:var(--ink2);background:var(--bg);white-space:nowrap}
+tr:last-child td{border-bottom:0}
+td code{white-space:nowrap}
+tr.dep td{opacity:.5}
+.val{white-space:nowrap;color:var(--ink2)}
+.sw{display:inline-block;vertical-align:-4px;width:18px;height:18px;border-radius:5px;margin-right:8px;background:var(--c);box-shadow:inset 0 0 0 1px rgba(127,127,127,.35)}
+.sw.none{background:repeating-linear-gradient(45deg,transparent 0 3px,var(--line) 3px 6px)}
+.bar{display:inline-block;height:10px;background:var(--mint);border-radius:2px;margin-right:8px;vertical-align:0}
+.radii{display:flex;flex-wrap:wrap;gap:12px}
+.rad{display:flex;flex-direction:column;gap:4px;width:130px;font-size:13px}
+.rad span{width:64px;height:48px;background:var(--mint-soft);border:2px solid var(--mint)}
+.rad small{color:var(--ink3)}
+.callout{background:var(--warn-soft);border-left:3px solid var(--warn);padding:12px 14px;border-radius:8px;margin:12px 0}
+.box{display:inline-block;width:14px;height:14px;border:1.5px solid var(--ink3);border-radius:3px;vertical-align:-2px}
+li:has(.box){list-style:none;margin-left:-20px}
+input[type=search]{width:100%;max-width:520px;height:44px;padding:0 14px;border:1px solid var(--line);border-radius:10px;background:var(--surface);color:var(--ink);font:inherit}
+input[type=search]:focus{outline:2px solid var(--mint);border-color:transparent}
+.filters{position:sticky;top:56px;z-index:3;background:var(--bg);padding:12px 0;display:flex;flex-direction:column;gap:10px}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{border:1px solid var(--line);background:var(--surface);color:var(--ink2);border-radius:8px;padding:6px 12px;font:inherit;font-size:14px;cursor:pointer}
+.chip.on{background:var(--ink);color:var(--surface);border-color:var(--ink)}
+.cnt{color:var(--ink3);font-size:13px;margin:0}
+.cat{color:var(--ink2);font-size:14px;margin:22px 0 8px;text-transform:none}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden;display:flex;flex-direction:column}
+.thumb{background:var(--thumb);height:170px;display:flex;align-items:center;justify-content:center;padding:10px}
+.thumb img{max-width:100%;max-height:100%;object-fit:contain}
+.thumb.on-light{background:#EFEFEF}
+.card.small .thumb{height:96px}.card.small .thumb img{max-height:56px}
+.body{padding:12px 14px 14px}
+.body h4{margin:0 0 4px;font-size:14px;font-weight:700;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:-.2px}
+.body p{margin:0 0 6px;font-size:13.5px;color:var(--ink)}
+.kv{font-size:13px;color:var(--ink2);margin-top:3px}
+.kv span{display:inline-block;min-width:64px;margin-right:8px;font-weight:700;color:var(--ink)}
+.var{margin-top:8px;font-size:12px;color:var(--ink3);font-family:ui-monospace,Menlo,monospace}
+.warn{margin-left:6px;font:700 11px/1 "Noto Sans KR";color:var(--warn);background:var(--warn-soft);padding:3px 6px;border-radius:4px;vertical-align:1px}
+.arc{margin-top:8px}
+.arow{display:flex;gap:12px;padding:10px 0;border-top:1px solid var(--line)}
+.why{flex:none;width:200px;font-size:13px;font-weight:700;color:var(--ink2)}
+.names{display:flex;flex-wrap:wrap;gap:6px}
+.names code{font-size:12px}
+[hidden]{display:none!important}
+@media (max-width:860px){
+ .menu{display:block}
+ .side{position:fixed;top:56px;left:0;right:0;width:auto;height:auto;max-height:calc(100vh - 56px);background:var(--surface);border-bottom:1px solid var(--line);z-index:6;display:none;padding:8px 16px 16px}
+ body.open .side{display:block}
+ main{padding:24px 16px 64px}
+ .top{padding:0 16px}
+ h1{font-size:24px}
+ .grid{grid-template-columns:1fr}
+ .arow{flex-direction:column;gap:6px}.why{width:auto}
+}
+.spec{margin-top:12px;border-top:1px solid var(--line);padding-top:10px}
+.spec summary{cursor:pointer;font-weight:700;color:var(--mint-ink);font-size:14px}
+.card:has(.spec[open]){grid-column:1/-1;flex-direction:row}
+.card:has(.spec[open]) .thumb{width:240px;flex:none;height:auto;min-height:200px;align-items:flex-start;padding-top:24px}
+.card:has(.spec[open]) .body{flex:1;min-width:0}
+.spec h5{margin:16px 0 4px;font-size:13px}
+.spec td{font-size:13px}.spec td code,.spec .tk,.spec .prim{white-space:normal;word-break:break-all}
+.legend{font-size:12px;color:var(--ink2)}
+.tk,.prim,.raw{font:12px/1.3 ui-monospace,Menlo,monospace;padding:1px 5px;border-radius:4px;white-space:nowrap}
+.tk{background:var(--mint-soft);color:var(--mint-ink)}
+.prim{background:var(--code);color:var(--ink2)}
+.raw{background:var(--warn-soft);color:var(--warn)}
+.has-spec{margin-left:6px;font:700 11px/1 "Noto Sans KR";color:var(--mint-ink);background:var(--mint-soft);padding:3px 6px;border-radius:4px;vertical-align:1px}
+@media (max-width:860px){.card:has(.spec[open]){flex-direction:column}.card:has(.spec[open]) .thumb{width:auto}}
+.fixn{margin-left:6px;font:700 11px/1 "Noto Sans KR";color:var(--warn);background:var(--warn-soft);padding:3px 6px;border-radius:4px}
+.ind{display:inline-block;width:calc(var(--d)*14px)}
+.callout ul{margin:6px 0 0;padding-left:18px}.callout li{font-size:13px;margin:3px 0}
+.foot{margin-top:56px;padding-top:16px;border-top:1px solid var(--line);font-size:13px;color:var(--ink3)}
+.body h4 a{color:inherit;text-decoration:none}
+.cp{margin-left:4px;border:0;background:none;color:var(--ink3);cursor:pointer;font-size:13px;padding:2px 4px;border-radius:4px}
+.cp:hover{background:var(--code)}.cp.ok{color:var(--mint-ink)}.cp.ok::after{content:" 복사됨";font:12px "Noto Sans KR"}
+.card:target{outline:2px solid var(--mint)}
+.dl{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;margin:12px 0}
+.dl a{display:flex;flex-direction:column;padding:12px 14px;border:1px solid var(--line);border-radius:10px;background:var(--surface);color:var(--ink);text-decoration:none;font:700 14px ui-monospace,Menlo,monospace}
+.dl a:hover{border-color:var(--mint)}.dl small{font:12px "Noto Sans KR";color:var(--ink2);margin-top:2px}
+.vd{margin-top:14px}.vd summary{cursor:pointer;font-weight:700;font-size:13px;color:var(--ink2)}
+.vd h6{margin:14px 0 4px;font-size:12px}
+.svgs{display:flex;flex-wrap:wrap;gap:4px;margin-top:8px}.svgs a{font-size:11px;padding:2px 6px;border:1px solid var(--line);border-radius:4px;text-decoration:none;color:var(--ink2)}
+.card.small .thumb img{width:48px;height:48px}
+.toc{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0}.toc a{padding:5px 10px;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--ink2);text-decoration:none;font-size:13px}.toc small{color:var(--ink3)}
+.scr-row{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:14px}
+.scr{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px}
+.scr h4{margin:0 0 2px;font-size:14px}.scr .no{display:inline-block;min-width:22px;height:22px;line-height:22px;text-align:center;border-radius:11px;background:var(--mint-soft);color:var(--mint-ink);font-size:12px;margin-right:6px}
+.scr .flow{margin:0;font-size:12px;color:var(--ink2)}.scr .src{margin:2px 0 0;font-size:11px;color:var(--ink3)}
+.imgs{display:flex;gap:8px;margin-top:8px}.imgs figure{margin:0;flex:1;min-width:0}.imgs img{width:100%;border-radius:8px;border:1px solid var(--line);display:block}
+.imgs figcaption{font-size:11px;color:var(--ink3);text-align:center;margin-top:2px}
+.imgs .none div{aspect-ratio:375/812;display:flex;align-items:center;justify-content:center;text-align:center;border:1.5px dashed var(--warn);border-radius:8px;color:var(--warn);font-size:12px;font-weight:700}
+.scr details{margin-top:8px}.scr summary{font-size:12px;cursor:pointer;color:var(--ink2)}
+.parts{display:flex;flex-wrap:wrap;gap:4px;margin-top:6px}.parts a,.parts span{font:11px ui-monospace,Menlo,monospace;padding:2px 5px;border-radius:4px}
+.parts a{background:var(--mint-soft);color:var(--mint-ink);text-decoration:none}.parts span{background:var(--code);color:var(--ink3);text-decoration:line-through}
+</style></head>
+<body><header class="top"><a class="brand" href="index.html"><span class="dot"></span>TEUIDA <b>디자인 시스템</b></a>
+<button class="menu" aria-label="메뉴" onclick="document.body.classList.toggle('open')">☰</button></header>
+<div class="wrap"><nav class="side"><a href="index.html">시작하기</a><a href="rules.html">작업 규칙</a><a href="components.html">컴포넌트</a><a href="tokens.html">토큰</a><a href="streak.html" aria-current="page">스트릭</a><a href="screens.html">현행 화면</a><a href="description.html">디스크립션</a><a href="changelog.html">변경 기록</a><a href="ai.html">Claude용 안내</a><p class="upd">갱신 2026-11-17<br><a href="ai/streak.md">이 페이지 Markdown</a></p></nav>
+<main><h1>스트릭 가이드라인</h1>
+<p>스트릭은 <strong>식물이 자라는 모습</strong>으로 연속 학습일을 보여줘요. 부품이 17개로 많은데, 대부분 서로를 품고 있어서 <strong>어느 하나만 바꾸면 다른 데가 같이 바뀌어요.</strong> 그래서 임의로 고치지 않는 게 가장 중요해요.</p>
+<h2>어느 부품을 언제 쓰나</h2>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>어디에</th>
+<th>부품</th>
+<th>크기</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>스트릭 달력 칸 안의 식물</td>
+<td><code>Streak/Calendar Icon</code></td>
+<td>90×90</td>
+</tr>
+<tr>
+<td>식물 얼굴 (표정만)</td>
+<td><code>Streak/Status Icon</code></td>
+<td>52×40</td>
+</tr>
+<tr>
+<td>레슨 화면 떠 있는 버튼</td>
+<td><code>Streak/Floating Button Set</code></td>
+<td>55×65</td>
+</tr>
+<tr>
+<td>그 버튼의 원 부분만</td>
+<td><code>Streak/Floating Button</code></td>
+<td>55×55</td>
+</tr>
+<tr>
+<td>민트 바탕 위 불꽃</td>
+<td><code>Streak/Icon 20 Green</code> · <code>Icon 40 Green</code></td>
+<td>20×20 · 40×40</td>
+</tr>
+<tr>
+<td>흰 바탕·컬러 면 위 불꽃</td>
+<td><code>Streak/Icon 40 White</code></td>
+<td>40×40</td>
+</tr>
+<tr>
+<td>iOS 홈화면 위젯</td>
+<td><code>Widget/Streak</code></td>
+<td>158×158</td>
+</tr>
+<tr>
+<td>달력 한 달</td>
+<td><code>Streak/Calendar Month</code></td>
+<td>300×306</td>
+</tr>
+<tr>
+<td>달력 날짜 한 칸</td>
+<td><code>Streak/Calendar Date Cell</code></td>
+<td>42×28</td>
+</tr>
+<tr>
+<td>프리즈 아이템 칸</td>
+<td><code>Streak/Freeze Item</code></td>
+<td>56×56</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>불꽃 아이콘은 바탕색으로 골라요.</strong> 민트·진한 면 위면 White, 흰 바탕이면 Green이에요. 반대로 쓰면 안 보여요.</p>
+<hr />
+<h2>1. 식물 아이콘 그리기</h2>
+<p>기준 심볼은 <code>Streak/Calendar Icon</code> 의 <code>state=done, day=day1</code> (새싹)이에요. 나머지 단계도 같은 캔버스·같은 화분을 써요.</p>
+<p><img alt="day1 새싹 아이콘 컬러 가이드" src="img/streak-plant-guide.png" /></p>
+<h3>캔버스</h3>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>캔버스</td>
+<td>90 × 90, 배경 투명</td>
+</tr>
+<tr>
+<td>일러스트 영역</td>
+<td>72.8 × 63.3</td>
+</tr>
+<tr>
+<td>여백</td>
+<td>위 20 · 좌우 8~9 · 아래 6</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>아래 여백이 좁은 건 일부러예요.</strong> 바닥 그림자가 캔버스 아래쪽에 붙어 있어야 식물이 바닥에 선 것처럼 보여요.</p>
+<h3>구성과 컬러</h3>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>파트</th>
+<th>위치·크기 (x, y, w, h)</th>
+<th>컬러</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>왼쪽 잎 (앞)</td>
+<td>35.7, 20.3, 10.0 × 15.7</td>
+<td><code>#00F4C1</code></td>
+</tr>
+<tr>
+<td>줄기</td>
+<td>44.6, 33.1, 길이 9.4 · 두께 1.93</td>
+<td><code>#00F4C1</code></td>
+</tr>
+<tr>
+<td>오른쪽 잎 (뒤)</td>
+<td>43.7, 20.7, 10.1 × 15.9</td>
+<td><code>#86FFD1</code></td>
+</tr>
+<tr>
+<td>화분 테두리(림)</td>
+<td>14.9, 38.2, 59.9 × 11.3</td>
+<td><code>#EBD9C9</code></td>
+</tr>
+<tr>
+<td>화분 몸통</td>
+<td>20.1, 43.8, 49.5 × 37.3</td>
+<td><code>#E3D0BE</code></td>
+</tr>
+<tr>
+<td>바닥 그림자</td>
+<td>8.4, 78.7, 72.8 × 5.0</td>
+<td><strong>아직 안 정함</strong></td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>잎은 <strong>진한 민트가 앞, 연한 민트가 뒤</strong>예요. 깊이감을 내려고 둘로 나눈 거라 같은 색으로 합치지 않아요.</li>
+<li>화분은 <strong>림이 몸통보다 밝고 넓은</strong> 사다리꼴이에요.</li>
+<li>선·외곽선 없고, 그라데이션 없는 <strong>플랫 단색</strong>이에요.</li>
+</ul>
+<h3>얼굴</h3>
+<p>얼굴은 <code>Streak/Status Icon</code> 인스턴스예요. 화분 몸통 위 <code>25.2, 49.4 / 39.8 × 30.6</code> 영역에 놓아요.</p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>파트</th>
+<th>크기</th>
+<th>컬러</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>눈</td>
+<td>원 3.8 × 3.8, 간격 약 13</td>
+<td><code>#545454</code></td>
+</tr>
+<tr>
+<td>볼터치</td>
+<td>타원 4.7 × 3.4 (눈 바깥쪽 아래)</td>
+<td><code>#FEABBF</code></td>
+</tr>
+<tr>
+<td>입 — done</td>
+<td>벌린 미소 7.4 × 5.8</td>
+<td><code>#545454</code></td>
+</tr>
+<tr>
+<td>입 안쪽 진한 부분</td>
+<td>2.5 × 3.2</td>
+<td><code>#3B3838</code></td>
+</tr>
+<tr>
+<td>입 — doing</td>
+<td>일자선, 두께 2.29</td>
+<td><code>#545454</code></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>눈·입은 <code>#545454</code> 하나로 통일해요.</strong> 라이브러리 원본에 <code>#555555</code>로 남아 있는 곳이 있는데 그건 고칠 거예요. 새로 그리거나 덮어쓸 때는 <code>#545454</code>를 써요.</p>
+<h3>하면 되는 것 · 하면 안 되는 것</h3>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>하면 돼요</th>
+<th>하면 안 돼요</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>라이브러리 인스턴스를 그대로 놓기</td>
+<td>인스턴스를 떼어내서(Detach) 고치기</td>
+</tr>
+<tr>
+<td>90×90 비율 그대로 키우고 줄이기</td>
+<td>가로세로 비율 다르게 늘리기</td>
+</tr>
+<tr>
+<td>단계가 없으면 가장 가까운 day 배리언트 쓰기</td>
+<td>잎·화분을 직접 그려 넣어 새 단계 만들기</td>
+</tr>
+<tr>
+<td>표정은 <code>Status Icon</code> 배리언트에서 고르기</td>
+<td>눈·입을 직접 그리거나 위치 옮기기</td>
+</tr>
+<tr>
+<td>색이 필요하면 위 표의 HEX 그대로</td>
+<td>민트를 <code>Color/Button</code> 토큰으로 바꾸기</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>일러스트 색은 토큰에 걸지 않아요.</strong> 디자인 시스템 공통 규칙이에요 — 다시 쓰이지 않는 그래픽은 토큰에 연결하지 않아요. 화면에서 민트가 필요하면 토큰을 쓰지만, 식물의 잎 민트는 일러스트 색이라 HEX로 둬요.</p>
+<hr />
+<h2>2. 불꽃 아이콘</h2>
+<p>연속 일수에 따라 불꽃 모양이 달라져요. <strong>같은 일수 구간이면 어느 크기를 써도 모양이 같아야 해요.</strong></p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>부품</th>
+<th>배리언트</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Streak/Icon 20 Green</code></td>
+<td>1-2 · 3-4 · 5-6 · 7-69 · 70-99</td>
+</tr>
+<tr>
+<td><code>Streak/Icon 40 Green</code></td>
+<td>1-2 · 3-4 · 5-6 · 7-69 · 70-99</td>
+</tr>
+<tr>
+<td><code>Streak/Icon 40 White</code></td>
+<td><strong>0day</strong> · 1-2 · 3-4 · 5-6 · 7-69 · 70-99</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li><code>0day</code>는 White에만 있어요. 아직 시작 안 한 상태를 흰 바탕에서만 보여주기 때문이에요.</li>
+<li><code>Streak/Ic Union</code>(17×17)은 불꽃 안의 조각이에요. 아이콘과 위젯이 같이 써요. <strong>따로 꺼내 쓰지 않아요.</strong></li>
+</ul>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>하면 돼요</th>
+<th>하면 안 돼요</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>바탕색 보고 Green·White 고르기</td>
+<td>흰 아이콘에 색 덮어씌워 민트 만들기</td>
+</tr>
+<tr>
+<td>20·40 중 자리에 맞는 크기</td>
+<td>20을 40으로 키워 쓰기 (획 두께가 달라요)</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>3. 플로팅 버튼</h2>
+<p>레슨 화면에 떠 있는 동그란 버튼이에요.</p>
+<ul>
+<li><code>Streak/Floating Button</code> — 55×55 원, Corner Radius 1000, 면 <code>icon-highlight</code>. 안에 <code>Streak/Icon 40 White</code>가 들어가요.</li>
+<li><code>Streak/Floating Button Set</code> — 위 버튼 + 아래 날짜 숫자. 55×65, 세로 오토레이아웃, 간격 <strong>-10</strong>(숫자가 원에 겹쳐 올라가요). 숫자 색은 <code>text-highlight</code>.</li>
+</ul>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>하면 돼요</th>
+<th>하면 안 돼요</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>숫자까지 필요하면 Set을 쓰기</td>
+<td>버튼과 숫자를 따로 놓고 직접 겹치기</td>
+</tr>
+<tr>
+<td>원 면은 <code>icon-highlight</code> 그대로</td>
+<td>간격 -10을 다른 값으로 바꾸기</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>4. 홈화면 위젯</h2>
+<p><code>Widget/Streak</code> — 158×158, Corner Radius 22, 바탕은 그라데이션. 안에 <code>Streak/Calendar Icon</code>(90×90)이 그대로 들어가요. 그래서 <strong>식물을 고치면 위젯도 같이 바뀌어요.</strong></p>
+<p>상태는 <code>none</code> · <code>todo</code> · <code>doing</code> · <code>doing/emergency</code> · <code>done</code> 다섯이에요.</p>
+<p><code>Widget/State6</code> · <code>State7</code> · <code>State8</code>은 477×477 대형 위젯이에요. <strong>어떤 조건에서 뜨는지 아직 확인 안 됐어요.</strong> 쓰기 전에 물어봐 주세요.</p>
+<hr />
+<h2>5. 달력</h2>
+<ul>
+<li><code>Streak/Calendar Month</code> — 300×306, 안쪽 여백 13, 간격 14, Corner Radius 10, 면 <code>button-tertiary</code>, 테두리 <code>background-primary</code> 2</li>
+<li><code>Streak/Calendar Date Cell</code> — 42×28. <code>default</code> · <code>today</code> · <code>active</code> · <code>start</code> · <code>freezemiddle</code> · <code>milestone</code></li>
+</ul>
+<p>연속 구간은 <strong>시작 · 중간 · 끝</strong> 모양이 따로 있어요. 가운데 날짜에 <code>start</code>를 쓰면 모서리가 끊겨 보여요.</p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>하면 돼요</th>
+<th>하면 안 돼요</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>구간 위치에 맞는 type 고르기</td>
+<td>하나의 type으로 다 깔고 색만 바꾸기</td>
+</tr>
+<tr>
+<td>글자색은 배리언트에 딸린 그대로</td>
+<td>선택 안 된 날짜에 <code>text-on-color</code> 쓰기</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>6. 프리즈</h2>
+<p><code>Streak/Freeze Item</code> — 56×56. <code>streakfreeze</code>(있음)와 <code>streakfreeze_empty</code>(빈 칸) 둘이에요.</p>
+<p>빈 칸은 면 <code>icon-inactive</code> + 아이콘 <code>icon-unselected</code>예요. <strong>빈 칸을 투명도로 만들지 않아요.</strong> 배리언트를 바꿔요.</p>
+<hr />
+<h2>공통으로 지킬 것</h2>
+<ol>
+<li><strong>인스턴스를 떼어내지 않아요.</strong> 스트릭 부품은 서로를 품고 있어서, 떼어내면 나중에 식물을 고쳐도 그 화면만 안 바뀌어요.</li>
+<li><strong>배리언트로 해결돼요.</strong> 상태가 안 맞으면 색을 덮어쓰지 말고 맞는 배리언트를 찾아요. 없으면 물어봐 주세요.</li>
+<li><strong>일러스트 색은 HEX, UI 색은 토큰.</strong> 식물·불꽃 안쪽은 HEX, 버튼 면·글자는 토큰이에요.</li>
+<li><strong>식물을 고치면 위젯·달력이 같이 바뀌어요.</strong> 고치기 전에 어디에 쓰이는지 먼저 봐요.</li>
+</ol>
+<hr />
+<h2>아직 안 정한 것 · 확인 필요</h2>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>무엇</th>
+<th>상태</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>바닥 그림자 컬러</td>
+<td><strong>미정.</strong> 어두운 그레이에 투명도를 주는 방향으로 갈 예정이라 HEX 하나로 못 적어요. 정하기 전까지 그림자를 임의로 칠하지 않아요</td>
+</tr>
+<tr>
+<td>눈 색 <code>#555555</code></td>
+<td>라이브러리 원본에 남아 있어요. <code>#545454</code>로 통일하기로 했고, 아이콘 수정 때 같이 고쳐요</td>
+</tr>
+<tr>
+<td>불꽃 일수 구간이 어긋나요</td>
+<td>아이콘은 <code>7-69days</code>인데 플로팅 버튼은 <code>6-69days</code>예요. <strong>6일째에 아이콘과 버튼 모양이 달라져요.</strong> 어느 쪽이 맞는지 확인 필요</td>
+</tr>
+<tr>
+<td>70일 이상 구간 이름</td>
+<td><code>Floating Button Set</code>만 <code>70-days</code>고 나머지는 <code>70-99days</code>예요. 100일 이상을 어떻게 할지 확인 필요</td>
+</tr>
+<tr>
+<td><code>Calendar Date Cell</code> 크기</td>
+<td>설명은 44×28인데 실제는 42×28이에요</td>
+</tr>
+<tr>
+<td><code>Floating Button Set</code> 날짜 글자</td>
+<td>텍스트 스타일이 안 걸려 있어요 (Bold 12 직접 입력)</td>
+</tr>
+<tr>
+<td><code>Status Icon</code>과 <code>Calendar Icon</code>의 상태 이름</td>
+<td>하나는 <code>doing-morning</code>(하이픈), 다른 하나는 <code>doing_morning</code>(밑줄)이에요. 상태 종류도 서로 달라요</td>
+</tr>
+<tr>
+<td><code>Widget/State6·7·8</code></td>
+<td>어떤 조건에서 뜨는지 확인 안 됨</td>
+</tr>
+</tbody>
+</table></div><footer class="foot">틀린 내용이 있거나 필요한 부품·토큰이 없으면 디자인 시스템 담당자에게 알려 주세요. 사이트와 피그마가 다르면 피그마가 기준이에요.</footer></main></div>
+<script>document.querySelectorAll('[data-copy]').forEach(b=>b.addEventListener('click',e=>{e.preventDefault();try{navigator.clipboard.writeText(b.dataset.copy);b.classList.add('ok');setTimeout(()=>b.classList.remove('ok'),1200);}catch(_){}}));</script></body></html>
