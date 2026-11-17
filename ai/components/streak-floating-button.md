@@ -7,7 +7,7 @@
 속성: active:1-2days·3-4days·5-6days·6-69days·70-99days
 
 - 스펙 (px, 기준 `active=1-2days`; 괄호 = 토큰 이름, "토큰 없음" = 숫자·색 직접):
-  - 전체: 55x55, 세로 정렬, 여백 위 2 (토큰 없음) · 오른 6 (토큰 없음) · 아래 8 (토큰 없음) · 왼 6 (토큰 없음), 모서리 full (토큰 없음), 면 icon-highlight
+  - 전체: 55x55, 세로 정렬, 여백 위 2 (토큰 없음) · 오른 6 (토큰 없음) · 아래 8 (토큰 없음) · 왼 6 (토큰 없음), Corner Radius full (토큰 없음), 면 icon-highlight
     - Streak/Icon 40 White: 40x40, 부품 Streak/Icon 40 White
   - 배리언트 `active=1-2days`: 55x55, 면 icon-highlight
   - 배리언트 `active=3-4days`: 55x55, 면 icon-highlight

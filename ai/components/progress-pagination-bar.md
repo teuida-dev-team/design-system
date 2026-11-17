@@ -8,7 +8,7 @@
 
 - 스펙 (px, 기준 `state1=2, state2=1`; 괄호 = 토큰 이름, "토큰 없음" = 숫자·색 직접):
   - 전체: 120x6, 가로 정렬, 간격 6 (Spacing/6)
-    - Rectangle 41453: 32x6, 모서리 full (Radius/full), 면 green-500 (기본 색)
+    - Rectangle 41453: 32x6, Corner Radius full (Radius/full), 면 green-500 (기본 색)
     - Ellipse 400: 6x6, 면 gray-300 (기본 색)
   - 배리언트 `state1=2, state2=1`: 120x6
   - 배리언트 `state1=state7, state2=2`: 120x6
@@ -22,63 +22,63 @@
   - 배리언트 `state1=5, state2=1`: 120x6
   - 배리언트 `state1=state7, state2=2` 자세히 (기준과 다른 부분):
       - Ellipse 400: 6x6, 면 gray-300 (기본 색)
-      - Rectangle 41453: 32x6, 모서리 full (Radius/full), 면 green-500 (기본 색)
+      - Rectangle 41453: 32x6, Corner Radius full (Radius/full), 면 green-500 (기본 색)
   - 배리언트 `state1=3, state2=1` 자세히 (기준과 다른 부분):
       - Ellipse 401: 6x6, 면 gray-300 (기본 색)
   - 배리언트 `state1=3, state2=2` 자세히 (기준과 다른 부분):
       - Ellipse 400: 6x6, 면 gray-300 (기본 색)
-      - Rectangle 41453: 32x6, 모서리 full (Radius/full), 면 green-500 (기본 색)
+      - Rectangle 41453: 32x6, Corner Radius full (Radius/full), 면 green-500 (기본 색)
       - Ellipse 401: 6x6, 면 gray-300 (기본 색)
   - 배리언트 `state1=3, state2=3` 자세히 (기준과 다른 부분):
       - Ellipse 400: 6x6, 면 gray-300 (기본 색)
       - Ellipse 401: 6x6, 면 gray-300 (기본 색)
-      - Rectangle 41453: 32x6, 모서리 full (Radius/full), 면 green-500 (기본 색)
+      - Rectangle 41453: 32x6, Corner Radius full (Radius/full), 면 green-500 (기본 색)
   - 배리언트 `state1=4, state2=1` 자세히 (기준과 다른 부분):
       - Ellipse 401: 6x6, 면 gray-300 (기본 색)
       - Ellipse 402: 6x6, 면 gray-300 (기본 색)
   - 배리언트 `state1=4, state2=2` 자세히 (기준과 다른 부분):
       - Ellipse 400: 6x6, 면 gray-300 (기본 색)
-      - Rectangle 41453: 32x6, 모서리 full (Radius/full), 면 green-500 (기본 색)
+      - Rectangle 41453: 32x6, Corner Radius full (Radius/full), 면 green-500 (기본 색)
       - Ellipse 401: 6x6, 면 gray-300 (기본 색)
       - Ellipse 402: 6x6, 면 gray-300 (기본 색)
   - 배리언트 `state1=4, state2=3` 자세히 (기준과 다른 부분):
       - Ellipse 400: 6x6, 면 gray-300 (기본 색)
       - Ellipse 401: 6x6, 면 gray-300 (기본 색)
-      - Rectangle 41453: 32x6, 모서리 full (Radius/full), 면 green-500 (기본 색)
+      - Rectangle 41453: 32x6, Corner Radius full (Radius/full), 면 green-500 (기본 색)
       - Ellipse 402: 6x6, 면 gray-300 (기본 색)
   - 배리언트 `state1=4, state2=4` 자세히 (기준과 다른 부분):
       - Ellipse 400: 6x6, 면 gray-300 (기본 색)
       - Ellipse 401: 6x6, 면 gray-300 (기본 색)
       - Ellipse 402: 6x6, 면 gray-300 (기본 색)
-      - Rectangle 41453: 32x6, 모서리 full (Radius/full), 면 green-500 (기본 색)
+      - Rectangle 41453: 32x6, Corner Radius full (Radius/full), 면 green-500 (기본 색)
   - 배리언트 `state1=5, state2=1` 자세히 (기준과 다른 부분):
       - Ellipse 401: 6x6, 면 gray-300 (기본 색)
       - Ellipse 402: 6x6, 면 gray-300 (기본 색)
       - Ellipse 403: 6x6, 면 gray-300 (기본 색)
   - 배리언트 `state1=5, state2=2` 자세히 (기준과 다른 부분):
       - Ellipse 400: 6x6, 면 gray-300 (기본 색)
-      - Rectangle 41453: 32x6, 모서리 full (Radius/full), 면 green-500 (기본 색)
+      - Rectangle 41453: 32x6, Corner Radius full (Radius/full), 면 green-500 (기본 색)
       - Ellipse 401: 6x6, 면 gray-300 (기본 색)
       - Ellipse 402: 6x6, 면 gray-300 (기본 색)
       - Ellipse 403: 6x6, 면 gray-300 (기본 색)
   - 배리언트 `state1=5, state2=3` 자세히 (기준과 다른 부분):
       - Ellipse 400: 6x6, 면 gray-300 (기본 색)
       - Ellipse 401: 6x6, 면 gray-300 (기본 색)
-      - Rectangle 41453: 32x6, 모서리 full (Radius/full), 면 green-500 (기본 색)
+      - Rectangle 41453: 32x6, Corner Radius full (Radius/full), 면 green-500 (기본 색)
       - Ellipse 402: 6x6, 면 gray-300 (기본 색)
       - Ellipse 403: 6x6, 면 gray-300 (기본 색)
   - 배리언트 `state1=5, state2=4` 자세히 (기준과 다른 부분):
       - Ellipse 400: 6x6, 면 gray-300 (기본 색)
       - Ellipse 401: 6x6, 면 gray-300 (기본 색)
       - Ellipse 402: 6x6, 면 gray-300 (기본 색)
-      - Rectangle 41453: 32x6, 모서리 full (Radius/full), 면 green-500 (기본 색)
+      - Rectangle 41453: 32x6, Corner Radius full (Radius/full), 면 green-500 (기본 색)
       - Ellipse 403: 6x6, 면 gray-300 (기본 색)
   - 배리언트 `state1=5, state2=5` 자세히 (기준과 다른 부분):
       - Ellipse 400: 6x6, 면 gray-300 (기본 색)
       - Ellipse 401: 6x6, 면 gray-300 (기본 색)
       - Ellipse 402: 6x6, 면 gray-300 (기본 색)
       - Ellipse 403: 6x6, 면 gray-300 (기본 색)
-      - Rectangle 41453: 32x6, 모서리 full (Radius/full), 면 green-500 (기본 색)
+      - Rectangle 41453: 32x6, Corner Radius full (Radius/full), 면 green-500 (기본 색)
   - 배리언트 `state1=6, state2=1` 자세히 (기준과 다른 부분):
       - Ellipse 401: 6x6, 면 gray-300 (기본 색)
       - Ellipse 402: 6x6, 면 gray-300 (기본 색)
@@ -86,7 +86,7 @@
       - Ellipse 404: 6x6, 면 gray-300 (기본 색)
   - 배리언트 `state1=6, state2=2` 자세히 (기준과 다른 부분):
       - Ellipse 400: 6x6, 면 gray-300 (기본 색)
-      - Rectangle 41453: 32x6, 모서리 full (Radius/full), 면 green-500 (기본 색)
+      - Rectangle 41453: 32x6, Corner Radius full (Radius/full), 면 green-500 (기본 색)
       - Ellipse 401: 6x6, 면 gray-300 (기본 색)
       - Ellipse 402: 6x6, 면 gray-300 (기본 색)
       - Ellipse 403: 6x6, 면 gray-300 (기본 색)
@@ -94,7 +94,7 @@
   - 배리언트 `state1=6, state2=3` 자세히 (기준과 다른 부분):
       - Ellipse 400: 6x6, 면 gray-300 (기본 색)
       - Ellipse 401: 6x6, 면 gray-300 (기본 색)
-      - Rectangle 41453: 32x6, 모서리 full (Radius/full), 면 green-500 (기본 색)
+      - Rectangle 41453: 32x6, Corner Radius full (Radius/full), 면 green-500 (기본 색)
       - Ellipse 402: 6x6, 면 gray-300 (기본 색)
       - Ellipse 403: 6x6, 면 gray-300 (기본 색)
       - Ellipse 404: 6x6, 면 gray-300 (기본 색)
@@ -102,7 +102,7 @@
       - Ellipse 400: 6x6, 면 gray-300 (기본 색)
       - Ellipse 401: 6x6, 면 gray-300 (기본 색)
       - Ellipse 402: 6x6, 면 gray-300 (기본 색)
-      - Rectangle 41453: 32x6, 모서리 full (Radius/full), 면 green-500 (기본 색)
+      - Rectangle 41453: 32x6, Corner Radius full (Radius/full), 면 green-500 (기본 색)
       - Ellipse 403: 6x6, 면 gray-300 (기본 색)
       - Ellipse 404: 6x6, 면 gray-300 (기본 색)
   - 배리언트 `state1=6, state2=5` 자세히 (기준과 다른 부분):
@@ -110,7 +110,7 @@
       - Ellipse 401: 6x6, 면 gray-300 (기본 색)
       - Ellipse 402: 6x6, 면 gray-300 (기본 색)
       - Ellipse 403: 6x6, 면 gray-300 (기본 색)
-      - Rectangle 41453: 32x6, 모서리 full (Radius/full), 면 green-500 (기본 색)
+      - Rectangle 41453: 32x6, Corner Radius full (Radius/full), 면 green-500 (기본 색)
       - Ellipse 404: 6x6, 면 gray-300 (기본 색)
   - 배리언트 `state1=6, state2=6` 자세히 (기준과 다른 부분):
       - Ellipse 400: 6x6, 면 gray-300 (기본 색)
@@ -118,7 +118,7 @@
       - Ellipse 402: 6x6, 면 gray-300 (기본 색)
       - Ellipse 403: 6x6, 면 gray-300 (기본 색)
       - Ellipse 404: 6x6, 면 gray-300 (기본 색)
-      - Rectangle 41453: 32x6, 모서리 full (Radius/full), 면 green-500 (기본 색)
+      - Rectangle 41453: 32x6, Corner Radius full (Radius/full), 면 green-500 (기본 색)
   - 배리언트 `state1=7, state2=1` 자세히 (기준과 다른 부분):
       - Ellipse 401: 6x6, 면 gray-300 (기본 색)
       - Ellipse 402: 6x6, 면 gray-300 (기본 색)
@@ -127,7 +127,7 @@
       - Ellipse 405: 6x6, 면 gray-300 (기본 색)
   - 배리언트 `state1=7, state2=2` 자세히 (기준과 다른 부분):
       - Ellipse 400: 6x6, 면 gray-300 (기본 색)
-      - Rectangle 41453: 32x6, 모서리 full (Radius/full), 면 green-500 (기본 색)
+      - Rectangle 41453: 32x6, Corner Radius full (Radius/full), 면 green-500 (기본 색)
       - Ellipse 401: 6x6, 면 gray-300 (기본 색)
       - Ellipse 402: 6x6, 면 gray-300 (기본 색)
       - Ellipse 403: 6x6, 면 gray-300 (기본 색)
@@ -136,7 +136,7 @@
   - 배리언트 `state1=7, state2=3` 자세히 (기준과 다른 부분):
       - Ellipse 400: 6x6, 면 gray-300 (기본 색)
       - Ellipse 401: 6x6, 면 gray-300 (기본 색)
-      - Rectangle 41453: 32x6, 모서리 full (Radius/full), 면 green-500 (기본 색)
+      - Rectangle 41453: 32x6, Corner Radius full (Radius/full), 면 green-500 (기본 색)
       - Ellipse 402: 6x6, 면 gray-300 (기본 색)
       - Ellipse 403: 6x6, 면 gray-300 (기본 색)
       - Ellipse 404: 6x6, 면 gray-300 (기본 색)
@@ -145,7 +145,7 @@
       - Ellipse 400: 6x6, 면 gray-300 (기본 색)
       - Ellipse 401: 6x6, 면 gray-300 (기본 색)
       - Ellipse 402: 6x6, 면 gray-300 (기본 색)
-      - Rectangle 41453: 32x6, 모서리 full (Radius/full), 면 green-500 (기본 색)
+      - Rectangle 41453: 32x6, Corner Radius full (Radius/full), 면 green-500 (기본 색)
       - Ellipse 403: 6x6, 면 gray-300 (기본 색)
       - Ellipse 404: 6x6, 면 gray-300 (기본 색)
       - Ellipse 405: 6x6, 면 gray-300 (기본 색)
@@ -154,7 +154,7 @@
       - Ellipse 401: 6x6, 면 gray-300 (기본 색)
       - Ellipse 402: 6x6, 면 gray-300 (기본 색)
       - Ellipse 403: 6x6, 면 gray-300 (기본 색)
-      - Rectangle 41453: 32x6, 모서리 full (Radius/full), 면 green-500 (기본 색)
+      - Rectangle 41453: 32x6, Corner Radius full (Radius/full), 면 green-500 (기본 색)
       - Ellipse 404: 6x6, 면 gray-300 (기본 색)
       - Ellipse 405: 6x6, 면 gray-300 (기본 색)
   - 배리언트 `state1=7, state2=6` 자세히 (기준과 다른 부분):
@@ -163,7 +163,7 @@
       - Ellipse 402: 6x6, 면 gray-300 (기본 색)
       - Ellipse 403: 6x6, 면 gray-300 (기본 색)
       - Ellipse 404: 6x6, 면 gray-300 (기본 색)
-      - Rectangle 41453: 32x6, 모서리 full (Radius/full), 면 green-500 (기본 색)
+      - Rectangle 41453: 32x6, Corner Radius full (Radius/full), 면 green-500 (기본 색)
       - Ellipse 405: 6x6, 면 gray-300 (기본 색)
   - 배리언트 `state1=7, state2=7` 자세히 (기준과 다른 부분):
       - Ellipse 400: 6x6, 면 gray-300 (기본 색)
@@ -172,4 +172,4 @@
       - Ellipse 403: 6x6, 면 gray-300 (기본 색)
       - Ellipse 404: 6x6, 면 gray-300 (기본 색)
       - Ellipse 405: 6x6, 면 gray-300 (기본 색)
-      - Rectangle 41453: 32x6, 모서리 full (Radius/full), 면 green-500 (기본 색)
+      - Rectangle 41453: 32x6, Corner Radius full (Radius/full), 면 green-500 (기본 색)

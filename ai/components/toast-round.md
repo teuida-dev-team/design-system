@@ -7,18 +7,18 @@
 속성: type:failed·success·success2
 
 - 스펙 (px, 기준 `type=success`; 괄호 = 토큰 이름, "토큰 없음" = 숫자·색 직접):
-  - 전체: 117x50, 가로 정렬, 여백 위아래 12 (Spacing/12) · 좌우 16 (Spacing/16), 간격 10 (Spacing/10), 모서리 14 (토큰 없음), 면 green-400 (기본 색)
+  - 전체: 117x50, 가로 정렬, 여백 위아래 12 (Spacing/12) · 좌우 16 (Spacing/16), 간격 10 (Spacing/10), Corner Radius 14 (토큰 없음), 면 green-400 (기본 색)
     - Frame 2038: 85x26, 가로 정렬, 간격 6 (Spacing/6)
       - Good job!: 85x26, 글자색 white (기본 색), 글자 Head 4/B
   - 배리언트 `type=success`: 117x50, 면 green-400 (기본 색), 글자 white (기본 색)
   - 배리언트 `type=success2`: 114x50, 면 green-400 (기본 색), 글자 white (기본 색)
   - 배리언트 `type=failed`: 116x50, 면 red-400 (기본 색), 글자 white (기본 색)
   - 배리언트 `type=success2` 자세히 (기준과 다른 부분):
-    - 전체: 114x50, 가로 정렬, 여백 위아래 12 (Spacing/12) · 좌우 16 (Spacing/16), 간격 10 (Spacing/10), 모서리 14 (토큰 없음), 면 green-400 (기본 색)
+    - 전체: 114x50, 가로 정렬, 여백 위아래 12 (Spacing/12) · 좌우 16 (Spacing/16), 간격 10 (Spacing/10), Corner Radius 14 (토큰 없음), 면 green-400 (기본 색)
       - Frame 2038: 82x26, 가로 정렬, 간격 6 (Spacing/6)
         - Icon/Checkboxes 28: 24x24, 부품 Icon/Checkboxes 28
         - Good!: 52x26, 글자색 white (기본 색), 글자 Head 4/B
   - 배리언트 `type=failed` 자세히 (기준과 다른 부분):
-    - 전체: 116x50, 가로 정렬, 여백 위아래 12 (Spacing/12) · 좌우 16 (Spacing/16), 간격 10 (Spacing/10), 모서리 14 (토큰 없음), 면 red-400 (기본 색)
+    - 전체: 116x50, 가로 정렬, 여백 위아래 12 (Spacing/12) · 좌우 16 (Spacing/16), 간격 10 (Spacing/10), Corner Radius 14 (토큰 없음), 면 red-400 (기본 색)
       - Frame 2038: 84x26, 가로 정렬, 간격 6 (Spacing/6)
         - Try again: 84x26, 글자색 white (기본 색), 글자 Head 4/B

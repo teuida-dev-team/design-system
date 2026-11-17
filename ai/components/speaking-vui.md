@@ -35,10 +35,10 @@
       - Group 1716: 88x88
         - 1: 88x88
           - Oval: 88x88, 면 background-secondary
-          - Rectangle: 4x33, 모서리 full (Radius/full), 면 green-500 (기본 색)
-          - Rectangle: 4x21, 모서리 full (Radius/full), 면 #0DD7C3 (토큰 없음)
-          - Rectangle: 4x21, 모서리 full (Radius/full), 면 #0DD7C3 (토큰 없음)
-          - Rectangle: 4x11, 모서리 full (Radius/full), 면 #21C6D2 (토큰 없음)
-          - Rectangle: 4x11, 모서리 full (Radius/full), 면 #21C6D2 (토큰 없음)
+          - Rectangle: 4x33, Corner Radius full (Radius/full), 면 green-500 (기본 색)
+          - Rectangle: 4x21, Corner Radius full (Radius/full), 면 #0DD7C3 (토큰 없음)
+          - Rectangle: 4x21, Corner Radius full (Radius/full), 면 #0DD7C3 (토큰 없음)
+          - Rectangle: 4x11, Corner Radius full (Radius/full), 면 #21C6D2 (토큰 없음)
+          - Rectangle: 4x11, Corner Radius full (Radius/full), 면 #21C6D2 (토큰 없음)
         - bg: 75x75, 면 black (기본 색)
         - bg: 75x75, 면 green-500 (기본 색)

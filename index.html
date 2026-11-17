@@ -23,7 +23,7 @@ pre{background:var(--code);padding:14px;border-radius:8px;overflow:auto}pre code
 .side{position:sticky;top:56px;align-self:flex-start;width:200px;flex:none;padding:24px 12px;height:calc(100vh - 56px);overflow:auto}
 .side a{display:block;padding:8px 12px;border-radius:8px;color:var(--ink2);text-decoration:none;font-weight:500}
 .side a:hover{background:var(--surface)}
-.side a[aria-current]{background:var(--mint-soft);color:var(--ink);font-weight:700}
+.side a[aria-current]{background:var(--surface);color:var(--ink);font-weight:700}
 .upd{margin:20px 12px 0;font-size:12px;color:var(--ink3);line-height:1.7}.upd a{display:inline;padding:0;color:var(--ink3)}
 main{flex:1;min-width:0;padding:32px 32px 80px}
 h1{font-size:28px;line-height:1.3;margin:0 0 8px;font-weight:800;letter-spacing:-.4px}
@@ -129,13 +129,13 @@ input[type=search]:focus{outline:2px solid var(--mint);border-color:transparent}
 </style></head>
 <body><header class="top"><a class="brand" href="index.html"><span class="dot"></span>TEUIDA <b>디자인 시스템</b></a>
 <button class="menu" aria-label="메뉴" onclick="document.body.classList.toggle('open')">☰</button></header>
-<div class="wrap"><nav class="side"><a href="index.html" aria-current="page">시작하기</a><a href="rules.html">작업 규칙</a><a href="components.html">컴포넌트</a><a href="tokens.html">토큰</a><a href="screens.html">현행 화면</a><a href="description.html">디스크립션</a><a href="changelog.html">변경 기록</a><a href="ai.html">Claude용 안내</a><p class="upd">갱신 2026-11-06<br><a href="ai/index.md">이 페이지 Markdown</a></p></nav>
+<div class="wrap"><nav class="side"><a href="index.html" aria-current="page">시작하기</a><a href="rules.html">작업 규칙</a><a href="components.html">컴포넌트</a><a href="tokens.html">토큰</a><a href="screens.html">현행 화면</a><a href="description.html">디스크립션</a><a href="changelog.html">변경 기록</a><a href="ai.html">Claude용 안내</a><p class="upd">갱신 2026-11-17<br><a href="ai/index.md">이 페이지 Markdown</a></p></nav>
 <main><h1>TEUIDA 디자인 시스템</h1>
 <p>TEUIDA 앱 화면을 만들 때 보는 기준이에요. 디자이너, 개발자, 그리고 팀원이 쓰는 Claude가 같은 내용을 읽어요.</p>
 <ul>
 <li><strong>이 사이트는 읽는 곳이에요.</strong> 화면 작업은 피그마에서 해요. 피그마에 시안을 만들려면 피그마 편집 권한이 있어야 해요.</li>
 <li>원본은 피그마 라이브러리(Design Library)예요. 사이트와 피그마가 다르면 <strong>피그마가 기준</strong>이에요.</li>
-<li>마지막 갱신: 2026-11-06</li>
+<li>마지막 갱신: 2026-11-17</li>
 </ul>
 <h2>누가 어떻게 쓰나</h2>
 <div class="tbl"><table>
@@ -167,9 +167,9 @@ input[type=search]:focus{outline:2px solid var(--mint);border-color:transparent}
 <h2>꼭 지킬 것</h2>
 <ol>
 <li><strong>라이브러리 부품만 써요.</strong> 인스턴스를 떼어내거나(detach) 로컬 부품을 새로 만들지 않아요. 맞는 게 없으면 가장 가까운 걸 쓰고 알려요.</li>
-<li><strong>색은 용도 토큰, 글자는 텍스트 스타일, 간격·모서리는 토큰.</strong> hex 값이나 임의 숫자를 직접 넣지 않아요.</li>
+<li><strong>색은 용도 토큰, 글자는 텍스트 스타일, 간격·Corner Radius는 토큰.</strong> hex 값이나 임의 숫자를 직접 넣지 않아요.</li>
 <li><strong>단, 콘텐츠가 한 화면에 다 들어가는 게 간격보다 먼저예요.</strong> 학습 화면은 스크롤하지 않아요.</li>
-<li><strong>글자가 들어간 알약(완전히 둥근) 버튼은 쓰지 않아요.</strong> 글자 버튼은 모서리 8이에요.</li>
+<li><strong>글자가 들어간 알약(완전히 둥근) 버튼은 쓰지 않아요.</strong> 글자 버튼은 Corner Radius 8이에요.</li>
 <li><strong>이 사이트 <a href="components.html">컴포넌트</a>에 있는 것만 써요.</strong> 피그마에서 찾았는데 여기 없으면 쓰지 않고 담당자에게 알려요.</li>
 </ol>
 <h2>작업 순서</h2>
@@ -177,7 +177,7 @@ input[type=search]:focus{outline:2px solid var(--mint);border-color:transparent}
 <li><strong>현행 화면에서 시작해요.</strong> <a href="screens.html">현행 화면</a>(피그마 <code>🧩 기능별 최신 화면</code>과 같아요)에서 해당 기능 원본을 찾아 시작해요. 섹션 안 화면만 원본이에요. 섹션 밖 화면은 참고용이에요. A/B 테스트 중인 화면은 빼요. 원본이 없으면 <a href="components.html#T">화면 뼈대</a>에서 시작해요.</li>
 <li><strong>부품을 골라요.</strong> <a href="components.html">컴포넌트</a> 페이지에서 "언제 / 쓰지 말 것"을 보고 골라요. 이 페이지에 없는 부품은 쓰지 않아요.</li>
 <li><strong>인스턴스로 놓아요.</strong> detach하지 않아요.</li>
-<li><strong>색·글자·간격·모서리를 토큰과 스타일에 연결해요.</strong> → <a href="tokens.html">토큰</a></li>
+<li><strong>색·글자·간격·Corner Radius를 토큰과 스타일에 연결해요.</strong> → <a href="tokens.html">토큰</a></li>
 <li><strong>콘텐츠가 한 화면에 들어가는지 봐요.</strong> 넘치면 간격부터 줄여요.</li>
 <li><strong>화면을 보고 확인해요.</strong> 토큰이 안 걸린 곳, 로컬 부품, 사이트에 없는 부품이 없는지 봐요.</li>
 <li><strong>디스크립션을 화면마다 달아요.</strong> → <a href="description.html">디스크립션</a></li>
@@ -201,7 +201,7 @@ input[type=search]:focus{outline:2px solid var(--mint);border-color:transparent}
 </tr>
 <tr>
 <td><a href="tokens.html">토큰</a></td>
-<td>색, 간격, 모서리, 그림자, 텍스트 스타일, 색 대비, 토큰 파일</td>
+<td>색, 간격, Corner Radius, 그림자, 텍스트 스타일, 색 대비, 토큰 파일</td>
 </tr>
 <tr>
 <td><a href="screens.html">현행 화면</a></td>

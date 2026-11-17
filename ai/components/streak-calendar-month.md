@@ -7,7 +7,7 @@
 속성: type:default·example
 
 - 스펙 (px, 기준 `type=default`; 괄호 = 토큰 이름, "토큰 없음" = 숫자·색 직접):
-  - 전체: 300x306, 세로 정렬, 여백 13 (토큰 없음), 간격 14 (토큰 없음), 모서리 10 (토큰 없음), 면 button-tertiary, 선 background-primary 2
+  - 전체: 300x306, 세로 정렬, 여백 13 (토큰 없음), 간격 14 (토큰 없음), Corner Radius 10 (토큰 없음), 면 button-tertiary, 선 background-primary 2
     - Frame 1319: 274x28, 가로 정렬, 여백 위아래 0 · 좌우 10 (Spacing/10), 간격 양 끝 정렬
       - Icon/Chevron Left 20: 20x20, 부품 Icon/Chevron Left 20
       - JULY 2022: 72x28, 글자색 text-secondary, 글자 Bold 15 (스타일 없음)

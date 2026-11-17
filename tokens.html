@@ -23,7 +23,7 @@ pre{background:var(--code);padding:14px;border-radius:8px;overflow:auto}pre code
 .side{position:sticky;top:56px;align-self:flex-start;width:200px;flex:none;padding:24px 12px;height:calc(100vh - 56px);overflow:auto}
 .side a{display:block;padding:8px 12px;border-radius:8px;color:var(--ink2);text-decoration:none;font-weight:500}
 .side a:hover{background:var(--surface)}
-.side a[aria-current]{background:var(--mint-soft);color:var(--ink);font-weight:700}
+.side a[aria-current]{background:var(--surface);color:var(--ink);font-weight:700}
 .upd{margin:20px 12px 0;font-size:12px;color:var(--ink3);line-height:1.7}.upd a{display:inline;padding:0;color:var(--ink3)}
 main{flex:1;min-width:0;padding:32px 32px 80px}
 h1{font-size:28px;line-height:1.3;margin:0 0 8px;font-weight:800;letter-spacing:-.4px}
@@ -129,9 +129,9 @@ input[type=search]:focus{outline:2px solid var(--mint);border-color:transparent}
 </style></head>
 <body><header class="top"><a class="brand" href="index.html"><span class="dot"></span>TEUIDA <b>디자인 시스템</b></a>
 <button class="menu" aria-label="메뉴" onclick="document.body.classList.toggle('open')">☰</button></header>
-<div class="wrap"><nav class="side"><a href="index.html">시작하기</a><a href="rules.html">작업 규칙</a><a href="components.html">컴포넌트</a><a href="tokens.html" aria-current="page">토큰</a><a href="screens.html">현행 화면</a><a href="description.html">디스크립션</a><a href="changelog.html">변경 기록</a><a href="ai.html">Claude용 안내</a><p class="upd">갱신 2026-11-06<br><a href="ai/tokens.md">이 페이지 Markdown</a></p></nav>
+<div class="wrap"><nav class="side"><a href="index.html">시작하기</a><a href="rules.html">작업 규칙</a><a href="components.html">컴포넌트</a><a href="tokens.html" aria-current="page">토큰</a><a href="screens.html">현행 화면</a><a href="description.html">디스크립션</a><a href="changelog.html">변경 기록</a><a href="ai.html">Claude용 안내</a><p class="upd">갱신 2026-11-17<br><a href="ai/tokens.md">이 페이지 Markdown</a></p></nav>
 <main><h1>토큰</h1><p class="lead">라이브러리 변수 <code>Tokens</code> 컬렉션이에요. 이름보다 <b>용도</b>로 골라요. 값은 라이트 모드 기준이에요.</p>
-<h2 id="color">색</h2><p class="note">글자 Text · 아이콘 Icon · 면 Background · 선 Border에서 골라요. Button 토큰은 버튼 부품 안에서만 써요.</p>
+<h2 id="color">Color</h2><p class="note">글자 Text · 아이콘 Icon · 면 Background · 선 Border에서 골라요. Button 토큰은 버튼 부품 안에서만 써요.</p>
 <h3>Background</h3><div class="tbl"><table><thead><tr><th>토큰</th><th>값</th><th>언제 쓰나</th></tr></thead><tbody>
 <tr><td><span class="sw" style="--c:#F5F5F5"></span><code>background-primary</code></td><td class="val">#F5F5F5<br><small>gray-100</small></td><td>앱 화면의 가장 기본 배경. 카드나 시트처럼 화면 위에 올라가는 면에는 background-secondary.</td></tr>
 <tr><td><span class="sw" style="--c:#FFFFFF"></span><code>background-secondary</code></td><td class="val">#FFFFFF<br><small>white</small></td><td>카드, 시트, 팝업처럼 기본 배경 위에 올라가는 면.</td></tr>
@@ -212,7 +212,7 @@ input[type=search]:focus{outline:2px solid var(--mint);border-color:transparent}
 <h3>Collection</h3><div class="tbl"><table><thead><tr><th>토큰</th><th>값</th><th>언제 쓰나</th></tr></thead><tbody>
 <tr><td><span class="sw none"></span><code>collection/*</code></td><td class="val"><br><small></small></td><td>컬렉션 배지·화면 색. 컬렉션 부품 안에서만 씀.</td></tr>
 </tbody></table></div>
-<h2 id="spacing">간격</h2><p class="note">용도 간격을 먼저 써요. 기본 값: Spacing/0·2·4·6·8·10·12·16·20·24. 콘텐츠가 한 화면에 안 들어가면 줄여도 돼요.</p>
+<h2 id="spacing">Spacing</h2><p class="note">용도 간격을 먼저 써요. 기본 값: Spacing/0·2·4·6·8·10·12·16·20·24. 콘텐츠가 한 화면에 안 들어가면 줄여도 돼요.</p>
 <div class="tbl"><table><thead><tr><th>토큰</th><th>값</th><th>언제 쓰나</th></tr></thead><tbody>
 <tr><td><code>Spacing/screen-horizontal</code></td><td class="val"><span class="bar" style="width:60px"></span>20</td><td>화면 좌우 바깥 여백 (콘텐츠 시작선). 리스트·카드 화면. 실제 화면 126곳 중 70곳.</td></tr>
 <tr><td><code>Spacing/screen-horizontal-wide</code></td><td class="val"><span class="bar" style="width:72px"></span>24</td><td>넓은 화면 좌우 여백. 온보딩·결과 화면 (34곳).</td></tr>
@@ -223,7 +223,7 @@ input[type=search]:focus{outline:2px solid var(--mint);border-color:transparent}
 <tr><td><code>Spacing/inline-gap</code></td><td class="val"><span class="bar" style="width:24px"></span>8</td><td>한 줄 안 요소 사이. 아이콘과 글자.</td></tr>
 <tr><td><code>Spacing/inline-gap-small</code></td><td class="val"><span class="bar" style="width:12px"></span>4</td><td>아주 가까운 요소 사이. 글자와 작은 화살표, 배지 안.</td></tr>
 <tr><td><code>Spacing/chip-gap</code></td><td class="val"><span class="bar" style="width:18px"></span>6</td><td>칩과 칩 사이. 리뷰 카테고리 칩.</td></tr>
-</tbody></table></div><h2 id="radius">모서리</h2><div class="radii">
+</tbody></table></div><h2 id="radius">Corner Radius</h2><div class="radii">
 <div class="rad"><span style="border-radius:4px"></span><b>Radius/4</b><small>작은 칩</small></div>
 <div class="rad"><span style="border-radius:8px"></span><b>Radius/8</b><small>버튼·입력창</small></div>
 <div class="rad"><span style="border-radius:12px"></span><b>Radius/12</b><small>카드</small></div>
@@ -231,8 +231,8 @@ input[type=search]:focus{outline:2px solid var(--mint);border-color:transparent}
 <div class="rad"><span style="border-radius:24px"></span><b>Radius/24</b><small>시트 위</small></div>
 <div class="rad"><span style="border-radius:30px"></span><b>Radius/30</b><small></small></div>
 <div class="rad"><span style="border-radius:999px"></span><b>Radius/full</b><small>원형·유리 칩 (글자 버튼에는 쓰지 않음)</small></div>
-</div><h2 id="shadow">그림자</h2><ul><li><code>Shadow/Soft 12</code> — 떠 있는 버튼</li><li><code>Shadow/Soft 8</code> — 작은 떠 있는 요소</li></ul>
-<h2 id="text">텍스트 스타일</h2><p class="note">항상 스타일을 걸어요. 글꼴은 Noto Sans예요. 크기/행간 단위는 px이에요.</p><div class="tbl"><table><thead><tr><th>스타일</th><th>굵기 · 크기/행간</th><th>보기</th></tr></thead><tbody>
+</div><h2 id="shadow">Shadow</h2><ul><li><code>Shadow/Soft 12</code> — 떠 있는 버튼</li><li><code>Shadow/Soft 8</code> — 작은 떠 있는 요소</li></ul>
+<h2 id="text">Text Style</h2><p class="note">항상 스타일을 걸어요. 글꼴은 Noto Sans예요. 크기/행간 단위는 px이에요.</p><div class="tbl"><table><thead><tr><th>스타일</th><th>굵기 · 크기/행간</th><th>보기</th></tr></thead><tbody>
 <tr><td><code>Head 1/EB</code></td><td class="val">ExtraBold 24/34</td><td><span style="font-weight:800;font-size:24px;line-height:34px">안녕하세요 Hello</span></td></tr>
 <tr><td><code>Head 2/EB</code></td><td class="val">ExtraBold 22/30</td><td><span style="font-weight:800;font-size:22px;line-height:30px">안녕하세요 Hello</span></td></tr>
 <tr><td><code>Head 3/EB</code></td><td class="val">ExtraBold 20/28</td><td><span style="font-weight:800;font-size:20px;line-height:28px">안녕하세요 Hello</span></td></tr>
@@ -261,7 +261,7 @@ input[type=search]:focus{outline:2px solid var(--mint);border-color:transparent}
 <tr><td><code>Overline/R</code></td><td class="val">Regular 10/16</td><td><span style="font-weight:400;font-size:10px;line-height:16px">안녕하세요 Hello</span></td></tr>
 <tr><td><code>Number/EB</code><br><small>큰 숫자 (스트릭·점수). 앱 코드에 아직 없음</small></td><td class="val">ExtraBold 32/40</td><td><span style="font-weight:800;font-size:32px;line-height:40px">안녕하세요 Hello</span></td></tr>
 </tbody></table></div>
-<h2 id="contrast">색 대비</h2><p class="note">글자·아이콘 토큰이 바탕 위에서 잘 읽히는지예요. 브랜드 민트 계열은 밝아서 흰 바탕 위 글자, 민트 위 흰 글자 모두 대비가 낮아요. 바꿀지는 디자인 시스템에서 따로 정해요. 기준 WCAG AA: 작은 글자 4.5 이상, 큰 글자(18px 이상 또는 굵은 14px 이상)·아이콘 3 이상.</p>
+<h2 id="contrast">Color Contrast</h2><p class="note">글자·아이콘 토큰이 바탕 위에서 잘 읽히는지예요. 브랜드 민트 계열은 밝아서 흰 바탕 위 글자, 민트 위 흰 글자 모두 대비가 낮아요. 바꿀지는 디자인 시스템에서 따로 정해요. 기준 WCAG AA: 작은 글자 4.5 이상, 큰 글자(18px 이상 또는 굵은 14px 이상)·아이콘 3 이상.</p>
 <div class="tbl"><table><thead><tr><th>토큰</th><th>background-primary 위</th><th>background-secondary 위</th><th>판정</th></tr></thead><tbody>
 <tr><td><span class="sw" style="--c:#252525"></span><code>text-primary</code></td><td class="val">14.1</td><td class="val">15.3</td><td>작은 글자 OK</td></tr>
 <tr><td><span class="sw" style="--c:#616161"></span><code>text-secondary</code></td><td class="val">5.7</td><td class="val">6.2</td><td>작은 글자 OK</td></tr>
@@ -284,6 +284,6 @@ input[type=search]:focus{outline:2px solid var(--mint);border-color:transparent}
 <tr><td><span class="sw" style="--c:#D7E6FF"></span><code>icon-bubble-background</code></td><td class="val">1.2</td><td class="val">1.3</td><td>예외 (비활성·선택 안 됨·장식은 기준 밖)</td></tr>
 <tr><td><span class="sw" style="--c:#FFFFFF"></span><code>text-on-color</code></td><td colspan="2" class="val">민트 button-primary 위 1.7</td><td><span class=raw>대비 부족</span></td></tr>
 </tbody></table></div>
-<h2 id="code">토큰 파일</h2><p class="note">토큰 값을 파일로 받을 수 있어요. 앱 코드는 앱에 이미 있는 상수를 쓰고, 이 파일은 값 확인이나 링크용 화면(웹)에 써요.</p>
+<h2 id="code">Token Files</h2><p class="note">토큰 값을 파일로 받을 수 있어요. 앱 코드는 앱에 이미 있는 상수를 쓰고, 이 파일은 값 확인이나 링크용 화면(웹)에 써요.</p>
 <div class="dl"><a href="tokens/tokens.json" download>tokens.json<small>디자인 토큰 표준 형식 (DTCG)</small></a><a href="tokens/tokens.css" download>tokens.css<small>웹 · CSS 변수</small></a></div><footer class="foot">틀린 내용이 있거나 필요한 부품·토큰이 없으면 디자인 시스템 담당자에게 알려 주세요. 사이트와 피그마가 다르면 피그마가 기준이에요.</footer></main></div>
 <script>document.querySelectorAll('[data-copy]').forEach(b=>b.addEventListener('click',e=>{e.preventDefault();try{navigator.clipboard.writeText(b.dataset.copy);b.classList.add('ok');setTimeout(()=>b.classList.remove('ok'),1200);}catch(_){}}));</script></body></html>

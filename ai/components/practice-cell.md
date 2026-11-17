@@ -21,12 +21,12 @@
   - 배리언트 `position=blank_middle, blank=true`: 26x44, 글자 gray-100 (기본 색)
   - 배리언트 `position=answer_one, blank=false` 자세히 (기준과 다른 부분):
     - 전체: 30x44, 가로 정렬, 여백 2 (Spacing/2), 간격 10 (Spacing/10)
-      - PT_JP_Cell/Answer/Small: 26x40, 세로 정렬, 여백 위아래 1 (토큰 없음) · 좌우 3 (토큰 없음), 간격 -4 (토큰 없음), 모서리 6 (토큰 없음), 면 background-primary
+      - PT_JP_Cell/Answer/Small: 26x40, 세로 정렬, 여백 위아래 1 (토큰 없음) · 좌우 3 (토큰 없음), 간격 -4 (토큰 없음), Corner Radius 6 (토큰 없음), 면 background-primary
         - えき: 20x16, 글자색 text-correct, 글자 Overline/R
         - 駅: 18x26, 글자색 text-correct, 글자 Head 4/B
   - 배리언트 `position=answer_end, blank=false` 자세히 (기준과 다른 부분):
     - 전체: 28x44, 가로 정렬, 여백 위 2 (Spacing/2) · 오른 2 (Spacing/2) · 아래 2 (Spacing/2) · 왼 0, 간격 10 (Spacing/10)
-      - PT_JP_Cell/Answer/Small: 26x40, 세로 정렬, 여백 위아래 1 (토큰 없음) · 좌우 3 (토큰 없음), 간격 -4 (토큰 없음), 모서리 0 6 (토큰 없음) 6 (토큰 없음) 0, 면 background-primary
+      - PT_JP_Cell/Answer/Small: 26x40, 세로 정렬, 여백 위아래 1 (토큰 없음) · 좌우 3 (토큰 없음), 간격 -4 (토큰 없음), Corner Radius 0 6 (토큰 없음) 6 (토큰 없음) 0, 면 background-primary
         - えき: 20x16, 글자색 text-correct, 글자 Overline/R
         - 駅: 18x26, 글자색 text-correct, 글자 Head 4/B
   - 배리언트 `position=answer_middle, blank=false` 자세히 (기준과 다른 부분):
@@ -36,22 +36,22 @@
         - 駅: 18x26, 글자색 text-correct, 글자 Head 4/B
   - 배리언트 `position=answer_front, blank=false` 자세히 (기준과 다른 부분):
     - 전체: 28x44, 가로 정렬, 여백 위 2 (Spacing/2) · 오른 0 · 아래 2 (Spacing/2) · 왼 2 (Spacing/2), 간격 10 (Spacing/10)
-      - PT_JP_Cell/Answer/Small: 26x40, 세로 정렬, 여백 위아래 1 (토큰 없음) · 좌우 3 (토큰 없음), 간격 -4 (토큰 없음), 모서리 6 (토큰 없음) 0 0 6 (토큰 없음), 면 background-primary
+      - PT_JP_Cell/Answer/Small: 26x40, 세로 정렬, 여백 위아래 1 (토큰 없음) · 좌우 3 (토큰 없음), 간격 -4 (토큰 없음), Corner Radius 6 (토큰 없음) 0 0 6 (토큰 없음), 면 background-primary
         - えき: 20x16, 글자색 text-correct, 글자 Overline/R
         - 駅: 18x26, 글자색 text-correct, 글자 Head 4/B
   - 배리언트 `position=blank_one, blank=true` 자세히 (기준과 다른 부분):
     - 전체: 30x44, 가로 정렬, 여백 2 (Spacing/2)
-      - PT_JP_Cell/Blank_One/Sma: 26x40, 세로 정렬, 여백 위아래 1 (토큰 없음) · 좌우 3 (토큰 없음), 간격 -4 (토큰 없음), 모서리 6 (토큰 없음), 면 background-primary
+      - PT_JP_Cell/Blank_One/Sma: 26x40, 세로 정렬, 여백 위아래 1 (토큰 없음) · 좌우 3 (토큰 없음), 간격 -4 (토큰 없음), Corner Radius 6 (토큰 없음), 면 background-primary
         - えき: 20x16, 글자색 gray-100 (기본 색), 글자 Overline/R
         - 駅: 18x26, 글자색 gray-100 (기본 색), 글자 Head 4/B
   - 배리언트 `position=blank_end, blank=true` 자세히 (기준과 다른 부분):
     - 전체: 28x44, 가로 정렬, 여백 위 2 (Spacing/2) · 오른 2 (Spacing/2) · 아래 2 (Spacing/2) · 왼 0
-      - PT_JP_Cell/Blank_End/Sma: 26x40, 세로 정렬, 여백 위아래 1 (토큰 없음) · 좌우 3 (토큰 없음), 간격 -4 (토큰 없음), 모서리 0 6 (토큰 없음) 6 (토큰 없음) 0, 면 background-primary
+      - PT_JP_Cell/Blank_End/Sma: 26x40, 세로 정렬, 여백 위아래 1 (토큰 없음) · 좌우 3 (토큰 없음), 간격 -4 (토큰 없음), Corner Radius 0 6 (토큰 없음) 6 (토큰 없음) 0, 면 background-primary
         - えき: 20x16, 글자색 gray-100 (기본 색), 글자 Overline/R
         - 駅: 18x26, 글자색 gray-100 (기본 색), 글자 Head 4/B
   - 배리언트 `position=blank_front, blank=true` 자세히 (기준과 다른 부분):
     - 전체: 28x44, 가로 정렬, 여백 위 2 (Spacing/2) · 오른 0 · 아래 2 (Spacing/2) · 왼 2 (Spacing/2), 간격 10 (Spacing/10)
-      - PT_JP_Cell/Blank_Front/S: 26x40, 세로 정렬, 여백 위아래 1 (토큰 없음) · 좌우 3 (토큰 없음), 간격 -4 (토큰 없음), 모서리 6 (토큰 없음) 0 0 6 (토큰 없음), 면 background-primary
+      - PT_JP_Cell/Blank_Front/S: 26x40, 세로 정렬, 여백 위아래 1 (토큰 없음) · 좌우 3 (토큰 없음), 간격 -4 (토큰 없음), Corner Radius 6 (토큰 없음) 0 0 6 (토큰 없음), 면 background-primary
         - えき: 20x16, 글자색 gray-100 (기본 색), 글자 Overline/R
         - 駅: 18x26, 글자색 gray-100 (기본 색), 글자 Head 4/B
   - 배리언트 `position=blank_middle, blank=true` 자세히 (기준과 다른 부분):

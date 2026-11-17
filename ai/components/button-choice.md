@@ -7,7 +7,7 @@
 속성: state:off·on·done·failed·disable·disable2 / type:img and text·audio·text·04_audio·img and text-3line
 
 - 스펙 (px, 기준 `state=off, type=audio`; 괄호 = 토큰 이름, "토큰 없음" = 숫자·색 직접):
-  - 전체: 120x94, 세로 정렬, 여백 20 (Spacing/20), 간격 10 (Spacing/10), 모서리 16 (Radius/16), 면 background-secondary
+  - 전체: 120x94, 세로 정렬, 여백 20 (Spacing/20), 간격 10 (Spacing/10), Corner Radius 16 (Radius/16), 면 background-secondary
     - sound-wave: 70x50, 세로 정렬, 여백 위아래 1.9 (토큰 없음) · 좌우 3.5 (토큰 없음), 간격 3.8 (토큰 없음), 부품 Vocab/Sound Wave
   - 배리언트 `state=off, type=audio`: 120x94, 면 background-secondary
   - 배리언트 `state=done, type=audio`: 120x94, 면 white (기본 색)
@@ -20,105 +20,105 @@
   - 배리언트 `state=failed, type=text`: 194x94, 면 red-300 (기본 색), 선 red-400 (기본 색), 글자 white (기본 색)
   - 배리언트 `state=on, type=text`: 194x94, 면 button-primary, 선 green-500 (기본 색), 글자 white (기본 색)
   - 배리언트 `state=done, type=audio` 자세히 (기준과 다른 부분):
-    - 전체: 120x94, 세로 정렬, 여백 20 (Spacing/20), 간격 10 (Spacing/10), 모서리 16 (Radius/16), 면 white (기본 색)
+    - 전체: 120x94, 세로 정렬, 여백 20 (Spacing/20), 간격 10 (Spacing/10), Corner Radius 16 (Radius/16), 면 white (기본 색)
   - 배리언트 `state=failed, type=audio` 자세히 (기준과 다른 부분):
-    - 전체: 120x94, 세로 정렬, 여백 20 (Spacing/20), 간격 10 (Spacing/10), 모서리 16 (Radius/16), 면 red-300 (기본 색), 선 red-400 (기본 색) 2
+    - 전체: 120x94, 세로 정렬, 여백 20 (Spacing/20), 간격 10 (Spacing/10), Corner Radius 16 (Radius/16), 면 red-300 (기본 색), 선 red-400 (기본 색) 2
   - 배리언트 `state=off, type=04_audio` 자세히 (기준과 다른 부분):
-    - 전체: 80x80, 세로 정렬, 여백 20 (Spacing/20), 간격 10 (Spacing/10), 모서리 24 (Radius/24), 면 background-secondary
+    - 전체: 80x80, 세로 정렬, 여백 20 (Spacing/20), 간격 10 (Spacing/10), Corner Radius 24 (Radius/24), 면 background-secondary
       - Lesson/Volume: 32x32, 부품 Audio/Volume
   - 배리언트 `state=on, type=audio` 자세히 (기준과 다른 부분):
-    - 전체: 120x94, 세로 정렬, 여백 20 (Spacing/20), 간격 10 (Spacing/10), 모서리 16 (Radius/16), 면 button-primary, 선 green-500 (기본 색) 2
+    - 전체: 120x94, 세로 정렬, 여백 20 (Spacing/20), 간격 10 (Spacing/10), Corner Radius 16 (Radius/16), 면 button-primary, 선 green-500 (기본 색) 2
   - 배리언트 `state=on, type=04_audio` 자세히 (기준과 다른 부분):
-    - 전체: 80x80, 세로 정렬, 여백 20 (Spacing/20), 간격 10 (Spacing/10), 모서리 24 (Radius/24), 면 button-primary
+    - 전체: 80x80, 세로 정렬, 여백 20 (Spacing/20), 간격 10 (Spacing/10), Corner Radius 24 (Radius/24), 면 button-primary
       - Lesson/Volume: 32x32, 부품 Audio/Volume
   - 배리언트 `state=off, type=text` 자세히 (기준과 다른 부분):
-    - 전체: 194x94, 세로 정렬, 여백 20 (Spacing/20), 간격 10 (Spacing/10), 모서리 16 (Radius/16), 면 background-secondary
+    - 전체: 194x94, 세로 정렬, 여백 20 (Spacing/20), 간격 10 (Spacing/10), Corner Radius 16 (Radius/16), 면 background-secondary
       - Frame 2041: 146x66, 세로 정렬, 간격 2 (Spacing/2)
         - 1 / Me (Very informal, o: 146x66, 글자색 button-text-secondary, 글자 Subtitle 1/B
   - 배리언트 `state=done, type=text` 자세히 (기준과 다른 부분):
-    - 전체: 194x94, 세로 정렬, 여백 20 (Spacing/20), 간격 10 (Spacing/10), 모서리 16 (Radius/16), 면 white (기본 색)
+    - 전체: 194x94, 세로 정렬, 여백 20 (Spacing/20), 간격 10 (Spacing/10), Corner Radius 16 (Radius/16), 면 white (기본 색)
       - Frame 2041: 146x66, 세로 정렬, 간격 2 (Spacing/2)
         - 1 / Me (Very informal, o: 146x66, 글자색 button-text-secondary, 글자 Subtitle 1/B
   - 배리언트 `state=failed, type=text` 자세히: 기준과 같음
   - 배리언트 `state=on, type=text` 자세히 (기준과 다른 부분):
-    - 전체: 194x94, 세로 정렬, 여백 20 (Spacing/20), 간격 10 (Spacing/10), 모서리 16 (Radius/16), 면 button-primary, 선 green-500 (기본 색) 2
+    - 전체: 194x94, 세로 정렬, 여백 20 (Spacing/20), 간격 10 (Spacing/10), Corner Radius 16 (Radius/16), 면 button-primary, 선 green-500 (기본 색) 2
       - Frame 2041: 146x66, 세로 정렬, 간격 2 (Spacing/2)
         - 1 / Me (Very informal, o: 146x66, 글자색 white (기본 색), 글자 Subtitle 1/B
   - 배리언트 `state=off, type=img and text` 자세히 (기준과 다른 부분):
-    - 전체: 155x200, 세로 정렬, 여백 위 34 (토큰 없음) · 오른 16 (Spacing/16) · 아래 30 (토큰 없음) · 왼 16 (Spacing/16), 간격 10 (Spacing/10), 모서리 24 (Radius/24), 면 background-secondary
+    - 전체: 155x200, 세로 정렬, 여백 위 34 (토큰 없음) · 오른 16 (Spacing/16) · 아래 30 (토큰 없음) · 왼 16 (Spacing/16), 간격 10 (Spacing/10), Corner Radius 24 (Radius/24), 면 background-secondary
       - Frame 2041: 123x124, 세로 정렬, 간격 16 (Spacing/16)
         - VocabIllust: 64x64
           - Student_Female: 36x56
         - Frame 2062: 123x44, 세로 정렬, 간격 2 (Spacing/2)
           - teacher: 123x44, 글자색 text-secondary, 글자 Head 4/B
   - 배리언트 `state=off, type=img and text-3lines` 자세히 (기준과 다른 부분):
-    - 전체: 155x200, 세로 정렬, 여백 위 34 (토큰 없음) · 오른 16 (Spacing/16) · 아래 30 (토큰 없음) · 왼 16 (Spacing/16), 간격 10 (Spacing/10), 모서리 24 (Radius/24), 면 background-secondary
+    - 전체: 155x200, 세로 정렬, 여백 위 34 (토큰 없음) · 오른 16 (Spacing/16) · 아래 30 (토큰 없음) · 왼 16 (Spacing/16), 간격 10 (Spacing/10), Corner Radius 24 (Radius/24), 면 background-secondary
       - Frame 2041: 123x154, 세로 정렬, 간격 12 (Spacing/12)
         - VocabIllust: 64x64
           - Student_Female: 36x56
         - Frame 2062: 123x78, 세로 정렬, 간격 2 (Spacing/2)
           - teacher teacher teacher: 123x78, 글자색 text-secondary, 글자 Head 4/B
   - 배리언트 `state=disable, type=img and text` 자세히 (기준과 다른 부분):
-    - 전체: 155x200, 세로 정렬, 여백 위 34 (토큰 없음) · 오른 16 (Spacing/16) · 아래 30 (토큰 없음) · 왼 16 (Spacing/16), 간격 10 (Spacing/10), 모서리 24 (Radius/24), 면 white (기본 색)
+    - 전체: 155x200, 세로 정렬, 여백 위 34 (토큰 없음) · 오른 16 (Spacing/16) · 아래 30 (토큰 없음) · 왼 16 (Spacing/16), 간격 10 (Spacing/10), Corner Radius 24 (Radius/24), 면 white (기본 색)
       - Frame 2041: 123x124, 세로 정렬, 간격 16 (Spacing/16)
         - VocabIllust: 64x64
           - Student_Female: 36x56
         - Frame 2062: 123x44, 세로 정렬, 간격 2 (Spacing/2)
           - teacher: 123x44, 글자색 text-secondary, 글자 Head 4/B
   - 배리언트 `state=disable, type=img and text-3lines` 자세히 (기준과 다른 부분):
-    - 전체: 155x200, 세로 정렬, 여백 위 34 (토큰 없음) · 오른 16 (Spacing/16) · 아래 30 (토큰 없음) · 왼 16 (Spacing/16), 간격 10 (Spacing/10), 모서리 24 (Radius/24), 면 white (기본 색)
+    - 전체: 155x200, 세로 정렬, 여백 위 34 (토큰 없음) · 오른 16 (Spacing/16) · 아래 30 (토큰 없음) · 왼 16 (Spacing/16), 간격 10 (Spacing/10), Corner Radius 24 (Radius/24), 면 white (기본 색)
       - Frame 2041: 123x154, 세로 정렬, 간격 12 (Spacing/12)
         - VocabIllust: 64x64
           - Student_Female: 36x56
         - Frame 2062: 123x78, 세로 정렬, 간격 2 (Spacing/2)
           - teacher: 123x78, 글자색 text-secondary, 글자 Head 4/B
   - 배리언트 `state=disable2, type=img and text` 자세히 (기준과 다른 부분):
-    - 전체: 155x200, 세로 정렬, 여백 위 34 (토큰 없음) · 오른 16 (Spacing/16) · 아래 30 (토큰 없음) · 왼 16 (Spacing/16), 간격 10 (Spacing/10), 모서리 24 (Radius/24), 면 gray-200 (기본 색)
+    - 전체: 155x200, 세로 정렬, 여백 위 34 (토큰 없음) · 오른 16 (Spacing/16) · 아래 30 (토큰 없음) · 왼 16 (Spacing/16), 간격 10 (Spacing/10), Corner Radius 24 (Radius/24), 면 gray-200 (기본 색)
       - Frame 2041: 123x124, 세로 정렬, 간격 16 (Spacing/16)
         - VocabIllust: 64x64
           - Student_Female: 36x56
         - Frame 2062: 123x44, 세로 정렬, 간격 2 (Spacing/2)
           - teacher: 123x44, 글자색 text-unselected, 글자 Head 4/B
   - 배리언트 `state=disable2, type=img and text-3lines` 자세히 (기준과 다른 부분):
-    - 전체: 155x200, 세로 정렬, 여백 위 34 (토큰 없음) · 오른 16 (Spacing/16) · 아래 30 (토큰 없음) · 왼 16 (Spacing/16), 간격 10 (Spacing/10), 모서리 24 (Radius/24), 면 gray-200 (기본 색)
+    - 전체: 155x200, 세로 정렬, 여백 위 34 (토큰 없음) · 오른 16 (Spacing/16) · 아래 30 (토큰 없음) · 왼 16 (Spacing/16), 간격 10 (Spacing/10), Corner Radius 24 (Radius/24), 면 gray-200 (기본 색)
       - Frame 2041: 123x154, 세로 정렬, 간격 12 (Spacing/12)
         - VocabIllust: 64x64
           - Student_Female: 36x56
         - Frame 2062: 123x78, 세로 정렬, 간격 2 (Spacing/2)
           - teacher teacher teacher: 123x78, 글자색 text-unselected, 글자 Head 4/B
   - 배리언트 `state=on, type=img and text-2lines` 자세히 (기준과 다른 부분):
-    - 전체: 155x200, 세로 정렬, 여백 위 24 (Spacing/24) · 오른 16 (Spacing/16) · 아래 30 (토큰 없음) · 왼 16 (Spacing/16), 간격 10 (Spacing/10), 모서리 24 (Radius/24), 면 background-secondary, 선 green-400 (기본 색) 2
+    - 전체: 155x200, 세로 정렬, 여백 위 24 (Spacing/24) · 오른 16 (Spacing/16) · 아래 30 (토큰 없음) · 왼 16 (Spacing/16), 간격 10 (Spacing/10), Corner Radius 24 (Radius/24), 면 background-secondary, 선 green-400 (기본 색) 2
       - Rectangle 41465: 155x82
       - Frame 2041: 123x156, 세로 정렬, 간격 8 (Spacing/8)
         - VocabIllust: 64x64
           - Student_Female: 36x56
         - Frame 2063: 123x84, 세로 정렬, 간격 8 (Spacing/8)
-          - btn_round_: 24x24, 가로 정렬, 여백 6.7 (Spacing/20), 간격 4.4 (토큰 없음), 모서리 full (Radius/full), 면 button-primary, 부품 Button/Mic
+          - btn_round_: 24x24, 가로 정렬, 여백 6.7 (Spacing/20), 간격 4.4 (토큰 없음), Corner Radius full (Radius/full), 면 button-primary, 부품 Button/Mic
           - Frame 2062: 123x52, 세로 정렬, 간격 2 (Spacing/2)
   - 배리언트 `state=on, type=img and text-3lines` 자세히 (기준과 다른 부분):
-    - 전체: 155x200, 세로 정렬, 여백 위 14 (토큰 없음) · 오른 16 (Spacing/16) · 아래 30 (토큰 없음) · 왼 16 (Spacing/16), 간격 10 (Spacing/10), 모서리 24 (Radius/24), 면 background-secondary, 선 green-400 (기본 색) 2
+    - 전체: 155x200, 세로 정렬, 여백 위 14 (토큰 없음) · 오른 16 (Spacing/16) · 아래 30 (토큰 없음) · 왼 16 (Spacing/16), 간격 10 (Spacing/10), Corner Radius 24 (Radius/24), 면 background-secondary, 선 green-400 (기본 색) 2
       - Rectangle 41465: 155x82
       - Frame 2041: 123x178, 세로 정렬, 간격 6 (Spacing/6)
         - VocabIllust: 64x64
           - Student_Female: 36x56
         - Frame 2063: 123x108, 세로 정렬, 간격 6 (Spacing/6)
-          - btn_round_: 24x24, 가로 정렬, 여백 6.7 (Spacing/20), 간격 4.4 (토큰 없음), 모서리 full (Radius/full), 면 button-primary, 부품 Button/Mic
+          - btn_round_: 24x24, 가로 정렬, 여백 6.7 (Spacing/20), 간격 4.4 (토큰 없음), Corner Radius full (Radius/full), 면 button-primary, 부품 Button/Mic
           - Frame 2062: 123x78, 세로 정렬, 간격 2 (Spacing/2)
   - 배리언트 `state=failed, type=img and text` 자세히 (기준과 다른 부분):
-    - 전체: 155x200, 세로 정렬, 여백 위 24 (Spacing/24) · 오른 16 (Spacing/16) · 아래 30 (토큰 없음) · 왼 16 (Spacing/16), 간격 10 (Spacing/10), 모서리 24 (Radius/24), 면 background-secondary, 선 red-400 (기본 색) 2
+    - 전체: 155x200, 세로 정렬, 여백 위 24 (Spacing/24) · 오른 16 (Spacing/16) · 아래 30 (토큰 없음) · 왼 16 (Spacing/16), 간격 10 (Spacing/10), Corner Radius 24 (Radius/24), 면 background-secondary, 선 red-400 (기본 색) 2
       - Rectangle 41465: 155x87
       - Frame 2065: 123x148, 세로 정렬, 간격 8 (Spacing/8)
         - Frame 2041: 64x64, 세로 정렬, 간격 12 (Spacing/12)
           - VocabIllust: 64x64
         - Frame 2064: 123x76, 세로 정렬, 간격 8 (Spacing/8)
-          - Button/Mic: 24x24, 가로 정렬, 여백 6.7 (Spacing/20), 간격 4.4 (토큰 없음), 모서리 full (Radius/full), 면 red-400 (기본 색), 부품 Button/Mic
+          - Button/Mic: 24x24, 가로 정렬, 여백 6.7 (Spacing/20), 간격 4.4 (토큰 없음), Corner Radius full (Radius/full), 면 red-400 (기본 색), 부품 Button/Mic
           - Frame 2062: 123x44, 세로 정렬, 간격 2 (Spacing/2)
   - 배리언트 `state=failed, type=img and text-3lines` 자세히 (기준과 다른 부분):
-    - 전체: 155x200, 세로 정렬, 여백 위 14 (토큰 없음) · 오른 16 (Spacing/16) · 아래 30 (토큰 없음) · 왼 16 (Spacing/16), 간격 10 (Spacing/10), 모서리 24 (Radius/24), 면 background-secondary, 선 red-400 (기본 색) 2
+    - 전체: 155x200, 세로 정렬, 여백 위 14 (토큰 없음) · 오른 16 (Spacing/16) · 아래 30 (토큰 없음) · 왼 16 (Spacing/16), 간격 10 (Spacing/10), Corner Radius 24 (Radius/24), 면 background-secondary, 선 red-400 (기본 색) 2
       - Rectangle 41465: 155x87
       - Frame 2065: 123x178, 세로 정렬, 간격 6 (Spacing/6)
         - Frame 2041: 64x64, 세로 정렬, 간격 12 (Spacing/12)
           - VocabIllust: 64x64
         - Frame 2064: 123x108, 세로 정렬, 간격 6 (Spacing/6)
-          - Button/Mic: 24x24, 가로 정렬, 여백 6.7 (Spacing/20), 간격 4.4 (토큰 없음), 모서리 full (Radius/full), 면 red-400 (기본 색), 부품 Button/Mic
+          - Button/Mic: 24x24, 가로 정렬, 여백 6.7 (Spacing/20), 간격 4.4 (토큰 없음), Corner Radius full (Radius/full), 면 red-400 (기본 색), 부품 Button/Mic
           - Frame 2062: 123x78, 세로 정렬, 간격 2 (Spacing/2)

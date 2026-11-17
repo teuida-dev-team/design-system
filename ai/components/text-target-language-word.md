@@ -7,7 +7,7 @@
 속성: language:jaen·koen-esen·romanization / type:start·middle·end·default / state:recall·spoken·default…
 
 - 스펙 (px, 기준 `language=jaen, type=start, state=default`; 괄호 = 토큰 이름, "토큰 없음" = 숫자·색 직접):
-  - 전체: 24x40, 세로 정렬, 여백 위 1 (토큰 없음) · 오른 1 (토큰 없음) · 아래 1 (토큰 없음) · 왼 3 (토큰 없음), 간격 -6 (토큰 없음), 모서리 6 (토큰 없음) 0 0 6 (토큰 없음), 면 background-primary
+  - 전체: 24x40, 세로 정렬, 여백 위 1 (토큰 없음) · 오른 1 (토큰 없음) · 아래 1 (토큰 없음) · 왼 3 (토큰 없음), 간격 -6 (토큰 없음), Corner Radius 6 (토큰 없음) 0 0 6 (토큰 없음), 면 background-primary
     - た: 10x16, 글자색 text-tertiary, 글자 Overline/R
     - 食: 20x28, 글자색 text-secondary, 글자 Head 3/B
   - 배리언트 `language=jaen, type=start, state=default`: 24x40, 면 background-primary, 글자 text-tertiary
@@ -23,7 +23,7 @@
   - 배리언트 `language=jaen, type=start, state=recall` 자세히 (기준과 다른 부분):
       - 食: 20x28, 글자색 text-primary, 글자 Head 3/B
   - 배리언트 `language=jaen, type=start, state=correct` 자세히 (기준과 다른 부분):
-    - 전체: 24x40, 세로 정렬, 여백 위 1 (토큰 없음) · 오른 1 (토큰 없음) · 아래 1 (토큰 없음) · 왼 3 (토큰 없음), 간격 -6 (토큰 없음), 모서리 6 (토큰 없음) 0 0 6 (토큰 없음), 면 background-highlight-soft
+    - 전체: 24x40, 세로 정렬, 여백 위 1 (토큰 없음) · 오른 1 (토큰 없음) · 아래 1 (토큰 없음) · 왼 3 (토큰 없음), 간격 -6 (토큰 없음), Corner Radius 6 (토큰 없음) 0 0 6 (토큰 없음), 면 background-highlight-soft
       - た: 10x16, 글자색 text-highlight, 글자 Overline/R
       - 食: 20x28, 글자색 text-highlight, 글자 Head 3/B
   - 배리언트 `language=jaen, type=start, state=spoken` 자세히 (기준과 다른 부분):
@@ -43,52 +43,52 @@
       - た: 10x16, 글자색 text-highlight, 글자 Overline/R
       - 食: 20x28, 글자색 text-highlight, 글자 Head 3/B
   - 배리언트 `language=jaen, type=end, state=default` 자세히 (기준과 다른 부분):
-    - 전체: 24x40, 세로 정렬, 여백 위 1 (토큰 없음) · 오른 3 (토큰 없음) · 아래 1 (토큰 없음) · 왼 1 (토큰 없음), 간격 -6 (토큰 없음), 모서리 0 6 (토큰 없음) 6 (토큰 없음) 0, 면 background-primary
+    - 전체: 24x40, 세로 정렬, 여백 위 1 (토큰 없음) · 오른 3 (토큰 없음) · 아래 1 (토큰 없음) · 왼 1 (토큰 없음), 간격 -6 (토큰 없음), Corner Radius 0 6 (토큰 없음) 6 (토큰 없음) 0, 면 background-primary
   - 배리언트 `language=jaen, type=end, state=recall` 자세히 (기준과 다른 부분):
-    - 전체: 24x40, 세로 정렬, 여백 위 1 (토큰 없음) · 오른 3 (토큰 없음) · 아래 1 (토큰 없음) · 왼 1 (토큰 없음), 간격 -6 (토큰 없음), 모서리 0 6 (토큰 없음) 6 (토큰 없음) 0, 면 background-primary
+    - 전체: 24x40, 세로 정렬, 여백 위 1 (토큰 없음) · 오른 3 (토큰 없음) · 아래 1 (토큰 없음) · 왼 1 (토큰 없음), 간격 -6 (토큰 없음), Corner Radius 0 6 (토큰 없음) 6 (토큰 없음) 0, 면 background-primary
       - 食: 20x28, 글자색 text-primary, 글자 Head 3/B
   - 배리언트 `language=jaen, type=end, state=correct` 자세히 (기준과 다른 부분):
-    - 전체: 24x40, 세로 정렬, 여백 위 1 (토큰 없음) · 오른 3 (토큰 없음) · 아래 1 (토큰 없음) · 왼 1 (토큰 없음), 간격 -6 (토큰 없음), 모서리 0 6 (토큰 없음) 6 (토큰 없음) 0, 면 background-highlight-soft
+    - 전체: 24x40, 세로 정렬, 여백 위 1 (토큰 없음) · 오른 3 (토큰 없음) · 아래 1 (토큰 없음) · 왼 1 (토큰 없음), 간격 -6 (토큰 없음), Corner Radius 0 6 (토큰 없음) 6 (토큰 없음) 0, 면 background-highlight-soft
       - た: 10x16, 글자색 text-highlight, 글자 Overline/R
       - 食: 20x28, 글자색 text-highlight, 글자 Head 3/B
   - 배리언트 `language=jaen, type=end, state=spoken` 자세히 (기준과 다른 부분):
-    - 전체: 24x40, 세로 정렬, 여백 위 1 (토큰 없음) · 오른 3 (토큰 없음) · 아래 1 (토큰 없음) · 왼 1 (토큰 없음), 간격 -6 (토큰 없음), 모서리 0 6 (토큰 없음) 6 (토큰 없음) 0, 면 background-primary
+    - 전체: 24x40, 세로 정렬, 여백 위 1 (토큰 없음) · 오른 3 (토큰 없음) · 아래 1 (토큰 없음) · 왼 1 (토큰 없음), 간격 -6 (토큰 없음), Corner Radius 0 6 (토큰 없음) 6 (토큰 없음) 0, 면 background-primary
       - た: 10x16, 글자색 text-highlight, 글자 Overline/R
       - 食: 20x28, 글자색 text-highlight, 글자 Head 3/B
   - 배리언트 `language=jaen, type=default, state=default` 자세히 (기준과 다른 부분):
-    - 전체: 26x40, 세로 정렬, 여백 위아래 1 (토큰 없음) · 좌우 3 (토큰 없음), 간격 -6 (토큰 없음), 모서리 6 (토큰 없음), 면 background-primary
+    - 전체: 26x40, 세로 정렬, 여백 위아래 1 (토큰 없음) · 좌우 3 (토큰 없음), 간격 -6 (토큰 없음), Corner Radius 6 (토큰 없음), 면 background-primary
   - 배리언트 `language=jaen, type=default, state=recall` 자세히 (기준과 다른 부분):
-    - 전체: 26x40, 세로 정렬, 여백 위아래 1 (토큰 없음) · 좌우 3 (토큰 없음), 간격 -6 (토큰 없음), 모서리 6 (토큰 없음), 면 background-primary
+    - 전체: 26x40, 세로 정렬, 여백 위아래 1 (토큰 없음) · 좌우 3 (토큰 없음), 간격 -6 (토큰 없음), Corner Radius 6 (토큰 없음), 면 background-primary
       - 食: 20x28, 글자색 text-primary, 글자 Head 3/B
   - 배리언트 `language=jaen, type=default, state=correct` 자세히 (기준과 다른 부분):
-    - 전체: 26x40, 세로 정렬, 여백 위아래 1 (토큰 없음) · 좌우 3 (토큰 없음), 간격 -6 (토큰 없음), 모서리 6 (토큰 없음), 면 background-highlight-soft
+    - 전체: 26x40, 세로 정렬, 여백 위아래 1 (토큰 없음) · 좌우 3 (토큰 없음), 간격 -6 (토큰 없음), Corner Radius 6 (토큰 없음), 면 background-highlight-soft
       - た: 10x16, 글자색 text-highlight, 글자 Overline/R
       - 食: 20x28, 글자색 text-highlight, 글자 Head 3/B
   - 배리언트 `language=jaen, type=default, state=spoken` 자세히 (기준과 다른 부분):
-    - 전체: 26x40, 세로 정렬, 여백 위아래 1 (토큰 없음) · 좌우 3 (토큰 없음), 간격 -6 (토큰 없음), 모서리 6 (토큰 없음), 면 background-primary
+    - 전체: 26x40, 세로 정렬, 여백 위아래 1 (토큰 없음) · 좌우 3 (토큰 없음), 간격 -6 (토큰 없음), Corner Radius 6 (토큰 없음), 면 background-primary
       - た: 10x16, 글자색 text-highlight, 글자 Overline/R
       - 食: 20x28, 글자색 text-highlight, 글자 Head 3/B
   - 배리언트 `language=koen-esen, type=default, state=default` 자세히 (기준과 다른 부분):
-    - 전체: 80x30, 세로 정렬, 여백 위아래 1 (토큰 없음) · 좌우 3 (토큰 없음), 간격 10 (Spacing/10), 모서리 6 (토큰 없음), 면 background-primary
+    - 전체: 80x30, 세로 정렬, 여백 위아래 1 (토큰 없음) · 좌우 3 (토큰 없음), 간격 10 (Spacing/10), Corner Radius 6 (토큰 없음), 면 background-primary
       - 출근하기: 74x28, 글자색 text-secondary, 글자 Head 3/B
   - 배리언트 `language=koen-esen, type=default, state=recall` 자세히 (기준과 다른 부분):
-    - 전체: 80x30, 세로 정렬, 여백 위아래 1 (토큰 없음) · 좌우 3 (토큰 없음), 간격 10 (Spacing/10), 모서리 6 (토큰 없음), 면 background-primary
+    - 전체: 80x30, 세로 정렬, 여백 위아래 1 (토큰 없음) · 좌우 3 (토큰 없음), 간격 10 (Spacing/10), Corner Radius 6 (토큰 없음), 면 background-primary
       - 출근하기: 74x28, 글자색 text-primary, 글자 Head 3/B
   - 배리언트 `language=koen-esen, type=default, state=correct` 자세히 (기준과 다른 부분):
-    - 전체: 80x30, 세로 정렬, 여백 위아래 1 (토큰 없음) · 좌우 3 (토큰 없음), 간격 10 (Spacing/10), 모서리 6 (토큰 없음), 면 background-highlight-soft
+    - 전체: 80x30, 세로 정렬, 여백 위아래 1 (토큰 없음) · 좌우 3 (토큰 없음), 간격 10 (Spacing/10), Corner Radius 6 (토큰 없음), 면 background-highlight-soft
       - 출근하기: 74x28, 글자색 text-highlight, 글자 Head 3/B
   - 배리언트 `language=koen-esen, type=default, state=spoken` 자세히 (기준과 다른 부분):
-    - 전체: 80x30, 세로 정렬, 여백 위아래 1 (토큰 없음) · 좌우 3 (토큰 없음), 간격 10 (Spacing/10), 모서리 6 (토큰 없음), 면 background-primary
+    - 전체: 80x30, 세로 정렬, 여백 위아래 1 (토큰 없음) · 좌우 3 (토큰 없음), 간격 10 (Spacing/10), Corner Radius 6 (토큰 없음), 면 background-primary
       - 출근하기: 74x28, 글자색 text-highlight, 글자 Head 3/B
   - 배리언트 `language=romanization, type=default, state=default` 자세히 (기준과 다른 부분):
-    - 전체: 48x24, 가로 정렬, 여백 위아래 0 · 좌우 2 (Spacing/2), 간격 10 (Spacing/10), 모서리 4 (Radius/4), 면 background-primary
+    - 전체: 48x24, 가로 정렬, 여백 위아래 0 · 좌우 2 (Spacing/2), 간격 10 (Spacing/10), Corner Radius 4 (Radius/4), 면 background-primary
       - taberu: 44x20, 글자색 text-tertiary, 글자 Body 2/R
   - 배리언트 `language=romanization, type=default, state=recall` 자세히 (기준과 다른 부분):
-    - 전체: 48x24, 가로 정렬, 여백 위아래 0 · 좌우 2 (Spacing/2), 간격 10 (Spacing/10), 모서리 4 (Radius/4), 면 background-primary
+    - 전체: 48x24, 가로 정렬, 여백 위아래 0 · 좌우 2 (Spacing/2), 간격 10 (Spacing/10), Corner Radius 4 (Radius/4), 면 background-primary
       - taberu: 44x20, 글자색 text-tertiary, 글자 Body 2/R
   - 배리언트 `language=romanization, type=default, state=correct` 자세히 (기준과 다른 부분):
-    - 전체: 48x24, 가로 정렬, 여백 위아래 0 · 좌우 2 (Spacing/2), 간격 10 (Spacing/10), 모서리 4 (Radius/4), 면 background-highlight-soft
+    - 전체: 48x24, 가로 정렬, 여백 위아래 0 · 좌우 2 (Spacing/2), 간격 10 (Spacing/10), Corner Radius 4 (Radius/4), 면 background-highlight-soft
       - taberu: 44x20, 글자색 text-highlight, 글자 Body 2/R
   - 배리언트 `language=romanization, type=default, state=spoken` 자세히 (기준과 다른 부분):
-    - 전체: 48x24, 가로 정렬, 여백 위아래 0 · 좌우 2 (Spacing/2), 간격 10 (Spacing/10), 모서리 4 (Radius/4), 면 background-primary
+    - 전체: 48x24, 가로 정렬, 여백 위아래 0 · 좌우 2 (Spacing/2), 간격 10 (Spacing/10), Corner Radius 4 (Radius/4), 면 background-primary
       - taberu: 44x20, 글자색 text-highlight, 글자 Body 2/R

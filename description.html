@@ -23,7 +23,7 @@ pre{background:var(--code);padding:14px;border-radius:8px;overflow:auto}pre code
 .side{position:sticky;top:56px;align-self:flex-start;width:200px;flex:none;padding:24px 12px;height:calc(100vh - 56px);overflow:auto}
 .side a{display:block;padding:8px 12px;border-radius:8px;color:var(--ink2);text-decoration:none;font-weight:500}
 .side a:hover{background:var(--surface)}
-.side a[aria-current]{background:var(--mint-soft);color:var(--ink);font-weight:700}
+.side a[aria-current]{background:var(--surface);color:var(--ink);font-weight:700}
 .upd{margin:20px 12px 0;font-size:12px;color:var(--ink3);line-height:1.7}.upd a{display:inline;padding:0;color:var(--ink3)}
 main{flex:1;min-width:0;padding:32px 32px 80px}
 h1{font-size:28px;line-height:1.3;margin:0 0 8px;font-weight:800;letter-spacing:-.4px}
@@ -129,7 +129,7 @@ input[type=search]:focus{outline:2px solid var(--mint);border-color:transparent}
 </style></head>
 <body><header class="top"><a class="brand" href="index.html"><span class="dot"></span>TEUIDA <b>디자인 시스템</b></a>
 <button class="menu" aria-label="메뉴" onclick="document.body.classList.toggle('open')">☰</button></header>
-<div class="wrap"><nav class="side"><a href="index.html">시작하기</a><a href="rules.html">작업 규칙</a><a href="components.html">컴포넌트</a><a href="tokens.html">토큰</a><a href="screens.html">현행 화면</a><a href="description.html" aria-current="page">디스크립션</a><a href="changelog.html">변경 기록</a><a href="ai.html">Claude용 안내</a><p class="upd">갱신 2026-11-06<br><a href="ai/description.md">이 페이지 Markdown</a></p></nav>
+<div class="wrap"><nav class="side"><a href="index.html">시작하기</a><a href="rules.html">작업 규칙</a><a href="components.html">컴포넌트</a><a href="tokens.html">토큰</a><a href="screens.html">현행 화면</a><a href="description.html" aria-current="page">디스크립션</a><a href="changelog.html">변경 기록</a><a href="ai.html">Claude용 안내</a><p class="upd">갱신 2026-11-17<br><a href="ai/description.md">이 페이지 Markdown</a></p></nav>
 <main><h1>디스크립션</h1>
 <p><strong>목적: 핸드오프 때 개발자(와 개발자가 쓰는 AI)가 화면 내용을 빨리 파악하는 것.</strong> 시안은 항상 디자인 시스템 + 디스크립션 한 묶음이에요.</p>
 <h2>원칙: 짧게, 핵심만</h2>
@@ -261,11 +261,11 @@ input[type=search]:focus{outline:2px solid var(--mint);border-color:transparent}
 <tbody>
 <tr>
 <td>디스크립션 박스</td>
-<td>파랑 (122,163,255) 80%, 모서리 2, 세로 오토레이아웃 패딩 20 · 간격 10. 라벨 Noto Sans Black 24 흰색 + 설명 Noto Sans Medium 18 흰색</td>
+<td>파랑 (122,163,255) 80%, Corner Radius 2, 세로 오토레이아웃 패딩 20 · 간격 10. 라벨 Noto Sans Black 24 흰색 + 설명 Noto Sans Medium 18 흰색</td>
 </tr>
 <tr>
 <td>영역 바 (기본)</td>
-<td>파랑 90%, 모서리 없음. 폭 40 + 라벨 Bold 24 (또는 폭 60 + Bold 32). 높이 = 가리키는 영역 높이 (최소 40). <strong>화면 바깥</strong> 10 띄워서: 왼쪽 요소는 화면 왼쪽, 오른쪽 요소는 화면 오른쪽</td>
+<td>파랑 90%, Corner Radius 없음. 폭 40 + 라벨 Bold 24 (또는 폭 60 + Bold 32). 높이 = 가리키는 영역 높이 (최소 40). <strong>화면 바깥</strong> 10 띄워서: 왼쪽 요소는 화면 왼쪽, 오른쪽 요소는 화면 오른쪽</td>
 </tr>
 <tr>
 <td>뱃지 (예외)</td>
@@ -273,7 +273,7 @@ input[type=search]:focus{outline:2px solid var(--mint);border-color:transparent}
 </tr>
 <tr>
 <td>플로우 헤더</td>
-<td>파랑 모서리 10, 높이 80, 흰색 Inter Black 30 가운데, "{화면} &gt; {플로우}"</td>
+<td>파랑 Corner Radius 10, 높이 80, 흰색 Inter Black 30 가운데, "{화면} &gt; {플로우}"</td>
 </tr>
 <tr>
 <td>변경 표시 / 참고</td>
@@ -294,12 +294,12 @@ input[type=search]:focus{outline:2px solid var(--mint);border-color:transparent}
 <tbody>
 <tr>
 <td>1. 콘텐츠·기능 묶음</td>
-<td>흰색 바, 높이 80, 모서리 10, 검정 Inter Black 30, 묶음 전체 폭</td>
+<td>흰색 바, 높이 80, Corner Radius 10, 검정 Inter Black 30, 묶음 전체 폭</td>
 <td><code>온보딩 플로우</code>, <code>보캡</code></td>
 </tr>
 <tr>
 <td>2. 플로우·비교·하위 유형</td>
-<td>높이 80, 모서리 10, 흰색 Inter Black 30. 기존 = 회색 (193,198,211), 추가·변경 = 파랑 80%</td>
+<td>높이 80, Corner Radius 10, 흰색 Inter Black 30. 기존 = 회색 (193,198,211), 추가·변경 = 파랑 80%</td>
 <td><code>기존 플로우</code> / <code>추가</code>, <code>AS-IS</code> / <code>TO-BE</code></td>
 </tr>
 <tr>
@@ -348,7 +348,7 @@ input[type=search]:focus{outline:2px solid var(--mint);border-color:transparent}
 </tr>
 <tr>
 <td>터치 영역 · 이미지 영역</td>
-<td>부품을 어두운 패널 (57,57,66, 모서리 20)에 떼어 놓고 양방향 화살표 + 빨강 계열 라벨</td>
+<td>부품을 어두운 패널 (57,57,66, Corner Radius 20)에 떼어 놓고 양방향 화살표 + 빨강 계열 라벨</td>
 </tr>
 </tbody>
 </table></div>

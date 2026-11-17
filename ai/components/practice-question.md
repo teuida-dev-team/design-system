@@ -10,7 +10,7 @@
   - 전체: 320x298, 세로 정렬, 간격 10 (Spacing/10)
     - Rvw_Title: 320x30, 가로 정렬, 간격 65 (토큰 없음)
       - Speak this sentence: 223x30, 글자색 text-primary, 글자 Head 2 - EB
-    - Rvw_Sentence: 320x258, 세로 정렬, 여백 위 14 (토큰 없음) · 오른 16 (Spacing/16) · 아래 16 (Spacing/16) · 왼 16 (Spacing/16), 간격 20 (Spacing/20), 모서리 16 (Radius/16), 면 background-secondary
+    - Rvw_Sentence: 320x258, 세로 정렬, 여백 위 14 (토큰 없음) · 오른 16 (Spacing/16) · 아래 16 (Spacing/16) · 왼 16 (Spacing/16), 간격 20 (Spacing/20), Corner Radius 16 (Radius/16), 면 background-secondary
       - Frame 1773: 288x148, 세로 정렬, 간격 8 (Spacing/8)
         - Frame 1778: 288x88, 세로 정렬
         - Frame 1815: 263x52, 세로 정렬

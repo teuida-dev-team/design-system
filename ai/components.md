@@ -1,6 +1,6 @@
 # 컴포넌트 (써도 되는 것)
 
-갱신 2026-11-06. 여기 없는 부품은 쓰지 않아요. 스펙(크기·여백·토큰·배리언트별 차이)은 부품마다 링크된 파일에 있어요.
+갱신 2026-11-17. 여기 없는 부품은 쓰지 않아요. 스펙(크기·여백·토큰·배리언트별 차이)은 부품마다 링크된 파일에 있어요.
 
 ## 공통 (146)
 
@@ -8,7 +8,7 @@
 
 - **Button/Sub 38** — 아이콘이 붙은 작은 보조 버튼 (높이 38). • 언제: 카드·프로필 안 작은 보조 행동 (편집 등) • 쓰지 말 것: 화면의 주요 행동 (→ Button/Full Width) • 함께: Profile/Header • 쓰는 곳(실제 앱): 프로필. · [스펙](components/button-sub-38.md)
 - **Button/See Answer 40** — 정답 보기 원형 버튼 40. 쓰는 곳(스프린트 화면): 보캡. · [스펙](components/button-see-answer-40.md)
-- **Button/Full Width** — 화면 폭 꽉 찬 글자 버튼 (모서리 8). • 언제: 화면 아래 주요 행동(계속·확인·구매), 폼 제출. size 48·54, style fill·outline·white • 쓰지 말 것: 한 화면에 fill 버튼 2개 이상, 알약(둥근) 모양으로 바꾸기, 카드 안 작은 행동(→ Button/Sub 38) • 함께: Template/Quiz Screen 아래, Dialog/Basic • 쓰는 곳(실제 앱): 온보딩 · 설정. · 속성: size:48·54 / style:fill·outline·white / state:disabled·enabled · [스펙](components/button-full-width.md)
+- **Button/Full Width** — 화면 폭 꽉 찬 글자 버튼 (Corner Radius 8). • 언제: 화면 아래 주요 행동(계속·확인·구매), 폼 제출. size 48·54, style fill·outline·white • 쓰지 말 것: 한 화면에 fill 버튼 2개 이상, 알약(둥근) 모양으로 바꾸기, 카드 안 작은 행동(→ Button/Sub 38) • 함께: Template/Quiz Screen 아래, Dialog/Basic • 쓰는 곳(실제 앱): 온보딩 · 설정. · 속성: size:48·54 / style:fill·outline·white / state:disabled·enabled · [스펙](components/button-full-width.md)
 - **Button/Page Nav 48** — 이전·다음 페이지로 넘기는 원형 화살표 버튼 48. 쓰는 곳(스프린트 화면): 유닛 요약. · 속성: direction:right·left · [스펙](components/button-page-nav-48.md)
 - **Button/Circle Icon** — 원형 아이콘 버튼 (소리·마이크·체크). • 언제: 글자 없이 아이콘 하나로 끝나는 작은 행동 (소리 듣기 등) • 쓰지 말 것: 글자가 필요한 행동 • 함께: Review/List Item, Word Card · 속성: state:mic·ic_check·audio_off·audio_m_off·audio_on·audio_m_on · [스펙](components/button-circle-icon.md)
 - **Button/Icon With Label** — 아래 회색 원형 아이콘 버튼 (answer 정답 보기 · skip 건너뛰기). • 언제: 퀴즈·레슨 하단 보조 행동 • 쓰지 말 것: 화면 주요 행동 (→ Button/Full Width) • 함께: Template/Quiz Screen • 쓰는 곳(실제 앱): 레슨. · 속성: type:answer·skip · [스펙](components/button-icon-with-label.md)
@@ -198,7 +198,7 @@
 - **Practice/Question** — 프랙티스 문제 영역. "Speak this sentence" + 문장 카드. 텍스트 규격: 한글 20pt / line-height 28pt, 로마자·모국어 12pt / line-height 16pt. · 속성: viewportwidth:under 390x / stage:1 · [스펙](components/practice-question.md)
 - **Practice/Romanization Cell** — 프랙티스 로마자 표기 셀. Default / Answer / Blank. · 속성: type:default·answer·blank · [스펙](components/practice-romanization-cell.md)
 - **Speaking/VUI In Progress** — 말하기 인식 중 원 (아이폰 듀오). · [스펙](components/speaking-vui-in-progress.md)
-- **Review/List Item** — 리뷰 탭 배운 단어·표현 목록의 한 줄 335x78. 북마크, 단어와 발음, 소리 버튼이 들어감. list-item으로 첫·중간·마지막 줄 모서리, lines로 1·2줄, romanization으로 발음 표기 유무를 고름. · 속성: lines:1·2 / language type:study·source / language:koen·jaen / list-item:first·middle·last · [스펙](components/review-list-item.md)
+- **Review/List Item** — 리뷰 탭 배운 단어·표현 목록의 한 줄 335x78. 북마크, 단어와 발음, 소리 버튼이 들어감. list-item으로 첫·중간·마지막 줄 Corner Radius, lines로 1·2줄, romanization으로 발음 표기 유무를 고름. · 속성: lines:1·2 / language type:study·source / language:koen·jaen / list-item:first·middle·last · [스펙](components/review-list-item.md)
 - **Story/Line Card Swipe Guide** — 스토리 대사 카드 스와이프 안내 화면. · [스펙](components/story-line-card-swipe-guide.md)
 - **Story/Script Line** — 레슨 문장 한 줄 280x67(원문과 번역). 스토리 상세 view all 목록에 씀. · 속성: type:default·focused(white back)·completed · [스펙](components/story-script-line.md)
 - **Streak/Icon 20 Green** — 민트 스트릭 아이콘 20 (연속 일수별). · 속성: days:1-2days·3-4days·5-6days·7-69days·70-99days · [스펙](components/streak-icon-20-green.md)
@@ -219,8 +219,8 @@
 - **Premium/Badge** — 프리미엄 배지 (기본·완료). · 속성: state:default·done · [스펙](components/premium-badge.md)
 - **Premium/Upgrade Badge** — 프리미엄 유도 배지 (Try·Premium·Upgrade). · 속성: type:try·premium·upgrade · [스펙](components/premium-upgrade-badge.md)
 - **Premium/Only Content** — 프리미엄 전용 콘텐츠 안내 카드. · 속성: state:default·highlight · [스펙](components/premium-only-content.md)
-- **Premium/Discount Timer Floating** — 할인 이벤트 떠 있는 타이머 카드. 레슨 메인에서 탭바 위에 뜸, 바깥 좌우 여백 20. 민트 유리 면(모서리 12) + 시간 칸 3개 + 흰 알약 CTA. 왼쪽 위에 리본 태그가 겹침(-10, -13). · [스펙](components/premium-discount-timer-floating.md)
-- **Premium/Discount Timer Banner** — 할인 이벤트 타이머 배너. 화면 폭 꽉 찬 민트 유리 면, 위 20 · 좌우·아래 16. 시간 칸 모서리 4, 흰 알약 CTA. · [스펙](components/premium-discount-timer-banner.md)
+- **Premium/Discount Timer Floating** — 할인 이벤트 떠 있는 타이머 카드. 레슨 메인에서 탭바 위에 뜸, 바깥 좌우 여백 20. 민트 유리 면(Corner Radius 12) + 시간 칸 3개 + 흰 알약 CTA. 왼쪽 위에 리본 태그가 겹침(-10, -13). · [스펙](components/premium-discount-timer-floating.md)
+- **Premium/Discount Timer Banner** — 할인 이벤트 타이머 배너. 화면 폭 꽉 찬 민트 유리 면, 위 20 · 좌우·아래 16. 시간 칸 Corner Radius 4, 흰 알약 CTA. · [스펙](components/premium-discount-timer-banner.md)
 - **Community/Post Bottom** — 커뮤니티 글 아래쪽 375x58(태그, 좋아요 수, 댓글 버튼). · [스펙](components/community-post-bottom.md)
 - **Community/Post Bottom Has Reply** — 커뮤니티 글 아래 줄 (답글 있음). · [스펙](components/community-post-bottom-has-reply.md)
 - **Community/Post Bottom Reply** — 커뮤니티 답글 아래 줄. · [스펙](components/community-post-bottom-reply.md)

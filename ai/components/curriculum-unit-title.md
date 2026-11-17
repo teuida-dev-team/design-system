@@ -17,7 +17,7 @@
     - Frame 2590: 335x174, 세로 정렬, 간격 10 (Spacing/10)
       - Container: 335x130, 세로 정렬, 여백 위아래 0 · 좌우 123 (토큰 없음), 간격 10 (Spacing/10)
         - Badge/Unit Badge: 160x130, 세로 정렬, 간격 -22 (토큰 없음), 부품 Badge/Unit Badge
-      - Frame 2588: 132x34, 가로 정렬, 여백 위 4 (Spacing/4) · 오른 7 (토큰 없음) · 아래 4 (Spacing/4) · 왼 14 (토큰 없음), 간격 4 (Spacing/4), 모서리 full (Radius/full), 면 background-secondary
+      - Frame 2588: 132x34, 가로 정렬, 여백 위 4 (Spacing/4) · 오른 7 (토큰 없음) · 아래 4 (Spacing/4) · 왼 14 (토큰 없음), 간격 4 (Spacing/4), Corner Radius full (Radius/full), 면 background-secondary
         - Frame 2589: 83x20, 가로 정렬, 간격 4 (Spacing/4)
         - Group 1720: 24x24
   - 배리언트 `type=inactive`: 375x293, 면 background-primary, 글자 text-tertiary

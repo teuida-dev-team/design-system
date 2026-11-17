@@ -41,33 +41,33 @@
     - 전체: 59x66, 세로 정렬, 여백 위아래 12 (Spacing/12) · 좌우 16 (Spacing/16), 간격 2 (Spacing/2)
       - 03.ICON / 03.ICON / ic_s: 24x24
         - Mask: 20x20, 면 icon-highlight
-          - Rectangle: 16x2, 모서리 1 (토큰 없음), 면 #D8D8D8 (토큰 없음), 선 #979797 (토큰 없음) 1
-          - Rectangle: 12x2, 모서리 1 (토큰 없음), 면 #D8D8D8 (토큰 없음), 선 #979797 (토큰 없음) 1
-          - Rectangle: 20x12, 모서리 1 (토큰 없음), 면 #D8D8D8 (토큰 없음), 선 #979797 (토큰 없음) 1
+          - Rectangle: 16x2, Corner Radius 1 (토큰 없음), 면 #D8D8D8 (토큰 없음), 선 #979797 (토큰 없음) 1
+          - Rectangle: 12x2, Corner Radius 1 (토큰 없음), 면 #D8D8D8 (토큰 없음), 선 #979797 (토큰 없음) 1
+          - Rectangle: 20x12, Corner Radius 1 (토큰 없음), 면 #D8D8D8 (토큰 없음), 선 #979797 (토큰 없음) 1
           - Path: 6x7
       - Story: 27x16, 글자색 text-highlight, 글자 Bold 10 (스타일 없음)
   - 배리언트 `tabicon=story, clicked=true, newdot=false, text=false` 자세히 (기준과 다른 부분):
       - 03.ICON / 03.ICON / ic_s: 24x24
         - Mask: 20x20, 면 icon-highlight
-          - Rectangle: 16x2, 모서리 1 (토큰 없음), 면 #D8D8D8 (토큰 없음), 선 #979797 (토큰 없음) 1
-          - Rectangle: 12x2, 모서리 1 (토큰 없음), 면 #D8D8D8 (토큰 없음), 선 #979797 (토큰 없음) 1
-          - Rectangle: 20x12, 모서리 1 (토큰 없음), 면 #D8D8D8 (토큰 없음), 선 #979797 (토큰 없음) 1
+          - Rectangle: 16x2, Corner Radius 1 (토큰 없음), 면 #D8D8D8 (토큰 없음), 선 #979797 (토큰 없음) 1
+          - Rectangle: 12x2, Corner Radius 1 (토큰 없음), 면 #D8D8D8 (토큰 없음), 선 #979797 (토큰 없음) 1
+          - Rectangle: 20x12, Corner Radius 1 (토큰 없음), 면 #D8D8D8 (토큰 없음), 선 #979797 (토큰 없음) 1
           - Path: 6x7
   - 배리언트 `tabicon=story, clicked=false, newdot=false, text=true` 자세히 (기준과 다른 부분):
     - 전체: 59x66, 세로 정렬, 여백 위아래 12 (Spacing/12) · 좌우 16 (Spacing/16), 간격 2 (Spacing/2)
       - 03.ICON / 03.ICON / ic_s: 24x24
         - Mask: 20x20, 면 icon-unselected
-          - Rectangle: 16x2, 모서리 1 (토큰 없음), 면 #D8D8D8 (토큰 없음), 선 #979797 (토큰 없음) 1
-          - Rectangle: 12x2, 모서리 1 (토큰 없음), 면 #D8D8D8 (토큰 없음), 선 #979797 (토큰 없음) 1
-          - Rectangle: 20x12, 모서리 1 (토큰 없음), 면 #D8D8D8 (토큰 없음), 선 #979797 (토큰 없음) 1
+          - Rectangle: 16x2, Corner Radius 1 (토큰 없음), 면 #D8D8D8 (토큰 없음), 선 #979797 (토큰 없음) 1
+          - Rectangle: 12x2, Corner Radius 1 (토큰 없음), 면 #D8D8D8 (토큰 없음), 선 #979797 (토큰 없음) 1
+          - Rectangle: 20x12, Corner Radius 1 (토큰 없음), 면 #D8D8D8 (토큰 없음), 선 #979797 (토큰 없음) 1
           - Path: 6x7
       - Story: 27x16, 글자색 icon-unselected, 글자 Bold 10 (스타일 없음)
   - 배리언트 `tabicon=story, clicked=false, newdot=false, text=false` 자세히 (기준과 다른 부분):
       - 03.ICON / 03.ICON / ic_s: 24x24
         - Mask: 20x20, 면 icon-unselected
-          - Rectangle: 16x2, 모서리 1 (토큰 없음), 면 #D8D8D8 (토큰 없음), 선 #979797 (토큰 없음) 1
-          - Rectangle: 12x2, 모서리 1 (토큰 없음), 면 #D8D8D8 (토큰 없음), 선 #979797 (토큰 없음) 1
-          - Rectangle: 20x12, 모서리 1 (토큰 없음), 면 #D8D8D8 (토큰 없음), 선 #979797 (토큰 없음) 1
+          - Rectangle: 16x2, Corner Radius 1 (토큰 없음), 면 #D8D8D8 (토큰 없음), 선 #979797 (토큰 없음) 1
+          - Rectangle: 12x2, Corner Radius 1 (토큰 없음), 면 #D8D8D8 (토큰 없음), 선 #979797 (토큰 없음) 1
+          - Rectangle: 20x12, Corner Radius 1 (토큰 없음), 면 #D8D8D8 (토큰 없음), 선 #979797 (토큰 없음) 1
           - Path: 6x7
   - 배리언트 `tabicon=story, clicked=false, newdot=true, text=true` 자세히 (기준과 다른 부분):
     - 전체: 60x66, 세로 정렬, 여백 위아래 12 (Spacing/12) · 좌우 16 (Spacing/16), 간격 2 (Spacing/2)

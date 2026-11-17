@@ -7,7 +7,7 @@
 속성: state:on·success·failed·mute·off·failed_1
 
 - 스펙 (px, 기준 `state=mute`; 괄호 = 토큰 이름, "토큰 없음" = 숫자·색 직접):
-  - 전체: 72x72, 가로 정렬, 여백 20 (Spacing/20), 간격 13.3 (토큰 없음), 모서리 full (Radius/full), 면 button-primary
+  - 전체: 72x72, 가로 정렬, 여백 20 (Spacing/20), 간격 13.3 (토큰 없음), Corner Radius full (Radius/full), 면 button-primary
     - Icon/Mic Mute 28: 34x34, 부품 Icon/Mic Mute 28
   - 배리언트 `state=on`: 72x72, 면 button-primary
   - 배리언트 `state=success`: 72x72, 면 button-primary
@@ -31,8 +31,8 @@
         - Ellipse 406: 75x75, 면 red-400 (기본 색)
         - Icon/X 28: 41x41, 부품 Icon/X 28
   - 배리언트 `state=failed` 자세히 (기준과 다른 부분):
-    - 전체: 72x72, 가로 정렬, 여백 20 (Spacing/20), 간격 13.3 (토큰 없음), 모서리 full (Radius/full), 면 red-400 (기본 색)
+    - 전체: 72x72, 가로 정렬, 여백 20 (Spacing/20), 간격 13.3 (토큰 없음), Corner Radius full (Radius/full), 면 red-400 (기본 색)
       - Icon/X 28: 34x34, 부품 Icon/X 28
   - 배리언트 `state=off` 자세히 (기준과 다른 부분):
-    - 전체: 72x72, 가로 정렬, 여백 20 (Spacing/20), 간격 13.3 (토큰 없음), 모서리 full (Radius/full), 면 button-second-primary
+    - 전체: 72x72, 가로 정렬, 여백 20 (Spacing/20), 간격 13.3 (토큰 없음), Corner Radius full (Radius/full), 면 button-second-primary
       - Icon/Mic On 28: 34x34, 부품 Icon/Mic On 28

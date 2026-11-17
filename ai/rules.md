@@ -10,7 +10,7 @@
 | 부품 | Design Library의 `Components` 페이지 → 이 사이트 [컴포넌트](components.html) |
 | 색 | 라이브러리 변수 `Tokens` 컬렉션 → [토큰](tokens.html). Primitives(`Color/Gray/gray-400` 등)와 옛 색 스타일은 직접 쓰지 않아요 |
 | 글자 | 텍스트 스타일 27개. 글꼴은 Noto Sans (이벤트 화면만 예외, 시스템 UI는 SF Pro) |
-| 간격·모서리·그림자 | `Spacing/*`, `Radius/*`, `Shadow/Soft 12·8` |
+| 간격·Corner Radius·그림자 | `Spacing/*`, `Radius/*`, `Shadow/Soft 12·8` |
 
 스프린트 페이지는 위쪽일수록 최신이에요. 같은 화면 사본이 여러 페이지에 있으면 가장 위 페이지 것을 써요.
 
@@ -64,9 +64,9 @@
 
 | 하지 말 것 | 대신 |
 |---|---|
-| 글자 들어간 알약 버튼 | `Button/Full Width` (모서리 8) |
+| 글자 들어간 알약 버튼 | `Button/Full Width` (Corner Radius 8) |
 | hex 직접 입력·옛 색 스타일 | 용도 토큰 (없으면 Primitives + 알리기) |
-| 임의 간격·모서리 (7, 14…) | Spacing·Radius 토큰 (콘텐츠 확보가 필요하면 예외) |
+| 임의 간격·Corner Radius (7, 14…) | Spacing·Radius 토큰 (콘텐츠 확보가 필요하면 예외) |
 | 인스턴스 detach·로컬 부품 | 라이브러리 인스턴스 |
 | 섹션 밖 참고 화면을 원본으로 | `🧩 기능별 최신 화면`, 섹션 안 화면 |
 | 색만 다른 아이콘 새로 만들기 | 기본 아이콘 + Icon 토큰 |

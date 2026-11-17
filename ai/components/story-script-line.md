@@ -7,7 +7,7 @@
 속성: type:default·focused(white back)·completed
 
 - 스펙 (px, 기준 `type=default`; 괄호 = 토큰 이름, "토큰 없음" = 숫자·색 직접):
-  - 전체: 280x65, 가로 정렬, 여백 위아래 13 (토큰 없음) · 좌우 15 (토큰 없음), 간격 12 (Spacing/12), 모서리 12 (Radius/12), 면 background-primary
+  - 전체: 280x65, 가로 정렬, 여백 위아래 13 (토큰 없음) · 좌우 15 (토큰 없음), 간격 12 (Spacing/12), Corner Radius 12 (Radius/12), 면 background-primary
     - Frame 1540: 214x39, 가로 정렬, 간격 12 (Spacing/12)
       - Frame 1540: 214x39, 세로 정렬, 간격 양 끝 정렬
         - Frame 1550: 214x39, 세로 정렬, 간격 3 (토큰 없음)
@@ -16,6 +16,6 @@
   - 배리언트 `type=focused(white back)`: 280x65, 면 background-secondary, 글자 text-primary
   - 배리언트 `type=completed`: 280x65, 면 background-primary, 글자 text-primary
   - 배리언트 `type=focused(white back)` 자세히 (기준과 다른 부분):
-    - 전체: 280x65, 가로 정렬, 여백 위아래 13 (토큰 없음) · 좌우 15 (토큰 없음), 간격 12 (Spacing/12), 모서리 12 (Radius/12), 면 background-secondary
+    - 전체: 280x65, 가로 정렬, 여백 위아래 13 (토큰 없음) · 좌우 15 (토큰 없음), 간격 12 (Spacing/12), Corner Radius 12 (Radius/12), 면 background-secondary
   - 배리언트 `type=completed` 자세히 (기준과 다른 부분):
       - Score/Grade 24: 24x24, 부품 Score/Grade 24

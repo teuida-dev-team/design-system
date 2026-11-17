@@ -10,7 +10,7 @@
   - 전체: 360x52, 가로 정렬, 여백 위아래 7 (토큰 없음) · 좌우 16 (Spacing/16), 간격 6 (Spacing/6), 면 background-secondary, 선 border-secondary
     - Icon/Change Course: 61x44, 가로 정렬, 간격 1 (토큰 없음), 부품 Icon/Change Course
     - Frame 1677: 214x25, 세로 정렬, 간격 10 (Spacing/10)
-      - Premium/Upgrade Badge: 141x25, 가로 정렬, 여백 위 3 (토큰 없음) · 오른 7 (토큰 없음) · 아래 5 (토큰 없음) · 왼 7 (토큰 없음), 간격 10 (Spacing/10), 모서리 6 (토큰 없음), 면 button-highlight-soft, 부품 Premium/Upgrade Badge
+      - Premium/Upgrade Badge: 141x25, 가로 정렬, 여백 위 3 (토큰 없음) · 오른 7 (토큰 없음) · 아래 5 (토큰 없음) · 왼 7 (토큰 없음), 간격 10 (Spacing/10), Corner Radius 6 (토큰 없음), 면 button-highlight-soft, 부품 Premium/Upgrade Badge
     - Badge/Key Count: 41x30, 가로 정렬, 간격 10 (Spacing/10), 부품 Badge/Key Count
   - 배리언트 `type=home`: 360x52, 면 background-secondary, 선 border-secondary, 글자 button-text-highlight
   - 배리언트 `type=other01`: 360x52, 면 background-secondary, 선 border-secondary, 글자 text-primary
@@ -31,7 +31,7 @@
       - Frame 662: 48x30, 가로 정렬
         - Text: 48x30, 글자색 text-primary, 글자 Head 2 - EB
       - Frame 1677: 227x25, 세로 정렬, 간격 10 (Spacing/10)
-        - Premium/Upgrade Badge: 141x25, 가로 정렬, 여백 위 3 (토큰 없음) · 오른 7 (토큰 없음) · 아래 5 (토큰 없음) · 왼 7 (토큰 없음), 간격 10 (Spacing/10), 모서리 6 (토큰 없음), 면 button-highlight-soft, 부품 Premium/Upgrade Badge
+        - Premium/Upgrade Badge: 141x25, 가로 정렬, 여백 위 3 (토큰 없음) · 오른 7 (토큰 없음) · 아래 5 (토큰 없음) · 왼 7 (토큰 없음), 간격 10 (Spacing/10), Corner Radius 6 (토큰 없음), 면 button-highlight-soft, 부품 Premium/Upgrade Badge
       - Badge/Key Count: 41x30, 가로 정렬, 간격 10 (Spacing/10), 부품 Badge/Key Count
   - 배리언트 `type=home(old)` 자세히 (기준과 다른 부분):
       - Image/Home Logo: 106x48, 부품 Image/Home Logo

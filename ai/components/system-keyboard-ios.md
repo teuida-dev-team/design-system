@@ -16,4 +16,4 @@ iOS 키보드 (화면 그림용, 시스템 UI). 쓰는 곳(실제 앱): 온보�
         - Second Row: 332x42
         - Top Row: 369x42
     - home indicator dark on l: 375x34
-      - Home Indicator: 134x5, 모서리 full (Radius/full), 면 black (기본 색)
+      - Home Indicator: 134x5, Corner Radius full (Radius/full), 면 black (기본 색)

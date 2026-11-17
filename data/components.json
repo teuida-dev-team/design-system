@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-06",
+ "updated": "2026-11-17",
  "components": [
   {
    "name": "Icon/Code Switch 24",
@@ -49,7 +49,7 @@
    "group": "공통",
    "category": "Button",
    "status": "use",
-   "description": "화면 폭 꽉 찬 글자 버튼 (모서리 8). • 언제: 화면 아래 주요 행동(계속·확인·구매), 폼 제출. size 48·54, style fill·outline·white • 쓰지 말 것: 한 화면에 fill 버튼 2개 이상, 알약(둥근) 모양으로 바꾸기, 카드 안 작은 행동(→ Button/Sub 38) • 함께: Template/Quiz Screen 아래, Dialog/Basic • 쓰는 곳(실제 앱): 온보딩 · 설정.",
+   "description": "화면 폭 꽉 찬 글자 버튼 (Corner Radius 8). • 언제: 화면 아래 주요 행동(계속·확인·구매), 폼 제출. size 48·54, style fill·outline·white • 쓰지 말 것: 한 화면에 fill 버튼 2개 이상, 알약(둥근) 모양으로 바꾸기, 카드 안 작은 행동(→ Button/Sub 38) • 함께: Template/Quiz Screen 아래, Dialog/Basic • 쓰는 곳(실제 앱): 온보딩 · 설정.",
    "variants": "size:48·54 / style:fill·outline·white / state:disabled·enabled",
    "image": "img/693-7850.png",
    "spec": "data/specs/button-full-width.json",
@@ -2429,7 +2429,7 @@
    "group": "기능 전용",
    "category": "Review",
    "status": "use",
-   "description": "리뷰 탭 배운 단어·표현 목록의 한 줄 335x78. 북마크, 단어와 발음, 소리 버튼이 들어감. list-item으로 첫·중간·마지막 줄 모서리, lines로 1·2줄, romanization으로 발음 표기 유무를 고름.",
+   "description": "리뷰 탭 배운 단어·표현 목록의 한 줄 335x78. 북마크, 단어와 발음, 소리 버튼이 들어감. list-item으로 첫·중간·마지막 줄 Corner Radius, lines로 1·2줄, romanization으로 발음 표기 유무를 고름.",
    "variants": "lines:1·2 / language type:study·source / language:koen·jaen / list-item:first·middle·last",
    "image": "img/1350-6432.png",
    "spec": "data/specs/review-list-item.json",
@@ -2660,7 +2660,7 @@
    "group": "기능 전용",
    "category": "Premium",
    "status": "use",
-   "description": "할인 이벤트 떠 있는 타이머 카드. 레슨 메인에서 탭바 위에 뜸, 바깥 좌우 여백 20. 민트 유리 면(모서리 12) + 시간 칸 3개 + 흰 알약 CTA. 왼쪽 위에 리본 태그가 겹침(-10, -13).",
+   "description": "할인 이벤트 떠 있는 타이머 카드. 레슨 메인에서 탭바 위에 뜸, 바깥 좌우 여백 20. 민트 유리 면(Corner Radius 12) + 시간 칸 3개 + 흰 알약 CTA. 왼쪽 위에 리본 태그가 겹침(-10, -13).",
    "variants": "",
    "image": "img/2952-5383.png",
    "spec": "data/specs/premium-discount-timer-floating.json",
@@ -2671,7 +2671,7 @@
    "group": "기능 전용",
    "category": "Premium",
    "status": "use",
-   "description": "할인 이벤트 타이머 배너. 화면 폭 꽉 찬 민트 유리 면, 위 20 · 좌우·아래 16. 시간 칸 모서리 4, 흰 알약 CTA.",
+   "description": "할인 이벤트 타이머 배너. 화면 폭 꽉 찬 민트 유리 면, 위 20 · 좌우·아래 16. 시간 칸 Corner Radius 4, 흰 알약 CTA.",
    "variants": "",
    "image": "img/2952-5397.png",
    "spec": "data/specs/premium-discount-timer-banner.json",

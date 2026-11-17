@@ -16,7 +16,7 @@
       - Ellipse 394: 318x318, 면 #FFCCC4 (토큰 없음)
     - Frame 2514: 267x369, 세로 정렬, 간격 18 (토큰 없음)
       - Group 1811: 253x234
-        - Rectangle 41502: 253x234, 모서리 14.7 (토큰 없음), 면 #F1FFFF (토큰 없음) 80%
+        - Rectangle 41502: 253x234, Corner Radius 14.7 (토큰 없음), 면 #F1FFFF (토큰 없음) 80%
         - Group 1780: 185x185
         - Group 92: 123x107
         - Group 1781: 31x46

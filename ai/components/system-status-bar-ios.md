@@ -9,7 +9,7 @@ iOS 상태바 (시스템 UI, 폭 375·360). • 언제: 모든 iOS 화면 맨 �
 - 스펙 (px, 기준 `width=375`; 괄호 = 토큰 이름, "토큰 없음" = 숫자·색 직접):
   - 전체: 375x44, 면 background-secondary
     - Left Side: 50x19
-      - _StatusBar-time: 50x19, 모서리 24 (Radius/24)
+      - _StatusBar-time: 50x19, Corner Radius 24 (Radius/24)
         - ✏️ Time: 27x11, 면 icon-primary
     - Right Side: 64x11
       - Battery: 24x11

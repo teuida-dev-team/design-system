@@ -14,8 +14,8 @@
         - Icon/Premium 20: 20x20, 부품 Icon/Premium 20
     - Frame 2251: 335x112, 가로 정렬, 간격 13 (토큰 없음)
       - Frame 2252: 335x112, 가로 정렬, 간격 양 끝 정렬
-        - Premium Badge: 45x45, 가로 정렬, 여백 10 (Spacing/10), 간격 10 (Spacing/10), 모서리 10 (토큰 없음), 면 icon-bubble-background, 부품 Premium/Badge
-        - Premium Only-content: 277x112, 세로 정렬, 여백 16 (Spacing/16), 간격 10 (Spacing/10), 모서리 14 (토큰 없음), 면 background-secondary + icon-bubble-background
+        - Premium Badge: 45x45, 가로 정렬, 여백 10 (Spacing/10), 간격 10 (Spacing/10), Corner Radius 10 (토큰 없음), 면 icon-bubble-background, 부품 Premium/Badge
+        - Premium Only-content: 277x112, 세로 정렬, 여백 16 (Spacing/16), 간격 10 (Spacing/10), Corner Radius 14 (토큰 없음), 면 background-secondary + icon-bubble-background
   - 배리언트 `state=default`: 372x175, 글자 text-secondary
   - 배리언트 `state=highlight`: 372x175, 글자 text-secondary
   - 배리언트 `state=highlight` 자세히: 기준과 같음
